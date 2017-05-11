@@ -1,7 +1,9 @@
 # Simply-Zen
 A Meditation App for iOS and (Eventually) Apple TV
 
+[![Build](https://img.shields.io/vso/build/larsbrinkhoff/953a34b9-5966-4923-a48a-c41874cfb5f5/1.svg)](http://blaumagier.com)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](license.md)
 
 ## Description
 
@@ -33,3 +35,4 @@ This will be a paid app on the app store, and I won't be able to pay anyone for 
 5. Submit a pull request :D
 
 ## License
+[Apache-2.0 License](license.md)
