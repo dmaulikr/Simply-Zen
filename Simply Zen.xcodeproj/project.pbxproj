@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652A44D71EC6791F004F57C9 /* SZModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 652A44D51EC6791F004F57C9 /* SZModel.xcdatamodeld */; };
 		65BE12C21EC500E700628802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12C11EC500E700628802 /* AppDelegate.swift */; };
 		65BE12C41EC500E700628802 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12C31EC500E700628802 /* FirstViewController.swift */; };
 		65BE12C61EC500E700628802 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12C51EC500E700628802 /* SecondViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		652A44D61EC6791F004F57C9 /* SZModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SZModel.xcdatamodel; sourceTree = "<group>"; };
 		65BE12BE1EC500E700628802 /* Simply Zen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simply Zen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE12C11EC500E700628802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65BE12C31EC500E700628802 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				65BE12C31EC500E700628802 /* FirstViewController.swift */,
 				65BE12C51EC500E700628802 /* SecondViewController.swift */,
 				65BE12C71EC500E700628802 /* Main.storyboard */,
+				652A44D51EC6791F004F57C9 /* SZModel.xcdatamodeld */,
 				65BE12CA1EC500E700628802 /* Assets.xcassets */,
 				65BE12CC1EC500E700628802 /* LaunchScreen.storyboard */,
 				65BE12CF1EC500E700628802 /* Info.plist */,
@@ -267,6 +270,7 @@
 			files = (
 				65BE12C61EC500E700628802 /* SecondViewController.swift in Sources */,
 				65BE12C21EC500E700628802 /* AppDelegate.swift in Sources */,
+				652A44D71EC6791F004F57C9 /* SZModel.xcdatamodeld in Sources */,
 				65BE12C41EC500E700628802 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +524,7 @@
 				65BE12EA1EC500E700628802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65BE12EB1EC500E700628802 /* Build configuration list for PBXNativeTarget "Simply ZenTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +533,7 @@
 				65BE12ED1EC500E700628802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65BE12EE1EC500E700628802 /* Build configuration list for PBXNativeTarget "Simply ZenUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,8 +542,23 @@
 				65BE12F01EC500E700628802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		652A44D51EC6791F004F57C9 /* SZModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				652A44D61EC6791F004F57C9 /* SZModel.xcdatamodel */,
+			);
+			currentVersion = 652A44D61EC6791F004F57C9 /* SZModel.xcdatamodel */;
+			name = SZModel.xcdatamodeld;
+			path = Model/SZModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 65BE12B61EC500E700628802 /* Project object */;
 }
