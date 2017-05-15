@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		652A44D71EC6791F004F57C9 /* SZModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 652A44D51EC6791F004F57C9 /* SZModel.xcdatamodeld */; };
 		65BE12C21EC500E700628802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12C11EC500E700628802 /* AppDelegate.swift */; };
-		65BE12C41EC500E700628802 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12C31EC500E700628802 /* FirstViewController.swift */; };
-		65BE12C61EC500E700628802 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12C51EC500E700628802 /* SecondViewController.swift */; };
 		65BE12C91EC500E700628802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12C71EC500E700628802 /* Main.storyboard */; };
 		65BE12CB1EC500E700628802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12CA1EC500E700628802 /* Assets.xcassets */; };
 		65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12CC1EC500E700628802 /* LaunchScreen.storyboard */; };
 		65BE12D91EC500E700628802 /* Simply_ZenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12D81EC500E700628802 /* Simply_ZenTests.swift */; };
 		65BE12E41EC500E700628802 /* Simply_ZenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12E31EC500E700628802 /* Simply_ZenUITests.swift */; };
+		65F6C9EF1ECA30E2001ABBA6 /* Meditation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6C9EB1ECA30E2001ABBA6 /* Meditation+CoreDataClass.swift */; };
+		65F6C9F01ECA30E2001ABBA6 /* Meditation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6C9EC1ECA30E2001ABBA6 /* Meditation+CoreDataProperties.swift */; };
+		65F6C9F11ECA30E2001ABBA6 /* UserData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6C9ED1ECA30E2001ABBA6 /* UserData+CoreDataClass.swift */; };
+		65F6C9F21ECA30E2001ABBA6 /* UserData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6C9EE1ECA30E2001ABBA6 /* UserData+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		652A44D61EC6791F004F57C9 /* SZModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SZModel.xcdatamodel; sourceTree = "<group>"; };
 		65BE12BE1EC500E700628802 /* Simply Zen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simply Zen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE12C11EC500E700628802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65BE12C31EC500E700628802 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		65BE12C51EC500E700628802 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		65BE12C81EC500E700628802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65BE12CA1EC500E700628802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65BE12CD1EC500E700628802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,10 @@
 		65BE12DF1EC500E700628802 /* Simply ZenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simply ZenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE12E31EC500E700628802 /* Simply_ZenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simply_ZenUITests.swift; sourceTree = "<group>"; };
 		65BE12E51EC500E700628802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F6C9EB1ECA30E2001ABBA6 /* Meditation+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Meditation+CoreDataClass.swift"; path = "Simply Zen/Model/Meditation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		65F6C9EC1ECA30E2001ABBA6 /* Meditation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Meditation+CoreDataProperties.swift"; path = "Simply Zen/Model/Meditation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		65F6C9ED1ECA30E2001ABBA6 /* UserData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataClass.swift"; path = "Simply Zen/Model/UserData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		65F6C9EE1ECA30E2001ABBA6 /* UserData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataProperties.swift"; path = "Simply Zen/Model/UserData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +105,9 @@
 		65BE12C01EC500E700628802 /* Simply Zen */ = {
 			isa = PBXGroup;
 			children = (
-				65BE12C11EC500E700628802 /* AppDelegate.swift */,
-				65BE12C31EC500E700628802 /* FirstViewController.swift */,
-				65BE12C51EC500E700628802 /* SecondViewController.swift */,
-				65BE12C71EC500E700628802 /* Main.storyboard */,
-				652A44D51EC6791F004F57C9 /* SZModel.xcdatamodeld */,
-				65BE12CA1EC500E700628802 /* Assets.xcassets */,
-				65BE12CC1EC500E700628802 /* LaunchScreen.storyboard */,
-				65BE12CF1EC500E700628802 /* Info.plist */,
+				65F6C9F31ECA30EA001ABBA6 /* Model */,
+				65F6C9F41ECA311B001ABBA6 /* View */,
+				65F6C9F51ECA312A001ABBA6 /* Supporting Files */,
 			);
 			path = "Simply Zen";
 			sourceTree = "<group>";
@@ -129,6 +128,38 @@
 				65BE12E51EC500E700628802 /* Info.plist */,
 			);
 			path = "Simply ZenUITests";
+			sourceTree = "<group>";
+		};
+		65F6C9F31ECA30EA001ABBA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				652A44D51EC6791F004F57C9 /* SZModel.xcdatamodeld */,
+				65F6C9EB1ECA30E2001ABBA6 /* Meditation+CoreDataClass.swift */,
+				65F6C9EC1ECA30E2001ABBA6 /* Meditation+CoreDataProperties.swift */,
+				65F6C9ED1ECA30E2001ABBA6 /* UserData+CoreDataClass.swift */,
+				65F6C9EE1ECA30E2001ABBA6 /* UserData+CoreDataProperties.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		65F6C9F41ECA311B001ABBA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65BE12C71EC500E700628802 /* Main.storyboard */,
+				65BE12CA1EC500E700628802 /* Assets.xcassets */,
+				65BE12CC1EC500E700628802 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		65F6C9F51ECA312A001ABBA6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65BE12C11EC500E700628802 /* AppDelegate.swift */,
+				65BE12CF1EC500E700628802 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,10 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65BE12C61EC500E700628802 /* SecondViewController.swift in Sources */,
+				65F6C9F21ECA30E2001ABBA6 /* UserData+CoreDataProperties.swift in Sources */,
 				65BE12C21EC500E700628802 /* AppDelegate.swift in Sources */,
+				65F6C9EF1ECA30E2001ABBA6 /* Meditation+CoreDataClass.swift in Sources */,
+				65F6C9F11ECA30E2001ABBA6 /* UserData+CoreDataClass.swift in Sources */,
+				65F6C9F01ECA30E2001ABBA6 /* Meditation+CoreDataProperties.swift in Sources */,
 				652A44D71EC6791F004F57C9 /* SZModel.xcdatamodeld in Sources */,
-				65BE12C41EC500E700628802 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,7 +587,7 @@
 			);
 			currentVersion = 652A44D61EC6791F004F57C9 /* SZModel.xcdatamodel */;
 			name = SZModel.xcdatamodeld;
-			path = Model/SZModel.xcdatamodeld;
+			path = "Simply Zen/Model/SZModel.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

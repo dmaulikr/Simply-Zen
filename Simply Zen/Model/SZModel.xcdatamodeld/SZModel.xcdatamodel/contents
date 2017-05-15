@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F71b" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="Meditation" representedClassName="Meditation" syncable="YES">
+        <attribute name="date" attributeType="Date" minDateTimeInterval="516566400" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="durationSeconds" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lesson" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="quote" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserData" inverseName="meditationHistory" inverseEntity="UserData" syncable="YES"/>
+    </entity>
+    <entity name="UserData" representedClassName="UserData" syncable="YES">
+        <attribute name="userData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <relationship name="meditationHistory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Meditation" inverseName="user" inverseEntity="Meditation" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Meditation" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="UserData" positionX="-54" positionY="-9" width="128" height="75"/>
+    </elements>
 </model>
