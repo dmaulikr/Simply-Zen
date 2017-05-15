@@ -7,7 +7,7 @@ A Meditation App for iOS and (Eventually) Apple TV
 
 ## Description
 
-This is a mindfulness app for users of all skill levels.
+This is a mindfulness app for users of all skill levels.  A high level mock-up can be found on [Prezi](https://prezi.com/view/cOvZsPdSOVXgDdZN8T5v/).
 
 ## Purpose
 
@@ -19,10 +19,8 @@ There are no features yet.
 
 ## TODO
 
-* Wireframes
-* Feature List
 * Paper Mock-Up
-* Everything
+* Design and Code Everything
 
 ## Contributing
 
