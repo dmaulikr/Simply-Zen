@@ -14,6 +14,9 @@
 		65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12CC1EC500E700628802 /* LaunchScreen.storyboard */; };
 		65BE12D91EC500E700628802 /* Simply_ZenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12D81EC500E700628802 /* Simply_ZenTests.swift */; };
 		65BE12E41EC500E700628802 /* Simply_ZenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12E31EC500E700628802 /* Simply_ZenUITests.swift */; };
+		65C190041ECA392200E6683D /* SZCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C190031ECA392200E6683D /* SZCourse.swift */; };
+		65C190061ECA392900E6683D /* SZLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C190051ECA392900E6683D /* SZLesson.swift */; };
+		65C190091ECA3D1A00E6683D /* SZLessonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C190081ECA3D1A00E6683D /* SZLessonProtocol.swift */; };
 		65F6C9EF1ECA30E2001ABBA6 /* Meditation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6C9EB1ECA30E2001ABBA6 /* Meditation+CoreDataClass.swift */; };
 		65F6C9F01ECA30E2001ABBA6 /* Meditation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6C9EC1ECA30E2001ABBA6 /* Meditation+CoreDataProperties.swift */; };
 		65F6C9F11ECA30E2001ABBA6 /* UserData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6C9ED1ECA30E2001ABBA6 /* UserData+CoreDataClass.swift */; };
@@ -51,6 +54,9 @@
 		65BE12DF1EC500E700628802 /* Simply ZenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simply ZenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE12E31EC500E700628802 /* Simply_ZenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simply_ZenUITests.swift; sourceTree = "<group>"; };
 		65BE12E51EC500E700628802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65C190031ECA392200E6683D /* SZCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SZCourse.swift; path = "Simply Zen/Model/SZCourse.swift"; sourceTree = "<group>"; };
+		65C190051ECA392900E6683D /* SZLesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SZLesson.swift; sourceTree = "<group>"; };
+		65C190081ECA3D1A00E6683D /* SZLessonProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SZLessonProtocol.swift; path = "Simply Zen/Model/SZLessonProtocol.swift"; sourceTree = "<group>"; };
 		65F6C9EB1ECA30E2001ABBA6 /* Meditation+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Meditation+CoreDataClass.swift"; path = "Simply Zen/Model/Meditation+CoreDataClass.swift"; sourceTree = "<group>"; };
 		65F6C9EC1ECA30E2001ABBA6 /* Meditation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Meditation+CoreDataProperties.swift"; path = "Simply Zen/Model/Meditation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		65F6C9ED1ECA30E2001ABBA6 /* UserData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataClass.swift"; path = "Simply Zen/Model/UserData+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -130,14 +136,57 @@
 			path = "Simply ZenUITests";
 			sourceTree = "<group>";
 		};
-		65F6C9F31ECA30EA001ABBA6 /* Model */ = {
+		65C18FFF1ECA384900E6683D /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				65C190021ECA386E00E6683D /* Core Model */,
+				65C190001ECA385B00E6683D /* Meditation */,
+				65C190011ECA386300E6683D /* User Data */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		65C190001ECA385B00E6683D /* Meditation */ = {
+			isa = PBXGroup;
+			children = (
+				65F6C9EB1ECA30E2001ABBA6 /* Meditation+CoreDataClass.swift */,
+				65F6C9EC1ECA30E2001ABBA6 /* Meditation+CoreDataProperties.swift */,
+			);
+			name = Meditation;
+			sourceTree = "<group>";
+		};
+		65C190011ECA386300E6683D /* User Data */ = {
+			isa = PBXGroup;
+			children = (
+				65F6C9ED1ECA30E2001ABBA6 /* UserData+CoreDataClass.swift */,
+				65F6C9EE1ECA30E2001ABBA6 /* UserData+CoreDataProperties.swift */,
+			);
+			name = "User Data";
+			sourceTree = "<group>";
+		};
+		65C190021ECA386E00E6683D /* Core Model */ = {
 			isa = PBXGroup;
 			children = (
 				652A44D51EC6791F004F57C9 /* SZModel.xcdatamodeld */,
-				65F6C9EB1ECA30E2001ABBA6 /* Meditation+CoreDataClass.swift */,
-				65F6C9EC1ECA30E2001ABBA6 /* Meditation+CoreDataProperties.swift */,
-				65F6C9ED1ECA30E2001ABBA6 /* UserData+CoreDataClass.swift */,
-				65F6C9EE1ECA30E2001ABBA6 /* UserData+CoreDataProperties.swift */,
+			);
+			name = "Core Model";
+			sourceTree = "<group>";
+		};
+		65C190071ECA392E00E6683D /* Lessons Model */ = {
+			isa = PBXGroup;
+			children = (
+				65C190031ECA392200E6683D /* SZCourse.swift */,
+				65C190051ECA392900E6683D /* SZLesson.swift */,
+				65C190081ECA3D1A00E6683D /* SZLessonProtocol.swift */,
+			);
+			name = "Lessons Model";
+			sourceTree = "<group>";
+		};
+		65F6C9F31ECA30EA001ABBA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65C18FFF1ECA384900E6683D /* Core Data */,
+				65C190071ECA392E00E6683D /* Lessons Model */,
 			);
 			name = Model;
 			path = ..;
@@ -301,10 +350,13 @@
 			files = (
 				65F6C9F21ECA30E2001ABBA6 /* UserData+CoreDataProperties.swift in Sources */,
 				65BE12C21EC500E700628802 /* AppDelegate.swift in Sources */,
+				65C190061ECA392900E6683D /* SZLesson.swift in Sources */,
 				65F6C9EF1ECA30E2001ABBA6 /* Meditation+CoreDataClass.swift in Sources */,
 				65F6C9F11ECA30E2001ABBA6 /* UserData+CoreDataClass.swift in Sources */,
 				65F6C9F01ECA30E2001ABBA6 /* Meditation+CoreDataProperties.swift in Sources */,
+				65C190041ECA392200E6683D /* SZCourse.swift in Sources */,
 				652A44D71EC6791F004F57C9 /* SZModel.xcdatamodeld in Sources */,
+				65C190091ECA3D1A00E6683D /* SZLessonProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
