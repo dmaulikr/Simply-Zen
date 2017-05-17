@@ -18,7 +18,6 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         
         // Start animation and setup delegate to handle taps
-        mainMenuView.alpha = 0.85
         mainMenuView.addFloatAnimation()
         mainMenuView.mainMenuViewDelegate = self
         
