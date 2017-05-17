@@ -13,6 +13,8 @@ import Foundation
 /** Represents a course of lessons as an array of SZLesson Objects.
     It will also keep track of the names of each lesson and the filenames associated with them.
     Finally it will hold the user progress within the course.
+ 
+ - Author: Daniel Pratt
  */
 
 class SZCourse {
