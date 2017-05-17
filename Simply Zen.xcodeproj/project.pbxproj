@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		652A44D71EC6791F004F57C9 /* SZModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 652A44D51EC6791F004F57C9 /* SZModel.xcdatamodeld */; };
 		658C9FD21ECBC6A600C71538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658C9FD11ECBC6A600C71538 /* Assets.xcassets */; };
-		658C9FD41ECBC6BD00C71538 /* MainMenuView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658C9FD31ECBC6BD00C71538 /* MainMenuView.xcassets */; };
-		658C9FD61ECBC6CB00C71538 /* MainMenuViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C9FD51ECBC6CB00C71538 /* MainMenuViewView.swift */; };
 		658C9FD81ECBC6E300C71538 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C9FD71ECBC6E300C71538 /* MainMenuViewController.swift */; };
 		65BE12C21EC500E700628802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12C11EC500E700628802 /* AppDelegate.swift */; };
 		65BE12C91EC500E700628802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12C71EC500E700628802 /* Main.storyboard */; };
@@ -20,6 +18,8 @@
 		65C190041ECA392200E6683D /* SZCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C190031ECA392200E6683D /* SZCourse.swift */; };
 		65C190061ECA392900E6683D /* SZLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C190051ECA392900E6683D /* SZLesson.swift */; };
 		65C190091ECA3D1A00E6683D /* SZLessonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C190081ECA3D1A00E6683D /* SZLessonProtocol.swift */; };
+		65CD515C1ECCD81300698F42 /* MainMenu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CD515B1ECCD81300698F42 /* MainMenu.xcassets */; };
+		65CD515E1ECCD81A00698F42 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD515D1ECCD81A00698F42 /* MainMenuView.swift */; };
 		65F6C9EF1ECA30E2001ABBA6 /* Meditation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6C9EB1ECA30E2001ABBA6 /* Meditation+CoreDataClass.swift */; };
 		65F6C9F01ECA30E2001ABBA6 /* Meditation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6C9EC1ECA30E2001ABBA6 /* Meditation+CoreDataProperties.swift */; };
 		65F6C9F11ECA30E2001ABBA6 /* UserData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6C9ED1ECA30E2001ABBA6 /* UserData+CoreDataClass.swift */; };
@@ -46,8 +46,6 @@
 /* Begin PBXFileReference section */
 		652A44D61EC6791F004F57C9 /* SZModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SZModel.xcdatamodel; sourceTree = "<group>"; };
 		658C9FD11ECBC6A600C71538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = View/Assets.xcassets; sourceTree = "<group>"; };
-		658C9FD31ECBC6BD00C71538 /* MainMenuView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MainMenuView.xcassets; sourceTree = "<group>"; };
-		658C9FD51ECBC6CB00C71538 /* MainMenuViewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewView.swift; sourceTree = "<group>"; };
 		658C9FD71ECBC6E300C71538 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = "Simply Zen/View Controllers/MainMenuViewController.swift"; sourceTree = "<group>"; };
 		65BE12BE1EC500E700628802 /* Simply Zen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simply Zen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE12C11EC500E700628802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +61,8 @@
 		65C190031ECA392200E6683D /* SZCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SZCourse.swift; path = "Simply Zen/Model/SZCourse.swift"; sourceTree = "<group>"; };
 		65C190051ECA392900E6683D /* SZLesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SZLesson.swift; sourceTree = "<group>"; };
 		65C190081ECA3D1A00E6683D /* SZLessonProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SZLessonProtocol.swift; path = "Simply Zen/Model/SZLessonProtocol.swift"; sourceTree = "<group>"; };
+		65CD515B1ECCD81300698F42 /* MainMenu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MainMenu.xcassets; sourceTree = "<group>"; };
+		65CD515D1ECCD81A00698F42 /* MainMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		65F6C9EB1ECA30E2001ABBA6 /* Meditation+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Meditation+CoreDataClass.swift"; path = "Simply Zen/Model/Meditation+CoreDataClass.swift"; sourceTree = "<group>"; };
 		65F6C9EC1ECA30E2001ABBA6 /* Meditation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Meditation+CoreDataProperties.swift"; path = "Simply Zen/Model/Meditation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		65F6C9ED1ECA30E2001ABBA6 /* UserData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataClass.swift"; path = "Simply Zen/Model/UserData+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -97,8 +97,8 @@
 		658C9FC31ECBB5DC00C71538 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				658C9FC41ECBB5F400C71538 /* Animations */,
 				658C9FD71ECBC6E300C71538 /* MainMenuViewController.swift */,
+				658C9FC41ECBB5F400C71538 /* Animations */,
 			);
 			name = "View Controllers";
 			path = ..;
@@ -107,7 +107,7 @@
 		658C9FC41ECBB5F400C71538 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				658C9FD51ECBC6CB00C71538 /* MainMenuViewView.swift */,
+				65CD515D1ECCD81A00698F42 /* MainMenuView.swift */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -222,7 +222,7 @@
 			children = (
 				65BE12C71EC500E700628802 /* Main.storyboard */,
 				658C9FD11ECBC6A600C71538 /* Assets.xcassets */,
-				658C9FD31ECBC6BD00C71538 /* MainMenuView.xcassets */,
+				65CD515B1ECCD81300698F42 /* MainMenu.xcassets */,
 				65BE12CC1EC500E700628802 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -349,8 +349,8 @@
 			files = (
 				65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */,
 				658C9FD21ECBC6A600C71538 /* Assets.xcassets in Resources */,
-				658C9FD41ECBC6BD00C71538 /* MainMenuView.xcassets in Resources */,
 				65BE12C91EC500E700628802 /* Main.storyboard in Resources */,
+				65CD515C1ECCD81300698F42 /* MainMenu.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F6C9F21ECA30E2001ABBA6 /* UserData+CoreDataProperties.swift in Sources */,
+				65CD515E1ECCD81A00698F42 /* MainMenuView.swift in Sources */,
 				65BE12C21EC500E700628802 /* AppDelegate.swift in Sources */,
 				658C9FD81ECBC6E300C71538 /* MainMenuViewController.swift in Sources */,
 				65C190061ECA392900E6683D /* SZLesson.swift in Sources */,
@@ -385,7 +386,6 @@
 				65C190041ECA392200E6683D /* SZCourse.swift in Sources */,
 				652A44D71EC6791F004F57C9 /* SZModel.xcdatamodeld in Sources */,
 				65C190091ECA3D1A00E6683D /* SZLessonProtocol.swift in Sources */,
-				658C9FD61ECBC6CB00C71538 /* MainMenuViewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

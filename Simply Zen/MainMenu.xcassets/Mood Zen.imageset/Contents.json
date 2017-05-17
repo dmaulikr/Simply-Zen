@@ -1,0 +1,13 @@
+{
+  "info" : {
+    "author" : "coreanimator",
+    "version" : 1
+  },
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x",
+      "filename" : "Mood Zen.png"
+    }
+  ]
+}
