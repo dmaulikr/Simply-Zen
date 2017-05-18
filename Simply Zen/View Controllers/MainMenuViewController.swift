@@ -26,6 +26,7 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         super.viewWillDisappear(animated)
         // make sure that animations are stopped
         mainMenuView.removeAllAnimations()
+        print("Animations removed")
     }
     
     // MARK: - MainMenuView Button Behavior
@@ -49,8 +50,16 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     func openZenPressed(openZen: UIButton) {
         mainMenuView.addOpenTappedAnimation { (completed) in
             if completed {
-                print("Open Zen")
+                self.performSegue(withIdentifier: "openZenSegue", sender: self)
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "openZenSegue" {
+            let openZenVC = segue.destination as! OpenZenMenuViewController
+            openZenVC.words = "Some words"
+        }
+    }
+    
 }

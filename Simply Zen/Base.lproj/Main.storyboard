@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G8c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Euo-Oi-CEe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G8c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1X7-Ut-dFE">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,20 +11,20 @@
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="9vv-dH-sil">
+        <scene sceneID="Xyh-qk-Env">
             <objects>
-                <navigationController id="Euo-Oi-CEe" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gMZ-rf-G2h">
+                <navigationController navigationBarHidden="YES" id="1X7-Ut-dFE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kh6-6m-dg3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="HcL-c0-dvT" kind="relationship" relationship="rootViewController" id="d6Y-se-WJe"/>
+                        <segue destination="HcL-c0-dvT" kind="relationship" relationship="rootViewController" id="5a3-iw-Hh8"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WKJ-Ns-cdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBa-kl-b45" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-732" y="-72"/>
+            <point key="canvasLocation" x="-1670" y="-38"/>
         </scene>
         <!--Simply Zen-->
         <scene sceneID="azL-yd-FSf">
@@ -39,11 +39,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Main-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="D9W-bm-qC1">
-                                <rect key="frame" x="0.0" y="32" width="414" height="704"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eh-41-KPk" customClass="MainMenuView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -54,10 +54,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="2eh-41-KPk" secondAttribute="trailing" constant="-20" id="lEL-rn-pfP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Simply Zen" id="xmt-3M-NwA">
+                    <navigationItem key="navigationItem" title="Simply Zen" prompt="Choose your Zen..." id="xmt-3M-NwA">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="fx5-Ee-kVO">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="7a1-zX-6lj">
-                                <rect key="frame" x="348" y="7" width="46" height="30"/>
+                                <rect key="frame" x="348" y="37" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -76,14 +76,71 @@
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
                         <outlet property="mainMenuView" destination="2eh-41-KPk" id="Frt-Nx-F78"/>
+                        <segue destination="d5k-qR-hvw" kind="show" identifier="openZenSegue" animates="NO" id="N6O-Gt-hGT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvr-Aa-XhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="191.30434782608697" y="-70.108695652173921"/>
+            <point key="canvasLocation" x="-578" y="-37"/>
+        </scene>
+        <!--Open Zen-->
+        <scene sceneID="Xnd-vN-PAX">
+            <objects>
+                <viewController storyboardIdentifier="openZenMenu" title="Open Zen" id="d5k-qR-hvw" customClass="OpenZenMenuViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lzh-sP-KYn"/>
+                        <viewControllerLayoutGuide type="bottom" id="qoG-jG-eqM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="QZ8-9C-xXZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Open-Zen-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="JNB-Ub-r1X">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="zS2-xn-m5P" customClass="OpenZenMenuView" customModule="Simply_Zen" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="zS2-xn-m5P" secondAttribute="trailing" constant="-20" id="Aet-PF-Arh"/>
+                            <constraint firstItem="zS2-xn-m5P" firstAttribute="top" secondItem="lzh-sP-KYn" secondAttribute="bottom" id="Mda-u8-aNl"/>
+                            <constraint firstItem="zS2-xn-m5P" firstAttribute="leading" secondItem="QZ8-9C-xXZ" secondAttribute="leadingMargin" constant="-20" id="SEk-h0-caa"/>
+                            <constraint firstItem="qoG-jG-eqM" firstAttribute="top" secondItem="zS2-xn-m5P" secondAttribute="bottom" id="aME-63-3TY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Open Zen" prompt="Bells will play every..." id="Zvb-ui-Cz8">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="Ayb-uH-F92"/>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="6IC-Gz-e4d">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="RDQ-iB-e1z">
+                                <rect key="frame" x="348" y="37" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="⚙">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="30" name="Menlo-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="openZenMenuView" destination="zS2-xn-m5P" id="pwF-1i-uqe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFi-DG-CJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-578.26086956521749" y="-744.29347826086962"/>
         </scene>
     </scenes>
     <resources>
         <image name="Main-Menu-Background" width="1242" height="2208"/>
+        <image name="Open-Zen-Menu-Background" width="1242" height="2208"/>
     </resources>
 </document>
