@@ -16,25 +16,41 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        super.viewWillAppear(animated)
         // Start animation and setup delegate to handle taps
         mainMenuView.addFloatAnimation()
         mainMenuView.mainMenuViewDelegate = self
-        
     }
-
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // make sure that animations are stopped
+        mainMenuView.removeAllAnimations()
+    }
     
     // MARK: - MainMenuView Button Behavior
     
     func moodZenPressed(moodZen: UIButton) {
-        print("Mood Zen")
+        mainMenuView.addMoodTappedAnimation { (completed) in
+            if completed {
+                print("Mood Zen")
+            }
+        }
     }
     
     func guidedZenPressed(guidedZen: UIButton) {
-        print("Guided Zen")
+        mainMenuView.addGuidedTappedAnimation { (completed) in
+            if completed {
+                print("Guided Zen")
+            }
+        }
     }
     
     func openZenPressed(openZen: UIButton) {
-        print("Open Zen")
+        mainMenuView.addOpenTappedAnimation { (completed) in
+            if completed {
+                print("Open Zen")
+            }
+        }
     }
 }
