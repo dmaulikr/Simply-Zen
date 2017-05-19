@@ -44,6 +44,9 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
         openZenMenuView.addNoBellsTappedAnimation { (finished) in
             if finished {
                 print("No bells")
+                let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
+                meditationVC.words = "Bells"
+                self.navigationController?.pushViewController(meditationVC, animated: true)
             }
         }
     }

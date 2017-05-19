@@ -255,10 +255,74 @@
             </objects>
             <point key="canvasLocation" x="-578.26086956521749" y="714.94565217391312"/>
         </scene>
+        <!--Meditate-->
+        <scene sceneID="SXY-5t-v9X">
+            <objects>
+                <viewController storyboardIdentifier="meditationView" title="Meditate" hidesBottomBarWhenPushed="YES" id="uFN-wy-pny" customClass="MeditationViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Kp-TB-K5r"/>
+                        <viewControllerLayoutGuide type="bottom" id="JfP-dj-El7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="Vp6-Ok-tiK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Meditation-Background" translatesAutoresizingMaskIntoConstraints="NO" id="XQv-5F-8RQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWo-GQ-pqB" customClass="MeditationView" customModule="Simply_Zen" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="160" width="414" height="416"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eHd-1Q-uVN" appends="YES" id="pXY-7a-YjD"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JfP-dj-El7" firstAttribute="top" secondItem="TWo-GQ-pqB" secondAttribute="bottom" constant="160" id="JVI-Vg-wrY"/>
+                            <constraint firstItem="TWo-GQ-pqB" firstAttribute="leading" secondItem="Vp6-Ok-tiK" secondAttribute="leadingMargin" constant="-20" id="Mkt-Ty-2Wx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TWo-GQ-pqB" secondAttribute="trailing" constant="-20" id="lm1-SJ-lS6"/>
+                            <constraint firstItem="TWo-GQ-pqB" firstAttribute="top" secondItem="8Kp-TB-K5r" secondAttribute="bottom" constant="140" id="zhF-1I-T7k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Meditate" prompt="Take a deep breath..." id="yOC-3N-ZgY">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="14k-5P-ZQA">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="UbE-SI-1CB">
+                                <rect key="frame" x="348" y="37" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="⚙">
+                                            <attributes>
+                                                <color key="NSColor" red="0.086274509799999996" green="0.058823529409999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="30" name="Menlo-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="meditationView" destination="TWo-GQ-pqB" id="0YD-FW-1YP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIK-DB-ASK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eHd-1Q-uVN">
+                    <connections>
+                        <action selector="meditationViewTapped:" destination="uFN-wy-pny" id="osF-wX-aVb"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="589.85507246376812" y="714.94565217391312"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Guided-Zen-Menu-Background" width="1242" height="2208"/>
         <image name="Main-Menu-Background" width="1242" height="2208"/>
+        <image name="Meditation-Background" width="1242" height="2208"/>
         <image name="Mood-Zen-Menu-Background" width="1242" height="2208"/>
         <image name="Open-Zen-Menu-Background" width="1242" height="2208"/>
     </resources>
