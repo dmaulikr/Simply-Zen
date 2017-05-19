@@ -13,11 +13,16 @@
         <!--Navigation Controller-->
         <scene sceneID="Xyh-qk-Env">
             <objects>
-                <navigationController navigationBarHidden="YES" id="1X7-Ut-dFE" sceneMemberID="viewController">
+                <navigationController modalTransitionStyle="crossDissolve" hidesBottomBarWhenPushed="YES" navigationBarHidden="YES" hidesBarsOnTap="YES" id="1X7-Ut-dFE" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kh6-6m-dg3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pxr-bB-AeE">
+                        <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="HcL-c0-dvT" kind="relationship" relationship="rootViewController" id="5a3-iw-Hh8"/>
                     </connections>
@@ -29,7 +34,7 @@
         <!--Simply Zen-->
         <scene sceneID="azL-yd-FSf">
             <objects>
-                <viewController storyboardIdentifier="mainMenu" title="Simply Zen" id="HcL-c0-dvT" customClass="MainMenuViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainMenu" title="Simply Zen" hidesBottomBarWhenPushed="YES" id="HcL-c0-dvT" customClass="MainMenuViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HJk-Aq-L7F"/>
                         <viewControllerLayoutGuide type="bottom" id="7r7-Ml-diU"/>
@@ -43,7 +48,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eh-41-KPk" customClass="MainMenuView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="642"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,7 +68,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="⚙">
                                             <attributes>
-                                                <color key="NSColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="NSColor" red="0.086274509799999996" green="0.058823529409999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="30" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -76,17 +81,18 @@
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
                         <outlet property="mainMenuView" destination="2eh-41-KPk" id="Frt-Nx-F78"/>
-                        <segue destination="d5k-qR-hvw" kind="show" identifier="openZenSegue" animates="NO" id="N6O-Gt-hGT"/>
+                        <segue destination="d5k-qR-hvw" kind="show" identifier="openZenSegue" id="N6O-Gt-hGT"/>
+                        <segue destination="3m4-uU-DnJ" kind="show" identifier="guidedZenSegue" id="f3K-yi-6Zu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvr-Aa-XhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-578" y="-37"/>
+            <point key="canvasLocation" x="-578" y="-38"/>
         </scene>
         <!--Open Zen-->
         <scene sceneID="Xnd-vN-PAX">
             <objects>
-                <viewController storyboardIdentifier="openZenMenu" title="Open Zen" id="d5k-qR-hvw" customClass="OpenZenMenuViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="openZenMenu" title="Open Zen" hidesBottomBarWhenPushed="YES" id="d5k-qR-hvw" customClass="OpenZenMenuViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lzh-sP-KYn"/>
                         <viewControllerLayoutGuide type="bottom" id="qoG-jG-eqM"/>
@@ -100,7 +106,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="zS2-xn-m5P" customClass="OpenZenMenuView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="642"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -121,7 +127,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="⚙">
                                             <attributes>
-                                                <color key="NSColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="NSColor" red="0.086274509799999996" green="0.058823529409999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="30" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -138,8 +144,64 @@
             </objects>
             <point key="canvasLocation" x="-578.26086956521749" y="-744.29347826086962"/>
         </scene>
+        <!--Guided Zen-->
+        <scene sceneID="toT-yu-AFl">
+            <objects>
+                <viewController storyboardIdentifier="guidedZenMenu" title="Guided Zen" hidesBottomBarWhenPushed="YES" id="3m4-uU-DnJ" customClass="GuidedZenViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G78-3n-rps"/>
+                        <viewControllerLayoutGuide type="bottom" id="cG6-U0-ETT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="y13-SK-QSP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Guided-Zen-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="rCa-Hf-n60">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzh-9L-UFd" customClass="GuidedZenMenuView" customModule="Simply_Zen" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="94" width="414" height="642"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cG6-U0-ETT" firstAttribute="top" secondItem="hzh-9L-UFd" secondAttribute="bottom" id="090-w0-daz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hzh-9L-UFd" secondAttribute="trailing" constant="-20" id="3BG-FW-mrV"/>
+                            <constraint firstItem="hzh-9L-UFd" firstAttribute="top" secondItem="G78-3n-rps" secondAttribute="bottom" id="kNC-mC-vdl"/>
+                            <constraint firstItem="hzh-9L-UFd" firstAttribute="leading" secondItem="y13-SK-QSP" secondAttribute="leadingMargin" constant="-20" id="vAZ-ba-tWa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Guided Zen" prompt="Select Your Guide" id="gCA-KO-Aa3">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="MAN-5N-znS"/>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="rya-3c-uIN">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="ND4-OL-CrP">
+                                <rect key="frame" x="348" y="37" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="⚙">
+                                            <attributes>
+                                                <color key="NSColor" red="0.086274509799999996" green="0.058823529409999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="30" name="Menlo-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="guidedZenView" destination="hzh-9L-UFd" id="jNf-f1-CGv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wb4-jD-Tqi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="591" y="-38"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Guided-Zen-Menu-Background" width="1242" height="2208"/>
         <image name="Main-Menu-Background" width="1242" height="2208"/>
         <image name="Open-Zen-Menu-Background" width="1242" height="2208"/>
     </resources>

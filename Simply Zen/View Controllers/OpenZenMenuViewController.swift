@@ -20,6 +20,9 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // Hide nav bar
+        navigationController?.navigationBar.isHidden = true
+        
         // Setup animations and enable button taps
         openZenMenuView.addFloatAnimation()
         openZenMenuView.openZenMenuViewDelegate = self
@@ -38,16 +41,16 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     // These handle the button presses
     
     func noBellsPressed(noBells: UIButton) {
-        openZenMenuView.addNoBellsTappedAnimation { (completed) in
-            if completed {
+        openZenMenuView.addNoBellsTappedAnimation { (finished) in
+            if finished {
                 print("No bells")
             }
         }
     }
     
     func tenMinutesPressed(tenMinutes: UIButton) {
-        openZenMenuView.addTenMinutesTappedAnimation() { (completed) in
-            if completed {
+        openZenMenuView.addTenMinutesTappedAnimation { (finished) in
+            if finished {
                 print("Ten Minutes")
             }
         }
@@ -55,8 +58,8 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     }
     
     func twentyMinutesPressed(twentyMinutes: UIButton) {
-        openZenMenuView.addTwentyMinutesTappedAnimation() { (completed) in
-            if completed {
+        openZenMenuView.addTwentyMinutesTappedAnimation { (finished) in
+            if finished {
                 print("Twenty Minutes")
             }
         }
@@ -64,8 +67,8 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     }
     
     func fiveMinutesPressed(fiveMinutes: UIButton) {
-        openZenMenuView.addFiveMinutesTappedAnimation() { (completed) in
-            if completed {
+        openZenMenuView.addFiveMinutesTappedAnimation { (finished) in
+            if finished {
                 print("Five Minutes")
             }
         }
@@ -73,8 +76,8 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     }
     
     func twoMinutesPressed(twoMinutes: UIButton) {
-        openZenMenuView.addTwoMinutesTappedAnimation() { (completed) in
-            if completed {
+        openZenMenuView.addTwoMinutesTappedAnimation { (finished) in
+            if finished {
                 print("Two Minutes")
             }
         }

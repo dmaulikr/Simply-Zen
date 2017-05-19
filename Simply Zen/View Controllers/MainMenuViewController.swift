@@ -11,12 +11,19 @@ import UIKit
 class MainMenuViewController: UIViewController, MainMenuViewDelegate {
 
     @IBOutlet var mainMenuView: MainMenuView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // setup navigation bar
+        setupNavigationBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // make sure nav bar is hidden
+        navigationController?.navigationBar.isHidden = true
+        
         // Start animation and setup delegate to handle taps
         mainMenuView.addFloatAnimation()
         mainMenuView.mainMenuViewDelegate = self
@@ -25,31 +32,45 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         // make sure that animations are stopped
-        mainMenuView.removeAllAnimations()
-        print("Animations removed")
+//        mainMenuView.removeAllAnimations()
+//        print("Animations removed")
+    }
+    
+    // MARK: - Setup Navigation Bar
+    private func setupNavigationBar() {
+        let navigationColor = UIColor(red: 22.0/255.0, green: 15.0/255.0, blue: 94.0/255, alpha: 1.0)
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.view.backgroundColor = UIColor.clear
+        navigationController?.navigationBar.tintColor = navigationColor
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:navigationColor]
+        navigationController?.navigationBar.isHidden = true
+
+        
     }
     
     // MARK: - MainMenuView Button Behavior
     
     func moodZenPressed(moodZen: UIButton) {
-        mainMenuView.addMoodTappedAnimation { (completed) in
-            if completed {
+        mainMenuView.addMoodTappedAnimation { (finished) in
+            if finished {
                 print("Mood Zen")
             }
         }
     }
     
     func guidedZenPressed(guidedZen: UIButton) {
-        mainMenuView.addGuidedTappedAnimation { (completed) in
-            if completed {
-                print("Guided Zen")
+        mainMenuView.addGuidedTappedAnimation { (finished) in
+            if finished {
+                self.performSegue(withIdentifier: "guidedZenSegue", sender: self)
             }
         }
     }
     
     func openZenPressed(openZen: UIButton) {
-        mainMenuView.addOpenTappedAnimation { (completed) in
-            if completed {
+        mainMenuView.addOpenTappedAnimation { (finished) in
+            if finished {
                 self.performSegue(withIdentifier: "openZenSegue", sender: self)
             }
         }
@@ -59,6 +80,9 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         if segue.identifier == "openZenSegue" {
             let openZenVC = segue.destination as! OpenZenMenuViewController
             openZenVC.words = "Some words"
+        } else if segue.identifier == "guidedZenSegue" {
+            let guidedZenVC = segue.destination as! GuidedZenViewController
+            guidedZenVC.words = "Some different words"
         }
     }
     
