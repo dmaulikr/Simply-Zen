@@ -55,7 +55,7 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     func moodZenPressed(moodZen: UIButton) {
         mainMenuView.addMoodTappedAnimation { (finished) in
             if finished {
-                print("Mood Zen")
+                self.performSegue(withIdentifier: "moodZenSegue", sender: self)
             }
         }
     }
@@ -83,6 +83,9 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         } else if segue.identifier == "guidedZenSegue" {
             let guidedZenVC = segue.destination as! GuidedZenViewController
             guidedZenVC.words = "Some different words"
+        } else if segue.identifier == "moodZenSegue" {
+            let moodZenVC = segue.destination as! MoodZenViewController
+            moodZenVC.words = "Moody Words"
         }
     }
     
