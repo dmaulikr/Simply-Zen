@@ -1,5 +1,5 @@
 //
-//  UserData+CoreDataClass.swift
+//  Lesson+CoreDataClass.swift
 //  Simply Zen
 //
 //  Created by Daniel Pratt on 5/22/17.
@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-@objc(UserData)
-public class UserData: NSManagedObject {
+@objc(Lesson)
+public class Lesson: NSManagedObject {
 
 }

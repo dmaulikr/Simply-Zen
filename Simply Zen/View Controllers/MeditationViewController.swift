@@ -20,7 +20,8 @@ class MeditationViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         print(words ?? "No words")
-        
+//        let lesson = SZLesson(addLesson: "Lesson 1", withFilename: "lesson1", level: 1, durationInSeconds: 65)
+//        
     }
     
     

@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G8c" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Course" representedClassName="Course" syncable="YES">
+        <attribute name="userProgress" optional="YES" attributeType="Integer 64" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="lessons" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Lesson" inverseName="course" inverseEntity="Lesson" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserData" inverseName="courses" inverseEntity="UserData" syncable="YES"/>
+    </entity>
+    <entity name="Lesson" representedClassName="Lesson" syncable="YES">
+        <attribute name="durationInSeconds" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lessonLevel" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nameAndFileName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="lessons" inverseEntity="Course" syncable="YES"/>
+        <relationship name="meditation" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Meditation" inverseName="lesson" inverseEntity="Meditation" syncable="YES"/>
+    </entity>
     <entity name="Meditation" representedClassName="Meditation" syncable="YES">
         <attribute name="date" attributeType="Date" minDateTimeInterval="516566400" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="durationSeconds" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="lesson" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
-        <attribute name="quote" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <relationship name="lesson" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lesson" inverseName="meditation" inverseEntity="Lesson" syncable="YES"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserData" inverseName="meditationHistory" inverseEntity="UserData" syncable="YES"/>
     </entity>
     <entity name="UserData" representedClassName="UserData" syncable="YES">
-        <attribute name="userData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
-        <relationship name="meditationHistory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Meditation" inverseName="user" inverseEntity="Meditation" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Course" inverseName="user" inverseEntity="Course" syncable="YES"/>
+        <relationship name="meditationHistory" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Meditation" inverseName="user" inverseEntity="Meditation" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Meditation" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Course" positionX="-54" positionY="36" width="128" height="90"/>
+        <element name="Lesson" positionX="-45" positionY="36" width="128" height="120"/>
+        <element name="Meditation" positionX="-63" positionY="-18" width="128" height="105"/>
         <element name="UserData" positionX="-54" positionY="-9" width="128" height="75"/>
     </elements>
 </model>

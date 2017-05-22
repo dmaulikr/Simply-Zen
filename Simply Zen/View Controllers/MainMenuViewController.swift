@@ -7,17 +7,26 @@
 //
 
 import UIKit
+import CoreData
 
 class MainMenuViewController: UIViewController, MainMenuViewDelegate {
 
     @IBOutlet var mainMenuView: MainMenuView!
+    
+    // Mark: - Properties
+    
+    // Entity Keys
+    let UserDataKey = "UserData"
     
     // App Delegate
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(String(describing: delegate.stack))
+        
+        // Test Core Data
+        runUserTest()
+        
         // setup navigation bar
         setupNavigationBar()
     }
@@ -37,6 +46,38 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         // make sure that animations are stopped
 //        mainMenuView.removeAllAnimations()
 //        print("Animations removed")
+    }
+    
+    // MARK: - Core Data Tests
+    private func runUserTest() {
+        let fetchedUserDataController = getFetchControllerFor(entityNamed: UserDataKey, inContext: delegate.stack.context)
+        do {
+            try fetchedUserDataController.performFetch()
+        } catch {
+            print("Failed to fetch user data")
+        }
+        
+        var userData = fetchedUserDataController.fetchedObjects as! [UserData]
+        
+        if userData.count == 0 {
+            print("None found, creating a new one")
+            userData.append(UserData(context: delegate.stack.context))
+            delegate.stack.save()
+        } else {
+            print(userData[0])
+        }
+        
+        
+    }
+    
+    // MARK: - Private Core Data Fetch Methods
+    
+    private func getFetchControllerFor(entityNamed entityName: String, inContext context: NSManagedObjectContext) -> NSFetchedResultsController<NSFetchRequestResult> {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        fetchRequest.sortDescriptors = []
+        
+        return NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        
     }
     
     // MARK: - Setup Navigation Bar

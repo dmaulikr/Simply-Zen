@@ -2,7 +2,7 @@
 //  Meditation+CoreDataProperties.swift
 //  Simply Zen
 //
-//  Created by Daniel Pratt on 5/15/17.
+//  Created by Daniel Pratt on 5/22/17.
 //  Copyright © 2017 Daniel Pratt. All rights reserved.
 //
 
@@ -16,10 +16,9 @@ extension Meditation {
         return NSFetchRequest<Meditation>(entityName: "Meditation")
     }
 
-    @NSManaged public var lesson: NSData?
-    @NSManaged public var quote: NSData?
     @NSManaged public var date: NSDate?
     @NSManaged public var durationSeconds: Double
+    @NSManaged public var lesson: Lesson?
     @NSManaged public var user: UserData?
 
 }
