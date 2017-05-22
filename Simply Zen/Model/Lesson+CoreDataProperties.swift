@@ -18,7 +18,7 @@ extension Lesson {
 
     @NSManaged public var durationInSeconds: Double
     @NSManaged public var lessonLevel: Int64
-    @NSManaged public var nameAndFileName: String?
+    @NSManaged public var lessonName: String?
     @NSManaged public var course: Course?
     @NSManaged public var meditation: NSSet?
 

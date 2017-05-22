@@ -278,12 +278,24 @@
                                     <outletCollection property="gestureRecognizers" destination="eHd-1Q-uVN" appends="YES" id="pXY-7a-YjD"/>
                                 </connections>
                             </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebo-9j-6M7">
+                                <rect key="frame" x="151.66666666666669" y="584" width="112.00000000000006" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="End Session">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.64742080479452058" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="endSessionTapped:" destination="uFN-wy-pny" eventType="touchUpInside" id="bNi-uH-kog"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JfP-dj-El7" firstAttribute="top" secondItem="TWo-GQ-pqB" secondAttribute="bottom" constant="160" id="JVI-Vg-wrY"/>
                             <constraint firstItem="TWo-GQ-pqB" firstAttribute="leading" secondItem="Vp6-Ok-tiK" secondAttribute="leadingMargin" constant="-20" id="Mkt-Ty-2Wx"/>
+                            <constraint firstItem="ebo-9j-6M7" firstAttribute="centerX" secondItem="Vp6-Ok-tiK" secondAttribute="centerX" id="Q7p-5W-6aE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TWo-GQ-pqB" secondAttribute="trailing" constant="-20" id="lm1-SJ-lS6"/>
+                            <constraint firstItem="ebo-9j-6M7" firstAttribute="top" secondItem="TWo-GQ-pqB" secondAttribute="bottom" constant="8" id="yY3-qQ-kV3"/>
                             <constraint firstItem="TWo-GQ-pqB" firstAttribute="top" secondItem="8Kp-TB-K5r" secondAttribute="bottom" constant="140" id="zhF-1I-T7k"/>
                         </constraints>
                     </view>
@@ -306,6 +318,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="endSessionButton" destination="ebo-9j-6M7" id="nt9-Kn-iUt"/>
                         <outlet property="meditationView" destination="TWo-GQ-pqB" id="0YD-FW-1YP"/>
                     </connections>
                 </viewController>

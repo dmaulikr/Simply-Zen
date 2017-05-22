@@ -8,7 +8,7 @@
     <entity name="Lesson" representedClassName="Lesson" syncable="YES">
         <attribute name="durationInSeconds" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="lessonLevel" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="nameAndFileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lessonName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="lessons" inverseEntity="Course" syncable="YES"/>
         <relationship name="meditation" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Meditation" inverseName="lesson" inverseEntity="Meditation" syncable="YES"/>
     </entity>

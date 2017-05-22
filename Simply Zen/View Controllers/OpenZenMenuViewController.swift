@@ -14,7 +14,10 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     
     // View responsible for animations
     @IBOutlet weak var openZenMenuView: OpenZenMenuView!
+    let openZen = SZCourse.openMeditationCourses() as SZCourse
+    var lesson: SZLesson!
     
+    // For testing only
     var words: String? = nil
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,6 +29,9 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
         // Setup animations and enable button taps
         openZenMenuView.addFloatAnimation()
         openZenMenuView.openZenMenuViewDelegate = self
+        
+        // Get the correct lesson filename
+        lesson = openZen.lessons[OpenZenLessons.Burmese]
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -46,6 +52,8 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
                 print("No bells")
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
                 meditationVC.isOpenMeditation = true
+                meditationVC.lessonFileName = self.openZen.lessons[OpenZenLessons.None].lessonFileName
+                meditationVC.lesson = self.openZen.lessons[OpenZenLessons.None]
                 self.navigationController?.pushViewController(meditationVC, animated: true)
             }
         }
@@ -56,7 +64,8 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
             if finished {
                 print("Ten Minutes")
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
-                meditationVC.lessonName = "bumese-bell"
+                meditationVC.lessonFileName = self.lesson.lessonFileName
+                meditationVC.lesson = self.lesson
                 meditationVC.isOpenMeditation = true
                 meditationVC.openMeditationTimer = 600.0
                 self.navigationController?.pushViewController(meditationVC, animated: true)
@@ -70,7 +79,8 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
             if finished {
                 print("Twenty Minutes")
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
-                meditationVC.lessonName = "bumese-bell"
+                meditationVC.lessonFileName = self.lesson.lessonFileName
+                meditationVC.lesson = self.lesson
                 meditationVC.isOpenMeditation = true
                 meditationVC.openMeditationTimer = 1200.0
                 self.navigationController?.pushViewController(meditationVC, animated: true)
@@ -84,7 +94,8 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
             if finished {
                 print("Five Minutes")
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
-                meditationVC.lessonName = "bumese-bell"
+                meditationVC.lessonFileName = self.lesson.lessonFileName
+                meditationVC.lesson = self.lesson
                 meditationVC.isOpenMeditation = true
                 meditationVC.openMeditationTimer = 300.0
                 self.navigationController?.pushViewController(meditationVC, animated: true)
@@ -98,7 +109,8 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
             if finished {
                 print("Two Minutes")
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
-                meditationVC.lessonName = "bumese-bell"
+                meditationVC.lessonFileName = self.lesson.lessonFileName
+                meditationVC.lesson = self.lesson
                 meditationVC.isOpenMeditation = true
                 meditationVC.openMeditationTimer = 120.0
                 self.navigationController?.pushViewController(meditationVC, animated: true)

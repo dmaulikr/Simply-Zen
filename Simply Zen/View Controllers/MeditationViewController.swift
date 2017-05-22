@@ -15,15 +15,18 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     // MARK: - Properties
     
     // IBOutlets
+    @IBOutlet weak var endSessionButton: UIButton!
     @IBOutlet weak var meditationView: MeditationView!
     
     // Class Properites
-    var lessonName: String? = nil
+    var lesson: SZLesson!
+    var lessonFileName: String!
     var audioURL: URL!
     var audioPlayer: AVAudioPlayer!
     var isOpenMeditation: Bool = false
     var openMeditationTimer: Double = 0.0
-    var timer: Timer?
+    var timer: Timer? = nil
+    var paused = false
     
     // Delegate
     let delegate = UIApplication.shared.delegate as! AppDelegate
@@ -31,8 +34,11 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // test to make sure we are getting the correct lesson
+        print("Lesson Name: \(lesson.lessonName)")
+        print("Lesson Filename: \(lessonFileName)")
         // Do any additional setup after loading the view.
-        if let name = lessonName {
+        if let name = lessonFileName {
             audioURL = Bundle.main.url(forResource: name, withExtension: "mp3")
             if !isOpenMeditation {
                 playAudio()
@@ -56,23 +62,44 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         super.viewWillDisappear(animated)
         if isOpenMeditation {
             timer?.invalidate()
+            // Do finishing stuff here
         }
     }
     
 
+    // MARK: - IBActions
+    
+    @IBAction func endSessionTapped(_ sender: Any) {
+        // Will write end session code later
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
     @IBAction func meditationViewTapped(_ sender: Any) {
         print("Meditation View meditationViewTapped")
-        if isOpenMeditation && (timer?.isValid)! {
-            timer?.invalidate()
-            print("invalidating")
-        } else if isOpenMeditation {
-            setupTimer()
-        } else if audioPlayer.isPlaying {
-            audioPlayer.pause()
-        } else {
-            audioPlayer.play()
+        
+        if !paused {
+            paused = true
+            meditationView.removeAllAnimations()
+            endSessionButton.isHidden = false
+            
+            if !isOpenMeditation {
+                audioPlayer.pause()
+            } else if lessonFileName != "none" {
+                timer?.invalidate()
+            }
         }
         
+        else {
+            paused = false
+            meditationView.addMeditateAnimation()
+            endSessionButton.isHidden = true
+            
+            if !isOpenMeditation {
+                audioPlayer.play()
+            } else if lessonFileName != "none" {
+                setupTimer()
+            }
+        }
     }
     
     // MARK: AVAudio Functions
@@ -91,9 +118,14 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     // MARK: - Timer
     
     func setupTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: openMeditationTimer, repeats: true, block: { (timer) in
-            self.playAudio()
-        })
+        if lessonFileName != "none" {
+            timer = Timer.scheduledTimer(withTimeInterval: openMeditationTimer, repeats: true, block: { (timer) in
+                self.playAudio()
+            })
+        } else {
+            print("No bells should play, so no timer will be setup")
+        }
+        
     }
     
     // MARK: AVAudioPlayerDelegate Functions
