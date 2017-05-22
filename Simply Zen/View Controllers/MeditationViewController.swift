@@ -26,7 +26,9 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     var isOpenMeditation: Bool = false
     var openMeditationTimer: Double = 0.0
     var timer: Timer? = nil
+    var durationStartTime: CFAbsoluteTime!
     var paused = false
+    var sessionDuration: Double = 0.0
     
     // Delegate
     let delegate = UIApplication.shared.delegate as! AppDelegate
@@ -37,6 +39,10 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         // test to make sure we are getting the correct lesson
         print("Lesson Name: \(lesson.lessonName)")
         print("Lesson Filename: \(lessonFileName)")
+        
+        // Start Duration Timer
+        durationStartTime = CFAbsoluteTimeGetCurrent()
+        
         // Do any additional setup after loading the view.
         if let name = lessonFileName {
             audioURL = Bundle.main.url(forResource: name, withExtension: "mp3")
@@ -71,6 +77,7 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func endSessionTapped(_ sender: Any) {
         // Will write end session code later
+        print("Duration: \(String(describing: sessionDuration))")
         navigationController?.popToRootViewController(animated: true)
     }
     
@@ -81,6 +88,8 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
             paused = true
             meditationView.removeAllAnimations()
             endSessionButton.isHidden = false
+            
+            sessionDuration += calculateDuration()
             
             if !isOpenMeditation {
                 audioPlayer.pause()
@@ -93,6 +102,9 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
             paused = false
             meditationView.addMeditateAnimation()
             endSessionButton.isHidden = true
+            
+            // Restart the duration timer
+            durationStartTime = CFAbsoluteTimeGetCurrent()
             
             if !isOpenMeditation {
                 audioPlayer.play()
@@ -115,9 +127,10 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
 
     }
     
-    // MARK: - Timer
+    // MARK: - Time Keeping
     
-    func setupTimer() {
+    // This sets up a timer used for playing bell audio
+    private func setupTimer() {
         if lessonFileName != "none" {
             timer = Timer.scheduledTimer(withTimeInterval: openMeditationTimer, repeats: true, block: { (timer) in
                 self.playAudio()
@@ -126,6 +139,14 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
             print("No bells should play, so no timer will be setup")
         }
         
+    }
+    
+    // This figures out how long the session ran
+    // Will need to improve usage for cases where user paused for a while
+    private func calculateDuration() -> Double {
+        let durationEndTime = CFAbsoluteTimeGetCurrent()
+        let duration = durationEndTime - durationStartTime
+        return duration
     }
     
     // MARK: AVAudioPlayerDelegate Functions
