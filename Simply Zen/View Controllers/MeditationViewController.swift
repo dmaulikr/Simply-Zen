@@ -13,12 +13,16 @@ class MeditationViewController: UIViewController {
     @IBOutlet weak var meditationView: MeditationView!
     var words: String? = nil
     
+    let delegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         print(words ?? "No words")
+        
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

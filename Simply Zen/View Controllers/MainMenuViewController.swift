@@ -12,9 +12,12 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
 
     @IBOutlet var mainMenuView: MainMenuView!
     
+    // App Delegate
+    let delegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(String(describing: delegate.stack))
         // setup navigation bar
         setupNavigationBar()
     }
