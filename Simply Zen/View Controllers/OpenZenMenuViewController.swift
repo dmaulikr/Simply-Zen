@@ -45,7 +45,7 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
             if finished {
                 print("No bells")
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
-                meditationVC.words = "Bells"
+                meditationVC.lessonName = "temp_1"
                 self.navigationController?.pushViewController(meditationVC, animated: true)
             }
         }

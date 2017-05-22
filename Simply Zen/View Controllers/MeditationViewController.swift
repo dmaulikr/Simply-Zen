@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
 
-class MeditationViewController: UIViewController {
+class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
 
     @IBOutlet weak var meditationView: MeditationView!
-    var words: String? = nil
+    var lessonName: String? = nil
+    var audioURL: URL!
+    var audioPlayer: AVAudioPlayer!
     
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -19,9 +22,10 @@ class MeditationViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print(words ?? "No words")
-//        let lesson = SZLesson(addLesson: "Lesson 1", withFilename: "lesson1", level: 1, durationInSeconds: 65)
-//        
+        if let name = lessonName {
+            audioURL = Bundle.main.url(forResource: name, withExtension: "mp3")
+            playAudio()
+        }
     }
     
     
@@ -39,6 +43,32 @@ class MeditationViewController: UIViewController {
 
     @IBAction func meditationViewTapped(_ sender: Any) {
         print("Meditation View meditationViewTapped")
+        if audioPlayer.isPlaying {
+            audioPlayer.pause()
+        } else {
+            audioPlayer.play()
+        }
+    }
+    
+    // MARK: AVAudio Functions
+    
+    func playAudio() {
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
+            audioPlayer.delegate = self
+            audioPlayer.play()
+        } catch {
+            print("Unable to start audio player")
+        }
+
+    }
+    
+    // MARK: AVAudioPlayerDelegate Functions
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        audioPlayer.stop()
+        print("Finished playing")
+        // Will save session to healthkit and then display the completion screen
     }
     
 
