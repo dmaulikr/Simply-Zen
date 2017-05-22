@@ -33,6 +33,10 @@
 		659E0D821ED3775100E6346D /* Meditation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E0D7A1ED3775100E6346D /* Meditation+CoreDataClass.swift */; };
 		659E0D831ED3775100E6346D /* Meditation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E0D7B1ED3775100E6346D /* Meditation+CoreDataProperties.swift */; };
 		659E0D871ED3847900E6346D /* temp_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 659E0D861ED3847900E6346D /* temp_1.mp3 */; };
+		659E0D961ED38B1800E6346D /* bumese-bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 659E0D921ED38B1800E6346D /* bumese-bell.mp3 */; };
+		659E0D971ED38B1800E6346D /* kyoto-temple-bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 659E0D931ED38B1800E6346D /* kyoto-temple-bell.mp3 */; };
+		659E0D981ED38B1800E6346D /* thai-bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 659E0D941ED38B1800E6346D /* thai-bell.mp3 */; };
+		659E0D991ED38B1800E6346D /* tibetan-bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 659E0D951ED38B1800E6346D /* tibetan-bell.mp3 */; };
 		65BE12C21EC500E700628802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12C11EC500E700628802 /* AppDelegate.swift */; };
 		65BE12C91EC500E700628802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12C71EC500E700628802 /* Main.storyboard */; };
 		65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12CC1EC500E700628802 /* LaunchScreen.storyboard */; };
@@ -86,6 +90,10 @@
 		659E0D7B1ED3775100E6346D /* Meditation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Meditation+CoreDataProperties.swift"; path = "Simply Zen/Model/Meditation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		659E0D841ED37E7F00E6346D /* temp_1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = temp_1.m4a; sourceTree = "<group>"; };
 		659E0D861ED3847900E6346D /* temp_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = temp_1.mp3; sourceTree = "<group>"; };
+		659E0D921ED38B1800E6346D /* bumese-bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bumese-bell.mp3"; sourceTree = "<group>"; };
+		659E0D931ED38B1800E6346D /* kyoto-temple-bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "kyoto-temple-bell.mp3"; sourceTree = "<group>"; };
+		659E0D941ED38B1800E6346D /* thai-bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "thai-bell.mp3"; sourceTree = "<group>"; };
+		659E0D951ED38B1800E6346D /* tibetan-bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "tibetan-bell.mp3"; sourceTree = "<group>"; };
 		65BE12BE1EC500E700628802 /* Simply Zen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simply Zen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE12C11EC500E700628802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65BE12C81EC500E700628802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -187,6 +195,26 @@
 				659E0D861ED3847900E6346D /* temp_1.mp3 */,
 			);
 			name = "Meditation Tracks";
+			sourceTree = "<group>";
+		};
+		659E0D881ED389F900E6346D /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				659E0D911ED38A0D00E6346D /* Bells */,
+				659E0D851ED37E8300E6346D /* Meditation Tracks */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		659E0D911ED38A0D00E6346D /* Bells */ = {
+			isa = PBXGroup;
+			children = (
+				659E0D921ED38B1800E6346D /* bumese-bell.mp3 */,
+				659E0D931ED38B1800E6346D /* kyoto-temple-bell.mp3 */,
+				659E0D941ED38B1800E6346D /* thai-bell.mp3 */,
+				659E0D951ED38B1800E6346D /* tibetan-bell.mp3 */,
+			);
+			name = Bells;
 			sourceTree = "<group>";
 		};
 		65BE12B51EC500E700628802 = {
@@ -309,7 +337,7 @@
 		65F6C9F51ECA312A001ABBA6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				659E0D851ED37E8300E6346D /* Meditation Tracks */,
+				659E0D881ED389F900E6346D /* Audio */,
 				65BE12C11EC500E700628802 /* AppDelegate.swift */,
 				65BE12CF1EC500E700628802 /* Info.plist */,
 			);
@@ -426,13 +454,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659E0D991ED38B1800E6346D /* tibetan-bell.mp3 in Resources */,
 				651F0C1D1ECF6EE600ABA621 /* GuidedZenMenu.xcassets in Resources */,
 				659E0D871ED3847900E6346D /* temp_1.mp3 in Resources */,
+				659E0D961ED38B1800E6346D /* bumese-bell.mp3 in Resources */,
 				65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */,
 				658C9FD21ECBC6A600C71538 /* Assets.xcassets in Resources */,
 				65BE12C91EC500E700628802 /* Main.storyboard in Resources */,
 				65CD515C1ECCD81300698F42 /* MainMenu.xcassets in Resources */,
+				659E0D971ED38B1800E6346D /* kyoto-temple-bell.mp3 in Resources */,
 				651F0C2F1ECF974500ABA621 /* Meditation.xcassets in Resources */,
+				659E0D981ED38B1800E6346D /* thai-bell.mp3 in Resources */,
 				651F0C231ECF91BE00ABA621 /* MoodZen.xcassets in Resources */,
 				6502A6741ECE2C080018E51B /* OpenZenMenu.xcassets in Resources */,
 			);

@@ -45,7 +45,7 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
             if finished {
                 print("No bells")
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
-                meditationVC.lessonName = "temp_1"
+                meditationVC.isOpenMeditation = true
                 self.navigationController?.pushViewController(meditationVC, animated: true)
             }
         }
@@ -55,6 +55,11 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
         openZenMenuView.addTenMinutesTappedAnimation { (finished) in
             if finished {
                 print("Ten Minutes")
+                let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
+                meditationVC.lessonName = "bumese-bell"
+                meditationVC.isOpenMeditation = true
+                meditationVC.openMeditationTimer = 600.0
+                self.navigationController?.pushViewController(meditationVC, animated: true)
             }
         }
 
@@ -64,6 +69,11 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
         openZenMenuView.addTwentyMinutesTappedAnimation { (finished) in
             if finished {
                 print("Twenty Minutes")
+                let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
+                meditationVC.lessonName = "bumese-bell"
+                meditationVC.isOpenMeditation = true
+                meditationVC.openMeditationTimer = 1200.0
+                self.navigationController?.pushViewController(meditationVC, animated: true)
             }
         }
 
@@ -73,6 +83,11 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
         openZenMenuView.addFiveMinutesTappedAnimation { (finished) in
             if finished {
                 print("Five Minutes")
+                let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
+                meditationVC.lessonName = "bumese-bell"
+                meditationVC.isOpenMeditation = true
+                meditationVC.openMeditationTimer = 300.0
+                self.navigationController?.pushViewController(meditationVC, animated: true)
             }
         }
 
@@ -82,6 +97,11 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
         openZenMenuView.addTwoMinutesTappedAnimation { (finished) in
             if finished {
                 print("Two Minutes")
+                let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
+                meditationVC.lessonName = "bumese-bell"
+                meditationVC.isOpenMeditation = true
+                meditationVC.openMeditationTimer = 120.0
+                self.navigationController?.pushViewController(meditationVC, animated: true)
             }
         }
 
