@@ -64,25 +64,23 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         }
         
         userData = fetchedUserDataController.fetchedObjects as! [UserData]
-
+        
         if userData.count == 0 {
             print("None found, creating a new one")
             userData.append(UserData(context: delegate.stack.context))
-            delegate.stack.save()
+            delegate.user = userData[0]
         } else {
-            let meditations = userData[0].meditationHistory?.array as! [Meditation]
-            
+            delegate.user = userData[0]
+        }
+        
+        if let meditations = delegate.user.meditationHistory?.array as? [Meditation] {
             for meditation in meditations {
-                print(meditation.lesson?.lessonName ?? "No value")
+                print(meditation.durationSeconds)
+                print(meditation.lesson?.lessonName ?? "No Name")
             }
         }
         
-        let lesson = Lesson(durationInSeconds: 60, lessonLevel: 0, lessonName: "Test", insertInto: delegate.stack.context)
-        let meditation = Meditation(date: Date() as NSDate, durationInSeconds: lesson.durationInSeconds, lesson: lesson, user: userData[0], insertInto: delegate.stack.context)
-        
-        userData[0].addToMeditationHistory(meditation)
         delegate.stack.save()
-        
         
     }
     

@@ -80,6 +80,7 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func endSessionTapped(_ sender: Any) {
         // Will write end session code later
         print("Duration: \(String(describing: sessionDuration))")
+        updateCoreData()
         HealthKitExtension.saveMeditation(startDate: sessionStartDate, seconds: sessionDuration)
         navigationController?.popToRootViewController(animated: true)
     }
@@ -150,6 +151,14 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         let durationEndTime = CFAbsoluteTimeGetCurrent()
         let duration = durationEndTime - durationStartTime
         return duration
+    }
+    
+    // MARK: CoreData Update
+    private func updateCoreData() {
+        let coreDataLesson = Lesson(durationInSeconds: lesson.durationInSeconds, lessonLevel: Int64(lesson.lessonLevel), lessonName: lesson.lessonName, insertInto: delegate.stack.context)
+        let meditation = Meditation(date: sessionStartDate as NSDate, durationInSeconds: sessionDuration, lesson: coreDataLesson, user: delegate.user, insertInto: delegate.stack.context)
+        delegate.user.addToMeditationHistory(meditation)
+        delegate.stack.save()
     }
     
     // MARK: AVAudioPlayerDelegate Functions
