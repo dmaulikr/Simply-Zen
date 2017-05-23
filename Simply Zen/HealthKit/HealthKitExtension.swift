@@ -38,6 +38,10 @@ struct HealthKitExtension {
         }
     }
     
+    static func checkAuthorizationStatus() -> Bool {
+        return healthStore.authorizationStatus(for: HKObjectType.categoryType(forIdentifier: .mindfulSession)!) == .sharingAuthorized
+    }
+    
     static func saveMeditation(startDate: Date, seconds: Double) {
         let mindfulType = HKCategoryType.categoryType(forIdentifier: .mindfulSession)
         let mindfulSample = HKCategorySample(type: mindfulType!, value: 0, start: startDate, end: Date(timeInterval: TimeInterval(seconds), since: startDate))

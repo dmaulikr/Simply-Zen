@@ -9,13 +9,18 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="STHeiti Light.ttc">
+            <string>STHeitiSC-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="Xyh-qk-Env">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" navigationBarHidden="YES" hidesBarsOnTap="YES" id="1X7-Ut-dFE" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kh6-6m-dg3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="kh6-6m-dg3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -74,11 +79,12 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="dnm-S2-X50" kind="presentation" id="tFe-Ky-oVe"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="414" height="736"/>
                     <connections>
                         <outlet property="mainMenuView" destination="2eh-41-KPk" id="Frt-Nx-F78"/>
                         <segue destination="d5k-qR-hvw" kind="show" identifier="openZenSegue" id="N6O-Gt-hGT"/>
@@ -88,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvr-Aa-XhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-578.26086956521749" y="-38.315217391304351"/>
+            <point key="canvasLocation" x="-579" y="54"/>
         </scene>
         <!--Open Zen-->
         <scene sceneID="Xnd-vN-PAX">
@@ -145,6 +151,49 @@
             </objects>
             <point key="canvasLocation" x="-578.26086956521749" y="-744.29347826086962"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="AOv-Z2-Xks">
+            <objects>
+                <viewController storyboardIdentifier="settings" id="dnm-S2-X50" customClass="SettingsViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GWH-pp-xjy"/>
+                        <viewControllerLayoutGuide type="bottom" id="s0m-oJ-buv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sva-Qu-icE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPl-vh-gpt">
+                                <rect key="frame" x="20" y="33" width="365" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HomeKit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zu7-FI-1gd">
+                                        <rect key="frame" x="0.0" y="0.0" width="316" height="31"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-rt-4Oh">
+                                        <rect key="frame" x="316" y="0.0" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="OPl-vh-gpt" secondAttribute="trailing" constant="9" id="afw-bn-vrl"/>
+                            <constraint firstItem="OPl-vh-gpt" firstAttribute="top" secondItem="GWH-pp-xjy" secondAttribute="bottom" constant="13" id="g1h-Lf-muO"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="OPl-vh-gpt" secondAttribute="leading" id="oub-LP-XQ6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="healthKitSwitch" destination="v9J-rt-4Oh" id="HJ6-Vv-G9p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbx-nR-62j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578.26086956521749" y="-788.31521739130437"/>
+        </scene>
         <!--Guided Zen-->
         <scene sceneID="toT-yu-AFl">
             <objects>
@@ -198,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wb4-jD-Tqi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="589.85507246376812" y="-38.315217391304351"/>
+            <point key="canvasLocation" x="579" y="54"/>
         </scene>
         <!--Mood Zen-->
         <scene sceneID="hFU-rT-iJ6">
@@ -253,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83u-Ph-r6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-578.26086956521749" y="714.94565217391312"/>
+            <point key="canvasLocation" x="-579" y="1023"/>
         </scene>
         <!--Meditate-->
         <scene sceneID="SXY-5t-v9X">
@@ -328,7 +377,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="589.85507246376812" y="714.94565217391312"/>
+            <point key="canvasLocation" x="579" y="921"/>
         </scene>
     </scenes>
     <resources>
