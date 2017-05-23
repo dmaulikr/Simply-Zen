@@ -13,14 +13,28 @@ This is a mindfulness app for users of all skill levels.  A high level mock-up c
 
 This started as my final project for Udacity's iOS Degree course.
 
-## Features
+## What Works
 
-There are no features yet.
+* Animated Menus
+* Open Meditations Work
+* HealthKit integration
+* Core Data is setup (but not really being used yet)
 
 ## TODO
 
-* Paper Mock-Up
-* Design and Code Everything
+* Use Core Data to log meditation sessions
+* Create settings screen
+* Record guided meditations
+* Create guided meditation courses
+* Implement 3D-Touch
+* Add Twitter Support
+* Use REST API to pull down quotes of the day
+* Add photos for quote of the day
+* Smooth transitions
+* Add user history / history details screens
+* Create first time tutorial splash screen
+* Finish this and then start on Apple TV Version
+* Probably some stuff I haven't thought of yet
 
 ## Contributing
 
