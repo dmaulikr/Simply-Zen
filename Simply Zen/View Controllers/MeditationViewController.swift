@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import HealthKit
 
 // MARK: - MeditationViewController Class
 class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
@@ -79,6 +80,12 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         // Will write end session code later
         print("Duration: \(String(describing: sessionDuration))")
         navigationController?.popToRootViewController(animated: true)
+        
+//        if HKHealthStore.isHealthDataAvailable() {
+//            // add code to use HealthKit here...
+//            let healthStore = HKHealthStore()
+//            healthStore.requestAuthorization(toShare: Set<HKSampleType>?, read: <#T##Set<HKObjectType>?#>, completion: <#T##(Bool, Error?) -> Void#>)
+//        }
     }
     
     @IBAction func meditationViewTapped(_ sender: Any) {
