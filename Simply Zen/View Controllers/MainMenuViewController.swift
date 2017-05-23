@@ -15,8 +15,9 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     
     // Mark: - Properties
     
-    // Entity Keys
+    // Entity Properties
     let UserDataKey = "UserData"
+    var userData: [UserData] = []
     
     // App Delegate
     let delegate = UIApplication.shared.delegate as! AppDelegate
@@ -24,8 +25,8 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Test Core Data
-        runUserTest()
+        // Setup or User
+        setupUser()
         
         // setup navigation bar
         setupNavigationBar()
@@ -52,24 +53,35 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
 //        print("Animations removed")
     }
     
-    // MARK: - Core Data Tests
-    private func runUserTest() {
+    // MARK: - Core Data
+    private func setupUser() {
         let fetchedUserDataController = getFetchControllerFor(entityNamed: UserDataKey, inContext: delegate.stack.context)
         do {
             try fetchedUserDataController.performFetch()
+
         } catch {
             print("Failed to fetch user data")
         }
         
-        var userData = fetchedUserDataController.fetchedObjects as! [UserData]
-        
+        userData = fetchedUserDataController.fetchedObjects as! [UserData]
+
         if userData.count == 0 {
             print("None found, creating a new one")
             userData.append(UserData(context: delegate.stack.context))
             delegate.stack.save()
         } else {
-            print(userData[0])
+            let meditations = userData[0].meditationHistory?.array as! [Meditation]
+            
+            for meditation in meditations {
+                print(meditation.lesson?.lessonName ?? "No value")
+            }
         }
+        
+        let lesson = Lesson(durationInSeconds: 60, lessonLevel: 0, lessonName: "Test", insertInto: delegate.stack.context)
+        let meditation = Meditation(date: Date() as NSDate, durationInSeconds: lesson.durationInSeconds, lesson: lesson, user: userData[0], insertInto: delegate.stack.context)
+        
+        userData[0].addToMeditationHistory(meditation)
+        delegate.stack.save()
         
         
     }

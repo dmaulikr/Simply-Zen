@@ -279,7 +279,7 @@
                                 </connections>
                             </view>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebo-9j-6M7">
-                                <rect key="frame" x="108.33333333333331" y="584" width="199" height="32"/>
+                                <rect key="frame" x="107.66666666666669" y="584" width="199" height="32"/>
                                 <state key="normal" image="Complete-Session-Button">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.64742080479452058" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
