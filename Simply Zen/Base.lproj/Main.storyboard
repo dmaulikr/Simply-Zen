@@ -13,7 +13,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Xyh-qk-Env">
             <objects>
-                <navigationController modalTransitionStyle="crossDissolve" hidesBottomBarWhenPushed="YES" navigationBarHidden="YES" hidesBarsOnTap="YES" id="1X7-Ut-dFE" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" navigationBarHidden="YES" hidesBarsOnTap="YES" id="1X7-Ut-dFE" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kh6-6m-dg3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

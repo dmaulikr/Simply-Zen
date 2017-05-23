@@ -29,6 +29,10 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         
         // setup navigation bar
         setupNavigationBar()
+        
+        if HealthKitExtension.checkAvailability() {
+            HealthKitExtension.requestAuthorization()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
