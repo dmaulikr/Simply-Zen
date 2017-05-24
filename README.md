@@ -17,13 +17,14 @@ This started as my final project for Udacity's iOS Degree course.
 
 * Animated Menus
 * Open Meditations Work
+* Bell type for open meditations can be selected in settings
 * HealthKit integration
 * Core Data is setup (but not really being used yet)
 
 ## TODO
 
 * Use Core Data to log meditation sessions
-* Create settings screen
+* Finish Settings Screen
 * Record guided meditations
 * Create guided meditation courses
 * Implement 3D-Touch
