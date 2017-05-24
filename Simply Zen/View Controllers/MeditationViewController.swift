@@ -128,7 +128,6 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         } catch {
             print("Unable to start audio player")
         }
-
     }
     
     // MARK: - Time Keeping

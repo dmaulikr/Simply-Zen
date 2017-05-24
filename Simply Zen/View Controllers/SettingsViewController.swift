@@ -7,31 +7,92 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SettingsViewController: UIViewController {
-
-    @IBOutlet weak var healthKitSwitch: UISwitch!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        healthKitSwitch.isOn = HealthKitExtension.checkAuthorizationStatus()
-        // Do any additional setup after loading the view.
+    // App Delegate
+    let delegate = UIApplication.shared.delegate as! AppDelegate
+    var audioURL: URL!
+    var audioPlayer: AVAudioPlayer!
+
+    @IBOutlet weak var bellSegmentedControl: UISegmentedControl!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        bellSegmentedControl.selectedSegmentIndex = getBellSegment()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func bellSegmentChanged(_ sender: Any) {
+        
+        let name = getName(atSegment: bellSegmentedControl.selectedSegmentIndex)
+        audioURL = Bundle.main.url(forResource: name, withExtension: "mp3")
+        
+        playAudio()
+
+        setBellSound(atSegment: bellSegmentedControl.selectedSegmentIndex)
+        delegate.stack.save()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func playAudio() {
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
+            audioPlayer.play()
+        } catch {
+            print("Unable to start audio player")
+        }
     }
-    */
+    
+    func getName(atSegment segment: Int) -> String {
+        switch segment {
+        case 0:
+            return "burmese-bell"
+        case 1:
+            return "kyoto-temple-bell"
+        case 2:
+            return "thai-bell"
+        case 3:
+            return "tibetan-bell"
+        default:
+            return "burmese-bell"
+        }
+    }
+    
+    func getBellSegment() -> Int{
+        // Setup segment control
+        let bellSound = delegate.user.bellSound
+        
+        var segment = 0
+        
+        switch bellSound {
+        case "burmese":
+            segment = 0
+        case "kyoto":
+            segment = 1
+        case "thai":
+            segment = 2
+        case "tibetan":
+            segment = 3
+        default:
+            segment = 0
+        }
+        
+        return segment
+    }
+    
+    func setBellSound(atSegment segment: Int) {
+        switch segment {
+        case 0:
+            delegate.user.bellSound = "burmese"
+        case 1:
+            delegate.user.bellSound = "kyoto"
+        case 2:
+            delegate.user.bellSound = "thai"
+        case 3:
+            delegate.user.bellSound = "tibetan"
+        default: break
+        }
+    }
 
 }

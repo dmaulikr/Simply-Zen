@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G8c" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Course" representedClassName="Course" parentEntity="UserData" syncable="YES">
         <attribute name="courseName" attributeType="String" syncable="YES"/>
         <attribute name="userProgress" attributeType="Integer 64" usesScalarValueType="YES" syncable="YES"/>
@@ -18,6 +18,7 @@
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserData" inverseName="meditationHistory" inverseEntity="UserData" syncable="YES"/>
     </entity>
     <entity name="UserData" representedClassName="UserData" syncable="YES">
+        <attribute name="bellSound" attributeType="String" defaultValueString="burmese" syncable="YES"/>
         <relationship name="courses" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Course" inverseName="user" inverseEntity="Course" syncable="YES"/>
         <relationship name="meditationHistory" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Meditation" inverseName="user" inverseEntity="Meditation" syncable="YES"/>
     </entity>
@@ -25,6 +26,6 @@
         <element name="Course" positionX="-54" positionY="36" width="128" height="90"/>
         <element name="Lesson" positionX="-45" positionY="36" width="128" height="105"/>
         <element name="Meditation" positionX="-63" positionY="-18" width="128" height="105"/>
-        <element name="UserData" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="UserData" positionX="-54" positionY="-9" width="128" height="90"/>
     </elements>
 </model>

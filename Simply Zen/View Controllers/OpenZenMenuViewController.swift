@@ -17,6 +17,9 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     let openZen = SZCourse.openMeditationCourses() as SZCourse
     var lesson: SZLesson!
     
+    // App Delegate
+    let delegate = UIApplication.shared.delegate as! AppDelegate
+    
     // For testing only
     var words: String? = nil
     
@@ -31,7 +34,22 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
         openZenMenuView.openZenMenuViewDelegate = self
         
         // Get the correct lesson filename
-        lesson = openZen.lessons[OpenZenLessons.Burmese]
+        let bellsSound = delegate.user.bellSound
+        
+        switch bellsSound {
+        case "burmese":
+            lesson = openZen.lessons[OpenZenLessons.Burmese]
+        case "kyoto":
+            lesson = openZen.lessons[OpenZenLessons.Kyoto]
+        case "thai":
+            lesson = openZen.lessons[OpenZenLessons.Thai]
+        case "tibetan":
+            lesson = openZen.lessons[OpenZenLessons.Tibet]
+        default:
+            lesson = openZen.lessons[OpenZenLessons.Burmese]
+        }
+        
+        
     }
 
     override func viewWillDisappear(_ animated: Bool) {

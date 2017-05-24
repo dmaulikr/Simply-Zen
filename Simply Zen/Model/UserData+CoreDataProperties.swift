@@ -15,7 +15,8 @@ extension UserData {
     @nonobjc public class func fetchRequest() -> NSFetchRequest<UserData> {
         return NSFetchRequest<UserData>(entityName: "UserData")
     }
-
+    
+    @NSManaged public var bellSound: String
     @NSManaged public var courses: NSOrderedSet?
     @NSManaged public var meditationHistory: NSOrderedSet?
 
