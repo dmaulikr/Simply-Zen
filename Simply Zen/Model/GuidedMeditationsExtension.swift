@@ -31,7 +31,7 @@ extension SZCourse {
         heartLessons.append(openToAll)
         heartLessons.append(innerLight)
         
-        return SZCourse(lessons: heartLessons)
+        return SZCourse(named: "Heart Meditation Course", withlessons: heartLessons)
     }
     
     // MARK: - Beginning Zen Course
@@ -53,7 +53,7 @@ extension SZCourse {
         beginningZenLessons.append(bodyAwareness)
         beginningZenLessons.append(fullSession)
         
-        return SZCourse(lessons: beginningZenLessons)
+        return SZCourse(named: "Beginning Zen Course", withlessons: beginningZenLessons)
     }
     
     // MARK: - Advanced Breathing Course
@@ -75,10 +75,10 @@ extension SZCourse {
         advancedBreathingLessons.append(beingKind)
         advancedBreathingLessons.append(fullSession)
         
-        return SZCourse(lessons: advancedBreathingLessons)
+        return SZCourse(named: "Advanced Breathing Course", withlessons: advancedBreathingLessons)
     }
     
-    // MARK: - Relax Course
+    // MARK: - Learning to Relax Course
     static func relaxCourse() -> SZCourse {
         // create the lessons for the course
         var relaxLessons = [SZLesson]()
@@ -97,10 +97,10 @@ extension SZCourse {
         relaxLessons.append(fillingWithSand)
         relaxLessons.append(fullSession)
         
-        return SZCourse(lessons: relaxLessons)
+        return SZCourse(named: "Learning to Relax Course", withlessons: relaxLessons)
     }
     
-    // MARK: - Letting Go Course
+    // MARK: - Learning to let Go Course
     static func lettingGoCourse() -> SZCourse {
         // create the lessons for the course
         var lettingGoLessons = [SZLesson]()
@@ -119,7 +119,7 @@ extension SZCourse {
         lettingGoLessons.append(lettingGo)
         lettingGoLessons.append(fullSession)
         
-        return SZCourse(lessons: lettingGoLessons)
+        return SZCourse(named: "Learning to Let Go", withlessons: lettingGoLessons)
     }
     
 }

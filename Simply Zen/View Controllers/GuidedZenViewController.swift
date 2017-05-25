@@ -16,7 +16,10 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     // MARK: - Properties
     
     @IBOutlet var guidedZenView: GuidedZenMenuView!
-    var words: String? = nil
+    var guidedCourse: SZCourse!
+    
+    // Delegate
+    let delegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -31,7 +34,6 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(words ?? "No words")
     }
 
     // MARK: - Guided Zen Menu View Delegate Methods
@@ -39,7 +41,8 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     func relaxPressed(relax: UIButton) {
         guidedZenView.addRelaxTappedAnimation { (finished) in
             if finished {
-                print("Relax Pressed")
+                self.guidedCourse = SZCourse.relaxCourse()
+                self.pushMeditationView()
             }
         }
     }
@@ -47,7 +50,8 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     func heartMeditationPressed(heartMeditation: UIButton) {
         guidedZenView.addHeartMeditationTappedAnimation { (finished) in
             if finished {
-                print("Heart Meditation")
+                self.guidedCourse = SZCourse.heartMeditationCourse()
+                self.pushMeditationView()
             }
         }
     }
@@ -55,7 +59,8 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     func beginningZenPressed(beginningZen: UIButton) {
         guidedZenView.addBeginningZenTappedAnimation { (finished) in
             if finished {
-                print("Begging Zen")
+                self.guidedCourse = SZCourse.beginningZenCourse()
+                self.pushMeditationView()
             }
         }
     }
@@ -63,7 +68,8 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     func lettingGoPressed(lettingGo: UIButton) {
         guidedZenView.addLettingGoTappedAnimation { (finished) in
             if finished {
-                print("Letting Go")
+                self.guidedCourse = SZCourse.lettingGoCourse()
+                self.pushMeditationView()
             }
         }
     }
@@ -71,9 +77,45 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     func advancedBreathingPressed(advancedBreathing: UIButton) {
         guidedZenView.addAdvancedBreathingTappedAnimation { (finished) in
             if finished {
-                print("Advanced Breathing")
+                self.guidedCourse = SZCourse.advancedBreathingCourse()
+                self.pushMeditationView()
             }
         }
+    }
+    
+    private func pushMeditationView() {
+        // Create variables for VC and course / lesson to load
+        let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
+        let selectedCourse = guidedCourse.name
+        var level = 0
+        var addedCourse = false
+        
+        // Check to see if the user already has a history
+        if let courses = self.delegate.user.courses?.array as? [Course] {
+            for course in courses {
+                print((course.courseName) ?? "No name")
+                if course.courseName == selectedCourse {
+                    addedCourse = true
+                    level = Int(course.userProgress)
+                    break
+                }
+            }
+        }
+        
+        // If the course hasn't been added yet create it and add to the user
+        if !addedCourse {
+            // create course Core Data object and add it to user
+            print("creating course")
+            delegate.user.addToCourses(Course(courseName: selectedCourse!, user: delegate.user, insertInto: delegate.stack.context))
+            print(delegate.user.courses?.array ?? "No courses")
+            delegate.stack.save()
+        }
+        
+        
+        // Load lesson and attach to meditationVC
+        meditationVC.lesson = guidedCourse.lessons[level]
+        meditationVC.lessonFileName = meditationVC.lesson.lessonFileName
+        self.navigationController?.pushViewController(meditationVC, animated: true)
     }
 
 }

@@ -30,8 +30,10 @@ struct OpenZenLessons {
 class SZCourse {
 
     let lessons: [SZLesson]!
+    let name: String!
     
-    init(lessons: [SZLesson]) {
+    init(named name: String, withlessons lessons: [SZLesson]) {
+        self.name = name
         self.lessons = lessons
     }
     

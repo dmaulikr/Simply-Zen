@@ -31,6 +31,8 @@
 		653BFFE11ED76C55008F48AA /* GuidedMeditationsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BFFE01ED76C55008F48AA /* GuidedMeditationsExtension.swift */; };
 		653BFFE31ED76C71008F48AA /* OpenMeditationsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BFFE21ED76C71008F48AA /* OpenMeditationsExtension.swift */; };
 		653BFFE51ED76C7C008F48AA /* MoodMeditationsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BFFE41ED76C7C008F48AA /* MoodMeditationsExtension.swift */; };
+		6576E2EC1ED787E000FBD40C /* Course+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576E2EA1ED787E000FBD40C /* Course+CoreDataClass.swift */; };
+		6576E2ED1ED787E000FBD40C /* Course+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576E2EB1ED787E000FBD40C /* Course+CoreDataProperties.swift */; };
 		658C9FD21ECBC6A600C71538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658C9FD11ECBC6A600C71538 /* Assets.xcassets */; };
 		658C9FD81ECBC6E300C71538 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C9FD71ECBC6E300C71538 /* MainMenuViewController.swift */; };
 		659B8D831ED4E20100E6D24C /* STHeiti Light.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 659B8D821ED4E1E800E6D24C /* STHeiti Light.ttc */; };
@@ -55,8 +57,6 @@
 		65FD30B81ED4D57C008D76D6 /* Meditation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30B01ED4D57C008D76D6 /* Meditation+CoreDataProperties.swift */; };
 		65FD30B91ED4D57C008D76D6 /* Lesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30B11ED4D57C008D76D6 /* Lesson+CoreDataClass.swift */; };
 		65FD30BA1ED4D57C008D76D6 /* Lesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30B21ED4D57C008D76D6 /* Lesson+CoreDataProperties.swift */; };
-		65FD30BB1ED4D57C008D76D6 /* Course+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30B31ED4D57C008D76D6 /* Course+CoreDataClass.swift */; };
-		65FD30BC1ED4D57C008D76D6 /* Course+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30B41ED4D57C008D76D6 /* Course+CoreDataProperties.swift */; };
 		65FD30BD1ED4D57C008D76D6 /* UserData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30B51ED4D57C008D76D6 /* UserData+CoreDataClass.swift */; };
 		65FD30BE1ED4D57C008D76D6 /* UserData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30B61ED4D57C008D76D6 /* UserData+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
@@ -103,6 +103,8 @@
 		653BFFE01ED76C55008F48AA /* GuidedMeditationsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuidedMeditationsExtension.swift; path = "Simply Zen/Model/GuidedMeditationsExtension.swift"; sourceTree = "<group>"; };
 		653BFFE21ED76C71008F48AA /* OpenMeditationsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenMeditationsExtension.swift; path = "Simply Zen/Model/OpenMeditationsExtension.swift"; sourceTree = "<group>"; };
 		653BFFE41ED76C7C008F48AA /* MoodMeditationsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoodMeditationsExtension.swift; path = "Simply Zen/Model/MoodMeditationsExtension.swift"; sourceTree = "<group>"; };
+		6576E2EA1ED787E000FBD40C /* Course+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Course+CoreDataClass.swift"; path = "Simply Zen/Model/Course+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6576E2EB1ED787E000FBD40C /* Course+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Course+CoreDataProperties.swift"; path = "Simply Zen/Model/Course+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		658C9FD11ECBC6A600C71538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = View/Assets.xcassets; sourceTree = "<group>"; };
 		658C9FD71ECBC6E300C71538 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = "Simply Zen/View Controllers/MainMenuViewController.swift"; sourceTree = "<group>"; };
 		659B8D821ED4E1E800E6D24C /* STHeiti Light.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "STHeiti Light.ttc"; sourceTree = "<group>"; };
@@ -134,8 +136,6 @@
 		65FD30B01ED4D57C008D76D6 /* Meditation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Meditation+CoreDataProperties.swift"; path = "Simply Zen/Model/Meditation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		65FD30B11ED4D57C008D76D6 /* Lesson+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Lesson+CoreDataClass.swift"; path = "Simply Zen/Model/Lesson+CoreDataClass.swift"; sourceTree = "<group>"; };
 		65FD30B21ED4D57C008D76D6 /* Lesson+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Lesson+CoreDataProperties.swift"; path = "Simply Zen/Model/Lesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		65FD30B31ED4D57C008D76D6 /* Course+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Course+CoreDataClass.swift"; path = "Simply Zen/Model/Course+CoreDataClass.swift"; sourceTree = "<group>"; };
-		65FD30B41ED4D57C008D76D6 /* Course+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Course+CoreDataProperties.swift"; path = "Simply Zen/Model/Course+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		65FD30B51ED4D57C008D76D6 /* UserData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataClass.swift"; path = "Simply Zen/Model/UserData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		65FD30B61ED4D57C008D76D6 /* UserData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataProperties.swift"; path = "Simply Zen/Model/UserData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -363,10 +363,10 @@
 		65C190071ECA392E00E6683D /* Lessons Model */ = {
 			isa = PBXGroup;
 			children = (
+				6576E2EA1ED787E000FBD40C /* Course+CoreDataClass.swift */,
+				6576E2EB1ED787E000FBD40C /* Course+CoreDataProperties.swift */,
 				65FD30B11ED4D57C008D76D6 /* Lesson+CoreDataClass.swift */,
 				65FD30B21ED4D57C008D76D6 /* Lesson+CoreDataProperties.swift */,
-				65FD30B31ED4D57C008D76D6 /* Course+CoreDataClass.swift */,
-				65FD30B41ED4D57C008D76D6 /* Course+CoreDataProperties.swift */,
 			);
 			name = "Lessons Model";
 			sourceTree = "<group>";
@@ -584,20 +584,20 @@
 				653BFFE31ED76C71008F48AA /* OpenMeditationsExtension.swift in Sources */,
 				6502A6721ECE1C1D0018E51B /* MainMenuView.swift in Sources */,
 				65FD30B71ED4D57C008D76D6 /* Meditation+CoreDataClass.swift in Sources */,
-				65FD30BC1ED4D57C008D76D6 /* Course+CoreDataProperties.swift in Sources */,
 				65BE12C21EC500E700628802 /* AppDelegate.swift in Sources */,
 				65FD30BD1ED4D57C008D76D6 /* UserData+CoreDataClass.swift in Sources */,
 				6502A6761ECE2C0F0018E51B /* OpenZenMenuView.swift in Sources */,
 				653BFFE11ED76C55008F48AA /* GuidedMeditationsExtension.swift in Sources */,
-				65FD30BB1ED4D57C008D76D6 /* Course+CoreDataClass.swift in Sources */,
 				659E0DA01ED392AF00E6346D /* SZCourse.swift in Sources */,
 				651F0C211ECF6F8E00ABA621 /* GuidedZenViewController.swift in Sources */,
 				658C9FD81ECBC6E300C71538 /* MainMenuViewController.swift in Sources */,
 				65FD30B81ED4D57C008D76D6 /* Meditation+CoreDataProperties.swift in Sources */,
 				651F0C2D1ECF970300ABA621 /* MeditationViewController.swift in Sources */,
+				6576E2EC1ED787E000FBD40C /* Course+CoreDataClass.swift in Sources */,
 				6502A6781ECE2C850018E51B /* OpenZenMenuViewController.swift in Sources */,
 				652C2E7C1ED34DF700352BE5 /* CoreDataStack.swift in Sources */,
 				659B8D871ED4E6B600E6D24C /* SettingsViewController.swift in Sources */,
+				6576E2ED1ED787E000FBD40C /* Course+CoreDataProperties.swift in Sources */,
 				652A44D71EC6791F004F57C9 /* SZCoreDataModel.xcdatamodeld in Sources */,
 				651F0C1F1ECF6F0000ABA621 /* GuidedZenMenuView.swift in Sources */,
 			);

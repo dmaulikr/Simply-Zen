@@ -29,7 +29,7 @@ extension SZCourse {
         openLessons.append(tibetanBells)
         openLessons.append(noBells)
         
-        return SZCourse(lessons: openLessons)
+        return SZCourse(named: "Open Meditation", withlessons: openLessons)
     }
     
 }

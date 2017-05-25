@@ -29,7 +29,7 @@ extension SZCourse {
         cantSleepLessons.append(warmingYourBody)
 
         
-        return SZCourse(lessons: cantSleepLessons)
+        return SZCourse(named: "Can't Sleep Course", withlessons: cantSleepLessons)
     }
     
     // MARK: - Upset Course
@@ -49,7 +49,7 @@ extension SZCourse {
         upsetLessons.append(visualizingAnger)
         
         
-        return SZCourse(lessons: upsetLessons)
+        return SZCourse(named: "Upset Course", withlessons: upsetLessons)
     }
     
     // MARK: - Happy Course
@@ -69,10 +69,10 @@ extension SZCourse {
         happyLessons.append(exploringHapiness)
         
         
-        return SZCourse(lessons: happyLessons)
+        return SZCourse(named: "Happiness Course", withlessons: happyLessons)
     }
     
-    // MARK: - Sad Course
+    // MARK: - Overcoming Sad Course
     static func sadCourse() -> SZCourse {
         // create the lessons for the course
         var sadLessons = [SZLesson]()
@@ -89,7 +89,7 @@ extension SZCourse {
         sadLessons.append(selfAffirmations)
         
         
-        return SZCourse(lessons: sadLessons)
+        return SZCourse(named: "Overcoming Sadness Course", withlessons: sadLessons)
     }
     
 }

@@ -14,12 +14,9 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
     // MARK: - Properties
     
     @IBOutlet weak var moodZenView: MoodZenView!
-    var words: String? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       print(words ?? "No words")
     }
     
     override func viewWillAppear(_ animated: Bool) {

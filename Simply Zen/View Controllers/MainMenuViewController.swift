@@ -73,10 +73,19 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
             delegate.user = userData[0]
         }
         
+        // MARK: - User History Tests
+        print("Running History Tests")
         if let meditations = delegate.user.meditationHistory?.array as? [Meditation] {
             for meditation in meditations {
                 print(meditation.durationSeconds)
                 print(meditation.lesson?.lessonName ?? "No Name")
+            }
+        }
+        
+        if let courses = delegate.user.courses?.array as? [Course] {
+            for course in courses {
+                print(course.courseName ?? "No Course name")
+                print(course.userProgress)
             }
         }
         
@@ -134,16 +143,14 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         }
     }
     
+    // Mark: - Prepare for Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "openZenSegue" {
-            let openZenVC = segue.destination as! OpenZenMenuViewController
-            openZenVC.words = "Some words"
+            let _ = segue.destination as! OpenZenMenuViewController
         } else if segue.identifier == "guidedZenSegue" {
-            let guidedZenVC = segue.destination as! GuidedZenViewController
-            guidedZenVC.words = "Some different words"
+            let _ = segue.destination as! GuidedZenViewController
         } else if segue.identifier == "moodZenSegue" {
-            let moodZenVC = segue.destination as! MoodZenViewController
-            moodZenVC.words = "Moody Words"
+            let _ = segue.destination as! MoodZenViewController
         }
     }
     

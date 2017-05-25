@@ -20,9 +20,6 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     // App Delegate
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
-    // For testing only
-    var words: String? = nil
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -57,7 +54,6 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     }
     
     override func viewDidLoad() {
-        print(words ?? "No words")
     }
     
 
@@ -67,7 +63,6 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     func noBellsPressed(noBells: UIButton) {
         openZenMenuView.addNoBellsTappedAnimation { (finished) in
             if finished {
-                print("No bells")
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
                 meditationVC.isOpenMeditation = true
                 meditationVC.lessonFileName = self.openZen.lessons[OpenZenLessons.None].lessonFileName
@@ -80,7 +75,6 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     func tenMinutesPressed(tenMinutes: UIButton) {
         openZenMenuView.addTenMinutesTappedAnimation { (finished) in
             if finished {
-                print("Ten Minutes")
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
                 meditationVC.lessonFileName = self.lesson.lessonFileName
                 meditationVC.lesson = self.lesson
@@ -95,7 +89,6 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     func twentyMinutesPressed(twentyMinutes: UIButton) {
         openZenMenuView.addTwentyMinutesTappedAnimation { (finished) in
             if finished {
-                print("Twenty Minutes")
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
                 meditationVC.lessonFileName = self.lesson.lessonFileName
                 meditationVC.lesson = self.lesson
@@ -110,7 +103,6 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     func fiveMinutesPressed(fiveMinutes: UIButton) {
         openZenMenuView.addFiveMinutesTappedAnimation { (finished) in
             if finished {
-                print("Five Minutes")
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
                 meditationVC.lessonFileName = self.lesson.lessonFileName
                 meditationVC.lesson = self.lesson
@@ -125,7 +117,6 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     func twoMinutesPressed(twoMinutes: UIButton) {
         openZenMenuView.addTwoMinutesTappedAnimation { (finished) in
             if finished {
-                print("Two Minutes")
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
                 meditationVC.lessonFileName = self.lesson.lessonFileName
                 meditationVC.lesson = self.lesson
