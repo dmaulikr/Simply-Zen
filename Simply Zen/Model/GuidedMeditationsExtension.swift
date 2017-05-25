@@ -100,7 +100,7 @@ extension SZCourse {
         return SZCourse(lessons: relaxLessons)
     }
     
-    // MARK: - Letting Go
+    // MARK: - Letting Go Course
     static func lettingGoCourse() -> SZCourse {
         // create the lessons for the course
         var lettingGoLessons = [SZLesson]()
