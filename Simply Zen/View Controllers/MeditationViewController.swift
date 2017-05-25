@@ -20,6 +20,8 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     
     // Class Properites
     var lesson: SZLesson!
+    var coreDataCourse: Course!
+    var maxLevel = 0
     var lessonFileName: String!
     var audioURL: URL!
     var audioPlayer: AVAudioPlayer!
@@ -171,10 +173,22 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         if !isOpenMeditation {
+            // Stop the player, remove animations, and update duration
             audioPlayer.stop()
-            print("Finished playing")
+            meditationView.removeAllAnimations()
+            sessionDuration += calculateDuration()
+            
+            if Int(coreDataCourse.userProgress) < maxLevel && maxLevel > 0 {
+                coreDataCourse.userProgress += 1
+            } else if maxLevel > 0 {
+                coreDataCourse.completed = true
+            } else {
+                coreDataCourse.userProgress = Int64(lesson.lessonLevel)
+            }
+            
+            
             // call finishing up stuff which will save session to model / healthkit
-            // and display completion screen
+            endSessionTapped(self)
         }
     }
     

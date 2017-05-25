@@ -78,6 +78,7 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
         // Create variables for VC and course / lesson to load
         let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
         let selectedCourse = moodCourse.name
+        var coredDataCourse: Course!
         let maxlevel = moodCourse.lessons.count
         let level: Int = Int(arc4random_uniform(UInt32(maxlevel)))
         print(level)
@@ -86,9 +87,9 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
         // Check to see if the user already has a history
         if let courses = self.delegate.user.courses?.array as? [Course] {
             for course in courses {
-                print((course.courseName) ?? "No name")
                 if course.courseName == selectedCourse {
                     addedCourse = true
+                    coredDataCourse = course
                     break
                 }
             }
@@ -98,7 +99,8 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
         if !addedCourse {
             // create course Core Data object and add it to user
             print("creating course")
-            delegate.user.addToCourses(Course(courseName: selectedCourse!, user: delegate.user, insertInto: delegate.stack.context))
+            coredDataCourse = Course(courseName: selectedCourse!, user: delegate.user, insertInto: delegate.stack.context)
+            delegate.user.addToCourses(coredDataCourse)
             print(delegate.user.courses?.array ?? "No courses")
             delegate.stack.save()
         }
@@ -107,6 +109,7 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
         // Load lesson and attach to meditationVC
         meditationVC.lesson = moodCourse.lessons[level]
         meditationVC.lessonFileName = meditationVC.lesson.lessonFileName
+        meditationVC.coreDataCourse = coredDataCourse
         self.navigationController?.pushViewController(meditationVC, animated: true)
     }
 

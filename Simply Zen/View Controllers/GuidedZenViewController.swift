@@ -89,13 +89,15 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
         let selectedCourse = guidedCourse.name
         var level = 0
         var addedCourse = false
+        var coreDataCourse: Course!
+        let maxLevel = guidedCourse.lessons.count
         
         // Check to see if the user already has a history
         if let courses = self.delegate.user.courses?.array as? [Course] {
             for course in courses {
-                print((course.courseName) ?? "No name")
                 if course.courseName == selectedCourse {
                     addedCourse = true
+                    coreDataCourse = course
                     level = Int(course.userProgress)
                     break
                 }
@@ -106,7 +108,8 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
         if !addedCourse {
             // create course Core Data object and add it to user
             print("creating course")
-            delegate.user.addToCourses(Course(courseName: selectedCourse!, user: delegate.user, insertInto: delegate.stack.context))
+            coreDataCourse = Course(courseName: selectedCourse!, user: delegate.user, insertInto: delegate.stack.context)
+            delegate.user.addToCourses(coreDataCourse)
             print(delegate.user.courses?.array ?? "No courses")
             delegate.stack.save()
         }
@@ -115,6 +118,8 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
         // Load lesson and attach to meditationVC
         meditationVC.lesson = guidedCourse.lessons[level]
         meditationVC.lessonFileName = meditationVC.lesson.lessonFileName
+        meditationVC.coreDataCourse = coreDataCourse
+        meditationVC.maxLevel = maxLevel
         self.navigationController?.pushViewController(meditationVC, animated: true)
     }
 
