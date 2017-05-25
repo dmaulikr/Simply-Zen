@@ -17,6 +17,7 @@ extension Course {
     }
 
     @NSManaged public var courseName: String?
+    @NSManaged public var completed: Bool
     @NSManaged public var userProgress: Int64
     @NSManaged public var user: UserData?
 
