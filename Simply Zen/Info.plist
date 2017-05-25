@@ -20,9 +20,9 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>Allow access to track your meditation sessions in HealthKit.</string>
 	<key>NSHealthShareUsageDescription</key>
+	<string>Allow access to track your meditation sessions in HealthKit.</string>
+	<key>NSHealthUpdateUsageDescription</key>
 	<string>Allow access to track your meditation sessions in HealthKit.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

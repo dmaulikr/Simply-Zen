@@ -36,6 +36,9 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Don't let the phone go into idle mode
+        UIApplication.shared.isIdleTimerDisabled = true
 
         // test to make sure we are getting the correct lesson
         print("Lesson Name: \(lesson.lessonName)")
@@ -72,6 +75,10 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
             timer?.invalidate()
             // Do finishing stuff here
         }
+        
+        // Re-enable idle timer
+        UIApplication.shared.isIdleTimerDisabled = false
+
     }
     
 
