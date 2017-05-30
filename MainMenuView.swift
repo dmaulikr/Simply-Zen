@@ -569,4 +569,5 @@ class MainMenuView : UIView, CAAnimationDelegate {
 	func actionOpenZenPressed(openZen: UIButton) {
 		mainMenuViewDelegate?.openZenPressed(openZen: openZen)
 	}
+    
 }

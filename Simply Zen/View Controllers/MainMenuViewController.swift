@@ -46,12 +46,15 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         mainMenuView.mainMenuViewDelegate = self
     }
     
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         // make sure that animations are stopped
 //        mainMenuView.removeAllAnimations()
 //        print("Animations removed")
     }
+    
+    
     
     // MARK: - Core Data
     private func setupUser() {
@@ -113,8 +116,8 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         navigationController?.navigationBar.tintColor = navigationColor
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:navigationColor]
         navigationController?.navigationBar.isHidden = true
-
-        
+        navigationController?.barHideOnTapGestureRecognizer.numberOfTapsRequired = 2
+        navigationController?.barHideOnTapGestureRecognizer.delaysTouchesBegan = true
     }
     
     // MARK: - MainMenuView Button Behavior

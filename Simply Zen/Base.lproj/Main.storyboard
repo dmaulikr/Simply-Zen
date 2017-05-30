@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1X7-Ut-dFE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G8c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1X7-Ut-dFE">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,16 +18,11 @@
         <!--Navigation Controller-->
         <scene sceneID="Xyh-qk-Env">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" navigationBarHidden="YES" hidesBarsOnTap="YES" id="1X7-Ut-dFE" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="kh6-6m-dg3">
+                <navigationController modalTransitionStyle="crossDissolve" hidesBottomBarWhenPushed="YES" hidesBarsOnSwipe="YES" hidesBarsOnTap="YES" id="1X7-Ut-dFE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" id="kh6-6m-dg3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pxr-bB-AeE">
-                        <rect key="frame" x="0.0" y="692" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
                     <connections>
                         <segue destination="HcL-c0-dvT" kind="relationship" relationship="rootViewController" id="5a3-iw-Hh8"/>
                     </connections>
@@ -52,11 +47,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eh-41-KPk" customClass="MainMenuView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eh-41-KPk" customClass="MainMenuView" customModule="Simply_Zen" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="74" width="414" height="662"/>
+                                <gestureRecognizers/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="2eh-41-KPk" firstAttribute="leading" secondItem="CU1-Dp-Dae" secondAttribute="leadingMargin" constant="-20" id="2Sr-aB-yQ9"/>
                             <constraint firstItem="7r7-Ml-diU" firstAttribute="top" secondItem="2eh-41-KPk" secondAttribute="bottom" id="GvB-on-sfc"/>
@@ -112,8 +109,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="zS2-xn-m5P" customClass="OpenZenMenuView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="zS2-xn-m5P" customClass="OpenZenMenuView" customModule="Simply_Zen" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="74" width="414" height="662"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,7 +154,7 @@
         <!--Settings-->
         <scene sceneID="AOv-Z2-Xks">
             <objects>
-                <viewController storyboardIdentifier="settings" title="Settings" id="dnm-S2-X50" customClass="SettingsViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settings" title="Settings" hidesBottomBarWhenPushed="YES" id="dnm-S2-X50" customClass="SettingsViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GWH-pp-xjy"/>
                         <viewControllerLayoutGuide type="bottom" id="s0m-oJ-buv"/>
@@ -226,8 +223,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzh-9L-UFd" customClass="GuidedZenMenuView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzh-9L-UFd" customClass="GuidedZenMenuView" customModule="Simply_Zen" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="74" width="414" height="662"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -284,8 +281,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7q-eF-KX4" customClass="MoodZenView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7q-eF-KX4" customClass="MoodZenView" customModule="Simply_Zen" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="74" width="414" height="662"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -342,7 +339,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWo-GQ-pqB" customClass="MeditationView" customModule="Simply_Zen" customModuleProvider="target">
+                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWo-GQ-pqB" customClass="MeditationView" customModule="Simply_Zen" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="160" width="414" height="416"/>
                                 <gestureRecognizers/>
                                 <connections>
