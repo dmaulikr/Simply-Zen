@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03AFCAE9B6825943BAB9EC06 /* Pods_Simply_ZenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71CA935852B17E4A87126B14 /* Pods_Simply_ZenTests.framework */; };
+		123DAEBAEEC165763E87B0AB /* Pods_Simply_Zen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3489C8EB9CFF7F238D4E7644 /* Pods_Simply_Zen.framework */; };
+		30D5E46BCB61EA03DE7D7AFB /* Pods_Simply_ZenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E926AB633DBA407E74580E59 /* Pods_Simply_ZenUITests.framework */; };
 		6502A6721ECE1C1D0018E51B /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6502A6711ECE1C1D0018E51B /* MainMenuView.swift */; };
 		6502A6741ECE2C080018E51B /* OpenZenMenu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6502A6731ECE2C080018E51B /* OpenZenMenu.xcassets */; };
 		6502A6761ECE2C0F0018E51B /* OpenZenMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6502A6751ECE2C0F0018E51B /* OpenZenMenuView.swift */; };
@@ -79,6 +82,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09F44175D081CBA209254172 /* Pods-Simply Zen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simply Zen.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simply Zen/Pods-Simply Zen.release.xcconfig"; sourceTree = "<group>"; };
+		3155256345EDCC3305152BA5 /* Pods-Simply ZenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simply ZenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simply ZenTests/Pods-Simply ZenTests.release.xcconfig"; sourceTree = "<group>"; };
+		3489C8EB9CFF7F238D4E7644 /* Pods_Simply_Zen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simply_Zen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E4E5A9048656EA4E95B602 /* Pods-Simply ZenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simply ZenUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simply ZenUITests/Pods-Simply ZenUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6502A6711ECE1C1D0018E51B /* MainMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		6502A6731ECE2C080018E51B /* OpenZenMenu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = OpenZenMenu.xcassets; sourceTree = "<group>"; };
 		6502A6751ECE2C0F0018E51B /* OpenZenMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenZenMenuView.swift; sourceTree = "<group>"; };
@@ -138,6 +145,11 @@
 		65FD30B21ED4D57C008D76D6 /* Lesson+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Lesson+CoreDataProperties.swift"; path = "Simply Zen/Model/Lesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		65FD30B51ED4D57C008D76D6 /* UserData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataClass.swift"; path = "Simply Zen/Model/UserData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		65FD30B61ED4D57C008D76D6 /* UserData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataProperties.swift"; path = "Simply Zen/Model/UserData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71CA935852B17E4A87126B14 /* Pods_Simply_ZenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simply_ZenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D05F32C2947C585F7048C1F2 /* Pods-Simply ZenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simply ZenUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simply ZenUITests/Pods-Simply ZenUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E39B9FA6C8023EEFC15DAADC /* Pods-Simply ZenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simply ZenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simply ZenTests/Pods-Simply ZenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E926AB633DBA407E74580E59 /* Pods_Simply_ZenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simply_ZenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5E7998270FE59CFA313021 /* Pods-Simply Zen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simply Zen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simply Zen/Pods-Simply Zen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65EB85591ED4AF3C0092FEB5 /* HealthKit.framework in Frameworks */,
+				123DAEBAEEC165763E87B0AB /* Pods_Simply_Zen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03AFCAE9B6825943BAB9EC06 /* Pods_Simply_ZenTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,12 +174,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30D5E46BCB61EA03DE7D7AFB /* Pods_Simply_ZenUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CA9A0ADADA119655891416F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB5E7998270FE59CFA313021 /* Pods-Simply Zen.debug.xcconfig */,
+				09F44175D081CBA209254172 /* Pods-Simply Zen.release.xcconfig */,
+				E39B9FA6C8023EEFC15DAADC /* Pods-Simply ZenTests.debug.xcconfig */,
+				3155256345EDCC3305152BA5 /* Pods-Simply ZenTests.release.xcconfig */,
+				D05F32C2947C585F7048C1F2 /* Pods-Simply ZenUITests.debug.xcconfig */,
+				55E4E5A9048656EA4E95B602 /* Pods-Simply ZenUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		651F0C241ECF91C800ABA621 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +307,7 @@
 				65BE12E21EC500E700628802 /* Simply ZenUITests */,
 				65BE12BF1EC500E700628802 /* Products */,
 				65EB85571ED4AF3C0092FEB5 /* Frameworks */,
+				5CA9A0ADADA119655891416F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -375,6 +404,9 @@
 			isa = PBXGroup;
 			children = (
 				65EB85581ED4AF3C0092FEB5 /* HealthKit.framework */,
+				3489C8EB9CFF7F238D4E7644 /* Pods_Simply_Zen.framework */,
+				71CA935852B17E4A87126B14 /* Pods_Simply_ZenTests.framework */,
+				E926AB633DBA407E74580E59 /* Pods_Simply_ZenUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -416,9 +448,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65BE12E81EC500E700628802 /* Build configuration list for PBXNativeTarget "Simply Zen" */;
 			buildPhases = (
+				696CE0F0E8625604A5AB8AA8 /* [CP] Check Pods Manifest.lock */,
 				65BE12BA1EC500E700628802 /* Sources */,
 				65BE12BB1EC500E700628802 /* Frameworks */,
 				65BE12BC1EC500E700628802 /* Resources */,
+				126CBADC979C34B46826E78C /* [CP] Embed Pods Frameworks */,
+				70D74356351F6D32BE1ECE99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -433,9 +468,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65BE12EB1EC500E700628802 /* Build configuration list for PBXNativeTarget "Simply ZenTests" */;
 			buildPhases = (
+				C3309F26DE4708B1010E03FF /* [CP] Check Pods Manifest.lock */,
 				65BE12D01EC500E700628802 /* Sources */,
 				65BE12D11EC500E700628802 /* Frameworks */,
 				65BE12D21EC500E700628802 /* Resources */,
+				F208BF504D690F9345C7492A /* [CP] Embed Pods Frameworks */,
+				DE878797C30B7B844B0BAC97 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -451,9 +489,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65BE12EE1EC500E700628802 /* Build configuration list for PBXNativeTarget "Simply ZenUITests" */;
 			buildPhases = (
+				9FFE49554EE3EF0341339135 /* [CP] Check Pods Manifest.lock */,
 				65BE12DB1EC500E700628802 /* Sources */,
 				65BE12DC1EC500E700628802 /* Frameworks */,
 				65BE12DD1EC500E700628802 /* Resources */,
+				F7801BA9D2BF26ED58F840E1 /* [CP] Embed Pods Frameworks */,
+				F4B6CEBA71DF696336D16E1D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -565,6 +606,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		126CBADC979C34B46826E78C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simply Zen/Pods-Simply Zen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		696CE0F0E8625604A5AB8AA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70D74356351F6D32BE1ECE99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simply Zen/Pods-Simply Zen-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FFE49554EE3EF0341339135 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C3309F26DE4708B1010E03FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE878797C30B7B844B0BAC97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simply ZenTests/Pods-Simply ZenTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F208BF504D690F9345C7492A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simply ZenTests/Pods-Simply ZenTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4B6CEBA71DF696336D16E1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simply ZenUITests/Pods-Simply ZenUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7801BA9D2BF26ED58F840E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simply ZenUITests/Pods-Simply ZenUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65BE12BA1EC500E700628802 /* Sources */ = {
@@ -743,7 +922,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -751,6 +930,7 @@
 		};
 		65BE12E91EC500E700628802 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB5E7998270FE59CFA313021 /* Pods-Simply Zen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Simply Zen/Simply Zen.entitlements";
@@ -766,6 +946,7 @@
 		};
 		65BE12EA1EC500E700628802 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F44175D081CBA209254172 /* Pods-Simply Zen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Simply Zen/Simply Zen.entitlements";
@@ -781,6 +962,7 @@
 		};
 		65BE12EC1EC500E700628802 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E39B9FA6C8023EEFC15DAADC /* Pods-Simply ZenTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -796,6 +978,7 @@
 		};
 		65BE12ED1EC500E700628802 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3155256345EDCC3305152BA5 /* Pods-Simply ZenTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -811,6 +994,7 @@
 		};
 		65BE12EF1EC500E700628802 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D05F32C2947C585F7048C1F2 /* Pods-Simply ZenUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = ZJ769HHQS2;
@@ -825,6 +1009,7 @@
 		};
 		65BE12F01EC500E700628802 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55E4E5A9048656EA4E95B602 /* Pods-Simply ZenUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = ZJ769HHQS2;

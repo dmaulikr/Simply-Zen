@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import TwitterKit
 
 class MainMenuViewController: UIViewController, MainMenuViewDelegate {
 
@@ -34,6 +35,9 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         if HealthKitExtension.checkAvailability() {
             HealthKitExtension.requestAuthorization()
         }
+        
+        // Twitter Test
+        setupTwitter()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,7 +58,35 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
 //        print("Animations removed")
     }
     
+    // MARK: - Twitter Setup
     
+    // This function sets up Twitter auth
+    // It will later be moved into first time setup VC (after it gets created)
+    func setupTwitter() {
+        let store = Twitter.sharedInstance().sessionStore
+        
+        if !store.hasLoggedInUsers() {
+            Twitter.sharedInstance().logIn(completion: { (session, error) in
+                if (session != nil) {
+                    print("signed in as \(String(describing: session?.userName))")
+                    store.save(session!, completion: { (authSession, error) in
+                        print("saved session")
+                    })
+                } else {
+                    print("error: \(String(describing: error?.localizedDescription))")
+                }
+            })
+        } else {
+            print("Logged in user \(String(describing:store.session()?.userID))")
+        }
+        
+//        if (Twitter.sharedInstance().sessionStore.hasLoggedInUsers()) {
+//            // App must have at least one logged-in user to compose a Tweet
+//            let composer = TWTRComposerViewController.init(initialText: "Hello, World! #SimplyZen", image: nil, videoURL: nil)
+//            present(composer, animated: true, completion: nil)
+//        }
+        
+    }
     
     // MARK: - Core Data
     private func setupUser() {

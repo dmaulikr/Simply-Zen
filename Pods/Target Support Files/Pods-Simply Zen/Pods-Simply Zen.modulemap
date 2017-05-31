@@ -1,0 +1,6 @@
+framework module Pods_Simply_Zen {
+  umbrella header "Pods-Simply Zen-umbrella.h"
+
+  export *
+  module * { export * }
+}
