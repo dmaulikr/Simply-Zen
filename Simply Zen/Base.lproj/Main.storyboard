@@ -176,7 +176,7 @@
         <scene sceneID="Xyh-qk-Env">
             <objects>
                 <navigationController storyboardIdentifier="navigationRoot" modalTransitionStyle="crossDissolve" hidesBottomBarWhenPushed="YES" hidesBarsOnSwipe="YES" hidesBarsOnTap="YES" id="1X7-Ut-dFE" customClass="SZNavigationController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" id="kh6-6m-dg3">
+                    <navigationBar key="navigationBar" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kh6-6m-dg3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -324,13 +324,13 @@
                                 <rect key="frame" x="-828" y="0.0" width="1242" height="2208"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temple Bell Sound for Open Zen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3q-p9-HkJ">
-                                <rect key="frame" x="20" y="72" width="374" height="28"/>
+                                <rect key="frame" x="20" y="72" width="374" height="20"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bog-Oo-jY3">
-                                <rect key="frame" x="20" y="108" width="374" height="29"/>
+                                <rect key="frame" x="20" y="100" width="374" height="29"/>
                                 <segments>
                                     <segment title="Burmese"/>
                                     <segment title="Kyoto"/>
