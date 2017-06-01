@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G8c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1X7-Ut-dFE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G12b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1X7-Ut-dFE">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,10 +15,167 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Tutorial Page View Controller-->
+        <scene sceneID="7zf-JH-nhJ">
+            <objects>
+                <pageViewController storyboardIdentifier="pageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="UpF-v4-kce" customClass="TutorialPageViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hBl-Pk-azs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3562" y="1728"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="HM9-xh-hKe">
+            <objects>
+                <viewController storyboardIdentifier="pageOne" id="Fu5-hl-211" customClass="TutorialViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="czR-1x-6yJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="xWO-fi-4Mf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fa1-iZ-spj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower_1" translatesAutoresizingMaskIntoConstraints="NO" id="Aqc-n4-z7e">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBb-CI-0vc">
+                                <rect key="frame" x="20" y="589" width="374" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
+                                <state key="normal" title="Enable HealthKit"/>
+                                <state key="disabled" title="HealthKit Enabled">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enableHealthKit:" destination="Fu5-hl-211" eventType="touchUpInside" id="zxr-RD-wdj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track Your Meditation Sessions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNf-Qp-7HB">
+                                <rect key="frame" x="20" y="560" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enable Twitter to Tweet Your Sessions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb3-CY-iOn">
+                                <rect key="frame" x="20" y="642" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldJ-m7-Kzg">
+                                <rect key="frame" x="20" y="671" width="374" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
+                                <state key="normal" title="Login to Twitter"/>
+                                <state key="disabled" title="Logged In">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginToTwitter:" destination="Fu5-hl-211" eventType="touchUpInside" id="bDa-xS-VRr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Simply Zen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPU-c4-m9x">
+                                <rect key="frame" x="82" y="33" width="250" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Twitter_logo_blue" translatesAutoresizingMaskIntoConstraints="NO" id="BWw-6l-hZQ">
+                                <rect key="frame" x="82" y="671" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a moment to enable HealthKit and Twitter.  Swipe left to continue to a brief tutorial once you are finished." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdu-5H-2RF">
+                                <rect key="frame" x="20" y="306" width="374" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Aqc-n4-z7e" secondAttribute="trailing" constant="-20" id="Tsv-9P-VaX"/>
+                            <constraint firstItem="Aqc-n4-z7e" firstAttribute="leading" secondItem="Fa1-iZ-spj" secondAttribute="leadingMargin" constant="-20" id="VUI-pP-tzL"/>
+                            <constraint firstItem="xWO-fi-4Mf" firstAttribute="top" secondItem="Aqc-n4-z7e" secondAttribute="bottom" id="Zi2-ja-YVR"/>
+                            <constraint firstItem="Aqc-n4-z7e" firstAttribute="top" secondItem="czR-1x-6yJ" secondAttribute="bottom" constant="-20" id="kFs-hw-PvZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="healthKitButton" destination="VBb-CI-0vc" id="Iza-ax-a4t"/>
+                        <outlet property="twitterButton" destination="ldJ-m7-Kzg" id="ai8-WS-D0L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZCn-gl-3Mm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2604.3478260869565" y="1020.6521739130436"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="3Uy-aJ-9ba">
+            <objects>
+                <viewController storyboardIdentifier="pageTwo" id="oVK-gO-Im1" customClass="TutorialViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sbi-FK-0rH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yap-ol-qAL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XDW-th-n1g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Dt-8o-GBe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Dt-8o-GBe" firstAttribute="top" secondItem="sbi-FK-0rH" secondAttribute="bottom" constant="-20" id="34m-O3-mBu"/>
+                            <constraint firstItem="Yap-ol-qAL" firstAttribute="top" secondItem="2Dt-8o-GBe" secondAttribute="bottom" id="CqQ-gN-OcN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Dt-8o-GBe" secondAttribute="trailing" constant="-20" id="Y79-2W-2ia"/>
+                            <constraint firstItem="2Dt-8o-GBe" firstAttribute="leading" secondItem="XDW-th-n1g" secondAttribute="leadingMargin" constant="-20" id="wBU-Z1-Uou"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qgn-jd-BKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2594" y="1729"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="mDw-tD-US2">
+            <objects>
+                <viewController storyboardIdentifier="pageThree" id="G7q-ls-tGG" customClass="TutorialViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6C8-J1-B9x"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qxl-hj-Zv0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e5v-ZL-35O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="24h-my-Z9A">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qxl-hj-Zv0" firstAttribute="top" secondItem="24h-my-Z9A" secondAttribute="bottom" id="4c3-cW-MML"/>
+                            <constraint firstItem="24h-my-Z9A" firstAttribute="leading" secondItem="e5v-ZL-35O" secondAttribute="leadingMargin" constant="-20" id="dhk-NB-Aqv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="24h-my-Z9A" secondAttribute="trailing" constant="-20" id="gBE-4B-0VE"/>
+                            <constraint firstItem="24h-my-Z9A" firstAttribute="top" secondItem="6C8-J1-B9x" secondAttribute="bottom" constant="-20" id="zVr-Be-av0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HL1-ZE-FLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2601" y="2494"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xyh-qk-Env">
             <objects>
-                <navigationController modalTransitionStyle="crossDissolve" hidesBottomBarWhenPushed="YES" hidesBarsOnSwipe="YES" hidesBarsOnTap="YES" id="1X7-Ut-dFE" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navigationRoot" modalTransitionStyle="crossDissolve" hidesBottomBarWhenPushed="YES" hidesBarsOnSwipe="YES" hidesBarsOnTap="YES" id="1X7-Ut-dFE" customClass="SZNavigationController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" id="kh6-6m-dg3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -407,6 +564,8 @@
         <image name="Mood-Zen-Menu-Background" width="1242" height="2208"/>
         <image name="Open-Zen-Menu-Background" width="1242" height="2208"/>
         <image name="Settings-Menu-Background" width="1242" height="2208"/>
+        <image name="Twitter_logo_blue" width="48" height="48"/>
+        <image name="flower_1" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="KjU-q1-dUz"/>

@@ -25,15 +25,17 @@ struct HealthKitExtension {
     
     // Request Permissions
     
-    static func requestAuthorization() {
+    static func requestAuthorization() -> Bool {
+        var successful: Bool = true
         let hkTypesToWrite = Set([HKSampleType.categoryType(forIdentifier: .mindfulSession)!])
         healthStore.requestAuthorization(toShare: hkTypesToWrite, read: nil, completion: { (success, error) in
             if success {
-                print("Success")
+                successful = true
             } else {
-                print("Failure")
+                successful = false
             }
         })
+        return successful
     }
     
     static func checkAuthorizationStatus() -> Bool {
