@@ -37,20 +37,53 @@ let task = session.dataTask(with: request) { (data, response, error) in
     }
     
     print(parsedJSONData)
-    if let quotesData = parsedJSONData["quotes"] as? [String:String] {
-        let backgroundURL = quotesData["background"]
-        var backGroundImage: UIImage?
-        if let backgroundImageData = try? UIImage(data: Data(contentsOf: URL(string: backgroundURL!)!)) {
-            backGroundImage = backgroundImageData
+    
+    if let error = parsedJSONData["error"] as? [String:AnyObject], let code = error["code"] as? Int {
+        if code == 429 {
+            print("Too many requests")
+            return
         }
-        let quoteText = quotesData["quote"]
-        
-        print("backgroundURL: \(String(describing: backgroundURL))")
-        print("quoteText: \(String(describing: quoteText))")
     }
     
+    guard let contentsData = parsedJSONData["contents"] as? [String:AnyObject] else {
+        print("Failed to get contents")
+        return
+    }
     
+    print(contentsData)
     
+    guard let quotesArrayData = contentsData["quotes"] as? [[String:AnyObject]] else {
+        print("Failed to get quote data")
+        return
+    }
+    
+    let quotesData = quotesArrayData[0]
+    
+    guard let author = quotesData["author"] as? String else {
+        print("Couldn't get author")
+        return
+    }
+    
+    guard let background = quotesData["background"] as? String else {
+        print("Couldn't get background")
+        return
+    }
+    
+    guard let quote = quotesData["quote"] as? String else {
+        print("Couldn't get quote")
+        return
+    }
+    
+    if let url = URL(string: background) {
+        DispatchQueue.main.async {
+            let imageData = try? Data(contentsOf: url)
+            let image = UIImage(data: imageData!)
+        }
+    }
+    
+    print("Author: \(author)")
+    print("Background URL: \(background)")
+    print("Quote: \(quote)")
   
 }
 
