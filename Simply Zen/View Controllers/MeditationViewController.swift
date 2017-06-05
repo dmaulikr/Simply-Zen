@@ -47,10 +47,14 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         
         // Don't let the phone go into idle mode
         UIApplication.shared.isIdleTimerDisabled = true
+        
+        // Start downloading the quote data
+        getQuote()
 
+        // TODO: - Delete print statmenets
         // test to make sure we are getting the correct lesson
-        print("Lesson Name: \(lesson.lessonName)")
-        print("Lesson Filename: \(lessonFileName)")
+//        print("Lesson Name: \(lesson.lessonName)")
+//        print("Lesson Filename: \(lessonFileName)")
         
         // Start Duration Timer
         durationStartTime = CFAbsoluteTimeGetCurrent()
@@ -151,7 +155,7 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
             print("Setting image")
             completionVC.quoteUIImage = image
         } else {
-//            completionVC.quoteUIImage = nil
+            completionVC.quoteUIImage = nil
         }
         
         navigationController?.pushViewController(completionVC, animated: false)

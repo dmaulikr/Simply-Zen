@@ -40,6 +40,7 @@
 		658C9FD21ECBC6A600C71538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658C9FD11ECBC6A600C71538 /* Assets.xcassets */; };
 		658C9FD81ECBC6E300C71538 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C9FD71ECBC6E300C71538 /* MainMenuViewController.swift */; };
 		6595C7CD1EE5F2C3007972A7 /* SessionCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595C7CC1EE5F2C3007972A7 /* SessionCompleteViewController.swift */; };
+		6595C7CF1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */; };
 		659B8D831ED4E20100E6D24C /* STHeiti Light.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 659B8D821ED4E1E800E6D24C /* STHeiti Light.ttc */; };
 		659B8D871ED4E6B600E6D24C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B8D861ED4E6B600E6D24C /* SettingsViewController.swift */; };
 		659E0D871ED3847900E6346D /* temp_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 659E0D861ED3847900E6346D /* temp_1.mp3 */; };
@@ -120,6 +121,7 @@
 		658C9FD11ECBC6A600C71538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = View/Assets.xcassets; sourceTree = "<group>"; };
 		658C9FD71ECBC6E300C71538 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = "Simply Zen/View Controllers/MainMenuViewController.swift"; sourceTree = "<group>"; };
 		6595C7CC1EE5F2C3007972A7 /* SessionCompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionCompleteViewController.swift; path = "Simply Zen/View Controllers/SessionCompleteViewController.swift"; sourceTree = "<group>"; };
+		6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetQuotesRESTAPI.swift; path = Model/REST/GetQuotesRESTAPI.swift; sourceTree = "<group>"; };
 		659B8D821ED4E1E800E6D24C /* STHeiti Light.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "STHeiti Light.ttc"; sourceTree = "<group>"; };
 		659B8D861ED4E6B600E6D24C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "Simply Zen/View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
 		659E0D861ED3847900E6346D /* temp_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = temp_1.mp3; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				651F0C221ECF91BE00ABA621 /* MoodZen.xcassets */,
 				651F0C2E1ECF974500ABA621 /* Meditation.xcassets */,
 				652BDA0C1ED511AC00D66AAE /* Settings.xcassets */,
+				6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */,
 				659B8D821ED4E1E800E6D24C /* STHeiti Light.ttc */,
 			);
 			name = Assets;
@@ -768,6 +771,7 @@
 				659E0D9D1ED3929800E6346D /* SZLessonProtocol.swift in Sources */,
 				65EB855F1ED4B1730092FEB5 /* HealthKitExtension.swift in Sources */,
 				651F0C291ECF928500ABA621 /* MoodZenViewController.swift in Sources */,
+				6595C7CF1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift in Sources */,
 				65FD30BE1ED4D57C008D76D6 /* UserData+CoreDataProperties.swift in Sources */,
 				65FD30B91ED4D57C008D76D6 /* Lesson+CoreDataClass.swift in Sources */,
 				659E0D9C1ED3929800E6346D /* SZLesson.swift in Sources */,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TwitterKit
 
 // MARK: - Session Complete View Controller Class
 
@@ -28,17 +29,57 @@ class SessionCompleteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("session complete")
-        // Do any additional setup after loading the view.
+        
+        // Setup the page to show the quote
+        if let quote = quoteBodyString, let author = quoteAuthorString, let image = quoteUIImage {
+            quoteBody.text = quote
+            quoteAuthor.text = author
+            quoteImage.image = image
+        } else if let quote = quoteBodyString, let author = quoteAuthorString, let url = URL(string: imageURLString!) {
+            quoteBody.text = quote
+            quoteAuthor.text = author
+            DispatchQueue.main.async {
+                let imageData = try? Data(contentsOf: url)
+                let image = UIImage(data: imageData!)
+                self.quoteImage.image = image
+            }
+        } else {
+            quoteBody.text = "Reduce the stress levels in your life through relaxation techniques like meditation, deep breathing, and exercise. You'll look and feel way better..."
+            quoteAuthor.text = "Suzanne Somers"
+        }
     }
 
     // MARK: - IBActions
 
     @IBAction func tweetSessionTapped(_ sender: Any) {
+        // Make sure app has a logged in user
+        if (Twitter.sharedInstance().sessionStore.hasLoggedInUsers()) {
+            var tweet: String!
+            if let quote = quoteBodyString {
+                tweet = "\(String(describing: quote)) #SimplyZen #meditation"
+            } else {
+                tweet = "I just became more #mindful with #SimplyZen #meditation"
+            }
+            
+            let composer = TWTRComposerViewController.init(initialText: tweet, image: nil, videoURL: nil)
+            present(composer, animated: true, completion: nil)
+            
+        } else {
+            let store = Twitter.sharedInstance().sessionStore
+            Twitter.sharedInstance().logIn(completion: { (session, error) in
+                if (session != nil) {
+                    print("signed in as \(String(describing: session?.userName))")
+                    store.save(session!, completion: { (authSession, error) in
+                        self.tweetSessionTapped(self)
+                    })
+                }
+            })
+
+        }
     }
  
     @IBAction func doneButtonTapped(_ sender: Any) {
-        navigationController?.popToRootViewController(animated: true)
+        navigationController?.popToRootViewController(animated: false)
     }
 
     
