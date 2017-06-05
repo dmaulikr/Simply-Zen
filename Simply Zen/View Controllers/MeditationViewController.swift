@@ -33,6 +33,12 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     var sessionDuration: Double = 0.0
     var sessionStartDate: Date!
     
+    // Properties to hold quote data
+    var quote: String?
+    var imageURL: String?
+    var quoteAuthor: String?
+    var quoteImage: UIImage? = nil
+    
     // Delegate
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -87,11 +93,14 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     // MARK: - IBActions
     
     @IBAction func endSessionTapped(_ sender: Any) {
-        // Will write end session code later
+        // TODO: - Remove Print Statements
+        // Update and save history to CoreData model, and add session to Healthkit
         print("Duration: \(String(describing: sessionDuration))")
         updateCoreData()
         HealthKitExtension.saveMeditation(startDate: sessionStartDate, seconds: sessionDuration)
-        navigationController?.popToRootViewController(animated: true)
+        
+        // Show completion screen
+        pushSessionCompleteView()
     }
     
     @IBAction func meditationViewTapped(_ sender: Any) {
@@ -127,9 +136,33 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         }
     }
     
+    // MARK: - Push to Session Complete View
+    
+    private func pushSessionCompleteView() {
+        // Create variables for VC and course / lesson to load
+        let completionVC = self.storyboard?.instantiateViewController(withIdentifier: "completedSession") as! SessionCompleteViewController
+        
+        completionVC.imageURLString = self.imageURL
+        completionVC.quoteAuthorString = self.quoteAuthor
+        completionVC.quoteBodyString = self.quote
+        
+        // Make sure there is an image before passing it
+        if let image = self.quoteImage {
+            print("Setting image")
+            completionVC.quoteUIImage = image
+        } else {
+//            completionVC.quoteUIImage = nil
+        }
+        
+        navigationController?.pushViewController(completionVC, animated: false)
+        
+        
+        }
+
+    
     // MARK: AVAudio Functions
     
-    func playAudio() {
+    private func playAudio() {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
             audioPlayer.delegate = self
