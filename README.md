@@ -19,21 +19,18 @@ This started as my final project for Udacity's iOS Degree course.
 * Open Meditations Work
 * Bell type for open meditations can be selected in settings
 * HealthKit integration
-* Core Data is setup (but not really being used yet)
+* Use Core Data to log meditation sessions
+* Twitter Support
+* Use REST API to pull down quotes of the day
 
 ## TODO
 
-* Use Core Data to log meditation sessions
 * Finish Settings Screen
 * Record guided meditations
-* Create guided meditation courses
 * Implement 3D-Touch
-* Add Twitter Support
-* Use REST API to pull down quotes of the day
 * Add photos for quote of the day
-* Smooth transitions
 * Add user history / history details screens
-* Create first time tutorial splash screen
+* Create first time tutorial splash screen (started)
 * Finish this and then start on Apple TV Version
 * Probably some stuff I haven't thought of yet
 
