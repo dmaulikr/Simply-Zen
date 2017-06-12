@@ -55,6 +55,7 @@
 		65B7BC421EEF360F009AE298 /* Learning to Breath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC401EEF360F009AE298 /* Learning to Breath.mp3 */; };
 		65B7BC441EEF3C81009AE298 /* Dealing With Distractions.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC431EEF3C81009AE298 /* Dealing With Distractions.mp3 */; };
 		65B7BC461EEF3F4F009AE298 /* Deeper Breath Awareness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC451EEF3F4F009AE298 /* Deeper Breath Awareness.mp3 */; };
+		65B7BC481EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC471EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 */; };
 		65BE12C21EC500E700628802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12C11EC500E700628802 /* AppDelegate.swift */; };
 		65BE12C91EC500E700628802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12C71EC500E700628802 /* Main.storyboard */; };
 		65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12CC1EC500E700628802 /* LaunchScreen.storyboard */; };
@@ -140,6 +141,7 @@
 		65B7BC401EEF360F009AE298 /* Learning to Breath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Learning to Breath.mp3"; sourceTree = "<group>"; };
 		65B7BC431EEF3C81009AE298 /* Dealing With Distractions.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dealing With Distractions.mp3"; sourceTree = "<group>"; };
 		65B7BC451EEF3F4F009AE298 /* Deeper Breath Awareness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Deeper Breath Awareness.mp3"; sourceTree = "<group>"; };
+		65B7BC471EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Becoming Aware of Your Body.mp3"; sourceTree = "<group>"; };
 		65BE12BE1EC500E700628802 /* Simply Zen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simply Zen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE12C11EC500E700628802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65BE12C81EC500E700628802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -431,6 +433,7 @@
 				65B7BC401EEF360F009AE298 /* Learning to Breath.mp3 */,
 				65B7BC431EEF3C81009AE298 /* Dealing With Distractions.mp3 */,
 				65B7BC451EEF3F4F009AE298 /* Deeper Breath Awareness.mp3 */,
+				65B7BC471EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 */,
 			);
 			name = "Beginning Zen";
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 				65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */,
 				658C9FD21ECBC6A600C71538 /* Assets.xcassets in Resources */,
 				65B7BC441EEF3C81009AE298 /* Dealing With Distractions.mp3 in Resources */,
+				65B7BC481EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 in Resources */,
 				65BE12C91EC500E700628802 /* Main.storyboard in Resources */,
 				65CD515C1ECCD81300698F42 /* MainMenu.xcassets in Resources */,
 				65B7BC461EEF3F4F009AE298 /* Deeper Breath Awareness.mp3 in Resources */,

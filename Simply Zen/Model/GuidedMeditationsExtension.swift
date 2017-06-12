@@ -42,7 +42,7 @@ extension SZCourse {
         let learnToBreath = SZLesson(addLesson: "Learning to Breath", withFilename: "Learning to Breath", level: 1, durationInSeconds: 600)
         let distractions = SZLesson(addLesson: "Dealing with Distractions", withFilename: "Dealing With Distractions", level: 2, durationInSeconds: 600)
         let deeperBreathAwareness = SZLesson(addLesson: "Deeper Breath Awareness", withFilename: "Deeper Breath Awareness", level: 3, durationInSeconds: 600)
-        let bodyAwareness = SZLesson(addLesson: "Becoming Aware of Your Body", withFilename: "temp_5", level: 4, durationInSeconds: 600)
+        let bodyAwareness = SZLesson(addLesson: "Becoming Aware of Your Body", withFilename: "Becoming Aware of Your Body", level: 4, durationInSeconds: 600)
         let fullSession = SZLesson(addLesson: "Full Meditation Session", withFilename: "temp_6", level: 5, durationInSeconds: 600)
         
         // add lessons
