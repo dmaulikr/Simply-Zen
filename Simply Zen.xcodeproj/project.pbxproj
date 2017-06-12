@@ -59,6 +59,7 @@
 		65C18A911EDF74E1000B29F6 /* SZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C18A901EDF74E1000B29F6 /* SZNavigationController.swift */; };
 		65C18A931EDF768F000B29F6 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C18A921EDF768F000B29F6 /* TutorialViewController.swift */; };
 		65CD515C1ECCD81300698F42 /* MainMenu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CD515B1ECCD81300698F42 /* MainMenu.xcassets */; };
+		65D73E721EEF29B600C2B8C0 /* Intro to Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65D73E711EEF29B600C2B8C0 /* Intro to Meditation.mp3 */; };
 		65EB85591ED4AF3C0092FEB5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EB85581ED4AF3C0092FEB5 /* HealthKit.framework */; };
 		65EB855F1ED4B1730092FEB5 /* HealthKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB855E1ED4B1730092FEB5 /* HealthKitExtension.swift */; };
 		65FD30B71ED4D57C008D76D6 /* Meditation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30AF1ED4D57C008D76D6 /* Meditation+CoreDataClass.swift */; };
@@ -146,6 +147,7 @@
 		65C18A901EDF74E1000B29F6 /* SZNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SZNavigationController.swift; path = "Simply Zen/View Controllers/SZNavigationController.swift"; sourceTree = "<group>"; };
 		65C18A921EDF768F000B29F6 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialViewController.swift; path = "Simply Zen/View Controllers/TutorialViewController.swift"; sourceTree = "<group>"; };
 		65CD515B1ECCD81300698F42 /* MainMenu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MainMenu.xcassets; sourceTree = "<group>"; };
+		65D73E711EEF29B600C2B8C0 /* Intro to Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Intro to Meditation.mp3"; sourceTree = "<group>"; };
 		65EB85561ED4AF3C0092FEB5 /* Simply Zen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Simply Zen.entitlements"; sourceTree = "<group>"; };
 		65EB85581ED4AF3C0092FEB5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		65EB855E1ED4B1730092FEB5 /* HealthKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthKitExtension.swift; path = HealthKit/HealthKitExtension.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 		659E0D851ED37E8300E6346D /* Meditation Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				65D73E731EEF29BD00C2B8C0 /* Beginning Zen */,
 				659E0D861ED3847900E6346D /* temp_1.mp3 */,
 				653BFFD61ED769DD008F48AA /* temp_2.mp3 */,
 				653BFFD81ED76A64008F48AA /* temp_6.mp3 */,
@@ -413,6 +416,14 @@
 				65FD30B21ED4D57C008D76D6 /* Lesson+CoreDataProperties.swift */,
 			);
 			name = "Lessons Model";
+			sourceTree = "<group>";
+		};
+		65D73E731EEF29BD00C2B8C0 /* Beginning Zen */ = {
+			isa = PBXGroup;
+			children = (
+				65D73E711EEF29B600C2B8C0 /* Intro to Meditation.mp3 */,
+			);
+			name = "Beginning Zen";
 			sourceTree = "<group>";
 		};
 		65EB85571ED4AF3C0092FEB5 /* Frameworks */ = {
@@ -588,6 +599,7 @@
 				651F0C1D1ECF6EE600ABA621 /* GuidedZenMenu.xcassets in Resources */,
 				659E0D871ED3847900E6346D /* temp_1.mp3 in Resources */,
 				653BFFDF1ED76A64008F48AA /* temp_3.mp3 in Resources */,
+				65D73E721EEF29B600C2B8C0 /* Intro to Meditation.mp3 in Resources */,
 				659E0D961ED38B1800E6346D /* burmese-bell.mp3 in Resources */,
 				65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */,
 				658C9FD21ECBC6A600C71538 /* Assets.xcassets in Resources */,
