@@ -56,6 +56,13 @@
 		65B7BC441EEF3C81009AE298 /* Dealing With Distractions.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC431EEF3C81009AE298 /* Dealing With Distractions.mp3 */; };
 		65B7BC461EEF3F4F009AE298 /* Deeper Breath Awareness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC451EEF3F4F009AE298 /* Deeper Breath Awareness.mp3 */; };
 		65B7BC481EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC471EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 */; };
+		65B7BC4A1EEF5B2E009AE298 /* Full Meditation Session.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC491EEF5B2E009AE298 /* Full Meditation Session.mp3 */; };
+		65B7BC501EEF5B5C009AE298 /* Inner Light Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC4B1EEF5B5C009AE298 /* Inner Light Meditation.mp3 */; };
+		65B7BC511EEF5B5C009AE298 /* Intro to Hearth meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC4C1EEF5B5C009AE298 /* Intro to Hearth meditation.mp3 */; };
+		65B7BC521EEF5B5C009AE298 /* Opening Your Heart to Difficult People.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC4D1EEF5B5C009AE298 /* Opening Your Heart to Difficult People.mp3 */; };
+		65B7BC531EEF5B5C009AE298 /* Opening Your Heart to the Universe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC4E1EEF5B5C009AE298 /* Opening Your Heart to the Universe.mp3 */; };
+		65B7BC541EEF5B5C009AE298 /* Opening Your Heart to Yourself.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC4F1EEF5B5C009AE298 /* Opening Your Heart to Yourself.mp3 */; };
+		65B7BC571EEF5C1A009AE298 /* Opening Your Heart to Others.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC561EEF5C1A009AE298 /* Opening Your Heart to Others.mp3 */; };
 		65BE12C21EC500E700628802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12C11EC500E700628802 /* AppDelegate.swift */; };
 		65BE12C91EC500E700628802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12C71EC500E700628802 /* Main.storyboard */; };
 		65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12CC1EC500E700628802 /* LaunchScreen.storyboard */; };
@@ -142,6 +149,13 @@
 		65B7BC431EEF3C81009AE298 /* Dealing With Distractions.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dealing With Distractions.mp3"; sourceTree = "<group>"; };
 		65B7BC451EEF3F4F009AE298 /* Deeper Breath Awareness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Deeper Breath Awareness.mp3"; sourceTree = "<group>"; };
 		65B7BC471EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Becoming Aware of Your Body.mp3"; sourceTree = "<group>"; };
+		65B7BC491EEF5B2E009AE298 /* Full Meditation Session.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Full Meditation Session.mp3"; sourceTree = "<group>"; };
+		65B7BC4B1EEF5B5C009AE298 /* Inner Light Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Inner Light Meditation.mp3"; sourceTree = "<group>"; };
+		65B7BC4C1EEF5B5C009AE298 /* Intro to Hearth meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Intro to Hearth meditation.mp3"; sourceTree = "<group>"; };
+		65B7BC4D1EEF5B5C009AE298 /* Opening Your Heart to Difficult People.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Opening Your Heart to Difficult People.mp3"; sourceTree = "<group>"; };
+		65B7BC4E1EEF5B5C009AE298 /* Opening Your Heart to the Universe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Opening Your Heart to the Universe.mp3"; sourceTree = "<group>"; };
+		65B7BC4F1EEF5B5C009AE298 /* Opening Your Heart to Yourself.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Opening Your Heart to Yourself.mp3"; sourceTree = "<group>"; };
+		65B7BC561EEF5C1A009AE298 /* Opening Your Heart to Others.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Opening Your Heart to Others.mp3"; sourceTree = "<group>"; };
 		65BE12BE1EC500E700628802 /* Simply Zen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simply Zen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE12C11EC500E700628802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65BE12C81EC500E700628802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -284,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				65D73E731EEF29BD00C2B8C0 /* Beginning Zen */,
+				65B7BC551EEF5B64009AE298 /* Heart Meditation */,
 				659E0D861ED3847900E6346D /* temp_1.mp3 */,
 				653BFFD61ED769DD008F48AA /* temp_2.mp3 */,
 				653BFFD81ED76A64008F48AA /* temp_6.mp3 */,
@@ -323,6 +338,19 @@
 				659E0D9B1ED3929800E6346D /* SZLessonProtocol.swift */,
 			);
 			name = "Lessons Model";
+			sourceTree = "<group>";
+		};
+		65B7BC551EEF5B64009AE298 /* Heart Meditation */ = {
+			isa = PBXGroup;
+			children = (
+				65B7BC4B1EEF5B5C009AE298 /* Inner Light Meditation.mp3 */,
+				65B7BC4C1EEF5B5C009AE298 /* Intro to Hearth meditation.mp3 */,
+				65B7BC561EEF5C1A009AE298 /* Opening Your Heart to Others.mp3 */,
+				65B7BC4D1EEF5B5C009AE298 /* Opening Your Heart to Difficult People.mp3 */,
+				65B7BC4E1EEF5B5C009AE298 /* Opening Your Heart to the Universe.mp3 */,
+				65B7BC4F1EEF5B5C009AE298 /* Opening Your Heart to Yourself.mp3 */,
+			);
+			name = "Heart Meditation";
 			sourceTree = "<group>";
 		};
 		65BE12B51EC500E700628802 = {
@@ -434,6 +462,7 @@
 				65B7BC431EEF3C81009AE298 /* Dealing With Distractions.mp3 */,
 				65B7BC451EEF3F4F009AE298 /* Deeper Breath Awareness.mp3 */,
 				65B7BC471EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 */,
+				65B7BC491EEF5B2E009AE298 /* Full Meditation Session.mp3 */,
 			);
 			name = "Beginning Zen";
 			sourceTree = "<group>";
@@ -607,20 +636,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				659B8D831ED4E20100E6D24C /* STHeiti Light.ttc in Resources */,
+				65B7BC511EEF5B5C009AE298 /* Intro to Hearth meditation.mp3 in Resources */,
 				659E0D991ED38B1800E6346D /* tibetan-bell.mp3 in Resources */,
 				651F0C1D1ECF6EE600ABA621 /* GuidedZenMenu.xcassets in Resources */,
 				659E0D871ED3847900E6346D /* temp_1.mp3 in Resources */,
 				653BFFDF1ED76A64008F48AA /* temp_3.mp3 in Resources */,
 				65B7BC421EEF360F009AE298 /* Learning to Breath.mp3 in Resources */,
 				65B7BC411EEF360F009AE298 /* Intro to Meditation.mp3 in Resources */,
+				65B7BC501EEF5B5C009AE298 /* Inner Light Meditation.mp3 in Resources */,
 				659E0D961ED38B1800E6346D /* burmese-bell.mp3 in Resources */,
 				65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */,
 				658C9FD21ECBC6A600C71538 /* Assets.xcassets in Resources */,
 				65B7BC441EEF3C81009AE298 /* Dealing With Distractions.mp3 in Resources */,
+				65B7BC541EEF5B5C009AE298 /* Opening Your Heart to Yourself.mp3 in Resources */,
 				65B7BC481EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 in Resources */,
+				65B7BC4A1EEF5B2E009AE298 /* Full Meditation Session.mp3 in Resources */,
 				65BE12C91EC500E700628802 /* Main.storyboard in Resources */,
 				65CD515C1ECCD81300698F42 /* MainMenu.xcassets in Resources */,
+				65B7BC571EEF5C1A009AE298 /* Opening Your Heart to Others.mp3 in Resources */,
 				65B7BC461EEF3F4F009AE298 /* Deeper Breath Awareness.mp3 in Resources */,
+				65B7BC531EEF5B5C009AE298 /* Opening Your Heart to the Universe.mp3 in Resources */,
+				65B7BC521EEF5B5C009AE298 /* Opening Your Heart to Difficult People.mp3 in Resources */,
 				659E0D971ED38B1800E6346D /* kyoto-temple-bell.mp3 in Resources */,
 				653BFFDC1ED76A64008F48AA /* temp_6.mp3 in Resources */,
 				651F0C2F1ECF974500ABA621 /* Meditation.xcassets in Resources */,

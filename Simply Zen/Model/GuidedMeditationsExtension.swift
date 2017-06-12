@@ -16,12 +16,12 @@ extension SZCourse {
     static func heartMeditationCourse() -> SZCourse {
         // create the lessons for the course
         var heartLessons = [SZLesson]()
-        let intro = SZLesson(addLesson: "Intro to Heart Meditation", withFilename: "temp_1", level: 0, durationInSeconds: 180)
-        let openToYourself = SZLesson(addLesson: "Opening Your Heart to Yourself", withFilename: "temp_2", level: 1, durationInSeconds: 600)
-        let openToOthers = SZLesson(addLesson: "Opening Your Heart to Others", withFilename: "temp_3", level: 2, durationInSeconds: 600)
-        let openToDifficult = SZLesson(addLesson: "Opening Your Heart to a Difficult Person", withFilename: "temp_4", level: 3, durationInSeconds: 600)
-        let openToAll = SZLesson(addLesson: "Opening Your Heart to the Universe", withFilename: "temp_5", level: 4, durationInSeconds: 600)
-        let innerLight = SZLesson(addLesson: "Inner Light Meditation", withFilename: "temp_6", level: 5, durationInSeconds: 600)
+        let intro = SZLesson(addLesson: "Intro to Heart Meditation", withFilename: "Intro to Hearth meditation", level: 0, durationInSeconds: 180)
+        let openToYourself = SZLesson(addLesson: "Opening Your Heart to Yourself", withFilename: "Opening Your Heart to Yourself", level: 1, durationInSeconds: 600)
+        let openToOthers = SZLesson(addLesson: "Opening Your Heart to Others", withFilename: "Opening Your Heart to Others", level: 2, durationInSeconds: 600)
+        let openToDifficult = SZLesson(addLesson: "Opening Your Heart to a Difficult Person", withFilename: "Opening Your Heart to Difficult People", level: 3, durationInSeconds: 600)
+        let openToAll = SZLesson(addLesson: "Opening Your Heart to the Universe", withFilename: "Opening Your Heart to the Universe", level: 4, durationInSeconds: 600)
+        let innerLight = SZLesson(addLesson: "Inner Light Meditation", withFilename: "Inner Light Meditation", level: 5, durationInSeconds: 600)
         
         // add lessons
         heartLessons.append(intro)
@@ -43,7 +43,7 @@ extension SZCourse {
         let distractions = SZLesson(addLesson: "Dealing with Distractions", withFilename: "Dealing With Distractions", level: 2, durationInSeconds: 600)
         let deeperBreathAwareness = SZLesson(addLesson: "Deeper Breath Awareness", withFilename: "Deeper Breath Awareness", level: 3, durationInSeconds: 600)
         let bodyAwareness = SZLesson(addLesson: "Becoming Aware of Your Body", withFilename: "Becoming Aware of Your Body", level: 4, durationInSeconds: 600)
-        let fullSession = SZLesson(addLesson: "Full Meditation Session", withFilename: "temp_6", level: 5, durationInSeconds: 600)
+        let fullSession = SZLesson(addLesson: "Full Meditation Session", withFilename: "Full Meditation Session", level: 5, durationInSeconds: 600)
         
         // add lessons
         beginningZenLessons.append(intro)
