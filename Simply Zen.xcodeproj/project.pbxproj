@@ -26,6 +26,24 @@
 		652A44D71EC6791F004F57C9 /* SZCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 652A44D51EC6791F004F57C9 /* SZCoreDataModel.xcdatamodeld */; };
 		652BDA0D1ED511AC00D66AAE /* Settings.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652BDA0C1ED511AC00D66AAE /* Settings.xcassets */; };
 		652C2E7C1ED34DF700352BE5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C2E7B1ED34DF700352BE5 /* CoreDataStack.swift */; };
+		653022A21EF0844B004BA701 /* Being Kind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6530229C1EF0844B004BA701 /* Being Kind.mp3 */; };
+		653022A31EF0844B004BA701 /* Finding Your Focus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6530229D1EF0844B004BA701 /* Finding Your Focus.mp3 */; };
+		653022A41EF0844B004BA701 /* Full Breath Awareness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6530229E1EF0844B004BA701 /* Full Breath Awareness.mp3 */; };
+		653022A51EF0844B004BA701 /* Full Breath Session.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6530229F1EF0844B004BA701 /* Full Breath Session.mp3 */; };
+		653022A61EF0844B004BA701 /* Intro to Advanced Breathing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022A01EF0844B004BA701 /* Intro to Advanced Breathing.mp3 */; };
+		653022A71EF0844B004BA701 /* Returning to the Breath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022A11EF0844B004BA701 /* Returning to the Breath.mp3 */; };
+		653022AF1EF08516004BA701 /* Breathing While Lying Down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022A91EF08516004BA701 /* Breathing While Lying Down.mp3 */; };
+		653022B01EF08516004BA701 /* Filling With Sand.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022AA1EF08516004BA701 /* Filling With Sand.mp3 */; };
+		653022B11EF08516004BA701 /* Fully Relax.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022AB1EF08516004BA701 /* Fully Relax.mp3 */; };
+		653022B21EF08516004BA701 /* Intro to Relaxing with Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022AC1EF08516004BA701 /* Intro to Relaxing with Meditation.mp3 */; };
+		653022B31EF08516004BA701 /* Learning to Visualize.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022AD1EF08516004BA701 /* Learning to Visualize.mp3 */; };
+		653022B41EF08516004BA701 /* Warming Your Body.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022AE1EF08516004BA701 /* Warming Your Body.mp3 */; };
+		653022BC1EF0853E004BA701 /* Full Letting Go Session.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022B61EF0853E004BA701 /* Full Letting Go Session.mp3 */; };
+		653022BD1EF0853E004BA701 /* Identifying Hurt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022B71EF0853E004BA701 /* Identifying Hurt.mp3 */; };
+		653022BE1EF0853E004BA701 /* Intro to Letting Go with Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022B81EF0853E004BA701 /* Intro to Letting Go with Meditation.mp3 */; };
+		653022BF1EF0853E004BA701 /* Letting Go.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022B91EF0853E004BA701 /* Letting Go.mp3 */; };
+		653022C01EF0853E004BA701 /* Loving Yourself.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022BA1EF0853E004BA701 /* Loving Yourself.mp3 */; };
+		653022C11EF0853E004BA701 /* Rejecting Negativity.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022BB1EF0853E004BA701 /* Rejecting Negativity.mp3 */; };
 		653BFFD71ED769DD008F48AA /* temp_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653BFFD61ED769DD008F48AA /* temp_2.mp3 */; };
 		653BFFDC1ED76A64008F48AA /* temp_6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653BFFD81ED76A64008F48AA /* temp_6.mp3 */; };
 		653BFFDD1ED76A64008F48AA /* temp_5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653BFFD91ED76A64008F48AA /* temp_5.mp3 */; };
@@ -119,6 +137,24 @@
 		652A44D61EC6791F004F57C9 /* SZCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SZCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		652BDA0C1ED511AC00D66AAE /* Settings.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Settings.xcassets; path = View/Settings.xcassets; sourceTree = "<group>"; };
 		652C2E7B1ED34DF700352BE5 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = "Simply Zen/Model/CoreDataStack.swift"; sourceTree = "<group>"; };
+		6530229C1EF0844B004BA701 /* Being Kind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Being Kind.mp3"; sourceTree = "<group>"; };
+		6530229D1EF0844B004BA701 /* Finding Your Focus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Finding Your Focus.mp3"; sourceTree = "<group>"; };
+		6530229E1EF0844B004BA701 /* Full Breath Awareness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Full Breath Awareness.mp3"; sourceTree = "<group>"; };
+		6530229F1EF0844B004BA701 /* Full Breath Session.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Full Breath Session.mp3"; sourceTree = "<group>"; };
+		653022A01EF0844B004BA701 /* Intro to Advanced Breathing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Intro to Advanced Breathing.mp3"; sourceTree = "<group>"; };
+		653022A11EF0844B004BA701 /* Returning to the Breath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Returning to the Breath.mp3"; sourceTree = "<group>"; };
+		653022A91EF08516004BA701 /* Breathing While Lying Down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Breathing While Lying Down.mp3"; sourceTree = "<group>"; };
+		653022AA1EF08516004BA701 /* Filling With Sand.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Filling With Sand.mp3"; sourceTree = "<group>"; };
+		653022AB1EF08516004BA701 /* Fully Relax.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fully Relax.mp3"; sourceTree = "<group>"; };
+		653022AC1EF08516004BA701 /* Intro to Relaxing with Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Intro to Relaxing with Meditation.mp3"; sourceTree = "<group>"; };
+		653022AD1EF08516004BA701 /* Learning to Visualize.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Learning to Visualize.mp3"; sourceTree = "<group>"; };
+		653022AE1EF08516004BA701 /* Warming Your Body.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Warming Your Body.mp3"; sourceTree = "<group>"; };
+		653022B61EF0853E004BA701 /* Full Letting Go Session.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Full Letting Go Session.mp3"; sourceTree = "<group>"; };
+		653022B71EF0853E004BA701 /* Identifying Hurt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Identifying Hurt.mp3"; sourceTree = "<group>"; };
+		653022B81EF0853E004BA701 /* Intro to Letting Go with Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Intro to Letting Go with Meditation.mp3"; sourceTree = "<group>"; };
+		653022B91EF0853E004BA701 /* Letting Go.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Letting Go.mp3"; sourceTree = "<group>"; };
+		653022BA1EF0853E004BA701 /* Loving Yourself.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Loving Yourself.mp3"; sourceTree = "<group>"; };
+		653022BB1EF0853E004BA701 /* Rejecting Negativity.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rejecting Negativity.mp3"; sourceTree = "<group>"; };
 		653BFFD61ED769DD008F48AA /* temp_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = temp_2.mp3; sourceTree = "<group>"; };
 		653BFFD81ED76A64008F48AA /* temp_6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = temp_6.mp3; sourceTree = "<group>"; };
 		653BFFD91ED76A64008F48AA /* temp_5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = temp_5.mp3; sourceTree = "<group>"; };
@@ -253,6 +289,45 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
+		653022A81EF08450004BA701 /* Advanced Breathing */ = {
+			isa = PBXGroup;
+			children = (
+				6530229C1EF0844B004BA701 /* Being Kind.mp3 */,
+				6530229D1EF0844B004BA701 /* Finding Your Focus.mp3 */,
+				6530229E1EF0844B004BA701 /* Full Breath Awareness.mp3 */,
+				6530229F1EF0844B004BA701 /* Full Breath Session.mp3 */,
+				653022A01EF0844B004BA701 /* Intro to Advanced Breathing.mp3 */,
+				653022A11EF0844B004BA701 /* Returning to the Breath.mp3 */,
+			);
+			name = "Advanced Breathing";
+			sourceTree = "<group>";
+		};
+		653022B51EF0851D004BA701 /* Relax */ = {
+			isa = PBXGroup;
+			children = (
+				653022A91EF08516004BA701 /* Breathing While Lying Down.mp3 */,
+				653022AA1EF08516004BA701 /* Filling With Sand.mp3 */,
+				653022AB1EF08516004BA701 /* Fully Relax.mp3 */,
+				653022AC1EF08516004BA701 /* Intro to Relaxing with Meditation.mp3 */,
+				653022AD1EF08516004BA701 /* Learning to Visualize.mp3 */,
+				653022AE1EF08516004BA701 /* Warming Your Body.mp3 */,
+			);
+			name = Relax;
+			sourceTree = "<group>";
+		};
+		653022C21EF08547004BA701 /* Letting Go */ = {
+			isa = PBXGroup;
+			children = (
+				653022B61EF0853E004BA701 /* Full Letting Go Session.mp3 */,
+				653022B71EF0853E004BA701 /* Identifying Hurt.mp3 */,
+				653022B81EF0853E004BA701 /* Intro to Letting Go with Meditation.mp3 */,
+				653022B91EF0853E004BA701 /* Letting Go.mp3 */,
+				653022BA1EF0853E004BA701 /* Loving Yourself.mp3 */,
+				653022BB1EF0853E004BA701 /* Rejecting Negativity.mp3 */,
+			);
+			name = "Letting Go";
+			sourceTree = "<group>";
+		};
 		653BFFE61ED76E30008F48AA /* Meditation Courses */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,8 +372,11 @@
 		659E0D851ED37E8300E6346D /* Meditation Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				653022A81EF08450004BA701 /* Advanced Breathing */,
 				65D73E731EEF29BD00C2B8C0 /* Beginning Zen */,
 				65B7BC551EEF5B64009AE298 /* Heart Meditation */,
+				653022B51EF0851D004BA701 /* Relax */,
+				653022C21EF08547004BA701 /* Letting Go */,
 				659E0D861ED3847900E6346D /* temp_1.mp3 */,
 				653BFFD61ED769DD008F48AA /* temp_2.mp3 */,
 				653BFFD81ED76A64008F48AA /* temp_6.mp3 */,
@@ -635,38 +713,56 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				653022A31EF0844B004BA701 /* Finding Your Focus.mp3 in Resources */,
 				659B8D831ED4E20100E6D24C /* STHeiti Light.ttc in Resources */,
+				653022AF1EF08516004BA701 /* Breathing While Lying Down.mp3 in Resources */,
 				65B7BC511EEF5B5C009AE298 /* Intro to Hearth meditation.mp3 in Resources */,
 				659E0D991ED38B1800E6346D /* tibetan-bell.mp3 in Resources */,
+				653022A21EF0844B004BA701 /* Being Kind.mp3 in Resources */,
 				651F0C1D1ECF6EE600ABA621 /* GuidedZenMenu.xcassets in Resources */,
 				659E0D871ED3847900E6346D /* temp_1.mp3 in Resources */,
 				653BFFDF1ED76A64008F48AA /* temp_3.mp3 in Resources */,
 				65B7BC421EEF360F009AE298 /* Learning to Breath.mp3 in Resources */,
 				65B7BC411EEF360F009AE298 /* Intro to Meditation.mp3 in Resources */,
 				65B7BC501EEF5B5C009AE298 /* Inner Light Meditation.mp3 in Resources */,
+				653022B21EF08516004BA701 /* Intro to Relaxing with Meditation.mp3 in Resources */,
+				653022A71EF0844B004BA701 /* Returning to the Breath.mp3 in Resources */,
+				653022A41EF0844B004BA701 /* Full Breath Awareness.mp3 in Resources */,
 				659E0D961ED38B1800E6346D /* burmese-bell.mp3 in Resources */,
+				653022BE1EF0853E004BA701 /* Intro to Letting Go with Meditation.mp3 in Resources */,
 				65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */,
 				658C9FD21ECBC6A600C71538 /* Assets.xcassets in Resources */,
+				653022C11EF0853E004BA701 /* Rejecting Negativity.mp3 in Resources */,
 				65B7BC441EEF3C81009AE298 /* Dealing With Distractions.mp3 in Resources */,
+				653022C01EF0853E004BA701 /* Loving Yourself.mp3 in Resources */,
 				65B7BC541EEF5B5C009AE298 /* Opening Your Heart to Yourself.mp3 in Resources */,
+				653022A61EF0844B004BA701 /* Intro to Advanced Breathing.mp3 in Resources */,
 				65B7BC481EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 in Resources */,
 				65B7BC4A1EEF5B2E009AE298 /* Full Meditation Session.mp3 in Resources */,
 				65BE12C91EC500E700628802 /* Main.storyboard in Resources */,
 				65CD515C1ECCD81300698F42 /* MainMenu.xcassets in Resources */,
+				653022B41EF08516004BA701 /* Warming Your Body.mp3 in Resources */,
+				653022B11EF08516004BA701 /* Fully Relax.mp3 in Resources */,
 				65B7BC571EEF5C1A009AE298 /* Opening Your Heart to Others.mp3 in Resources */,
 				65B7BC461EEF3F4F009AE298 /* Deeper Breath Awareness.mp3 in Resources */,
+				653022B01EF08516004BA701 /* Filling With Sand.mp3 in Resources */,
+				653022B31EF08516004BA701 /* Learning to Visualize.mp3 in Resources */,
 				65B7BC531EEF5B5C009AE298 /* Opening Your Heart to the Universe.mp3 in Resources */,
 				65B7BC521EEF5B5C009AE298 /* Opening Your Heart to Difficult People.mp3 in Resources */,
 				659E0D971ED38B1800E6346D /* kyoto-temple-bell.mp3 in Resources */,
+				653022A51EF0844B004BA701 /* Full Breath Session.mp3 in Resources */,
 				653BFFDC1ED76A64008F48AA /* temp_6.mp3 in Resources */,
 				651F0C2F1ECF974500ABA621 /* Meditation.xcassets in Resources */,
 				653BFFDE1ED76A64008F48AA /* temp_4.mp3 in Resources */,
 				653BFFDD1ED76A64008F48AA /* temp_5.mp3 in Resources */,
 				659E0D981ED38B1800E6346D /* thai-bell.mp3 in Resources */,
+				653022BF1EF0853E004BA701 /* Letting Go.mp3 in Resources */,
 				651F0C231ECF91BE00ABA621 /* MoodZen.xcassets in Resources */,
 				6502A6741ECE2C080018E51B /* OpenZenMenu.xcassets in Resources */,
 				652BDA0D1ED511AC00D66AAE /* Settings.xcassets in Resources */,
 				653BFFD71ED769DD008F48AA /* temp_2.mp3 in Resources */,
+				653022BC1EF0853E004BA701 /* Full Letting Go Session.mp3 in Resources */,
+				653022BD1EF0853E004BA701 /* Identifying Hurt.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
