@@ -16,10 +16,10 @@ extension SZCourse {
     static func cantSleepCourse() -> SZCourse {
         // create the lessons for the course
         var cantSleepLessons = [SZLesson]()
-        let findingPeace = SZLesson(addLesson: "Finding a Peaceful Place", withFilename: "temp_1", level: 0, durationInSeconds: 180)
-        let floating = SZLesson(addLesson: "Floating on a Cloud", withFilename: "temp_2", level: 1, durationInSeconds: 600)
-        let fillingWithSand = SZLesson(addLesson: "Filling With Sand", withFilename: "temp_3", level: 2, durationInSeconds: 600)
-        let warmingYourBody = SZLesson(addLesson: "Warming Your Body", withFilename: "temp_4", level: 3, durationInSeconds: 600)
+        let findingPeace = SZLesson(addLesson: "Finding a Peaceful Place", withFilename: "Finding a Peaceful Place", level: 0, durationInSeconds: 180)
+        let floating = SZLesson(addLesson: "Floating on a Cloud", withFilename: "Floating on a Cloud", level: 1, durationInSeconds: 317)
+        let fillingWithSand = SZLesson(addLesson: "Filling With Sand", withFilename: "Filling With Sand", level: 2, durationInSeconds: 600)
+        let warmingYourBody = SZLesson(addLesson: "Warming Your Body", withFilename: "Warming Your Body No Intro", level: 3, durationInSeconds: 317)
 
         
         // add lessons
@@ -36,10 +36,10 @@ extension SZCourse {
     static func upsetCourse() -> SZCourse {
         // create the lessons for the course
         var upsetLessons = [SZLesson]()
-        let lettingGo = SZLesson(addLesson: "Letting Go Full Session", withFilename: "temp_1", level: 0, durationInSeconds: 180)
-        let rejectingNegativity = SZLesson(addLesson: "Rejecting Negativity", withFilename: "temp_2", level: 1, durationInSeconds: 600)
-        let breathingAwayAnger = SZLesson(addLesson: "Breathing Away Anger", withFilename: "temp_3", level: 2, durationInSeconds: 600)
-        let visualizingAnger = SZLesson(addLesson: "Visualizing Anger", withFilename: "temp_4", level: 3, durationInSeconds: 600)
+        let lettingGo = SZLesson(addLesson: "Letting Go Full Session", withFilename: "Full Letting Go Session No Intro", level: 0, durationInSeconds: 623)
+        let rejectingNegativity = SZLesson(addLesson: "Rejecting Negativity", withFilename: "Rejecting Negativity No Intro", level: 1, durationInSeconds: 468)
+        let breathingAwayAnger = SZLesson(addLesson: "Breathing Away Anger", withFilename: "Breathing Away Anger", level: 2, durationInSeconds: 361)
+        let visualizingAnger = SZLesson(addLesson: "Visualizing Anger", withFilename: "Visualizing Anger", level: 3, durationInSeconds: 330)
         
         
         // add lessons
