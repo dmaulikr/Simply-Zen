@@ -44,11 +44,6 @@
 		653022BF1EF0853E004BA701 /* Letting Go.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022B91EF0853E004BA701 /* Letting Go.mp3 */; };
 		653022C01EF0853E004BA701 /* Loving Yourself.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022BA1EF0853E004BA701 /* Loving Yourself.mp3 */; };
 		653022C11EF0853E004BA701 /* Rejecting Negativity.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653022BB1EF0853E004BA701 /* Rejecting Negativity.mp3 */; };
-		653BFFD71ED769DD008F48AA /* temp_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653BFFD61ED769DD008F48AA /* temp_2.mp3 */; };
-		653BFFDC1ED76A64008F48AA /* temp_6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653BFFD81ED76A64008F48AA /* temp_6.mp3 */; };
-		653BFFDD1ED76A64008F48AA /* temp_5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653BFFD91ED76A64008F48AA /* temp_5.mp3 */; };
-		653BFFDE1ED76A64008F48AA /* temp_4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653BFFDA1ED76A64008F48AA /* temp_4.mp3 */; };
-		653BFFDF1ED76A64008F48AA /* temp_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 653BFFDB1ED76A64008F48AA /* temp_3.mp3 */; };
 		653BFFE11ED76C55008F48AA /* GuidedMeditationsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BFFE01ED76C55008F48AA /* GuidedMeditationsExtension.swift */; };
 		653BFFE31ED76C71008F48AA /* OpenMeditationsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BFFE21ED76C71008F48AA /* OpenMeditationsExtension.swift */; };
 		653BFFE51ED76C7C008F48AA /* MoodMeditationsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BFFE41ED76C7C008F48AA /* MoodMeditationsExtension.swift */; };
@@ -56,6 +51,14 @@
 		656F20AA1EF2EC61009C6AAB /* Full Letting Go Session No Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20A61EF2EC61009C6AAB /* Full Letting Go Session No Intro.mp3 */; };
 		656F20AB1EF2EC61009C6AAB /* Rejecting Negativity No Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20A71EF2EC61009C6AAB /* Rejecting Negativity No Intro.mp3 */; };
 		656F20AC1EF2EC61009C6AAB /* Visualizing Anger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20A81EF2EC61009C6AAB /* Visualizing Anger.mp3 */; };
+		656F20B21EF2FCDC009C6AAB /* Exploring Happiness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20AE1EF2FCDC009C6AAB /* Exploring Happiness.mp3 */; };
+		656F20B31EF2FCDC009C6AAB /* Inner Light Meditation No Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20AF1EF2FCDC009C6AAB /* Inner Light Meditation No Intro.mp3 */; };
+		656F20B41EF2FCDC009C6AAB /* Opening Your Heart to Others No Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20B01EF2FCDC009C6AAB /* Opening Your Heart to Others No Intro.mp3 */; };
+		656F20B51EF2FCDC009C6AAB /* Opening Your Heart to the Universe No Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20B11EF2FCDC009C6AAB /* Opening Your Heart to the Universe No Intro.mp3 */; };
+		656F20BB1EF2FCEA009C6AAB /* Identifying Sadness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20B71EF2FCEA009C6AAB /* Identifying Sadness.mp3 */; };
+		656F20BC1EF2FCEA009C6AAB /* Opening Your Heart to Yourself No Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20B81EF2FCEA009C6AAB /* Opening Your Heart to Yourself No Intro.mp3 */; };
+		656F20BD1EF2FCEA009C6AAB /* Seeking Happiness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20B91EF2FCEA009C6AAB /* Seeking Happiness.mp3 */; };
+		656F20BE1EF2FCEA009C6AAB /* Self Affirmations.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20BA1EF2FCEA009C6AAB /* Self Affirmations.mp3 */; };
 		6576E2EC1ED787E000FBD40C /* Course+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576E2EA1ED787E000FBD40C /* Course+CoreDataClass.swift */; };
 		6576E2ED1ED787E000FBD40C /* Course+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576E2EB1ED787E000FBD40C /* Course+CoreDataProperties.swift */; };
 		657B41881EE088CC00503868 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B41871EE088CC00503868 /* TutorialPageViewController.swift */; };
@@ -65,7 +68,6 @@
 		6595C7CF1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */; };
 		659B8D831ED4E20100E6D24C /* STHeiti Light.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 659B8D821ED4E1E800E6D24C /* STHeiti Light.ttc */; };
 		659B8D871ED4E6B600E6D24C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B8D861ED4E6B600E6D24C /* SettingsViewController.swift */; };
-		659E0D871ED3847900E6346D /* temp_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 659E0D861ED3847900E6346D /* temp_1.mp3 */; };
 		659E0D961ED38B1800E6346D /* burmese-bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 659E0D921ED38B1800E6346D /* burmese-bell.mp3 */; };
 		659E0D971ED38B1800E6346D /* kyoto-temple-bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 659E0D931ED38B1800E6346D /* kyoto-temple-bell.mp3 */; };
 		659E0D981ED38B1800E6346D /* thai-bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 659E0D941ED38B1800E6346D /* thai-bell.mp3 */; };
@@ -162,11 +164,6 @@
 		653022B91EF0853E004BA701 /* Letting Go.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Letting Go.mp3"; sourceTree = "<group>"; };
 		653022BA1EF0853E004BA701 /* Loving Yourself.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Loving Yourself.mp3"; sourceTree = "<group>"; };
 		653022BB1EF0853E004BA701 /* Rejecting Negativity.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rejecting Negativity.mp3"; sourceTree = "<group>"; };
-		653BFFD61ED769DD008F48AA /* temp_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = temp_2.mp3; sourceTree = "<group>"; };
-		653BFFD81ED76A64008F48AA /* temp_6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = temp_6.mp3; sourceTree = "<group>"; };
-		653BFFD91ED76A64008F48AA /* temp_5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = temp_5.mp3; sourceTree = "<group>"; };
-		653BFFDA1ED76A64008F48AA /* temp_4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = temp_4.mp3; sourceTree = "<group>"; };
-		653BFFDB1ED76A64008F48AA /* temp_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = temp_3.mp3; sourceTree = "<group>"; };
 		653BFFE01ED76C55008F48AA /* GuidedMeditationsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuidedMeditationsExtension.swift; path = "Simply Zen/Model/GuidedMeditationsExtension.swift"; sourceTree = "<group>"; };
 		653BFFE21ED76C71008F48AA /* OpenMeditationsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenMeditationsExtension.swift; path = "Simply Zen/Model/OpenMeditationsExtension.swift"; sourceTree = "<group>"; };
 		653BFFE41ED76C7C008F48AA /* MoodMeditationsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoodMeditationsExtension.swift; path = "Simply Zen/Model/MoodMeditationsExtension.swift"; sourceTree = "<group>"; };
@@ -174,6 +171,14 @@
 		656F20A61EF2EC61009C6AAB /* Full Letting Go Session No Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Full Letting Go Session No Intro.mp3"; sourceTree = "<group>"; };
 		656F20A71EF2EC61009C6AAB /* Rejecting Negativity No Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rejecting Negativity No Intro.mp3"; sourceTree = "<group>"; };
 		656F20A81EF2EC61009C6AAB /* Visualizing Anger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Visualizing Anger.mp3"; sourceTree = "<group>"; };
+		656F20AE1EF2FCDC009C6AAB /* Exploring Happiness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Exploring Happiness.mp3"; sourceTree = "<group>"; };
+		656F20AF1EF2FCDC009C6AAB /* Inner Light Meditation No Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Inner Light Meditation No Intro.mp3"; sourceTree = "<group>"; };
+		656F20B01EF2FCDC009C6AAB /* Opening Your Heart to Others No Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Opening Your Heart to Others No Intro.mp3"; sourceTree = "<group>"; };
+		656F20B11EF2FCDC009C6AAB /* Opening Your Heart to the Universe No Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Opening Your Heart to the Universe No Intro.mp3"; sourceTree = "<group>"; };
+		656F20B71EF2FCEA009C6AAB /* Identifying Sadness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Identifying Sadness.mp3"; sourceTree = "<group>"; };
+		656F20B81EF2FCEA009C6AAB /* Opening Your Heart to Yourself No Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Opening Your Heart to Yourself No Intro.mp3"; sourceTree = "<group>"; };
+		656F20B91EF2FCEA009C6AAB /* Seeking Happiness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Seeking Happiness.mp3"; sourceTree = "<group>"; };
+		656F20BA1EF2FCEA009C6AAB /* Self Affirmations.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Self Affirmations.mp3"; sourceTree = "<group>"; };
 		6576E2EA1ED787E000FBD40C /* Course+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Course+CoreDataClass.swift"; path = "Simply Zen/Model/Course+CoreDataClass.swift"; sourceTree = "<group>"; };
 		6576E2EB1ED787E000FBD40C /* Course+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Course+CoreDataProperties.swift"; path = "Simply Zen/Model/Course+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		657B41871EE088CC00503868 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialPageViewController.swift; path = "Simply Zen/View Controllers/TutorialPageViewController.swift"; sourceTree = "<group>"; };
@@ -183,7 +188,6 @@
 		6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetQuotesRESTAPI.swift; path = Model/REST/GetQuotesRESTAPI.swift; sourceTree = "<group>"; };
 		659B8D821ED4E1E800E6D24C /* STHeiti Light.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "STHeiti Light.ttc"; sourceTree = "<group>"; };
 		659B8D861ED4E6B600E6D24C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "Simply Zen/View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
-		659E0D861ED3847900E6346D /* temp_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = temp_1.mp3; sourceTree = "<group>"; };
 		659E0D921ED38B1800E6346D /* burmese-bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "burmese-bell.mp3"; sourceTree = "<group>"; };
 		659E0D931ED38B1800E6346D /* kyoto-temple-bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "kyoto-temple-bell.mp3"; sourceTree = "<group>"; };
 		659E0D941ED38B1800E6346D /* thai-bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "thai-bell.mp3"; sourceTree = "<group>"; };
@@ -363,6 +367,28 @@
 			name = Upset;
 			sourceTree = "<group>";
 		};
+		656F20B61EF2FCE0009C6AAB /* Happy */ = {
+			isa = PBXGroup;
+			children = (
+				656F20AE1EF2FCDC009C6AAB /* Exploring Happiness.mp3 */,
+				656F20AF1EF2FCDC009C6AAB /* Inner Light Meditation No Intro.mp3 */,
+				656F20B01EF2FCDC009C6AAB /* Opening Your Heart to Others No Intro.mp3 */,
+				656F20B11EF2FCDC009C6AAB /* Opening Your Heart to the Universe No Intro.mp3 */,
+			);
+			name = Happy;
+			sourceTree = "<group>";
+		};
+		656F20BF1EF2FCF0009C6AAB /* Sad */ = {
+			isa = PBXGroup;
+			children = (
+				656F20B71EF2FCEA009C6AAB /* Identifying Sadness.mp3 */,
+				656F20B81EF2FCEA009C6AAB /* Opening Your Heart to Yourself No Intro.mp3 */,
+				656F20B91EF2FCEA009C6AAB /* Seeking Happiness.mp3 */,
+				656F20BA1EF2FCEA009C6AAB /* Self Affirmations.mp3 */,
+			);
+			name = Sad;
+			sourceTree = "<group>";
+		};
 		658C9FC31ECBB5DC00C71538 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,12 +430,8 @@
 				653022C21EF08547004BA701 /* Letting Go */,
 				65A688E81EF21408000DAB18 /* Can't Sleep */,
 				656F20AD1EF2EC66009C6AAB /* Upset */,
-				659E0D861ED3847900E6346D /* temp_1.mp3 */,
-				653BFFD61ED769DD008F48AA /* temp_2.mp3 */,
-				653BFFD81ED76A64008F48AA /* temp_6.mp3 */,
-				653BFFD91ED76A64008F48AA /* temp_5.mp3 */,
-				653BFFDA1ED76A64008F48AA /* temp_4.mp3 */,
-				653BFFDB1ED76A64008F48AA /* temp_3.mp3 */,
+				656F20B61EF2FCE0009C6AAB /* Happy */,
+				656F20BF1EF2FCF0009C6AAB /* Sad */,
 			);
 			name = "Meditation Tracks";
 			sourceTree = "<group>";
@@ -757,9 +779,8 @@
 				659E0D991ED38B1800E6346D /* tibetan-bell.mp3 in Resources */,
 				653022A21EF0844B004BA701 /* Being Kind.mp3 in Resources */,
 				65A688E51EF213FA000DAB18 /* Finding a Peaceful Place.mp3 in Resources */,
+				656F20B41EF2FCDC009C6AAB /* Opening Your Heart to Others No Intro.mp3 in Resources */,
 				651F0C1D1ECF6EE600ABA621 /* GuidedZenMenu.xcassets in Resources */,
-				659E0D871ED3847900E6346D /* temp_1.mp3 in Resources */,
-				653BFFDF1ED76A64008F48AA /* temp_3.mp3 in Resources */,
 				65B7BC421EEF360F009AE298 /* Learning to Breath.mp3 in Resources */,
 				656F20AC1EF2EC61009C6AAB /* Visualizing Anger.mp3 in Resources */,
 				656F20AA1EF2EC61009C6AAB /* Full Letting Go Session No Intro.mp3 in Resources */,
@@ -767,11 +788,13 @@
 				65B7BC501EEF5B5C009AE298 /* Inner Light Meditation.mp3 in Resources */,
 				653022B21EF08516004BA701 /* Intro to Relaxing with Meditation.mp3 in Resources */,
 				653022A71EF0844B004BA701 /* Returning to the Breath.mp3 in Resources */,
+				656F20BC1EF2FCEA009C6AAB /* Opening Your Heart to Yourself No Intro.mp3 in Resources */,
 				653022A41EF0844B004BA701 /* Full Breath Awareness.mp3 in Resources */,
 				659E0D961ED38B1800E6346D /* burmese-bell.mp3 in Resources */,
 				653022BE1EF0853E004BA701 /* Intro to Letting Go with Meditation.mp3 in Resources */,
 				65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */,
 				658C9FD21ECBC6A600C71538 /* Assets.xcassets in Resources */,
+				656F20B31EF2FCDC009C6AAB /* Inner Light Meditation No Intro.mp3 in Resources */,
 				653022C11EF0853E004BA701 /* Rejecting Negativity.mp3 in Resources */,
 				65B7BC441EEF3C81009AE298 /* Dealing With Distractions.mp3 in Resources */,
 				65A688E61EF213FA000DAB18 /* Floating on a Cloud.mp3 in Resources */,
@@ -783,9 +806,12 @@
 				65BE12C91EC500E700628802 /* Main.storyboard in Resources */,
 				656F20A91EF2EC61009C6AAB /* Breathing Away Anger.mp3 in Resources */,
 				65CD515C1ECCD81300698F42 /* MainMenu.xcassets in Resources */,
+				656F20BD1EF2FCEA009C6AAB /* Seeking Happiness.mp3 in Resources */,
 				653022B41EF08516004BA701 /* Warming Your Body.mp3 in Resources */,
 				653022B11EF08516004BA701 /* Fully Relax.mp3 in Resources */,
 				65B7BC571EEF5C1A009AE298 /* Opening Your Heart to Others.mp3 in Resources */,
+				656F20BB1EF2FCEA009C6AAB /* Identifying Sadness.mp3 in Resources */,
+				656F20B21EF2FCDC009C6AAB /* Exploring Happiness.mp3 in Resources */,
 				65B7BC461EEF3F4F009AE298 /* Deeper Breath Awareness.mp3 in Resources */,
 				653022B01EF08516004BA701 /* Filling With Sand.mp3 in Resources */,
 				653022B31EF08516004BA701 /* Learning to Visualize.mp3 in Resources */,
@@ -794,16 +820,14 @@
 				65A688E71EF213FA000DAB18 /* Warming Your Body No Intro.mp3 in Resources */,
 				659E0D971ED38B1800E6346D /* kyoto-temple-bell.mp3 in Resources */,
 				653022A51EF0844B004BA701 /* Full Breath Session.mp3 in Resources */,
-				653BFFDC1ED76A64008F48AA /* temp_6.mp3 in Resources */,
+				656F20BE1EF2FCEA009C6AAB /* Self Affirmations.mp3 in Resources */,
 				651F0C2F1ECF974500ABA621 /* Meditation.xcassets in Resources */,
-				653BFFDE1ED76A64008F48AA /* temp_4.mp3 in Resources */,
-				653BFFDD1ED76A64008F48AA /* temp_5.mp3 in Resources */,
 				659E0D981ED38B1800E6346D /* thai-bell.mp3 in Resources */,
 				653022BF1EF0853E004BA701 /* Letting Go.mp3 in Resources */,
+				656F20B51EF2FCDC009C6AAB /* Opening Your Heart to the Universe No Intro.mp3 in Resources */,
 				651F0C231ECF91BE00ABA621 /* MoodZen.xcassets in Resources */,
 				6502A6741ECE2C080018E51B /* OpenZenMenu.xcassets in Resources */,
 				652BDA0D1ED511AC00D66AAE /* Settings.xcassets in Resources */,
-				653BFFD71ED769DD008F48AA /* temp_2.mp3 in Resources */,
 				656F20AB1EF2EC61009C6AAB /* Rejecting Negativity No Intro.mp3 in Resources */,
 				653022BC1EF0853E004BA701 /* Full Letting Go Session.mp3 in Resources */,
 				653022BD1EF0853E004BA701 /* Identifying Hurt.mp3 in Resources */,

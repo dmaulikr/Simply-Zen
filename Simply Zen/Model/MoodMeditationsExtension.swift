@@ -56,10 +56,10 @@ extension SZCourse {
     static func happyCourse() -> SZCourse {
         // create the lessons for the course
         var happyLessons = [SZLesson]()
-        let innerLight = SZLesson(addLesson: "Inner Light Meditation", withFilename: "temp_1", level: 0, durationInSeconds: 180)
-        let openingToUniverse = SZLesson(addLesson: "Opening Your Heart to the Universe", withFilename: "temp_2", level: 1, durationInSeconds: 600)
-        let openingToOthers = SZLesson(addLesson: "Opening Your Heart to Others", withFilename: "temp_3", level: 2, durationInSeconds: 600)
-        let exploringHapiness = SZLesson(addLesson: "Exploring Happiness", withFilename: "temp_4", level: 3, durationInSeconds: 600)
+        let innerLight = SZLesson(addLesson: "Inner Light Meditation", withFilename: "Inner Light Meditation No Intro", level: 0, durationInSeconds: 580)
+        let openingToUniverse = SZLesson(addLesson: "Opening Your Heart to the Universe", withFilename: "Opening Your Heart to the Universe No Intro", level: 1, durationInSeconds: 584)
+        let openingToOthers = SZLesson(addLesson: "Opening Your Heart to Others", withFilename: "Opening Your Heart to Others No Intro", level: 2, durationInSeconds: 386)
+        let exploringHapiness = SZLesson(addLesson: "Exploring Happiness", withFilename: "Exploring Happiness", level: 3, durationInSeconds: 370)
         
         
         // add lessons
@@ -76,10 +76,10 @@ extension SZCourse {
     static func sadCourse() -> SZCourse {
         // create the lessons for the course
         var sadLessons = [SZLesson]()
-        let openToYourself = SZLesson(addLesson: "Opening Your Heart to Yourself", withFilename: "temp_1", level: 0, durationInSeconds: 180)
-        let identifyingSadness = SZLesson(addLesson: "Identifying Sadness", withFilename: "temp_2", level: 1, durationInSeconds: 600)
-        let seekingHappiness = SZLesson(addLesson: "Seeking Happiness", withFilename: "temp_3", level: 2, durationInSeconds: 600)
-        let selfAffirmations = SZLesson(addLesson: "Self Affirmations", withFilename: "temp_4", level: 3, durationInSeconds: 600)
+        let openToYourself = SZLesson(addLesson: "Opening Your Heart to Yourself", withFilename: "Opening Your Heart to Yourself No Intro", level: 0, durationInSeconds: 360)
+        let identifyingSadness = SZLesson(addLesson: "Identifying Sadness", withFilename: "Identifying Sadness", level: 1, durationInSeconds: 397)
+        let seekingHappiness = SZLesson(addLesson: "Seeking Happiness", withFilename: "Seeking Happiness", level: 2, durationInSeconds: 361)
+        let selfAffirmations = SZLesson(addLesson: "Self Affirmations", withFilename: "Self Affirmations", level: 3, durationInSeconds: 562)
         
         
         // add lessons
