@@ -58,7 +58,7 @@ class SessionCompleteViewController: UIViewController {
             if let quote = quoteBodyString {
                 tweet = "\(String(describing: quote)) #SimplyZen #meditation"
             } else {
-                tweet = "I just became more #mindful with #SimplyZen #meditation"
+                tweet = "I just became more #mindful with @SimplyZenApp #meditation"
             }
             
             let composer = TWTRComposerViewController.init(initialText: tweet, image: nil, videoURL: nil)
