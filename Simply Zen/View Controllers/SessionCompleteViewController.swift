@@ -56,7 +56,7 @@ class SessionCompleteViewController: UIViewController {
         if (Twitter.sharedInstance().sessionStore.hasLoggedInUsers()) {
             var tweet: String!
             if let quote = quoteBodyString {
-                tweet = "\(String(describing: quote)) #SimplyZen #meditation"
+                tweet = "\(String(describing: quote)) @SimplyZenApp #meditation"
             } else {
                 tweet = "I just became more #mindful with @SimplyZenApp #meditation"
             }
