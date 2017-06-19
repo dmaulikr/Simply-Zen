@@ -342,6 +342,30 @@
                                     <action selector="bellSegmentChanged:" destination="dnm-S2-X50" eventType="valueChanged" id="65C-Ek-m3x"/>
                                 </connections>
                             </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZiX-MP-4NP">
+                                <rect key="frame" x="20" y="144" width="374" height="572"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingsCell" id="wXZ-GX-ove">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wXZ-GX-ove" id="htk-Uc-0sI">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dnm-S2-X50" id="Hqn-X6-k59"/>
+                                    <outlet property="delegate" destination="dnm-S2-X50" id="U3v-jU-bUB"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -349,15 +373,20 @@
                             <constraint firstItem="L3q-p9-HkJ" firstAttribute="top" secondItem="GWH-pp-xjy" secondAttribute="bottom" constant="8" id="8lO-z1-E5C"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bog-Oo-jY3" secondAttribute="trailing" id="Bpv-hD-VFI"/>
                             <constraint firstItem="L3q-p9-HkJ" firstAttribute="leading" secondItem="kuH-bw-6Ym" secondAttribute="trailing" constant="-394" id="NnE-S6-iYw"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ZiX-MP-4NP" secondAttribute="leading" id="T6b-eg-qD6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZiX-MP-4NP" secondAttribute="trailing" id="U6G-hu-YzT"/>
                             <constraint firstItem="kuH-bw-6Ym" firstAttribute="top" secondItem="Sva-Qu-icE" secondAttribute="top" id="ZIk-Wk-ME2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="L3q-p9-HkJ" secondAttribute="trailing" id="eSk-C3-WZ5"/>
+                            <constraint firstItem="ZiX-MP-4NP" firstAttribute="top" secondItem="bog-Oo-jY3" secondAttribute="bottom" constant="8" id="ef5-q5-LfK"/>
                             <constraint firstItem="bog-Oo-jY3" firstAttribute="top" secondItem="L3q-p9-HkJ" secondAttribute="bottom" constant="8" id="sOD-7N-ggg"/>
                             <constraint firstAttribute="leadingMargin" secondItem="L3q-p9-HkJ" secondAttribute="leading" id="wbq-h4-jwJ"/>
+                            <constraint firstItem="s0m-oJ-buv" firstAttribute="top" secondItem="ZiX-MP-4NP" secondAttribute="bottom" constant="20" id="ys6-28-ZRj"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="bellSegmentedControl" destination="bog-Oo-jY3" id="xPS-Nz-ANF"/>
+                        <outlet property="settingsTableView" destination="ZiX-MP-4NP" id="0h1-6W-KGi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbx-nR-62j" userLabel="First Responder" sceneMemberID="firstResponder"/>

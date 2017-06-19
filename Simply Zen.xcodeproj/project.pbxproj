@@ -66,7 +66,6 @@
 		658C9FD81ECBC6E300C71538 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C9FD71ECBC6E300C71538 /* MainMenuViewController.swift */; };
 		6595C7CD1EE5F2C3007972A7 /* SessionCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595C7CC1EE5F2C3007972A7 /* SessionCompleteViewController.swift */; };
 		6595C7CF1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */; };
-		659B8D831ED4E20100E6D24C /* STHeiti Light.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 659B8D821ED4E1E800E6D24C /* STHeiti Light.ttc */; };
 		659B8D871ED4E6B600E6D24C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B8D861ED4E6B600E6D24C /* SettingsViewController.swift */; };
 		659E0D961ED38B1800E6346D /* burmese-bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 659E0D921ED38B1800E6346D /* burmese-bell.mp3 */; };
 		659E0D971ED38B1800E6346D /* kyoto-temple-bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 659E0D931ED38B1800E6346D /* kyoto-temple-bell.mp3 */; };
@@ -186,7 +185,6 @@
 		658C9FD71ECBC6E300C71538 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = "Simply Zen/View Controllers/MainMenuViewController.swift"; sourceTree = "<group>"; };
 		6595C7CC1EE5F2C3007972A7 /* SessionCompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionCompleteViewController.swift; path = "Simply Zen/View Controllers/SessionCompleteViewController.swift"; sourceTree = "<group>"; };
 		6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetQuotesRESTAPI.swift; path = Model/REST/GetQuotesRESTAPI.swift; sourceTree = "<group>"; };
-		659B8D821ED4E1E800E6D24C /* STHeiti Light.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "STHeiti Light.ttc"; sourceTree = "<group>"; };
 		659B8D861ED4E6B600E6D24C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "Simply Zen/View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
 		659E0D921ED38B1800E6346D /* burmese-bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "burmese-bell.mp3"; sourceTree = "<group>"; };
 		659E0D931ED38B1800E6346D /* kyoto-temple-bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "kyoto-temple-bell.mp3"; sourceTree = "<group>"; };
@@ -293,7 +291,6 @@
 				651F0C2E1ECF974500ABA621 /* Meditation.xcassets */,
 				652BDA0C1ED511AC00D66AAE /* Settings.xcassets */,
 				6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */,
-				659B8D821ED4E1E800E6D24C /* STHeiti Light.ttc */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -773,7 +770,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				653022A31EF0844B004BA701 /* Finding Your Focus.mp3 in Resources */,
-				659B8D831ED4E20100E6D24C /* STHeiti Light.ttc in Resources */,
 				653022AF1EF08516004BA701 /* Breathing While Lying Down.mp3 in Resources */,
 				65B7BC511EEF5B5C009AE298 /* Intro to Hearth meditation.mp3 in Resources */,
 				659E0D991ED38B1800E6346D /* tibetan-bell.mp3 in Resources */,
@@ -1184,6 +1180,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Simply Zen/Simply Zen.entitlements";
 				DEVELOPMENT_TEAM = ZJ769HHQS2;
 				INFOPLIST_FILE = "Simply Zen/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blaumagier.Simply-Zen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1200,6 +1197,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Simply Zen/Simply Zen.entitlements";
 				DEVELOPMENT_TEAM = ZJ769HHQS2;
 				INFOPLIST_FILE = "Simply Zen/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blaumagier.Simply-Zen";
 				PRODUCT_NAME = "$(TARGET_NAME)";

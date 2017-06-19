@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // App Delegate
     let delegate = UIApplication.shared.delegate as! AppDelegate
@@ -17,6 +17,21 @@ class SettingsViewController: UIViewController {
     var audioPlayer: AVAudioPlayer!
 
     @IBOutlet weak var bellSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var settingsTableView: UITableView!
+    
+    // Arrays for cell data
+    private let guidedCourses = ["Heart Meditation", "Advanced Breathing", "Beginning Zen", "Relax, Letting Go"]
+    private let moodCourses = ["Upset", "Happy", "Can't Sleep", "Sad"]
+    
+    // Color For text
+    let darkBlue = UIColor(red: 1.0 / 255.0, green: 84.0 / 255.0, blue: 147.0 / 255.0, alpha: 1)
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        settingsTableView.delegate = self
+        
+        
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -93,6 +108,74 @@ class SettingsViewController: UIViewController {
             delegate.user.bellSound = "tibetan"
         default: break
         }
+    }
+    
+    // MARK: - Table View Delegate Methods
+    
+    // Mark: - Setup Sections
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Guided Zen"
+        } else {
+            return "Mood Zen"
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.tintColor = UIColor.clear
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = darkBlue
+        header.textLabel?.font =  UIFont(name: "STHeitiSC-Light", size: 20)
+    }
+    
+    // Mark: - Setup Table View
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return guidedCourses.count
+        } else {
+            return moodCourses.count
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "settingsCell")
+        cell?.textLabel?.textColor = darkBlue
+        cell?.textLabel?.font = UIFont(name: "STHeitiSC-Light", size: 14)
+        cell?.selectionStyle = .none
+        
+        
+        if indexPath.section == 0 {
+            cell?.textLabel?.text = guidedCourses[indexPath.row]
+        } else {
+            cell?.textLabel?.text = moodCourses[indexPath.row]
+        }
+        
+        return cell!
+    
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            pushGuided(indexPath.row)
+        } else {
+            pushMood(indexPath.row)
+        }
+    }
+    
+    // MARK: - Pushing
+    
+    private func pushGuided(_ index: Int) {
+        print(index)
+    }
+    
+    private func pushMood(_ index: Int) {
+        print(index)
     }
 
 }
