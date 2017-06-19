@@ -19,6 +19,7 @@ class SessionCompleteViewController: UIViewController {
     @IBOutlet weak var quoteBody: UILabel!
     @IBOutlet weak var quoteAuthor: UILabel!
     @IBOutlet weak var quoteImage: UIImageView!
+    @IBOutlet weak var tweetButton: UIButton!
     
     
     // Properties to hold quote data
@@ -29,6 +30,11 @@ class SessionCompleteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if !(Twitter.sharedInstance().sessionStore.hasLoggedInUsers()) {
+            tweetButton.isEnabled = false
+            tweetButton.isHidden = true
+        }
         
         // Setup the page to show the quote
         if let quote = quoteBodyString, let author = quoteAuthorString, let image = quoteUIImage {
@@ -56,9 +62,9 @@ class SessionCompleteViewController: UIViewController {
         if (Twitter.sharedInstance().sessionStore.hasLoggedInUsers()) {
             var tweet: String!
             if let quote = quoteBodyString {
-                tweet = "\(String(describing: quote)) @SimplyZenApp #meditation"
+                tweet = "\(String(describing: quote)) #SimplyZen #meditation"
             } else {
-                tweet = "I just became more #mindful with @SimplyZenApp #meditation"
+                tweet = "I just became more #mindful with #SimplyZen #meditation"
             }
             
             let composer = TWTRComposerViewController.init(initialText: tweet, image: nil, videoURL: nil)
