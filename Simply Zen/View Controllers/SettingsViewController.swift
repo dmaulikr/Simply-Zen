@@ -20,8 +20,22 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var settingsTableView: UITableView!
     
     // Arrays for cell data
-    private let guidedCourses = ["Heart Meditation", "Advanced Breathing", "Beginning Zen", "Relax, Letting Go"]
-    private let moodCourses = ["Upset", "Happy", "Can't Sleep", "Sad"]
+    
+    // Section Names
+    private let courses = ["Heart Meditation", "Advanced Breathing", "Beginning Zen", "Relax", "Letting Go", "Upset", "Happy", "Can't Sleep", "Sad"]
+    
+    // Guided Courses
+    private let heartCourse = SZCourse.heartMeditationCourse()
+    private let advancedCourse = SZCourse.advancedBreathingCourse()
+    private let beginningZenCourse = SZCourse.beginningZenCourse()
+    private let relaxCourse = SZCourse.relaxCourse()
+    private let lettingGoCourse = SZCourse.lettingGoCourse()
+    
+    // Mood Courses
+    private let upsetCourse = SZCourse.upsetCourse()
+    private let happyCourse = SZCourse.happyCourse()
+    private let cantSleepCourse = SZCourse.cantSleepCourse()
+    private let sadCourse = SZCourse.sadCourse()
     
     // Color For text
     let darkBlue = UIColor(red: 1.0 / 255.0, green: 84.0 / 255.0, blue: 147.0 / 255.0, alpha: 1)
@@ -114,15 +128,11 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     // Mark: - Setup Sections
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return courses.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-            return "Guided Zen"
-        } else {
-            return "Mood Zen"
-        }
+        return courses[section]
     }
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
@@ -135,47 +145,55 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     // Mark: - Setup Table View
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return guidedCourses.count
-        } else {
-            return moodCourses.count
-        }
+        let count = getCourseBy(section: section).lessons.count
+        return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "settingsCell")
-        cell?.textLabel?.textColor = darkBlue
-        cell?.textLabel?.font = UIFont(name: "STHeitiSC-Light", size: 14)
-        cell?.selectionStyle = .none
+        let cell = tableView.dequeueReusableCell(withIdentifier: "settingsCell") as! SettingsTableViewCell
+        cell.lessonTitle.textColor = darkBlue
+        cell.lessonTitle.font = UIFont(name: "STHeitiSC-Light", size: 14)
+        cell.selectionStyle = .none
+        cell.playButton.imageView?.contentMode = .scaleAspectFit
         
+        let lesson = getCourseBy(section: indexPath.section).lessons[indexPath.row]
         
-        if indexPath.section == 0 {
-            cell?.textLabel?.text = guidedCourses[indexPath.row]
-        } else {
-            cell?.textLabel?.text = moodCourses[indexPath.row]
-        }
+        cell.lessonTitle.text = lesson.lessonName
         
-        return cell!
+        return cell
     
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 0 {
-            pushGuided(indexPath.row)
-        } else {
-            pushMood(indexPath.row)
+        print("Did select")
+    }
+    
+    // MARK: - Get Correct SZCourse
+
+    private func getCourseBy(section: Int) -> SZCourse {
+        switch section {
+        case 0:
+            return heartCourse
+        case 1:
+            return advancedCourse
+        case 2:
+            return beginningZenCourse
+        case 3:
+            return relaxCourse
+        case 4:
+            return lettingGoCourse
+        case 5:
+            return upsetCourse
+        case 6:
+            return cantSleepCourse
+        default:
+            return sadCourse
         }
     }
     
     // MARK: - Pushing
     
-    private func pushGuided(_ index: Int) {
-        print(index)
-    }
     
-    private func pushMood(_ index: Int) {
-        print(index)
-    }
 
 }

@@ -367,7 +367,7 @@
                                     <action selector="bellSegmentChanged:" destination="dnm-S2-X50" eventType="valueChanged" id="65C-Ek-m3x"/>
                                 </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZiX-MP-4NP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZiX-MP-4NP">
                                 <rect key="frame" x="20" y="144" width="374" height="572"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -376,14 +376,46 @@
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexTrackingBackgroundColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingsCell" id="wXZ-GX-ove">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingsCell" rowHeight="40" id="wXZ-GX-ove" customClass="SettingsTableViewCell" customModule="Simply_Zen" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wXZ-GX-ove" id="htk-Uc-0sI">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="39.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6L-Y1-Z5c">
+                                                    <rect key="frame" x="8" y="6" width="325" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mx5-CX-tWC">
+                                                    <rect key="frame" x="341" y="2" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="N48-dd-Jl2"/>
+                                                        <constraint firstAttribute="width" constant="25" id="iYN-O5-mXx"/>
+                                                    </constraints>
+                                                    <state key="normal" image="Play-Button"/>
+                                                    <connections>
+                                                        <action selector="playButtonTapped:" destination="wXZ-GX-ove" eventType="touchUpInside" id="mj7-fe-eM9"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Mx5-CX-tWC" firstAttribute="leading" secondItem="K6L-Y1-Z5c" secondAttribute="trailing" constant="8" id="Aoz-RW-Ocd"/>
+                                                <constraint firstItem="K6L-Y1-Z5c" firstAttribute="top" secondItem="htk-Uc-0sI" secondAttribute="topMargin" constant="-2" id="IbJ-hN-MHo"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Mx5-CX-tWC" secondAttribute="bottom" constant="-5.3333333333333321" id="KcC-hg-1Ug"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Mx5-CX-tWC" secondAttribute="trailing" id="Kll-fj-Ghh"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="K6L-Y1-Z5c" secondAttribute="leading" id="U34-1y-yLm"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="K6L-Y1-Z5c" secondAttribute="bottom" constant="-1.3333333333333321" id="goe-t6-pj0"/>
+                                                <constraint firstItem="Mx5-CX-tWC" firstAttribute="top" secondItem="htk-Uc-0sI" secondAttribute="topMargin" constant="-6" id="jtJ-is-xH4"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="lessonTitle" destination="K6L-Y1-Z5c" id="A77-Hw-we8"/>
+                                            <outlet property="playButton" destination="Mx5-CX-tWC" id="Y0F-Ux-VkJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -700,6 +732,7 @@
         <image name="Meditation-Background" width="1242" height="2208"/>
         <image name="Mood-Zen-Menu-Background" width="1242" height="2208"/>
         <image name="Open-Zen-Menu-Background" width="1242" height="2208"/>
+        <image name="Play-Button" width="50" height="50"/>
         <image name="Session-Complete-Background" width="1242" height="2208"/>
         <image name="Settings-Menu-Background" width="1242" height="2208"/>
         <image name="Tweet-Session-Button" width="199" height="32"/>
