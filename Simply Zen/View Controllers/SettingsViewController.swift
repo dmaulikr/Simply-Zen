@@ -157,16 +157,21 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         cell.selectionStyle = .none
         cell.playButton.imageView?.contentMode = .scaleAspectFit
         
-        let lesson = getCourseBy(section: indexPath.section).lessons[indexPath.row]
+        cell.lesson = getCourseBy(section: indexPath.section).lessons[indexPath.row]
         
-        cell.lessonTitle.text = lesson.lessonName
+        if let lessonName = cell.lesson?.lessonName {
+            cell.lessonTitle.text = lessonName
+        } else {
+            // This shouldn't happen ever, but if it does, display something different
+            // This text will be used mostly for debug purposes, and shouldn't ever show up
+            // in a release product
+            cell.lessonTitle.text = "Simply Zen"
+        }
+        
+        
         
         return cell
     
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Did select")
     }
     
     // MARK: - Get Correct SZCourse

@@ -13,6 +13,8 @@ class SettingsTableViewCell: UITableViewCell {
     @IBOutlet weak var lessonTitle: UILabel!
     @IBOutlet weak var playButton: UIButton!
     
+    var lesson: SZLesson?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,6 +27,6 @@ class SettingsTableViewCell: UITableViewCell {
     }
 
     @IBAction func playButtonTapped(_ sender: Any) {
-        print("Play!")
+        print("Playing \(String(describing: lesson?.lessonName))")
     }
 }
