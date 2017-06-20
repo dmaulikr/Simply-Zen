@@ -38,10 +38,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower_1" translatesAutoresizingMaskIntoConstraints="NO" id="Aqc-n4-z7e">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBb-CI-0vc">
-                                <rect key="frame" x="20" y="589" width="374" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBb-CI-0vc">
+                                <rect key="frame" x="20" y="598" width="374" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="MpY-r2-X4E"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
                                 <state key="normal" title="Enable HealthKit"/>
                                 <state key="disabled" title="HealthKit Enabled">
@@ -51,24 +53,27 @@
                                     <action selector="enableHealthKit:" destination="Fu5-hl-211" eventType="touchUpInside" id="zxr-RD-wdj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track Your Meditation Sessions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNf-Qp-7HB">
-                                <rect key="frame" x="20" y="560" width="374" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Your Meditation Sessions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GNf-Qp-7HB">
+                                <rect key="frame" x="20" y="569" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cZb-hM-NMy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enable Twitter to Tweet Your Sessions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb3-CY-iOn">
-                                <rect key="frame" x="20" y="642" width="374" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Twitter to Tweet Your Sessions (Optional)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sb3-CY-iOn">
+                                <rect key="frame" x="14" y="642" width="386" height="24"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldJ-m7-Kzg">
-                                <rect key="frame" x="20" y="671" width="374" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldJ-m7-Kzg">
+                                <rect key="frame" x="20" y="680" width="374" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="jZ5-rz-ibJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
                                 <state key="normal" title="Login to Twitter"/>
                                 <state key="disabled" title="Logged In">
@@ -78,20 +83,20 @@
                                     <action selector="loginToTwitter:" destination="Fu5-hl-211" eventType="touchUpInside" id="bDa-xS-VRr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Simply Zen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPU-c4-m9x">
-                                <rect key="frame" x="82" y="33" width="250" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Simply Zen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XPU-c4-m9x">
+                                <rect key="frame" x="88" y="33" width="238" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="h5c-Fh-M2P"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Twitter_logo_blue" translatesAutoresizingMaskIntoConstraints="NO" id="BWw-6l-hZQ">
-                                <rect key="frame" x="82" y="671" width="45" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a moment to enable HealthKit and Twitter.  Swipe left to continue to a brief tutorial once you are finished." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdu-5H-2RF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a moment to enable HealthKit and Twitter.  Swipe left to continue to a brief tutorial once you are finished." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pdu-5H-2RF">
                                 <rect key="frame" x="20" y="306" width="374" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="58n-Xy-J8M"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -99,10 +104,30 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Aqc-n4-z7e" secondAttribute="trailing" constant="-20" id="Tsv-9P-VaX"/>
-                            <constraint firstItem="Aqc-n4-z7e" firstAttribute="leading" secondItem="Fa1-iZ-spj" secondAttribute="leadingMargin" constant="-20" id="VUI-pP-tzL"/>
-                            <constraint firstItem="xWO-fi-4Mf" firstAttribute="top" secondItem="Aqc-n4-z7e" secondAttribute="bottom" id="Zi2-ja-YVR"/>
-                            <constraint firstItem="Aqc-n4-z7e" firstAttribute="top" secondItem="czR-1x-6yJ" secondAttribute="bottom" constant="-20" id="kFs-hw-PvZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="GNf-Qp-7HB" secondAttribute="leading" id="0zO-JT-QvV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Aqc-n4-z7e" secondAttribute="trailing" constant="-20" id="36l-hy-iMH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VBb-CI-0vc" secondAttribute="trailing" id="4Zf-ji-nsY"/>
+                            <constraint firstItem="VBb-CI-0vc" firstAttribute="top" secondItem="GNf-Qp-7HB" secondAttribute="bottom" constant="8" id="BZa-if-g2q"/>
+                            <constraint firstItem="XPU-c4-m9x" firstAttribute="leading" secondItem="Fa1-iZ-spj" secondAttribute="leadingMargin" constant="68" id="CFs-bD-4Pz"/>
+                            <constraint firstItem="xWO-fi-4Mf" firstAttribute="top" secondItem="ldJ-m7-Kzg" secondAttribute="bottom" constant="20" id="JCj-vR-RDg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ldJ-m7-Kzg" secondAttribute="leading" id="JR4-33-YE9"/>
+                            <constraint firstItem="xWO-fi-4Mf" firstAttribute="top" secondItem="Aqc-n4-z7e" secondAttribute="bottom" id="K0X-j7-Rfm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ldJ-m7-Kzg" secondAttribute="trailing" id="MUJ-vO-Mhn"/>
+                            <constraint firstItem="Aqc-n4-z7e" firstAttribute="leading" secondItem="Fa1-iZ-spj" secondAttribute="leadingMargin" constant="-20" id="MZx-mS-wFw"/>
+                            <constraint firstItem="XPU-c4-m9x" firstAttribute="top" secondItem="czR-1x-6yJ" secondAttribute="bottom" constant="13" id="NRM-O6-bKP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sb3-CY-iOn" secondAttribute="trailing" constant="-6" id="Pw0-ii-CZR"/>
+                            <constraint firstItem="Pdu-5H-2RF" firstAttribute="centerY" secondItem="Fa1-iZ-spj" secondAttribute="centerY" id="ZX7-5t-7av"/>
+                            <constraint firstItem="Pdu-5H-2RF" firstAttribute="centerX" secondItem="Fa1-iZ-spj" secondAttribute="centerX" id="ZhK-Mh-mwU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XPU-c4-m9x" secondAttribute="trailing" constant="68" id="b3L-a4-seG"/>
+                            <constraint firstItem="sb3-CY-iOn" firstAttribute="top" secondItem="VBb-CI-0vc" secondAttribute="bottom" constant="8" id="ekm-sS-XEJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GNf-Qp-7HB" secondAttribute="trailing" id="f30-Xt-Tfg"/>
+                            <constraint firstItem="ldJ-m7-Kzg" firstAttribute="top" secondItem="sb3-CY-iOn" secondAttribute="bottom" constant="14" id="gPn-b9-H8d"/>
+                            <constraint firstItem="XPU-c4-m9x" firstAttribute="centerX" secondItem="Fa1-iZ-spj" secondAttribute="centerX" id="nvo-3v-xdl"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="VBb-CI-0vc" secondAttribute="leading" id="qhH-E4-aQd"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Pdu-5H-2RF" secondAttribute="leading" id="r2X-t5-Yhl"/>
+                            <constraint firstItem="sb3-CY-iOn" firstAttribute="leading" secondItem="Fa1-iZ-spj" secondAttribute="leadingMargin" constant="-6" id="vU2-mA-J1H"/>
+                            <constraint firstItem="Aqc-n4-z7e" firstAttribute="top" secondItem="czR-1x-6yJ" secondAttribute="bottom" constant="-20" id="xAb-OQ-sSk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pdu-5H-2RF" secondAttribute="trailing" id="xvo-vc-MPQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -176,7 +201,7 @@
         <scene sceneID="Xyh-qk-Env">
             <objects>
                 <navigationController storyboardIdentifier="navigationRoot" modalTransitionStyle="crossDissolve" hidesBottomBarWhenPushed="YES" hidesBarsOnSwipe="YES" hidesBarsOnTap="YES" id="1X7-Ut-dFE" customClass="SZNavigationController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" id="kh6-6m-dg3">
+                    <navigationBar key="navigationBar" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kh6-6m-dg3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -323,7 +348,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="kuH-bw-6Ym">
                                 <rect key="frame" x="-828" y="0.0" width="1242" height="2208"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temple Bell Sound for Open Zen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3q-p9-HkJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temple Bell Sound for Open Zen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="L3q-p9-HkJ">
                                 <rect key="frame" x="20" y="72" width="374" height="28"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -678,7 +703,6 @@
         <image name="Session-Complete-Background" width="1242" height="2208"/>
         <image name="Settings-Menu-Background" width="1242" height="2208"/>
         <image name="Tweet-Session-Button" width="199" height="32"/>
-        <image name="Twitter_logo_blue" width="48" height="48"/>
         <image name="flower_1" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
