@@ -71,8 +71,8 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         super.viewWillAppear(animated)
         // Don't let the phone go into idle mode
         UIApplication.shared.isIdleTimerDisabled = true
-        self.navigationController?.navigationBar.isHidden = true
-        
+        navigationController?.navigationBar.isHidden = true
+        navigationController?.hidesBarsOnTap = false
         meditationView.addMeditateAnimation()
     }
 
