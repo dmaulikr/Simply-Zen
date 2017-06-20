@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import TwitterKit
 
 class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -18,6 +19,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
 
     @IBOutlet weak var bellSegmentedControl: UISegmentedControl!
     @IBOutlet weak var settingsTableView: UITableView!
+    @IBOutlet weak var enableTwitterButton: UIButton!
     
     // Arrays for cell data
     
@@ -43,14 +45,19 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         settingsTableView.delegate = self
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         bellSegmentedControl.selectedSegmentIndex = getBellSegment()
+        
+        if (Twitter.sharedInstance().sessionStore.hasLoggedInUsers()) {
+            enableTwitterButton.isEnabled = false
+            enableTwitterButton.isHidden = true
+        } else {
+            enableTwitterButton.titleLabel?.font = UIFont(name: "STHeitiSC-Light", size: 18)
+        }
     }
 
     @IBAction func bellSegmentChanged(_ sender: Any) {
@@ -124,6 +131,29 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
+    // MARK: - Enable Twitter Button Tapped
+    @IBAction func enableTwitter(_ sender: Any) {
+        let store = Twitter.sharedInstance().sessionStore
+        
+        if !store.hasLoggedInUsers() {
+            Twitter.sharedInstance().logIn(completion: { (session, error) in
+                if (session != nil) {
+                    print("signed in as \(String(describing: session?.userName))")
+                    store.save(session!, completion: { (authSession, error) in
+                        print("saved session")
+                        self.enableTwitterButton.isEnabled = false
+                    })
+                } else {
+                    print("error: \(String(describing: error?.localizedDescription))")
+                }
+            })
+        } else {
+            print("Logged in user \(String(describing:store.session()?.userID))")
+            self.enableTwitterButton.isEnabled = false
+        }
+    }
+    
+    
     // MARK: - Table View Delegate Methods
     
     // Mark: - Setup Sections
@@ -138,7 +168,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         view.tintColor = UIColor.clear
         let header = view as! UITableViewHeaderFooterView
-        header.textLabel?.textColor = darkBlue
+        header.textLabel?.textColor = .white
         header.textLabel?.font =  UIFont(name: "STHeitiSC-Light", size: 20)
     }
     
@@ -157,7 +187,11 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         cell.selectionStyle = .none
         cell.playButton.imageView?.contentMode = .scaleAspectFit
         
-        cell.lesson = getCourseBy(section: indexPath.section).lessons[indexPath.row]
+        cell.course = getCourseBy(section: indexPath.section)
+        cell.lesson = cell.course?.lessons[indexPath.row]
+        cell.meditationVC = storyboard?.instantiateViewController(withIdentifier: "meditationView") as? MeditationViewController
+        cell.navigation = self.navigationController
+        
         
         if let lessonName = cell.lesson?.lessonName {
             cell.lessonTitle.text = lessonName

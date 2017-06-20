@@ -35,6 +35,8 @@ class SessionCompleteViewController: UIViewController {
             tweetButton.isEnabled = false
             tweetButton.isHidden = true
         }
+    
+        navigationController?.hidesBarsOnTap = false
         
         // Setup the page to show the quote
         if let quote = quoteBodyString, let author = quoteAuthorString, let image = quoteUIImage {
@@ -85,6 +87,7 @@ class SessionCompleteViewController: UIViewController {
     }
  
     @IBAction func doneButtonTapped(_ sender: Any) {
+        navigationController?.hidesBarsOnTap = true
         navigationController?.popToRootViewController(animated: false)
     }
 
