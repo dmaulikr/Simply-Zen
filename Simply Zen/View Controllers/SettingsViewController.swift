@@ -20,6 +20,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var bellSegmentedControl: UISegmentedControl!
     @IBOutlet weak var settingsTableView: UITableView!
     @IBOutlet weak var enableTwitterButton: UIButton!
+    @IBOutlet weak var viewTutorialButton: UIButton!
     
     // Arrays for cell data
     
@@ -54,6 +55,10 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         navigationItem.rightBarButtonItem?.isEnabled = false
         
         bellSegmentedControl.selectedSegmentIndex = getBellSegment()
+        
+        // Setup button fonts
+        
+        viewTutorialButton.titleLabel?.font = UIFont(name: "STHeitiSC-Light", size: 18)
         
         if (Twitter.sharedInstance().sessionStore.hasLoggedInUsers()) {
             enableTwitterButton.isEnabled = false
@@ -155,6 +160,15 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             self.enableTwitterButton.isEnabled = false
         }
     }
+    
+    // MARK: - View Tutorial Button tapped
+    
+    @IBAction func viewTutorial(_ sender: Any) {
+        // sets a new rootVC
+        let tutorialVC = storyboard?.instantiateViewController(withIdentifier: "pageVC") as! TutorialPageViewController
+        UIApplication.shared.delegate?.window??.rootViewController = tutorialVC
+    }
+    
     
     
     // MARK: - Table View Delegate Methods

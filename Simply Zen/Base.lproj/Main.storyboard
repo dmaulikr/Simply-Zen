@@ -369,16 +369,17 @@
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8m-Rv-itu">
                                 <rect key="frame" x="20" y="174" width="374" height="33"/>
+                                <color key="backgroundColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Enable Twitter">
-                                    <color key="titleColor" red="0.0020844584796577692" green="0.32912391424179077" blue="0.57680368423461914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="enableTwitter:" destination="dnm-S2-X50" eventType="touchUpInside" id="A40-Fe-Cnj"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZiX-MP-4NP">
-                                <rect key="frame" x="20" y="215" width="374" height="501"/>
+                                <rect key="frame" x="20" y="256" width="374" height="460"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -433,6 +434,18 @@
                                     <outlet property="delegate" destination="dnm-S2-X50" id="U3v-jU-bUB"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hj-by-yFz">
+                                <rect key="frame" x="20" y="215" width="374" height="33"/>
+                                <color key="backgroundColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="View Tutorial">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="enableTwitter:" destination="dnm-S2-X50" eventType="touchUpInside" id="1BG-bp-v1T"/>
+                                    <action selector="viewTutorial:" destination="dnm-S2-X50" eventType="touchUpInside" id="Qwt-6P-Ld2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -440,14 +453,17 @@
                             <constraint firstItem="L3q-p9-HkJ" firstAttribute="top" secondItem="GWH-pp-xjy" secondAttribute="bottom" constant="8" id="8lO-z1-E5C"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bog-Oo-jY3" secondAttribute="trailing" id="Bpv-hD-VFI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="a8m-Rv-itu" secondAttribute="trailing" id="IeT-CU-BP2"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="1Hj-by-yFz" secondAttribute="leading" id="LqB-4H-I1f"/>
                             <constraint firstItem="L3q-p9-HkJ" firstAttribute="leading" secondItem="kuH-bw-6Ym" secondAttribute="trailing" constant="-394" id="NnE-S6-iYw"/>
+                            <constraint firstItem="ZiX-MP-4NP" firstAttribute="top" secondItem="1Hj-by-yFz" secondAttribute="bottom" constant="8" id="SiP-sU-WLr"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ZiX-MP-4NP" secondAttribute="leading" id="T6b-eg-qD6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZiX-MP-4NP" secondAttribute="trailing" id="U6G-hu-YzT"/>
                             <constraint firstItem="kuH-bw-6Ym" firstAttribute="top" secondItem="Sva-Qu-icE" secondAttribute="top" id="ZIk-Wk-ME2"/>
                             <constraint firstItem="a8m-Rv-itu" firstAttribute="top" secondItem="bog-Oo-jY3" secondAttribute="bottom" constant="8" id="b7q-rX-TdE"/>
+                            <constraint firstItem="1Hj-by-yFz" firstAttribute="top" secondItem="a8m-Rv-itu" secondAttribute="bottom" constant="8" id="e3s-Wu-lsP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="L3q-p9-HkJ" secondAttribute="trailing" id="eSk-C3-WZ5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Hj-by-yFz" secondAttribute="trailing" id="pzR-cG-NBd"/>
                             <constraint firstItem="bog-Oo-jY3" firstAttribute="top" secondItem="L3q-p9-HkJ" secondAttribute="bottom" constant="8" id="sOD-7N-ggg"/>
-                            <constraint firstItem="ZiX-MP-4NP" firstAttribute="top" secondItem="a8m-Rv-itu" secondAttribute="bottom" constant="8" id="vFF-La-9q7"/>
                             <constraint firstAttribute="leadingMargin" secondItem="L3q-p9-HkJ" secondAttribute="leading" id="wbq-h4-jwJ"/>
                             <constraint firstAttribute="leadingMargin" secondItem="a8m-Rv-itu" secondAttribute="leading" id="ykm-la-JUh"/>
                             <constraint firstItem="s0m-oJ-buv" firstAttribute="top" secondItem="ZiX-MP-4NP" secondAttribute="bottom" constant="20" id="ys6-28-ZRj"/>
@@ -457,6 +473,7 @@
                         <outlet property="bellSegmentedControl" destination="bog-Oo-jY3" id="xPS-Nz-ANF"/>
                         <outlet property="enableTwitterButton" destination="a8m-Rv-itu" id="6hg-7B-f3I"/>
                         <outlet property="settingsTableView" destination="ZiX-MP-4NP" id="0h1-6W-KGi"/>
+                        <outlet property="viewTutorialButton" destination="1Hj-by-yFz" id="vi3-Ie-hq6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbx-nR-62j" userLabel="First Responder" sceneMemberID="firstResponder"/>
