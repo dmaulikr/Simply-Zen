@@ -13,7 +13,12 @@ class TutorialPageViewController: UIPageViewController, UIPageViewControllerData
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         return [self.newTutorialVC("pageOne"),
                 self.newTutorialVC("pageTwo"),
-                self.newTutorialVC("pageThree")
+                self.newTutorialVC("pageThree"),
+                self.newTutorialVC("pageFour"),
+                self.newTutorialVC("pageFive"),
+                self.newTutorialVC("pageSix"),
+                self.newTutorialVC("pageSeven"),
+                self.newTutorialVC("pageEight")
                 ]
     }()
 

@@ -22,6 +22,8 @@ class TutorialViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    // MARK: - Button Actions
 
     @IBAction func enableHealthKit(_ sender: Any) {
         if HealthKitExtension.checkAvailability() {
@@ -51,4 +53,11 @@ class TutorialViewController: UIViewController {
             self.twitterButton.isEnabled = false
         }
     }
+    
+    @IBAction func finishTutorial(_ sender: Any) {
+        let navigationRoot = storyboard?.instantiateViewController(withIdentifier: "navigationRoot") as! SZNavigationController
+        UIApplication.shared.delegate?.window??.rootViewController = navigationRoot
+    }
+    
+    
 }

@@ -21,7 +21,7 @@
                 <pageViewController storyboardIdentifier="pageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="UpF-v4-kce" customClass="TutorialPageViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBl-Pk-azs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3562" y="1728"/>
+            <point key="canvasLocation" x="-4141" y="1728"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="HM9-xh-hKe">
@@ -35,7 +35,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower_1" translatesAutoresizingMaskIntoConstraints="NO" id="Aqc-n4-z7e">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower_2" translatesAutoresizingMaskIntoConstraints="NO" id="Aqc-n4-z7e">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBb-CI-0vc">
@@ -89,11 +89,11 @@
                                     <constraint firstAttribute="height" constant="21" id="h5c-Fh-M2P"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a moment to enable HealthKit and Twitter.  Swipe left to continue to a brief tutorial once you are finished." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pdu-5H-2RF">
-                                <rect key="frame" x="20" y="306" width="374" height="124"/>
+                                <rect key="frame" x="14" y="425" width="374" height="124"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="124" id="58n-Xy-J8M"/>
                                 </constraints>
@@ -116,18 +116,18 @@
                             <constraint firstItem="Aqc-n4-z7e" firstAttribute="leading" secondItem="Fa1-iZ-spj" secondAttribute="leadingMargin" constant="-20" id="MZx-mS-wFw"/>
                             <constraint firstItem="XPU-c4-m9x" firstAttribute="top" secondItem="czR-1x-6yJ" secondAttribute="bottom" constant="13" id="NRM-O6-bKP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sb3-CY-iOn" secondAttribute="trailing" constant="-6" id="Pw0-ii-CZR"/>
-                            <constraint firstItem="Pdu-5H-2RF" firstAttribute="centerY" secondItem="Fa1-iZ-spj" secondAttribute="centerY" id="ZX7-5t-7av"/>
-                            <constraint firstItem="Pdu-5H-2RF" firstAttribute="centerX" secondItem="Fa1-iZ-spj" secondAttribute="centerX" id="ZhK-Mh-mwU"/>
+                            <constraint firstItem="Pdu-5H-2RF" firstAttribute="centerY" secondItem="Fa1-iZ-spj" secondAttribute="centerY" constant="119" id="ZX7-5t-7av"/>
+                            <constraint firstItem="Pdu-5H-2RF" firstAttribute="centerX" secondItem="Fa1-iZ-spj" secondAttribute="centerX" constant="-6" id="ZhK-Mh-mwU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XPU-c4-m9x" secondAttribute="trailing" constant="68" id="b3L-a4-seG"/>
                             <constraint firstItem="sb3-CY-iOn" firstAttribute="top" secondItem="VBb-CI-0vc" secondAttribute="bottom" constant="8" id="ekm-sS-XEJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GNf-Qp-7HB" secondAttribute="trailing" id="f30-Xt-Tfg"/>
                             <constraint firstItem="ldJ-m7-Kzg" firstAttribute="top" secondItem="sb3-CY-iOn" secondAttribute="bottom" constant="14" id="gPn-b9-H8d"/>
                             <constraint firstItem="XPU-c4-m9x" firstAttribute="centerX" secondItem="Fa1-iZ-spj" secondAttribute="centerX" id="nvo-3v-xdl"/>
                             <constraint firstAttribute="leadingMargin" secondItem="VBb-CI-0vc" secondAttribute="leading" id="qhH-E4-aQd"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Pdu-5H-2RF" secondAttribute="leading" id="r2X-t5-Yhl"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Pdu-5H-2RF" secondAttribute="leading" constant="6" id="r2X-t5-Yhl"/>
                             <constraint firstItem="sb3-CY-iOn" firstAttribute="leading" secondItem="Fa1-iZ-spj" secondAttribute="leadingMargin" constant="-6" id="vU2-mA-J1H"/>
                             <constraint firstItem="Aqc-n4-z7e" firstAttribute="top" secondItem="czR-1x-6yJ" secondAttribute="bottom" constant="-20" id="xAb-OQ-sSk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Pdu-5H-2RF" secondAttribute="trailing" id="xvo-vc-MPQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pdu-5H-2RF" secondAttribute="trailing" constant="6" id="xvo-vc-MPQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -137,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZCn-gl-3Mm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2604.3478260869565" y="1020.6521739130436"/>
+            <point key="canvasLocation" x="-3409" y="1728"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="3Uy-aJ-9ba">
@@ -151,8 +151,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Dt-8o-GBe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="First-Screen" translatesAutoresizingMaskIntoConstraints="NO" id="2Dt-8o-GBe">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -166,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qgn-jd-BKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2594" y="1729"/>
+            <point key="canvasLocation" x="-2594.202898550725" y="1728.2608695652175"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="mDw-tD-US2">
@@ -180,7 +181,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="24h-my-Z9A">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guided-Screen" translatesAutoresizingMaskIntoConstraints="NO" id="24h-my-Z9A">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                         </subviews>
@@ -195,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HL1-ZE-FLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2601" y="2494"/>
+            <point key="canvasLocation" x="-1797.1014492753625" y="1727.4456521739132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xyh-qk-Env">
@@ -753,20 +754,188 @@
             </objects>
             <point key="canvasLocation" x="562.31884057971024" y="1747.826086956522"/>
         </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="mIm-5E-KWL">
+            <objects>
+                <viewController storyboardIdentifier="pageFour" id="HvQ-UY-AXs" customClass="TutorialViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vG1-W8-BW7"/>
+                        <viewControllerLayoutGuide type="bottom" id="zcz-ac-YyJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tfg-vQ-jz4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mood-Screen" translatesAutoresizingMaskIntoConstraints="NO" id="jJk-oy-aB5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zcz-ac-YyJ" firstAttribute="top" secondItem="jJk-oy-aB5" secondAttribute="bottom" id="NnC-zB-0Rl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jJk-oy-aB5" secondAttribute="trailing" constant="-20" id="S9e-Cm-SJX"/>
+                            <constraint firstItem="jJk-oy-aB5" firstAttribute="top" secondItem="vG1-W8-BW7" secondAttribute="bottom" constant="-20" id="XLh-jn-ebf"/>
+                            <constraint firstItem="jJk-oy-aB5" firstAttribute="leading" secondItem="tfg-vQ-jz4" secondAttribute="leadingMargin" constant="-20" id="iCK-YN-HOi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1o-G2-cQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3410.144927536232" y="2425.271739130435"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="JGX-wy-eKF">
+            <objects>
+                <viewController storyboardIdentifier="pageFive" id="dWo-u9-dWm" customClass="TutorialViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zqa-z4-1Tn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gwf-Mz-1Gd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dSu-jj-C4Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Open-Screen" translatesAutoresizingMaskIntoConstraints="NO" id="Sqi-Dk-wwn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sqi-Dk-wwn" firstAttribute="leading" secondItem="dSu-jj-C4Y" secondAttribute="leadingMargin" constant="-20" id="1wO-W8-588"/>
+                            <constraint firstItem="Gwf-Mz-1Gd" firstAttribute="top" secondItem="Sqi-Dk-wwn" secondAttribute="bottom" id="FkF-KU-ngQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sqi-Dk-wwn" secondAttribute="trailing" constant="-20" id="Jab-Ud-bUd"/>
+                            <constraint firstItem="Sqi-Dk-wwn" firstAttribute="top" secondItem="zqa-z4-1Tn" secondAttribute="bottom" constant="-20" id="qTr-SP-cds"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxd-dW-2zv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2594.202898550725" y="2424.4565217391305"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="c0V-lg-RKb">
+            <objects>
+                <viewController storyboardIdentifier="pageSix" id="lCJ-ak-Ulw" customClass="TutorialViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xDI-3a-4wS"/>
+                        <viewControllerLayoutGuide type="bottom" id="EbP-p7-ChC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ehm-9W-jyo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Meditation-Screen" translatesAutoresizingMaskIntoConstraints="NO" id="Zmd-ig-LIg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zmd-ig-LIg" firstAttribute="leading" secondItem="Ehm-9W-jyo" secondAttribute="leadingMargin" constant="-20" id="DPz-fH-g3W"/>
+                            <constraint firstItem="EbP-p7-ChC" firstAttribute="top" secondItem="Zmd-ig-LIg" secondAttribute="bottom" id="LU3-Cj-u19"/>
+                            <constraint firstItem="Zmd-ig-LIg" firstAttribute="top" secondItem="xDI-3a-4wS" secondAttribute="bottom" constant="-20" id="h7i-xI-deZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zmd-ig-LIg" secondAttribute="trailing" constant="-20" id="vBJ-ai-xZB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ChB-Kq-Vjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1797.1014492753625" y="2424.4565217391305"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="7Mp-oZ-ByI">
+            <objects>
+                <viewController storyboardIdentifier="pageSeven" id="1xC-XZ-bFp" customClass="TutorialViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NRQ-M7-ZKS"/>
+                        <viewControllerLayoutGuide type="bottom" id="iIV-e7-Wsi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="paR-M7-qcz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pause-Screen" translatesAutoresizingMaskIntoConstraints="NO" id="cLb-AX-blF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cLb-AX-blF" firstAttribute="leading" secondItem="paR-M7-qcz" secondAttribute="leadingMargin" constant="-20" id="On5-hh-aRz"/>
+                            <constraint firstItem="cLb-AX-blF" firstAttribute="top" secondItem="NRQ-M7-ZKS" secondAttribute="bottom" constant="-20" id="PGC-eF-0RR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cLb-AX-blF" secondAttribute="trailing" constant="-20" id="QkJ-h0-t02"/>
+                            <constraint firstItem="iIV-e7-Wsi" firstAttribute="top" secondItem="cLb-AX-blF" secondAttribute="bottom" id="WFH-GH-7iG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gai-Ug-Q4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3410.144927536232" y="3106.79347826087"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="PHW-P2-XXU">
+            <objects>
+                <viewController storyboardIdentifier="pageEight" id="eNK-vn-eDT" customClass="TutorialViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T6Z-gu-dtC"/>
+                        <viewControllerLayoutGuide type="bottom" id="BJJ-Si-LAl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Qn-Ug-hps">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings-Screen" translatesAutoresizingMaskIntoConstraints="NO" id="hfs-Ba-pJ6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knX-3O-kj6">
+                                <rect key="frame" x="154" y="686" width="106" height="30"/>
+                                <color key="backgroundColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GRx-TH-O4B"/>
+                                </constraints>
+                                <state key="normal" title="Finish Tutorial">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishTutorial:" destination="eNK-vn-eDT" eventType="touchUpInside" id="aqU-FF-fO4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="knX-3O-kj6" secondAttribute="trailing" constant="134" id="0rO-dV-TOB"/>
+                            <constraint firstItem="hfs-Ba-pJ6" firstAttribute="top" secondItem="T6Z-gu-dtC" secondAttribute="bottom" constant="-20" id="4dQ-I8-qcR"/>
+                            <constraint firstItem="BJJ-Si-LAl" firstAttribute="top" secondItem="knX-3O-kj6" secondAttribute="bottom" constant="20" id="IPf-dC-qbx"/>
+                            <constraint firstItem="knX-3O-kj6" firstAttribute="leading" secondItem="4Qn-Ug-hps" secondAttribute="leadingMargin" constant="134" id="Lbe-Q2-9Ba"/>
+                            <constraint firstItem="BJJ-Si-LAl" firstAttribute="top" secondItem="hfs-Ba-pJ6" secondAttribute="bottom" id="hJE-h2-hHY"/>
+                            <constraint firstItem="hfs-Ba-pJ6" firstAttribute="leading" secondItem="4Qn-Ug-hps" secondAttribute="leadingMargin" constant="-20" id="pH3-15-Mcw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hfs-Ba-pJ6" secondAttribute="trailing" constant="-20" id="w2g-Ws-Vpl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jN7-t6-f8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2594.202898550725" y="3106.79347826087"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Complete-Session-Button" width="199" height="32"/>
         <image name="Done-Button" width="199" height="32"/>
+        <image name="First-Screen" width="766" height="1321"/>
+        <image name="Guided-Screen" width="767" height="1331"/>
         <image name="Guided-Zen-Menu-Background" width="1242" height="2208"/>
         <image name="Main-Menu-Background" width="1242" height="2208"/>
         <image name="Meditation-Background" width="1242" height="2208"/>
+        <image name="Meditation-Screen" width="766" height="1334"/>
+        <image name="Mood-Screen" width="766" height="1322"/>
         <image name="Mood-Zen-Menu-Background" width="1242" height="2208"/>
+        <image name="Open-Screen" width="767" height="1321"/>
         <image name="Open-Zen-Menu-Background" width="1242" height="2208"/>
+        <image name="Pause-Screen" width="767" height="1324"/>
         <image name="Play-Button" width="50" height="50"/>
         <image name="Session-Complete-Background" width="1242" height="2208"/>
         <image name="Settings-Menu-Background" width="1242" height="2208"/>
+        <image name="Settings-Screen" width="766" height="1331"/>
         <image name="Tweet-Session-Button" width="199" height="32"/>
-        <image name="flower_1" width="1024" height="1024"/>
+        <image name="flower_2" width="2592" height="1936"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="800-15-ETT"/>

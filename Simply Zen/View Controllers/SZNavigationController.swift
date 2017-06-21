@@ -13,12 +13,6 @@ class SZNavigationController: UINavigationController {
     // MARK: - Variables
     private var pageViewController: UIPageViewController?
     
-    // Background Images
-    private let contentImages = ["flower_1",
-                                 "flower_2",
-                                 "flower_3",
-                                 "flower_4"]
-
     override func viewDidLoad() {
         super.viewDidLoad()
         

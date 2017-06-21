@@ -186,7 +186,7 @@
 		658C9FD11ECBC6A600C71538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = View/Assets.xcassets; sourceTree = "<group>"; };
 		658C9FD71ECBC6E300C71538 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = "Simply Zen/View Controllers/MainMenuViewController.swift"; sourceTree = "<group>"; };
 		6595C7CC1EE5F2C3007972A7 /* SessionCompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionCompleteViewController.swift; path = "Simply Zen/View Controllers/SessionCompleteViewController.swift"; sourceTree = "<group>"; };
-		6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetQuotesRESTAPI.swift; path = Model/REST/GetQuotesRESTAPI.swift; sourceTree = "<group>"; };
+		6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetQuotesRESTAPI.swift; path = "Simply Zen/Model/REST/GetQuotesRESTAPI.swift"; sourceTree = "<group>"; };
 		659B8D861ED4E6B600E6D24C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "Simply Zen/View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
 		659E0D921ED38B1800E6346D /* burmese-bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "burmese-bell.mp3"; sourceTree = "<group>"; };
 		659E0D931ED38B1800E6346D /* kyoto-temple-bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "kyoto-temple-bell.mp3"; sourceTree = "<group>"; };
@@ -292,7 +292,6 @@
 				651F0C221ECF91BE00ABA621 /* MoodZen.xcassets */,
 				651F0C2E1ECF974500ABA621 /* Meditation.xcassets */,
 				652BDA0C1ED511AC00D66AAE /* Settings.xcassets */,
-				6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -618,6 +617,7 @@
 		65F6C9F31ECA30EA001ABBA6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */,
 				659E0D9E1ED392A000E6346D /* Lessons Model */,
 				65C18FFF1ECA384900E6683D /* Core Data */,
 			);
