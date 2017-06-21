@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Init TwitterKit
         Twitter.sharedInstance().start(withConsumerKey: "XFM07xtiySlTXwb6FiujgDJW4", consumerSecret: "gVutyIBB4Ji1uRn9cc6eeCHKgBaMMVEEeGkxe6nwKbENLf8cig")
+        
+        // set status bar
+        UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
     
