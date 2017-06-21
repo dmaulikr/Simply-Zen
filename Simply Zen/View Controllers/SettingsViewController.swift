@@ -50,6 +50,9 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        navigationController?.navigationBar.isHidden = true
+        navigationItem.rightBarButtonItem?.isEnabled = false
+        
         bellSegmentedControl.selectedSegmentIndex = getBellSegment()
         
         if (Twitter.sharedInstance().sessionStore.hasLoggedInUsers()) {
@@ -166,7 +169,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        view.tintColor = UIColor.clear
+        view.tintColor = darkBlue
         let header = view as! UITableViewHeaderFooterView
         header.textLabel?.textColor = .white
         header.textLabel?.font =  UIFont(name: "STHeitiSC-Light", size: 20)
