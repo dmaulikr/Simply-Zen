@@ -63,10 +63,11 @@ class SessionCompleteViewController: UIViewController {
         // Make sure app has a logged in user
         if (Twitter.sharedInstance().sessionStore.hasLoggedInUsers()) {
             var tweet: String!
-            if let quote = quoteBodyString {
-                tweet = "\(String(describing: quote)) #SimplyZen #meditation"
+            // Make sure we have a quote body and that the quote won't be too long
+            if let quote = quoteBodyString, (quoteBodyString?.characters.count)! <= 114 {
+                tweet = "\(String(describing: quote)) @SimplyZenApp #meditation"
             } else {
-                tweet = "I just became more #mindful with #SimplyZen #meditation"
+                tweet = "I just became more #mindful with @SimplyZenApp #meditation"
             }
             
             let composer = TWTRComposerViewController.init(initialText: tweet, image: nil, videoURL: nil)
