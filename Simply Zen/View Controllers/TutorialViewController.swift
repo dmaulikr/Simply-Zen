@@ -20,13 +20,18 @@ class TutorialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Disable buttons if already logged in
-        if Twitter.sharedInstance().sessionStore.hasLoggedInUsers() {
-            twitterButton.isEnabled = false
-        }
+        // make sure buttons are on current view
         
-        if HealthKitExtension.checkAuthorizationStatus() {
-            healthKitButton.isEnabled = false
+        if pageName == "pageOne" {
+            // Disable buttons if already logged in
+            if Twitter.sharedInstance().sessionStore.hasLoggedInUsers() {
+                twitterButton.isEnabled = false
+            }
+            
+            if HealthKitExtension.checkAuthorizationStatus() {
+                healthKitButton.isEnabled = false
+            }
+
         }
     }
     
@@ -62,8 +67,11 @@ class TutorialViewController: UIViewController {
     }
     
     @IBAction func finishTutorial(_ sender: Any) {
-        let navigationRoot = storyboard?.instantiateViewController(withIdentifier: "navigationRoot") as! SZNavigationController
-        UIApplication.shared.delegate?.window??.rootViewController = navigationRoot
+        if pageName == "pageEight" {
+            let navigationRoot = storyboard?.instantiateViewController(withIdentifier: "navigationRoot") as! SZNavigationController
+            UIApplication.shared.delegate?.window??.rootViewController = navigationRoot
+        }
+        
     }
     
     
