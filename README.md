@@ -1,7 +1,7 @@
 # Simply-Zen
 A Meditation App for iOS and (Eventually) Apple TV
 
-[![Build](https://img.shields.io/vso/build/larsbrinkhoff/953a34b9-5966-4923-a48a-c41874cfb5f5/1.svg)](http://blaumagier.com)
+[![Build](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](http://blaumagier.com)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](license.md)
 
@@ -12,6 +12,11 @@ This is a mindfulness app for users of all skill levels.  A high level mock-up c
 ## Purpose
 
 This started as my final project for Udacity's iOS Degree course.
+
+## Accessing Settings
+
+* Double tap on the screen (no access from meditation and completed session screens)
+* Tap on gear icon in top right corner
 
 ## What Works
 
@@ -25,12 +30,9 @@ This started as my final project for Udacity's iOS Degree course.
 
 ## TODO
 
-* Finish Settings Screen
-* Record guided meditations
 * Implement 3D-Touch
-* Add photos for quote of the day
+* Add my own photos for quote of the day
 * Add user history / history details screens
-* Create first time tutorial splash screen (started)
 * Finish this and then start on Apple TV Version
 * Probably some stuff I haven't thought of yet
 
