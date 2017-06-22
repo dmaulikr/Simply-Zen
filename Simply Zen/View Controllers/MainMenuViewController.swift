@@ -32,12 +32,6 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         // setup navigation bar
         setupNavigationBar()
         
-//        if HealthKitExtension.checkAvailability() {
-//            HealthKitExtension.requestAuthorization()
-//        }
-        
-        // Twitter Test
-//        setupTwitter()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,9 +47,6 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        // make sure that animations are stopped
-//        mainMenuView.removeAllAnimations()
-//        print("Animations removed")
     }
         
     // MARK: - Core Data
@@ -76,22 +67,6 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
             delegate.user = userData[0]
         } else {
             delegate.user = userData[0]
-        }
-        
-        // MARK: - User History Tests
-        print("Running History Tests")
-        if let meditations = delegate.user.meditationHistory?.array as? [Meditation] {
-            for meditation in meditations {
-                print(meditation.durationSeconds)
-                print(meditation.lesson?.lessonName ?? "No Name")
-            }
-        }
-        
-        if let courses = delegate.user.courses?.array as? [Course] {
-            for course in courses {
-                print(course.courseName ?? "No Course name")
-                print(course.userProgress)
-            }
         }
         
         delegate.stack.save()

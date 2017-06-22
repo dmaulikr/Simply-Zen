@@ -106,9 +106,7 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     // MARK: - IBActions
     
     @IBAction func endSessionTapped(_ sender: Any) {
-        // TODO: - Remove Print Statements
         // Update and save history to CoreData model, and add session to Healthkit
-        print("Duration: \(String(describing: sessionDuration))")
         updateCoreData()
         HealthKitExtension.saveMeditation(startDate: sessionStartDate, seconds: sessionDuration)
         
@@ -117,7 +115,6 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     @IBAction func meditationViewTapped(_ sender: Any) {
-        print("Meditation View meditationViewTapped")
         
         if !paused {
             paused = true
@@ -161,7 +158,6 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         
         // Make sure there is an image before passing it
         if let image = self.quoteImage {
-            print("Setting image")
             completionVC.quoteUIImage = image
         } else {
             completionVC.quoteUIImage = nil

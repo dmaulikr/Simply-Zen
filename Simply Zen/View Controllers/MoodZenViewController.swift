@@ -81,7 +81,6 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
         var coredDataCourse: Course!
         let maxlevel = moodCourse.lessons.count
         let level: Int = Int(arc4random_uniform(UInt32(maxlevel)))
-        print(level)
         var addedCourse = false
         
         // Check to see if the user already has a history

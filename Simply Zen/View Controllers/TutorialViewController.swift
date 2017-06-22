@@ -20,7 +20,14 @@ class TutorialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Disable buttons if already logged in
+        if Twitter.sharedInstance().sessionStore.hasLoggedInUsers() {
+            twitterButton.isEnabled = false
+        }
+        
+        if HealthKitExtension.checkAuthorizationStatus() {
+            healthKitButton.isEnabled = false
+        }
     }
     
     // MARK: - Button Actions
