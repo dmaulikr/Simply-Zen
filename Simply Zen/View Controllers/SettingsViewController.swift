@@ -51,8 +51,8 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        navigationController?.navigationBar.isHidden = true
-        navigationItem.rightBarButtonItem?.isEnabled = false
+        // Make it easy to get back out of settings
+        navigationController?.navigationBar.isHidden = false
         
         bellSegmentedControl.selectedSegmentIndex = getBellSegment()
         
@@ -169,11 +169,14 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         UIApplication.shared.delegate?.window??.rootViewController = tutorialVC
     }
     
-    
+    // MARK: - Done Button tapped
+    @IBAction func doneButtonTapped(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     
     // MARK: - Table View Delegate Methods
     
-    // Mark: - Setup Sections
+    // Setup Sections
     func numberOfSections(in tableView: UITableView) -> Int {
         return courses.count
     }
