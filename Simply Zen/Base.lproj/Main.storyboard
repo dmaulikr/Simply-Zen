@@ -473,13 +473,7 @@
                             <constraint firstItem="s0m-oJ-buv" firstAttribute="top" secondItem="ZiX-MP-4NP" secondAttribute="bottom" constant="20" id="ys6-28-ZRj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="RFu-gZ-j3r">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="C6x-4B-fK9">
-                            <connections>
-                                <action selector="doneButtonTapped:" destination="dnm-S2-X50" id="b3x-b5-Svb"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Settings" id="RFu-gZ-j3r"/>
                     <connections>
                         <outlet property="bellSegmentedControl" destination="bog-Oo-jY3" id="xPS-Nz-ANF"/>
                         <outlet property="enableTwitterButton" destination="a8m-Rv-itu" id="6hg-7B-f3I"/>

@@ -168,11 +168,12 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         let tutorialVC = storyboard?.instantiateViewController(withIdentifier: "pageVC") as! TutorialPageViewController
         UIApplication.shared.delegate?.window??.rootViewController = tutorialVC
     }
-    
-    // MARK: - Done Button tapped
-    @IBAction func doneButtonTapped(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
+
+    // MARK: - Commented out, because I may use it again later on
+//    // MARK: - Done Button tapped
+//    @IBAction func doneButtonTapped(_ sender: Any) {
+//        navigationController?.popViewController(animated: true)
+//    }
     
     // MARK: - Table View Delegate Methods
     
