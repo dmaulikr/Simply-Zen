@@ -67,6 +67,20 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
             delegate.user = userData[0]
         } else {
             delegate.user = userData[0]
+            
+            // clear out any old sessions (older than 90 days)
+            let threeMonthsAgoDate = Date.init(timeIntervalSinceNow: -7776000)
+            let threeMonthsAgo = threeMonthsAgoDate.timeIntervalSinceReferenceDate
+            for session in delegate.user.meditationHistory?.array as! [Meditation] {
+                
+                // find the time interval
+                if let time = session.date?.timeIntervalSinceReferenceDate {
+                    // if the time is 90 days or more old, delete the session form core data history
+                    if time <= threeMonthsAgo {
+                        delegate.user.removeFromMeditationHistory(session)
+                    }
+                }
+            }
         }
         
         delegate.stack.save()

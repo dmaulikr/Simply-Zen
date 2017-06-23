@@ -45,8 +45,6 @@ extension MeditationViewController {
                 return
             }
             
-            print(parsedJSONData)
-            
             if let error = parsedJSONData["error"] as? [String:AnyObject], let code = error["code"] as? Int {
                 if code == 429 {
                     print("Too many requests")

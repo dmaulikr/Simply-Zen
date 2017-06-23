@@ -23,11 +23,6 @@ class SZNavigationController: UINavigationController {
             let tutorialVC = storyboard?.instantiateViewController(withIdentifier: "pageVC") as! TutorialPageViewController
             UIApplication.shared.delegate?.window??.rootViewController = tutorialVC
         }
-        
-        // Do any additional setup after loading the view.
     }
-
-    // MARK: - Navigation
-
-
+    
 }
