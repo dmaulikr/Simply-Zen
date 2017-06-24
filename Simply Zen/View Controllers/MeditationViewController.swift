@@ -55,10 +55,7 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
             
             if !success {
                 // setup the alternate quotes
-                
-                // display error for udacity version, however final version will not do this
-                // as backup quotes will take effect, and user should not know anything went wrong
-                self.presentNetworkAlert()
+                print("Not successful")
             }
         }
         
@@ -233,16 +230,4 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
             endSessionTapped(self)
         }
     }
-    
-    // MARK: - Network Failure Alert
-    
-    func presentNetworkAlert() {
-        DispatchQueue.main.async {
-            let alert = UIAlertController.init(title: "Error loading", message: "There was an error contacting the quotes server, please check your network connection.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction.init(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
-    }
-
-
 }
