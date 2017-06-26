@@ -1,5 +1,5 @@
 # Simply-Zen
-A Meditation App for iOS and (Eventually) Apple TV
+A Meditation App for iOS
 
 [![Build](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](http://blaumagier.com)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
@@ -33,7 +33,6 @@ This started as my final project for Udacity's iOS Degree course.
 * Implement 3D-Touch
 * Add my own photos for quote of the day
 * Add user history / history details screens
-* Finish this and then start on Apple TV Version
 * Probably some stuff I haven't thought of yet
 
 ## Contributing
