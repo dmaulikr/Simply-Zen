@@ -72,7 +72,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         let name = getName(atSegment: bellSegmentedControl.selectedSegmentIndex)
         audioURL = Bundle.main.url(forResource: name, withExtension: "mp3")
-        
         playAudio()
 
         setBellSound(atSegment: bellSegmentedControl.selectedSegmentIndex)
@@ -82,6 +81,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     func playAudio() {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
+            audioPlayer.volume = 0.3
             audioPlayer.play()
         } catch {
             print("Unable to start audio player")

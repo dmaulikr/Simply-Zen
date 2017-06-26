@@ -80,7 +80,7 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
         let selectedCourse = moodCourse.name
         var coredDataCourse: Course!
         let maxlevel = moodCourse.lessons.count
-        let level: Int = Int(arc4random_uniform(UInt32(maxlevel)))
+        var level: Int = Int(arc4random_uniform(UInt32(maxlevel)))
         var addedCourse = false
         
         // Check to see if the user already has a history
@@ -97,15 +97,23 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
         // If the course hasn't been added yet create it and add to the user
         if !addedCourse {
             // create course Core Data object and add it to user
-            print("creating course")
             coredDataCourse = Course(courseName: selectedCourse!, user: delegate.user, insertInto: delegate.stack.context)
             delegate.user.addToCourses(coredDataCourse)
-            print(delegate.user.courses?.array ?? "No courses")
             delegate.stack.save()
         }
         
         
         // Load lesson and attach to meditationVC
+        
+        // Make sure that level index is not out of range of the array
+        
+        // Make sure that level is not out of array index
+        if !(level < maxlevel) {
+            level = 0
+        } else if level > maxlevel - 1 {
+            level = maxlevel - 1
+        }
+        
         meditationVC.lesson = moodCourse.lessons[level]
         meditationVC.lessonFileName = meditationVC.lesson.lessonFileName
         meditationVC.coreDataCourse = coredDataCourse

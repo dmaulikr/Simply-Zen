@@ -90,7 +90,7 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
         var level = 0
         var addedCourse = false
         var coreDataCourse: Course!
-        let maxLevel = guidedCourse.lessons.count
+        let maxLevel = guidedCourse.lessons.count - 1
         
         // Check to see if the user already has a history
         if let courses = self.delegate.user.courses?.array as? [Course] {
@@ -107,20 +107,30 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
         // If the course hasn't been added yet create it and add to the user
         if !addedCourse {
             // create course Core Data object and add it to user
-            print("creating course")
             coreDataCourse = Course(courseName: selectedCourse!, user: delegate.user, insertInto: delegate.stack.context)
             delegate.user.addToCourses(coreDataCourse)
-            print(delegate.user.courses?.array ?? "No courses")
             delegate.stack.save()
         }
         
         
         // Load lesson and attach to meditationVC
+        
+        // Make sure that level is not out of array index
+        // If we have to change it to avoid a crash, update the CoreData model
+        if !(level <= maxLevel) && coreDataCourse.completed {
+            level = 1
+            coreDataCourse.userProgress = Int64(level)
+        } else if level >= maxLevel {
+            level = maxLevel
+            coreDataCourse.userProgress = Int64(level)
+        }
+        
         meditationVC.lesson = guidedCourse.lessons[level]
         meditationVC.lessonFileName = meditationVC.lesson.lessonFileName
         meditationVC.coreDataCourse = coreDataCourse
         meditationVC.maxLevel = maxLevel
         self.navigationController?.pushViewController(meditationVC, animated: true)
+        
     }
 
 }

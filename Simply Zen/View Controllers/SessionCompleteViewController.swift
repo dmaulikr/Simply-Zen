@@ -21,12 +21,13 @@ class SessionCompleteViewController: UIViewController {
     @IBOutlet weak var quoteImage: UIImageView!
     @IBOutlet weak var tweetButton: UIButton!
     
+    // NOTE: - Removing images from launch version
     
     // Properties to hold quote data
     var quoteBodyString: String?
-    var imageURLString: String?
+//    var imageURLString: String?
     var quoteAuthorString: String?
-    var quoteUIImage: UIImage?
+//    var quoteUIImage: UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,22 +39,39 @@ class SessionCompleteViewController: UIViewController {
     
         navigationController?.hidesBarsOnTap = false
         
+        // NOTE: - Part of if let statements to get images, removed from launch version
+        // let image = quoteUIImage
+        // let url = URL(string: imageURLString!)
+        
         // Setup the page to show the quote
-        if let quote = quoteBodyString, let author = quoteAuthorString, let image = quoteUIImage {
+        if let quote = quoteBodyString, let author = quoteAuthorString {
             quoteBody.text = quote
             quoteAuthor.text = author
-            quoteImage.image = image
-        } else if let quote = quoteBodyString, let author = quoteAuthorString, let url = URL(string: imageURLString!) {
-            quoteBody.text = quote
-            quoteAuthor.text = author
-            DispatchQueue.main.async {
-                let imageData = try? Data(contentsOf: url)
-                let image = UIImage(data: imageData!)
-                self.quoteImage.image = image
+//            quoteImage.image = image
+        }
+        
+//        else if let quote = quoteBodyString, let author = quoteAuthorString {
+//            quoteBody.text = quote
+//            quoteAuthor.text = author
+////            DispatchQueue.main.async {
+////                let imageData = try? Data(contentsOf: url)
+////                let image = UIImage(data: imageData!)
+////                self.quoteImage.image = image
+//            }
+        else {
+            // Mark: - If we can't get a quote from the REST API, take one from this application
+            let quoteDictionary = getQuote()
+            
+            if let quote = quoteDictionary["Quote"], let author = quoteDictionary["Author"] {
+                quoteBody.text = quote
+                quoteAuthor.text = author
             }
-        } else {
-            quoteBody.text = "Reduce the stress levels in your life through relaxation techniques like meditation, deep breathing, and exercise. You'll look and feel way better..."
-            quoteAuthor.text = "Suzanne Somers"
+            
+                // This shouldn't ever happen, but nice to have a final backup just in case
+            else {
+                quoteBody.text = "Reduce the stress levels in your life through relaxation techniques like meditation, deep breathing, and exercise. You'll look and feel way better..."
+                quoteAuthor.text = "Suzanne Somers"
+            }
         }
     }
 
@@ -69,6 +87,8 @@ class SessionCompleteViewController: UIViewController {
             } else {
                 tweet = "I just became more #mindful with @SimplyZenApp #meditation"
             }
+            
+            // TODO: - When a good image solution becomes available, let's add it to the tweets
             
             let composer = TWTRComposerViewController.init(initialText: tweet, image: nil, videoURL: nil)
             present(composer, animated: true, completion: nil)

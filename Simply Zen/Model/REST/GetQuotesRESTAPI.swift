@@ -74,11 +74,13 @@ extension MeditationViewController {
                 return
             }
             
-            guard let background = quotesData["background"] as? String else {
-                print("Couldn't get background")
-                completion(false)
-                return
-            }
+            // NOTE: - Removing images from this version
+            
+//            guard let background = quotesData["background"] as? String else {
+//                print("Couldn't get background")
+//                completion(false)
+//                return
+//            }
             
             guard let quote = quotesData["quote"] as? String else {
                 print("Couldn't get quote")
@@ -86,27 +88,28 @@ extension MeditationViewController {
                 return
             }
             
-            if let url = URL(string: background) {
-                DispatchQueue.main.async {
-                    guard let imageData = try? Data(contentsOf: url) else {
-                        completion(false)
-                        return
-                    }
-                    guard let image = UIImage(data: imageData)  else {
-                        completion(false)
-                        return
-                    }
-                    
-                    self.quoteImage = image
-                    
-                }
-            } else {
-                completion(false)
-                return
-            }
+//            if let url = URL(string: background) {
+//                DispatchQueue.main.async {
+//                    guard let imageData = try? Data(contentsOf: url) else {
+//                        completion(false)
+//                        return
+//                    }
+//                    
+//                    guard let image = UIImage(data: imageData)  else {
+//                        completion(false)
+//                        return
+//                    }
+//                    
+//                    self.quoteImage = image
+//                    
+//                }
+//            } else {
+//                completion(false)
+//                return
+//            }
             
             self.quoteAuthor = author
-            self.imageURL = background
+//            self.imageURL = background
             self.quote = quote
             completion(true)
         }

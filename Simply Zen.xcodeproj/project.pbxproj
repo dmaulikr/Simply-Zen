@@ -98,6 +98,7 @@
 		65C18A911EDF74E1000B29F6 /* SZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C18A901EDF74E1000B29F6 /* SZNavigationController.swift */; };
 		65C18A931EDF768F000B29F6 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C18A921EDF768F000B29F6 /* TutorialViewController.swift */; };
 		65CD515C1ECCD81300698F42 /* MainMenu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CD515B1ECCD81300698F42 /* MainMenu.xcassets */; };
+		65D13A521F017B2100DBEDEA /* QuotesBackupExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D13A511F017B2100DBEDEA /* QuotesBackupExtension.swift */; };
 		65EB85591ED4AF3C0092FEB5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EB85581ED4AF3C0092FEB5 /* HealthKit.framework */; };
 		65EB855F1ED4B1730092FEB5 /* HealthKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB855E1ED4B1730092FEB5 /* HealthKitExtension.swift */; };
 		65FD30B71ED4D57C008D76D6 /* Meditation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30AF1ED4D57C008D76D6 /* Meditation+CoreDataClass.swift */; };
@@ -224,6 +225,7 @@
 		65C18A901EDF74E1000B29F6 /* SZNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SZNavigationController.swift; path = "Simply Zen/View Controllers/SZNavigationController.swift"; sourceTree = "<group>"; };
 		65C18A921EDF768F000B29F6 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialViewController.swift; path = "Simply Zen/View Controllers/TutorialViewController.swift"; sourceTree = "<group>"; };
 		65CD515B1ECCD81300698F42 /* MainMenu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MainMenu.xcassets; sourceTree = "<group>"; };
+		65D13A511F017B2100DBEDEA /* QuotesBackupExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuotesBackupExtension.swift; path = "Simply Zen/View Controllers/Extensions/QuotesBackupExtension.swift"; sourceTree = "<group>"; };
 		65EB85561ED4AF3C0092FEB5 /* Simply Zen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Simply Zen.entitlements"; sourceTree = "<group>"; };
 		65EB85581ED4AF3C0092FEB5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		65EB855E1ED4B1730092FEB5 /* HealthKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthKitExtension.swift; path = HealthKit/HealthKitExtension.swift; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 				657B41871EE088CC00503868 /* TutorialPageViewController.swift */,
 				65C18A921EDF768F000B29F6 /* TutorialViewController.swift */,
 				653FDEBC1EF99C0D00CD26FE /* SettingsTableViewCell.swift */,
+				65D13A511F017B2100DBEDEA /* QuotesBackupExtension.swift */,
 				658C9FC41ECBB5F400C71538 /* Animations */,
 			);
 			name = "View Controllers";
@@ -1014,6 +1017,7 @@
 				659E0DA01ED392AF00E6346D /* SZCourse.swift in Sources */,
 				651F0C211ECF6F8E00ABA621 /* GuidedZenViewController.swift in Sources */,
 				658C9FD81ECBC6E300C71538 /* MainMenuViewController.swift in Sources */,
+				65D13A521F017B2100DBEDEA /* QuotesBackupExtension.swift in Sources */,
 				6595C7CD1EE5F2C3007972A7 /* SessionCompleteViewController.swift in Sources */,
 				65FD30B81ED4D57C008D76D6 /* Meditation+CoreDataProperties.swift in Sources */,
 				651F0C2D1ECF970300ABA621 /* MeditationViewController.swift in Sources */,

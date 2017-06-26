@@ -33,11 +33,13 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     var sessionDuration: Double = 0.0
     var sessionStartDate: Date!
     
+    // NOTE: - Removing images from launch version until we can figure out how to do images better
+    
     // Properties to hold quote data
     var quote: String?
-    var imageURL: String?
+//    var imageURL: String?
     var quoteAuthor: String?
-    var quoteImage: UIImage? = nil
+//    var quoteImage: UIImage? = nil
     
     // Delegate
     let delegate = UIApplication.shared.delegate as! AppDelegate
@@ -50,11 +52,12 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         
         // Start downloading the quote data
         getQuote { (success) in
-            // Stop spinning the network indicator
+            // Stop spinning the network indicator no matter what
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             
             if !success {
-                // setup the alternate quotes
+                // alternate quotes will be loaded in completed view controller
+                // could access firebase database here later, if i set one up
                 print("Not successful")
             }
         }
@@ -149,16 +152,18 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         // Create variables for VC and course / lesson to load
         let completionVC = self.storyboard?.instantiateViewController(withIdentifier: "completedSession") as! SessionCompleteViewController
         
-        completionVC.imageURLString = self.imageURL
+        // NOTE: - Removed images from launch version, will restore later when I figure out a better image source
+        // May end up doing something with a remote database
+//        completionVC.imageURLString = self.imageURL
         completionVC.quoteAuthorString = self.quoteAuthor
         completionVC.quoteBodyString = self.quote
         
         // Make sure there is an image before passing it
-        if let image = self.quoteImage {
-            completionVC.quoteUIImage = image
-        } else {
-            completionVC.quoteUIImage = nil
-        }
+//        if let image = self.quoteImage {
+//            completionVC.quoteUIImage = image
+//        } else {
+//            completionVC.quoteUIImage = nil
+//        }
         
         navigationController?.pushViewController(completionVC, animated: false)
         
@@ -172,6 +177,11 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
             audioPlayer.delegate = self
+            
+            if isOpenMeditation {
+                audioPlayer.volume = 0.3
+            }
+            
             audioPlayer.play()
         } catch {
             print("Unable to start audio player")
@@ -221,10 +231,10 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
                 coreDataCourse.userProgress += 1
             } else if maxLevel > 0 {
                 coreDataCourse.completed = true
+                coreDataCourse.userProgress = 1
             } else {
                 coreDataCourse.userProgress = Int64(lesson.lessonLevel)
             }
-            
             
             // call finishing up stuff which will save session to model / healthkit
             endSessionTapped(self)
