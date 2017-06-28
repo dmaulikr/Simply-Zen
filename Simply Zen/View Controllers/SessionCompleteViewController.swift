@@ -36,6 +36,10 @@ class SessionCompleteViewController: UIViewController {
             tweetButton.isEnabled = false
             tweetButton.isHidden = true
         }
+        
+        let quoteDictionary = getQuote()
+        print(quoteDictionary["Quote"] ?? "Error printin quote")
+        print(quoteDictionary["Author"] ?? "Error printing author")
     
         navigationController?.hidesBarsOnTap = false
         
@@ -48,30 +52,21 @@ class SessionCompleteViewController: UIViewController {
             quoteBody.text = quote
             quoteAuthor.text = author
 //            quoteImage.image = image
-        }
-        
-//        else if let quote = quoteBodyString, let author = quoteAuthorString {
-//            quoteBody.text = quote
-//            quoteAuthor.text = author
-////            DispatchQueue.main.async {
-////                let imageData = try? Data(contentsOf: url)
-////                let image = UIImage(data: imageData!)
-////                self.quoteImage.image = image
-//            }
+        } else if let quote = quoteBodyString, let author = quoteAuthorString {
+            quoteBody.text = quote
+            quoteAuthor.text = author
+//            DispatchQueue.main.async {
+//                let imageData = try? Data(contentsOf: url)
+//                let image = UIImage(data: imageData!)
+//                self.quoteImage.image = image
+            }
         else {
-            // Mark: - If we can't get a quote from the REST API, take one from this application
+            // TODO: - Create backup to REST API quotes
             let quoteDictionary = getQuote()
-            
-            if let quote = quoteDictionary["Quote"], let author = quoteDictionary["Author"] {
-                quoteBody.text = quote
-                quoteAuthor.text = author
-            }
-            
-                // This shouldn't ever happen, but nice to have a final backup just in case
-            else {
-                quoteBody.text = "Reduce the stress levels in your life through relaxation techniques like meditation, deep breathing, and exercise. You'll look and feel way better..."
-                quoteAuthor.text = "Suzanne Somers"
-            }
+            print(quoteDictionary["Quote"] ?? "Error printin quote")
+            print(quoteDictionary["Author"] ?? "Error printing author")
+            quoteBody.text = "Reduce the stress levels in your life through relaxation techniques like meditation, deep breathing, and exercise. You'll look and feel way better..."
+            quoteAuthor.text = "Suzanne Somers"
         }
     }
 

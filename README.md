@@ -1,13 +1,13 @@
 # Simply-Zen
 A Meditation App for iOS
 
-[![Build](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](http://blaumagier.com)
+[![Build](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](http://www.blaumagier.com/p/simply-zen.html)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](license.md)
 
 ## Description
 
-This is a mindfulness app for users of all skill levels.  A high level mock-up can be found on [Prezi](https://prezi.com/view/cOvZsPdSOVXgDdZN8T5v/).
+Simply Zen is an elegant, content rich mindfulness app that was developed for people who want to learn how to mediate and enjoy the benefits that a mindfulness practice can bring.
 
 ## Purpose
 
