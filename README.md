@@ -45,5 +45,9 @@ This will be a paid app on the app store, and I won't be able to pay anyone for 
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
+## Product Links
+[Product Support Page](http://www.blaumagier.com/p/simply-zen.html)
+[Download on Apple App Store](https://itunes.apple.com/us/app/simply-zen/id1235806103?ls=1&mt=8)
+
 ## License
 [Apache-2.0 License](license.md)
