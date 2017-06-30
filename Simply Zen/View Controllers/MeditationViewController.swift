@@ -36,9 +36,9 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     // NOTE: - Removing images from launch version until we can figure out how to do images better
     
     // Properties to hold quote data
-    var quote: String?
+    var quote: String? = nil
 //    var imageURL: String?
-    var quoteAuthor: String?
+    var quoteAuthor: String? = nil
 //    var quoteImage: UIImage? = nil
     
     // Delegate

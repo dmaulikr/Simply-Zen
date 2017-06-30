@@ -36,10 +36,6 @@ class SessionCompleteViewController: UIViewController {
             tweetButton.isEnabled = false
             tweetButton.isHidden = true
         }
-        
-        let quoteDictionary = getQuote()
-        print(quoteDictionary["Quote"] ?? "Error printin quote")
-        print(quoteDictionary["Author"] ?? "Error printing author")
     
         navigationController?.hidesBarsOnTap = false
         
@@ -61,12 +57,17 @@ class SessionCompleteViewController: UIViewController {
 //                self.quoteImage.image = image
             }
         else {
-            // TODO: - Create backup to REST API quotes
+            // Use internal quote if getting a quote from online has failed
             let quoteDictionary = getQuote()
-            print(quoteDictionary["Quote"] ?? "Error printin quote")
-            print(quoteDictionary["Author"] ?? "Error printing author")
-            quoteBody.text = "Reduce the stress levels in your life through relaxation techniques like meditation, deep breathing, and exercise. You'll look and feel way better..."
-            quoteAuthor.text = "Suzanne Somers"
+            if let quote = quoteDictionary["Quote"], let author = quoteDictionary["Author"] {
+                quoteBody.text = quote
+                quoteAuthor.text = author
+            } else {
+                // Final fallback
+                quoteBody.text = "Reduce the stress levels in your life through relaxation techniques like meditation, deep breathing, and exercise. You'll look and feel way better..."
+                quoteAuthor.text = "Suzanne Somers"
+            }
+            
         }
     }
 
