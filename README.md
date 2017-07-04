@@ -30,10 +30,12 @@ This started as my final project for Udacity's iOS Degree course.
 
 ## TODO
 
+* Add Accessability (Next Version)
 * Implement 3D-Touch
 * Add my own photos for quote of the day
 * Add user history / history details screens
 * Probably some stuff I haven't thought of yet
+
 
 ## Contributing
 
