@@ -31,7 +31,6 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         
         // setup navigation bar
         setupNavigationBar()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
