@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A291m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1X7-Ut-dFE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A306f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1X7-Ut-dFE">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -369,7 +369,7 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8m-Rv-itu">
-                                <rect key="frame" x="20" y="144" width="374" height="33"/>
+                                <rect key="frame" x="20" y="208" width="374" height="33"/>
                                 <color key="backgroundColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Enable Twitter">
@@ -380,7 +380,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZiX-MP-4NP">
-                                <rect key="frame" x="20" y="226" width="374" height="490"/>
+                                <rect key="frame" x="20" y="290" width="374" height="426"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -392,7 +392,7 @@
                                         <rect key="frame" x="0.0" y="28" width="374" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wXZ-GX-ove" id="htk-Uc-0sI">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="39.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6L-Y1-Z5c">
@@ -435,8 +435,21 @@
                                     <outlet property="delegate" destination="dnm-S2-X50" id="U3v-jU-bUB"/>
                                 </connections>
                             </tableView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="JJb-Iz-RNX">
+                                <rect key="frame" x="18" y="170" width="378" height="31"/>
+                                <color key="tintColor" red="0.13513316214084625" green="0.32346397638320923" blue="0.55696898698806763" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="bellVolumeChanged:" destination="dnm-S2-X50" eventType="valueChanged" id="g8O-Tg-iZR"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bell Volume" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2FA-Uj-a51">
+                                <rect key="frame" x="20" y="144" width="374" height="28"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hj-by-yFz">
-                                <rect key="frame" x="20" y="185" width="374" height="33"/>
+                                <rect key="frame" x="20" y="249" width="374" height="33"/>
                                 <color key="backgroundColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="View Tutorial">
@@ -450,24 +463,30 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="bog-Oo-jY3" firstAttribute="top" secondItem="L3q-p9-HkJ" secondAttribute="bottom" constant="8" id="027-o5-01W"/>
+                            <constraint firstItem="2FA-Uj-a51" firstAttribute="top" secondItem="bog-Oo-jY3" secondAttribute="bottom" constant="8" id="65p-5i-eXg"/>
+                            <constraint firstItem="2FA-Uj-a51" firstAttribute="leading" secondItem="JJb-Iz-RNX" secondAttribute="leading" id="6bi-0s-2Yq"/>
                             <constraint firstAttribute="leadingMargin" secondItem="bog-Oo-jY3" secondAttribute="leading" id="8UK-MN-VEE"/>
                             <constraint firstItem="L3q-p9-HkJ" firstAttribute="top" secondItem="GWH-pp-xjy" secondAttribute="bottom" constant="8" id="8lO-z1-E5C"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="JJb-Iz-RNX" secondAttribute="leading" id="9Pw-Iy-hNk"/>
+                            <constraint firstItem="ZiX-MP-4NP" firstAttribute="top" secondItem="1Hj-by-yFz" secondAttribute="bottom" constant="8" id="BIY-7i-Wpt"/>
                             <constraint firstItem="s0m-oJ-buv" firstAttribute="top" secondItem="kuH-bw-6Ym" secondAttribute="bottom" id="Bdu-AG-0Fu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bog-Oo-jY3" secondAttribute="trailing" id="Bpv-hD-VFI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="a8m-Rv-itu" secondAttribute="trailing" id="IeT-CU-BP2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JJb-Iz-RNX" secondAttribute="trailing" id="E85-8E-vOj"/>
                             <constraint firstAttribute="leadingMargin" secondItem="1Hj-by-yFz" secondAttribute="leading" id="LqB-4H-I1f"/>
                             <constraint firstItem="L3q-p9-HkJ" firstAttribute="leading" secondItem="kuH-bw-6Ym" secondAttribute="trailing" constant="-394" id="NnE-S6-iYw"/>
                             <constraint firstItem="kuH-bw-6Ym" firstAttribute="top" secondItem="Sva-Qu-icE" secondAttribute="top" id="P8V-KM-dXm"/>
                             <constraint firstAttribute="trailing" secondItem="kuH-bw-6Ym" secondAttribute="trailing" id="SaW-f4-lWe"/>
-                            <constraint firstItem="ZiX-MP-4NP" firstAttribute="top" secondItem="1Hj-by-yFz" secondAttribute="bottom" constant="8" id="SiP-sU-WLr"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ZiX-MP-4NP" secondAttribute="leading" id="T6b-eg-qD6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZiX-MP-4NP" secondAttribute="trailing" id="U6G-hu-YzT"/>
-                            <constraint firstItem="a8m-Rv-itu" firstAttribute="top" secondItem="bog-Oo-jY3" secondAttribute="bottom" constant="8" id="b7q-rX-TdE"/>
-                            <constraint firstItem="1Hj-by-yFz" firstAttribute="top" secondItem="a8m-Rv-itu" secondAttribute="bottom" constant="8" id="e3s-Wu-lsP"/>
+                            <constraint firstItem="2FA-Uj-a51" firstAttribute="trailing" secondItem="JJb-Iz-RNX" secondAttribute="trailing" id="aM7-HN-8ca"/>
+                            <constraint firstItem="2FA-Uj-a51" firstAttribute="trailing" secondItem="a8m-Rv-itu" secondAttribute="trailing" id="cw1-2t-CUo"/>
+                            <constraint firstItem="JJb-Iz-RNX" firstAttribute="top" secondItem="2FA-Uj-a51" secondAttribute="bottom" constant="-2" id="czh-YJ-bwx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="L3q-p9-HkJ" secondAttribute="trailing" id="eSk-C3-WZ5"/>
                             <constraint firstItem="kuH-bw-6Ym" firstAttribute="leading" secondItem="Sva-Qu-icE" secondAttribute="leading" id="fzY-vD-xzE"/>
+                            <constraint firstItem="a8m-Rv-itu" firstAttribute="top" secondItem="JJb-Iz-RNX" secondAttribute="bottom" constant="8" id="jNp-YV-R4J"/>
+                            <constraint firstItem="1Hj-by-yFz" firstAttribute="top" secondItem="a8m-Rv-itu" secondAttribute="bottom" constant="8" id="kQV-N3-SZG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Hj-by-yFz" secondAttribute="trailing" id="pzR-cG-NBd"/>
-                            <constraint firstItem="bog-Oo-jY3" firstAttribute="top" secondItem="L3q-p9-HkJ" secondAttribute="bottom" constant="8" id="sOD-7N-ggg"/>
                             <constraint firstAttribute="leadingMargin" secondItem="L3q-p9-HkJ" secondAttribute="leading" id="wbq-h4-jwJ"/>
                             <constraint firstAttribute="leadingMargin" secondItem="a8m-Rv-itu" secondAttribute="leading" id="ykm-la-JUh"/>
                             <constraint firstItem="s0m-oJ-buv" firstAttribute="top" secondItem="ZiX-MP-4NP" secondAttribute="bottom" constant="20" id="ys6-28-ZRj"/>
@@ -476,6 +495,7 @@
                     <navigationItem key="navigationItem" title="Settings" id="RFu-gZ-j3r"/>
                     <connections>
                         <outlet property="bellSegmentedControl" destination="bog-Oo-jY3" id="xPS-Nz-ANF"/>
+                        <outlet property="bellVolumeSlider" destination="JJb-Iz-RNX" id="2Lg-6g-C0F"/>
                         <outlet property="enableTwitterButton" destination="a8m-Rv-itu" id="6hg-7B-f3I"/>
                         <outlet property="settingsTableView" destination="ZiX-MP-4NP" id="0h1-6W-KGi"/>
                         <outlet property="viewTutorialButton" destination="1Hj-by-yFz" id="vi3-Ie-hq6"/>
@@ -942,6 +962,6 @@
         <image name="flower_2" width="2592" height="1936"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="800-15-ETT"/>
+        <segue reference="tFe-Ky-oVe"/>
     </inferredMetricsTieBreakers>
 </document>

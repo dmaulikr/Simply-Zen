@@ -21,6 +21,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var settingsTableView: UITableView!
     @IBOutlet weak var enableTwitterButton: UIButton!
     @IBOutlet weak var viewTutorialButton: UIButton!
+    @IBOutlet weak var bellVolumeSlider: UISlider!
     
     // Arrays for cell data
     
@@ -81,7 +82,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     func playAudio() {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
-            audioPlayer.volume = 0.3
+            audioPlayer.volume = 0.2
             audioPlayer.play()
         } catch {
             print("Unable to start audio player")
@@ -138,6 +139,11 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         default: break
         }
     }
+    
+    @IBAction func bellVolumeChanged(_ sender: Any) {
+        
+    }
+    
     
     // MARK: - Enable Twitter Button Tapped
     @IBAction func enableTwitter(_ sender: Any) {
