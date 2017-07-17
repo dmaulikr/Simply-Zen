@@ -78,6 +78,7 @@
 		65A688E51EF213FA000DAB18 /* Finding a Peaceful Place.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65A688E21EF213FA000DAB18 /* Finding a Peaceful Place.mp3 */; };
 		65A688E61EF213FA000DAB18 /* Floating on a Cloud.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65A688E31EF213FA000DAB18 /* Floating on a Cloud.mp3 */; };
 		65A688E71EF213FA000DAB18 /* Warming Your Body No Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65A688E41EF213FA000DAB18 /* Warming Your Body No Intro.mp3 */; };
+		65A9CC5B1F1D3FE200770A82 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9CC5A1F1D3FE200770A82 /* Alerts.swift */; };
 		65B7BC411EEF360F009AE298 /* Intro to Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC3F1EEF360F009AE298 /* Intro to Meditation.mp3 */; };
 		65B7BC421EEF360F009AE298 /* Learning to Breath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC401EEF360F009AE298 /* Learning to Breath.mp3 */; };
 		65B7BC441EEF3C81009AE298 /* Dealing With Distractions.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC431EEF3C81009AE298 /* Dealing With Distractions.mp3 */; };
@@ -200,6 +201,7 @@
 		65A688E21EF213FA000DAB18 /* Finding a Peaceful Place.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Finding a Peaceful Place.mp3"; sourceTree = "<group>"; };
 		65A688E31EF213FA000DAB18 /* Floating on a Cloud.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Floating on a Cloud.mp3"; sourceTree = "<group>"; };
 		65A688E41EF213FA000DAB18 /* Warming Your Body No Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Warming Your Body No Intro.mp3"; sourceTree = "<group>"; };
+		65A9CC5A1F1D3FE200770A82 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		65B7BC3F1EEF360F009AE298 /* Intro to Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Intro to Meditation.mp3"; sourceTree = "<group>"; };
 		65B7BC401EEF360F009AE298 /* Learning to Breath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Learning to Breath.mp3"; sourceTree = "<group>"; };
 		65B7BC431EEF3C81009AE298 /* Dealing With Distractions.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dealing With Distractions.mp3"; sourceTree = "<group>"; };
@@ -398,15 +400,16 @@
 				6502A6771ECE2C850018E51B /* OpenZenMenuViewController.swift */,
 				651F0C201ECF6F8E00ABA621 /* GuidedZenViewController.swift */,
 				651F0C2C1ECF970300ABA621 /* MeditationViewController.swift */,
-				65EC9EA21F1D3DE700DFB38C /* RateInStoreExtension.swift */,
 				651F0C281ECF928500ABA621 /* MoodZenViewController.swift */,
 				659B8D861ED4E6B600E6D24C /* SettingsViewController.swift */,
 				65C18A901EDF74E1000B29F6 /* SZNavigationController.swift */,
-				6595C7CC1EE5F2C3007972A7 /* SessionCompleteViewController.swift */,
 				657B41871EE088CC00503868 /* TutorialPageViewController.swift */,
 				65C18A921EDF768F000B29F6 /* TutorialViewController.swift */,
 				653FDEBC1EF99C0D00CD26FE /* SettingsTableViewCell.swift */,
 				65D13A511F017B2100DBEDEA /* QuotesBackupExtension.swift */,
+				6595C7CC1EE5F2C3007972A7 /* SessionCompleteViewController.swift */,
+				65EC9EA21F1D3DE700DFB38C /* RateInStoreExtension.swift */,
+				65A9CC5A1F1D3FE200770A82 /* Alerts.swift */,
 				658C9FC41ECBB5F400C71538 /* Animations */,
 			);
 			name = "View Controllers";
@@ -1018,6 +1021,7 @@
 				653BFFE11ED76C55008F48AA /* GuidedMeditationsExtension.swift in Sources */,
 				653FDEBD1EF99C0D00CD26FE /* SettingsTableViewCell.swift in Sources */,
 				659E0DA01ED392AF00E6346D /* SZCourse.swift in Sources */,
+				65A9CC5B1F1D3FE200770A82 /* Alerts.swift in Sources */,
 				651F0C211ECF6F8E00ABA621 /* GuidedZenViewController.swift in Sources */,
 				658C9FD81ECBC6E300C71538 /* MainMenuViewController.swift in Sources */,
 				65EC9EA31F1D3DE700DFB38C /* RateInStoreExtension.swift in Sources */,

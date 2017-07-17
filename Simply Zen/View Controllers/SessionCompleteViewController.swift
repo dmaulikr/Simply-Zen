@@ -8,12 +8,18 @@
 
 import UIKit
 import TwitterKit
+import StoreKit
 
 // MARK: - Session Complete View Controller Class
 
-class SessionCompleteViewController: UIViewController {
+class SessionCompleteViewController: UIViewController, SKStoreProductViewControllerDelegate {
 
     // MARK: - Properties
+    
+    // Properties for showing app store rating
+    var timesUserHasOpenedApp : Int?
+    var doNotBugToRate : Bool?
+    let openTimesToCheck = 3
     
     // Mark: - IBOutlets
     @IBOutlet weak var quoteBody: UILabel!
@@ -104,6 +110,15 @@ class SessionCompleteViewController: UIViewController {
     }
  
     @IBAction func doneButtonTapped(_ sender: Any) {
+        
+        // Check to see if user has opened the app three times already if so, call the rate app popup
+        updateTimesUserHasOpenedApp()
+        if timesUserHasOpenedApp! >= openTimesToCheck && !doNotBugToRate! {
+            showRateUsAlert(Alerts.RateUsTitle, message: Alerts.RateUsMessage)
+            timesUserHasOpenedApp = 0
+            setTimesUserHasOpenedApp()
+        }
+        
         navigationController?.hidesBarsOnTap = true
         navigationController?.popToRootViewController(animated: false)
     }

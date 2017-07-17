@@ -8,12 +8,12 @@
 
 import UIKit
 
-extension ViewController {
+extension SessionCompleteViewController {
     
     // This is where alert messages go
     struct Alerts {
-        static let RateUsTitle = "Rate Blue Tip Calculator!"
-        static let RateUsMessage = "Your ratings and reviews will keep the updates coming.  Let us know what you think!"
+        static let RateUsTitle = "Rate Simply Zen"
+        static let RateUsMessage = "Your ratings and reviews are greatly appreciated"
         static let WillRateUs = "Sure, I will help out"
         static let WontRateUs = "No thanks"
         static let RemindMe = "Maybe later"
@@ -29,7 +29,7 @@ extension ViewController {
         }))
         alert.addAction(UIAlertAction(title: Alerts.WontRateUs, style: .default, handler: { (UIAlertAction) -> Void in
             print("Don't disturb anymore")
-            doNotBugToRate = true
+            self.doNotBugToRate = true
             self.setNotToBugUser()
         }))
         alert.addAction(UIAlertAction(title: Alerts.RemindMe, style: .default, handler: nil))
