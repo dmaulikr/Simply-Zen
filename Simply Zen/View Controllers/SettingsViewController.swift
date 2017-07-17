@@ -16,6 +16,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     let delegate = UIApplication.shared.delegate as! AppDelegate
     var audioURL: URL!
     var audioPlayer: AVAudioPlayer!
+    var bellVolume: Float!
 
     @IBOutlet weak var bellSegmentedControl: UISegmentedControl!
     @IBOutlet weak var settingsTableView: UITableView!
@@ -55,7 +56,23 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         // Make it easy to get back out of settings
         navigationController?.navigationBar.isHidden = false
         
+        // Load UI with settings
+
+        // Setup bell sound
         bellSegmentedControl.selectedSegmentIndex = getBellSegment()
+        let name = getName(atSegment: bellSegmentedControl.selectedSegmentIndex)
+        audioURL = Bundle.main.url(forResource: name, withExtension: "mp3")
+        
+        // Get volume control setup
+        if let volume = UserDefaults.standard.value(forKey: "bellVolume") as? Float {
+            bellVolume = volume
+        } else {
+            bellVolume = 0.2
+            UserDefaults.standard.setValue(bellVolume, forKey: "bellVolume")
+        }
+        
+        bellVolumeSlider.value = bellVolume
+        print("The volume is set to \(String(describing: bellVolume))")
         
         // Setup button fonts
         
@@ -68,6 +85,12 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             enableTwitterButton.titleLabel?.font = UIFont(name: "STHeitiSC-Light", size: 18)
         }
     }
+    
+    // MARK: - Save bell volume when view will disappear
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        UserDefaults.standard.setValue(bellVolume, forKey: "bellVolume")
+    }
 
     @IBAction func bellSegmentChanged(_ sender: Any) {
         
@@ -79,10 +102,11 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         delegate.stack.save()
     }
     
+    // Play Sound using Current Settings
     func playAudio() {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
-            audioPlayer.volume = 0.2
+            audioPlayer.volume = bellVolume
             audioPlayer.play()
         } catch {
             print("Unable to start audio player")
@@ -106,8 +130,8 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     func getBellSegment() -> Int{
         // Setup segment control
-        let bellSound = delegate.user.bellSound
         
+        let bellSound = delegate.user.bellSound
         var segment = 0
         
         switch bellSound {
@@ -140,10 +164,14 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
-    @IBAction func bellVolumeChanged(_ sender: Any) {
-        
+    // Change volume when slider moves and play the bell at new volume
+    @IBAction func volumeSliderValueChanged(_ sender: UISlider) {
+        bellVolume = bellVolumeSlider.value
+        let _ = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false, block: { (timer) in
+            self.playAudio()
+        })
     }
-    
+
     
     // MARK: - Enable Twitter Button Tapped
     @IBAction func enableTwitter(_ sender: Any) {
@@ -257,9 +285,5 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             return sadCourse
         }
     }
-    
-    // MARK: - Pushing
-    
-    
 
 }

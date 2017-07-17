@@ -101,6 +101,7 @@
 		65D13A521F017B2100DBEDEA /* QuotesBackupExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D13A511F017B2100DBEDEA /* QuotesBackupExtension.swift */; };
 		65EB85591ED4AF3C0092FEB5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EB85581ED4AF3C0092FEB5 /* HealthKit.framework */; };
 		65EB855F1ED4B1730092FEB5 /* HealthKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB855E1ED4B1730092FEB5 /* HealthKitExtension.swift */; };
+		65EC9EA31F1D3DE700DFB38C /* RateInStoreExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EC9EA21F1D3DE700DFB38C /* RateInStoreExtension.swift */; };
 		65FD30B71ED4D57C008D76D6 /* Meditation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30AF1ED4D57C008D76D6 /* Meditation+CoreDataClass.swift */; };
 		65FD30B81ED4D57C008D76D6 /* Meditation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30B01ED4D57C008D76D6 /* Meditation+CoreDataProperties.swift */; };
 		65FD30B91ED4D57C008D76D6 /* Lesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30B11ED4D57C008D76D6 /* Lesson+CoreDataClass.swift */; };
@@ -229,6 +230,7 @@
 		65EB85561ED4AF3C0092FEB5 /* Simply Zen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Simply Zen.entitlements"; sourceTree = "<group>"; };
 		65EB85581ED4AF3C0092FEB5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		65EB855E1ED4B1730092FEB5 /* HealthKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthKitExtension.swift; path = HealthKit/HealthKitExtension.swift; sourceTree = "<group>"; };
+		65EC9EA21F1D3DE700DFB38C /* RateInStoreExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RateInStoreExtension.swift; path = "Simply Zen/View Controllers/Extensions/RateInStoreExtension.swift"; sourceTree = "<group>"; };
 		65FD30AF1ED4D57C008D76D6 /* Meditation+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Meditation+CoreDataClass.swift"; path = "Simply Zen/Model/Meditation+CoreDataClass.swift"; sourceTree = "<group>"; };
 		65FD30B01ED4D57C008D76D6 /* Meditation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Meditation+CoreDataProperties.swift"; path = "Simply Zen/Model/Meditation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		65FD30B11ED4D57C008D76D6 /* Lesson+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Lesson+CoreDataClass.swift"; path = "Simply Zen/Model/Lesson+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 				6502A6771ECE2C850018E51B /* OpenZenMenuViewController.swift */,
 				651F0C201ECF6F8E00ABA621 /* GuidedZenViewController.swift */,
 				651F0C2C1ECF970300ABA621 /* MeditationViewController.swift */,
+				65EC9EA21F1D3DE700DFB38C /* RateInStoreExtension.swift */,
 				651F0C281ECF928500ABA621 /* MoodZenViewController.swift */,
 				659B8D861ED4E6B600E6D24C /* SettingsViewController.swift */,
 				65C18A901EDF74E1000B29F6 /* SZNavigationController.swift */,
@@ -1017,6 +1020,7 @@
 				659E0DA01ED392AF00E6346D /* SZCourse.swift in Sources */,
 				651F0C211ECF6F8E00ABA621 /* GuidedZenViewController.swift in Sources */,
 				658C9FD81ECBC6E300C71538 /* MainMenuViewController.swift in Sources */,
+				65EC9EA31F1D3DE700DFB38C /* RateInStoreExtension.swift in Sources */,
 				65D13A521F017B2100DBEDEA /* QuotesBackupExtension.swift in Sources */,
 				6595C7CD1EE5F2C3007972A7 /* SessionCompleteViewController.swift in Sources */,
 				65FD30B81ED4D57C008D76D6 /* Meditation+CoreDataProperties.swift in Sources */,

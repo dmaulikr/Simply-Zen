@@ -16,9 +16,13 @@ class SZNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Make sure bell volume has a default value
+        // Set user default for sound level
+        if UserDefaults.standard.value(forKey: "bellVolume") == nil {
+            UserDefaults.standard.setValue(0.2 as Float, forKey: "bellVolume")
+        }
+        
         if UserDefaults.standard.value(forKey: "viewedTutorial") == nil {
-            // TODO: - Move this into TutorialVC after it has been completed
-            UserDefaults.standard.setValue(true, forKey: "viewedTutorial")
             // sets a new rootVC
             let tutorialVC = storyboard?.instantiateViewController(withIdentifier: "pageVC") as! TutorialPageViewController
             UIApplication.shared.delegate?.window??.rootViewController = tutorialVC

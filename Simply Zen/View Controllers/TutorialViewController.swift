@@ -68,6 +68,16 @@ class TutorialViewController: UIViewController {
     
     @IBAction func finishTutorial(_ sender: Any) {
         if pageName == "pageEight" {
+            
+            // MARK: - User Defaults
+            
+            // Set user defaults so that tutorial doesn't show up again
+            UserDefaults.standard.setValue(true, forKey: "viewedTutorial")
+            
+            // Set user default for sound level
+            UserDefaults.standard.setValue(0.2 as Float, forKey: "bellVolume")
+            
+            // Set back to nav controller to get into main program
             let navigationRoot = storyboard?.instantiateViewController(withIdentifier: "navigationRoot") as! SZNavigationController
             UIApplication.shared.delegate?.window??.rootViewController = navigationRoot
         }

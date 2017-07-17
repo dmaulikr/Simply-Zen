@@ -32,6 +32,7 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     var paused = false
     var sessionDuration: Double = 0.0
     var sessionStartDate: Date!
+    let bellVolume = UserDefaults.standard.value(forKey: "bellVolume") as! Float
     
     // NOTE: - Removing images from launch version until we can figure out how to do images better
     
@@ -179,7 +180,7 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
             audioPlayer.delegate = self
             
             if isOpenMeditation {
-                audioPlayer.volume = 0.3
+                audioPlayer.volume = bellVolume
             }
             
             audioPlayer.play()
