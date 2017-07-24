@@ -32,8 +32,9 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
         guidedZenView.guidedZenMenuViewDelegate = self
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        guidedZenView.removeAllAnimations()
     }
 
     // MARK: - Guided Zen Menu View Delegate Methods

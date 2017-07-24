@@ -46,6 +46,7 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        mainMenuView.removeAllAnimations()
     }
         
     // MARK: - Core Data

@@ -100,7 +100,7 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
         
         // Re-enable idle timer
         UIApplication.shared.isIdleTimerDisabled = false
-
+        meditationView.removeAllAnimations()
     }
     
 

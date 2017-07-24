@@ -32,7 +32,12 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
         // Setup animations and enable button taps
         moodZenView.addFloatAnimation()
         moodZenView.moodZenViewDelegate = self
-        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        moodZenView.removeAllAnimations()
+    }
 
 
     // MARK: - MoodZenViewDelegate Methods
