@@ -89,11 +89,14 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     // MARK: - Save bell volume when view will disappear
     
     override func viewWillDisappear(_ animated: Bool) {
+        // set the volume correctly
         UserDefaults.standard.setValue(bellVolume, forKey: "bellVolume")
     }
 
+    // Change volume when slider value changes
+    // note that slider isContinues value is false so that the bell sound will
+    // only play after user interaction has ended
     @IBAction func bellSegmentChanged(_ sender: Any) {
-        
         let name = getName(atSegment: bellSegmentedControl.selectedSegmentIndex)
         audioURL = Bundle.main.url(forResource: name, withExtension: "mp3")
         playAudio()
