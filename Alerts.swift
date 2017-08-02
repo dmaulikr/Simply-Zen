@@ -24,11 +24,9 @@ extension SessionCompleteViewController {
     func showRateUsAlert(_ title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: Alerts.WillRateUs, style: .default, handler: { (UIAlertAction) -> Void in
-            print("handling")
             self.goToAppInAppStore()
         }))
         alert.addAction(UIAlertAction(title: Alerts.WontRateUs, style: .default, handler: { (UIAlertAction) -> Void in
-            print("Don't disturb anymore")
             self.doNotBugToRate = true
             self.setNotToBugUser()
         }))
