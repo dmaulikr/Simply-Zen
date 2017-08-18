@@ -283,8 +283,13 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         case 5:
             return upsetCourse
         case 6:
+            return happyCourse
+        case 7:
             return cantSleepCourse
+        case 8:
+            return sadCourse
         default:
+            print("Default case run, should not have been.  Check for logic error.")
             return sadCourse
         }
     }
