@@ -94,7 +94,6 @@
 		65BE12C21EC500E700628802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12C11EC500E700628802 /* AppDelegate.swift */; };
 		65BE12C91EC500E700628802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12C71EC500E700628802 /* Main.storyboard */; };
 		65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12CC1EC500E700628802 /* LaunchScreen.storyboard */; };
-		65BE12D91EC500E700628802 /* Simply_ZenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12D81EC500E700628802 /* Simply_ZenTests.swift */; };
 		65BE12E41EC500E700628802 /* Simply_ZenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12E31EC500E700628802 /* Simply_ZenUITests.swift */; };
 		65C18A911EDF74E1000B29F6 /* SZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C18A901EDF74E1000B29F6 /* SZNavigationController.swift */; };
 		65C18A931EDF768F000B29F6 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C18A921EDF768F000B29F6 /* TutorialViewController.swift */; };
@@ -103,6 +102,7 @@
 		65EB85591ED4AF3C0092FEB5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EB85581ED4AF3C0092FEB5 /* HealthKit.framework */; };
 		65EB855F1ED4B1730092FEB5 /* HealthKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB855E1ED4B1730092FEB5 /* HealthKitExtension.swift */; };
 		65EC9EA31F1D3DE700DFB38C /* RateInStoreExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EC9EA21F1D3DE700DFB38C /* RateInStoreExtension.swift */; };
+		65F036111F4770BB004EEF09 /* SZModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F036101F4770BB004EEF09 /* SZModelTests.swift */; };
 		65FD30B71ED4D57C008D76D6 /* Meditation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30AF1ED4D57C008D76D6 /* Meditation+CoreDataClass.swift */; };
 		65FD30B81ED4D57C008D76D6 /* Meditation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30B01ED4D57C008D76D6 /* Meditation+CoreDataProperties.swift */; };
 		65FD30B91ED4D57C008D76D6 /* Lesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD30B11ED4D57C008D76D6 /* Lesson+CoreDataClass.swift */; };
@@ -220,7 +220,6 @@
 		65BE12CD1EC500E700628802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65BE12CF1EC500E700628802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65BE12D41EC500E700628802 /* Simply ZenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simply ZenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		65BE12D81EC500E700628802 /* Simply_ZenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simply_ZenTests.swift; sourceTree = "<group>"; };
 		65BE12DA1EC500E700628802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65BE12DF1EC500E700628802 /* Simply ZenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simply ZenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE12E31EC500E700628802 /* Simply_ZenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simply_ZenUITests.swift; sourceTree = "<group>"; };
@@ -233,6 +232,7 @@
 		65EB85581ED4AF3C0092FEB5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		65EB855E1ED4B1730092FEB5 /* HealthKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthKitExtension.swift; path = HealthKit/HealthKitExtension.swift; sourceTree = "<group>"; };
 		65EC9EA21F1D3DE700DFB38C /* RateInStoreExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RateInStoreExtension.swift; path = "Simply Zen/View Controllers/Extensions/RateInStoreExtension.swift"; sourceTree = "<group>"; };
+		65F036101F4770BB004EEF09 /* SZModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SZModelTests.swift; sourceTree = "<group>"; };
 		65FD30AF1ED4D57C008D76D6 /* Meditation+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Meditation+CoreDataClass.swift"; path = "Simply Zen/Model/Meditation+CoreDataClass.swift"; sourceTree = "<group>"; };
 		65FD30B01ED4D57C008D76D6 /* Meditation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Meditation+CoreDataProperties.swift"; path = "Simply Zen/Model/Meditation+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		65FD30B11ED4D57C008D76D6 /* Lesson+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Lesson+CoreDataClass.swift"; path = "Simply Zen/Model/Lesson+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -535,7 +535,7 @@
 		65BE12D71EC500E700628802 /* Simply ZenTests */ = {
 			isa = PBXGroup;
 			children = (
-				65BE12D81EC500E700628802 /* Simply_ZenTests.swift */,
+				65F036101F4770BB004EEF09 /* SZModelTests.swift */,
 				65BE12DA1EC500E700628802 /* Info.plist */,
 			);
 			path = "Simply ZenTests";
@@ -745,6 +745,7 @@
 					65BE12D31EC500E700628802 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = ZJ769HHQS2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 65BE12BD1EC500E700628802;
 					};
@@ -1046,7 +1047,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65BE12D91EC500E700628802 /* Simply_ZenTests.swift in Sources */,
+				65F036111F4770BB004EEF09 /* SZModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1228,11 +1229,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = ZJ769HHQS2;
 				INFOPLIST_FILE = "Simply ZenTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blaumagier.Simply-ZenTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simply Zen.app/Simply Zen";
 			};
@@ -1244,6 +1247,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = ZJ769HHQS2;
 				INFOPLIST_FILE = "Simply ZenTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
