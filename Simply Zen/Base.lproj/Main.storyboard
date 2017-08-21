@@ -911,7 +911,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knX-3O-kj6">
-                                <rect key="frame" x="154" y="686" width="106" height="30"/>
+                                <rect key="frame" x="154" y="680" width="106" height="30"/>
                                 <color key="backgroundColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GRx-TH-O4B"/>
@@ -928,7 +928,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hfs-Ba-pJ6" firstAttribute="top" secondItem="T6Z-gu-dtC" secondAttribute="bottom" constant="-20" id="4dQ-I8-qcR"/>
-                            <constraint firstItem="BJJ-Si-LAl" firstAttribute="top" secondItem="knX-3O-kj6" secondAttribute="bottom" constant="20" id="IPf-dC-qbx"/>
+                            <constraint firstItem="BJJ-Si-LAl" firstAttribute="top" secondItem="knX-3O-kj6" secondAttribute="bottom" constant="26" id="IPf-dC-qbx"/>
                             <constraint firstItem="BJJ-Si-LAl" firstAttribute="top" secondItem="hfs-Ba-pJ6" secondAttribute="bottom" id="hJE-h2-hHY"/>
                             <constraint firstItem="hfs-Ba-pJ6" firstAttribute="leading" secondItem="4Qn-Ug-hps" secondAttribute="leadingMargin" constant="-20" id="pH3-15-Mcw"/>
                             <constraint firstItem="knX-3O-kj6" firstAttribute="centerX" secondItem="4Qn-Ug-hps" secondAttribute="centerX" id="qWK-78-vIn"/>
@@ -958,7 +958,7 @@
         <image name="Play-Button" width="50" height="50"/>
         <image name="Session-Complete-Background" width="1242" height="2208"/>
         <image name="Settings-Menu-Background" width="1242" height="2208"/>
-        <image name="Settings-Screen" width="766" height="1331"/>
+        <image name="Settings-Screen" width="1242" height="2208"/>
         <image name="Tweet-Session-Button" width="199" height="32"/>
         <image name="flower_2" width="2592" height="1936"/>
     </resources>
