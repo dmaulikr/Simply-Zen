@@ -11,7 +11,8 @@ import XCTest
 
 class SZModelTests: XCTestCase {
     
-    var sut: SZLesson!
+    var lesson: SZLesson!
+    var course: SZCourse!
     
     override func setUp() {
         super.setUp()
@@ -32,12 +33,12 @@ class SZModelTests: XCTestCase {
         let fileName = "burmese-bell"
         let level = 0
         
-        sut = SZLesson(addLesson: lessonName, withFilename: fileName, level: level)
+        lesson = SZLesson(addLesson: lessonName, withFilename: fileName, level: level)
         
         // Make sure that properties have been set correctly
-        XCTAssertEqual(sut.lessonName, lessonName)
-        XCTAssertEqual(sut.lessonFileName, fileName)
-        XCTAssertEqual(sut.lessonLevel, level)
+        XCTAssertEqual(lesson.lessonName, lessonName)
+        XCTAssertEqual(lesson.lessonFileName, fileName)
+        XCTAssertEqual(lesson.lessonLevel, level)
     }
     
     // Make sure that lessons with duration can be added and that properties are set correctly
@@ -47,12 +48,12 @@ class SZModelTests: XCTestCase {
         let level = 0
         let duration = 104.0
         
-        sut = SZLesson(addLesson: lessonName, withFilename: fileName, level: level, durationInSeconds: duration)
+        lesson = SZLesson(addLesson: lessonName, withFilename: fileName, level: level, durationInSeconds: duration)
         
-        XCTAssertEqual(sut.lessonName, lessonName)
-        XCTAssertEqual(sut.lessonFileName, fileName)
-        XCTAssertEqual(sut.lessonLevel, level)
-        XCTAssertEqual(sut.durationInSeconds, duration)
+        XCTAssertEqual(lesson.lessonName, lessonName)
+        XCTAssertEqual(lesson.lessonFileName, fileName)
+        XCTAssertEqual(lesson.lessonLevel, level)
+        XCTAssertEqual(lesson.durationInSeconds, duration)
     }
     
     // Test performance of adding a lesson
@@ -64,8 +65,34 @@ class SZModelTests: XCTestCase {
             let level = 0
             let duration = 104.0
             
-            self.sut = SZLesson(addLesson: lessonName, withFilename: fileName, level: level, durationInSeconds: duration)
+            self.lesson = SZLesson(addLesson: lessonName, withFilename: fileName, level: level, durationInSeconds: duration)
         }
+    }
+    
+    // MARK: - Tests for specific courses
+    
+    // MARK: - Heart Meditation
+    
+    // Test that heart meditation course can be created
+    func test_heartMeditationCourse_canCreate() {
+        course = SZCourse.heartMeditationCourse()
+        
+        // Check name of course
+        XCTAssertEqual(course.name, "Heart Meditation Course")
+        
+        // Check that there are 6 lessons
+        XCTAssertEqual(course.lessons.count, 6)
+        
+        // Make sure that lessons inside course have correct name, filename, level, and duration
+        /*for courseLesson in course.lessons {
+            switch courseLesson.lessonLevel {
+            case 0:
+            
+                
+            default:
+                XCTFail()
+            }
+        } */
     }
     
 }
