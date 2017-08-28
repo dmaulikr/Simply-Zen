@@ -79,6 +79,9 @@
 		65A688E61EF213FA000DAB18 /* Floating on a Cloud.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65A688E31EF213FA000DAB18 /* Floating on a Cloud.mp3 */; };
 		65A688E71EF213FA000DAB18 /* Warming Your Body No Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65A688E41EF213FA000DAB18 /* Warming Your Body No Intro.mp3 */; };
 		65A9CC5B1F1D3FE200770A82 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9CC5A1F1D3FE200770A82 /* Alerts.swift */; };
+		65B4E0EF1F54B2AB00EA3C61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65B4E0EE1F54B2AB00EA3C61 /* GoogleService-Info.plist */; };
+		65B4E0F01F54B2AB00EA3C61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65B4E0EE1F54B2AB00EA3C61 /* GoogleService-Info.plist */; };
+		65B4E0F11F54B2AB00EA3C61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65B4E0EE1F54B2AB00EA3C61 /* GoogleService-Info.plist */; };
 		65B7BC411EEF360F009AE298 /* Intro to Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC3F1EEF360F009AE298 /* Intro to Meditation.mp3 */; };
 		65B7BC421EEF360F009AE298 /* Learning to Breath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC401EEF360F009AE298 /* Learning to Breath.mp3 */; };
 		65B7BC441EEF3C81009AE298 /* Dealing With Distractions.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC431EEF3C81009AE298 /* Dealing With Distractions.mp3 */; };
@@ -202,6 +205,7 @@
 		65A688E31EF213FA000DAB18 /* Floating on a Cloud.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Floating on a Cloud.mp3"; sourceTree = "<group>"; };
 		65A688E41EF213FA000DAB18 /* Warming Your Body No Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Warming Your Body No Intro.mp3"; sourceTree = "<group>"; };
 		65A9CC5A1F1D3FE200770A82 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		65B4E0EE1F54B2AB00EA3C61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		65B7BC3F1EEF360F009AE298 /* Intro to Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Intro to Meditation.mp3"; sourceTree = "<group>"; };
 		65B7BC401EEF360F009AE298 /* Learning to Breath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Learning to Breath.mp3"; sourceTree = "<group>"; };
 		65B7BC431EEF3C81009AE298 /* Dealing With Distractions.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dealing With Distractions.mp3"; sourceTree = "<group>"; };
@@ -650,6 +654,7 @@
 				6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */,
 				65BE12C11EC500E700628802 /* AppDelegate.swift */,
 				65BE12CF1EC500E700628802 /* Info.plist */,
+				65B4E0EE1F54B2AB00EA3C61 /* GoogleService-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -807,6 +812,7 @@
 				653022C11EF0853E004BA701 /* Rejecting Negativity.mp3 in Resources */,
 				65B7BC441EEF3C81009AE298 /* Dealing With Distractions.mp3 in Resources */,
 				65A688E61EF213FA000DAB18 /* Floating on a Cloud.mp3 in Resources */,
+				65B4E0EF1F54B2AB00EA3C61 /* GoogleService-Info.plist in Resources */,
 				653022C01EF0853E004BA701 /* Loving Yourself.mp3 in Resources */,
 				65B7BC541EEF5B5C009AE298 /* Opening Your Heart to Yourself.mp3 in Resources */,
 				653022A61EF0844B004BA701 /* Intro to Advanced Breathing.mp3 in Resources */,
@@ -847,6 +853,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B4E0F01F54B2AB00EA3C61 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,6 +861,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B4E0F11F54B2AB00EA3C61 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
