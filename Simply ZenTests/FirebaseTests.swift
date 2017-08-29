@@ -46,5 +46,11 @@ class FirebaseTests: XCTestCase {
         })
     }
     
+    func test_timeToRetrieveQuote_performance() {
+        self.measure {
+            self.test_getA_Message_notNil()
+        }
+    }
+    
     
 }
