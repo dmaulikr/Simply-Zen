@@ -6,17 +6,22 @@ target 'Simply Zen' do
   use_frameworks!
   pod 'TwitterKit'
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
   # Pods for Simply Zen
 
   target 'Simply ZenTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
   end
 
   target 'Simply ZenUITests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
   end
 
 end

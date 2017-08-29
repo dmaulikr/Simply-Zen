@@ -31,6 +31,7 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         
         // setup navigation bar
         setupNavigationBar()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,6 +42,8 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         // Start animation and setup delegate to handle taps
         mainMenuView.addFloatAnimation()
         mainMenuView.mainMenuViewDelegate = self
+        
+        
     }
     
     

@@ -48,6 +48,7 @@
 		653BFFE31ED76C71008F48AA /* OpenMeditationsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BFFE21ED76C71008F48AA /* OpenMeditationsExtension.swift */; };
 		653BFFE51ED76C7C008F48AA /* MoodMeditationsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BFFE41ED76C7C008F48AA /* MoodMeditationsExtension.swift */; };
 		653FDEBD1EF99C0D00CD26FE /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653FDEBC1EF99C0D00CD26FE /* SettingsTableViewCell.swift */; };
+		655A90181F54BDCA00610496 /* FirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655A90171F54BDCA00610496 /* FirebaseTests.swift */; };
 		656F20A91EF2EC61009C6AAB /* Breathing Away Anger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20A51EF2EC61009C6AAB /* Breathing Away Anger.mp3 */; };
 		656F20AA1EF2EC61009C6AAB /* Full Letting Go Session No Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20A61EF2EC61009C6AAB /* Full Letting Go Session No Intro.mp3 */; };
 		656F20AB1EF2EC61009C6AAB /* Rejecting Negativity No Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20A71EF2EC61009C6AAB /* Rejecting Negativity No Intro.mp3 */; };
@@ -174,6 +175,7 @@
 		653BFFE21ED76C71008F48AA /* OpenMeditationsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenMeditationsExtension.swift; path = "Simply Zen/Model/OpenMeditationsExtension.swift"; sourceTree = "<group>"; };
 		653BFFE41ED76C7C008F48AA /* MoodMeditationsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoodMeditationsExtension.swift; path = "Simply Zen/Model/MoodMeditationsExtension.swift"; sourceTree = "<group>"; };
 		653FDEBC1EF99C0D00CD26FE /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsTableViewCell.swift; path = "Simply Zen/View Controllers/SettingsTableViewCell.swift"; sourceTree = "<group>"; };
+		655A90171F54BDCA00610496 /* FirebaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseTests.swift; sourceTree = "<group>"; };
 		656F20A51EF2EC61009C6AAB /* Breathing Away Anger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Breathing Away Anger.mp3"; sourceTree = "<group>"; };
 		656F20A61EF2EC61009C6AAB /* Full Letting Go Session No Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Full Letting Go Session No Intro.mp3"; sourceTree = "<group>"; };
 		656F20A71EF2EC61009C6AAB /* Rejecting Negativity No Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rejecting Negativity No Intro.mp3"; sourceTree = "<group>"; };
@@ -540,6 +542,7 @@
 			isa = PBXGroup;
 			children = (
 				65F036101F4770BB004EEF09 /* SZModelTests.swift */,
+				655A90171F54BDCA00610496 /* FirebaseTests.swift */,
 				65BE12DA1EC500E700628802 /* Info.plist */,
 			);
 			path = "Simply ZenTests";
@@ -1055,6 +1058,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655A90181F54BDCA00610496 /* FirebaseTests.swift in Sources */,
 				65F036111F4770BB004EEF09 /* SZModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
