@@ -8,11 +8,16 @@
 
 import UIKit
 import AVFoundation
+import Firebase
 
 // MARK: - MeditationViewController Class
 class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
 
     // MARK: - Properties
+    
+    // Firebase Properties
+    let QuotesCountKey = "count"
+    var ref: DatabaseReference!
     
     // IBOutlets
     @IBOutlet weak var endSessionButton: UIButton!
@@ -47,6 +52,9 @@ class MeditationViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Setup Firebase database reference
+        ref = Database.database().reference()
         
         // Start the network activity indicator
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
