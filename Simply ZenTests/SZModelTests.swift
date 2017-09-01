@@ -84,15 +84,36 @@ class SZModelTests: XCTestCase {
         XCTAssertEqual(course.lessons.count, 6)
         
         // Make sure that lessons inside course have correct name, filename, level, and duration
-        /*for courseLesson in course.lessons {
+        for courseLesson in course.lessons {
             switch courseLesson.lessonLevel {
             case 0:
-            
-                
+                XCTAssertEqual(courseLesson.lessonName, "Intro to Heart Meditation")
+                XCTAssertEqual(courseLesson.lessonFileName, "Intro to Hearth meditation")
+                XCTAssertEqual(courseLesson.durationInSeconds, 104)
+            case 1:
+                XCTAssertEqual(courseLesson.lessonName, "Opening Your Heart to Yourself")
+                XCTAssertEqual(courseLesson.lessonFileName, "Opening Your Heart to Yourself")
+                XCTAssertEqual(courseLesson.durationInSeconds, 379)
+            case 2:
+                XCTAssertEqual(courseLesson.lessonName, "Opening Your Heart to Others")
+                XCTAssertEqual(courseLesson.lessonFileName, "Opening Your Heart to Others")
+                XCTAssertEqual(courseLesson.durationInSeconds, 418)
+            case 3:
+                XCTAssertEqual(courseLesson.lessonName, "Opening Your Heart to a Difficult Person")
+                XCTAssertEqual(courseLesson.lessonFileName, "Opening Your Heart to Difficult People")
+                XCTAssertEqual(courseLesson.durationInSeconds, 487)
+            case 4:
+                XCTAssertEqual(courseLesson.lessonName, "Opening Your Heart to the Universe")
+                XCTAssertEqual(courseLesson.lessonFileName, "Opening Your Heart to the Universe")
+                XCTAssertEqual(courseLesson.durationInSeconds, 626)
+            case 5:
+                XCTAssertEqual(courseLesson.lessonName, "Inner Light Meditation")
+                XCTAssertEqual(courseLesson.lessonFileName, "Inner Light Meditation")
+                XCTAssertEqual(courseLesson.durationInSeconds, 617)
             default:
                 XCTFail()
             }
-        } */
+        }
     }
     
 }
