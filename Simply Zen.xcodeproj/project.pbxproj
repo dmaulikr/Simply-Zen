@@ -26,6 +26,7 @@
 		652A44D71EC6791F004F57C9 /* SZCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 652A44D51EC6791F004F57C9 /* SZCoreDataModel.xcdatamodeld */; };
 		652BDA0D1ED511AC00D66AAE /* Settings.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652BDA0C1ED511AC00D66AAE /* Settings.xcassets */; };
 		652C2E7C1ED34DF700352BE5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C2E7B1ED34DF700352BE5 /* CoreDataStack.swift */; };
+		652F8F001F69B2C70004C926 /* Water on Paper.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 652F8EFF1F69B2C70004C926 /* Water on Paper.mp3 */; };
 		653022A21EF0844B004BA701 /* Being Kind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6530229C1EF0844B004BA701 /* Being Kind.mp3 */; };
 		653022A31EF0844B004BA701 /* Finding Your Focus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6530229D1EF0844B004BA701 /* Finding Your Focus.mp3 */; };
 		653022A41EF0844B004BA701 /* Full Breath Awareness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6530229E1EF0844B004BA701 /* Full Breath Awareness.mp3 */; };
@@ -153,6 +154,7 @@
 		652A44D61EC6791F004F57C9 /* SZCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SZCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		652BDA0C1ED511AC00D66AAE /* Settings.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Settings.xcassets; path = View/Settings.xcassets; sourceTree = "<group>"; };
 		652C2E7B1ED34DF700352BE5 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = "Simply Zen/Model/CoreDataStack.swift"; sourceTree = "<group>"; };
+		652F8EFF1F69B2C70004C926 /* Water on Paper.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Water on Paper.mp3"; sourceTree = "<group>"; };
 		6530229C1EF0844B004BA701 /* Being Kind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Being Kind.mp3"; sourceTree = "<group>"; };
 		6530229D1EF0844B004BA701 /* Finding Your Focus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Finding Your Focus.mp3"; sourceTree = "<group>"; };
 		6530229E1EF0844B004BA701 /* Full Breath Awareness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Full Breath Awareness.mp3"; sourceTree = "<group>"; };
@@ -453,6 +455,7 @@
 		659E0D881ED389F900E6346D /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				652F8EFF1F69B2C70004C926 /* Water on Paper.mp3 */,
 				659E0D911ED38A0D00E6346D /* Bells */,
 				659E0D851ED37E8300E6346D /* Meditation Tracks */,
 			);
@@ -842,6 +845,7 @@
 				651F0C2F1ECF974500ABA621 /* Meditation.xcassets in Resources */,
 				659E0D981ED38B1800E6346D /* thai-bell.mp3 in Resources */,
 				653022BF1EF0853E004BA701 /* Letting Go.mp3 in Resources */,
+				652F8F001F69B2C70004C926 /* Water on Paper.mp3 in Resources */,
 				656F20B51EF2FCDC009C6AAB /* Opening Your Heart to the Universe No Intro.mp3 in Resources */,
 				651F0C231ECF91BE00ABA621 /* MoodZen.xcassets in Resources */,
 				6502A6741ECE2C080018E51B /* OpenZenMenu.xcassets in Resources */,
