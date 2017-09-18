@@ -123,6 +123,9 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     // MARK: - MainMenuView Button Behavior
     
     func moodZenPressed(moodZen: UIButton) {
+        let notification = UINotificationFeedbackGenerator()
+        notification.notificationOccurred(.success)
+        self.playAudio()
         mainMenuView.addMoodTappedAnimation { (finished) in
             if finished {
                 self.performSegue(withIdentifier: "moodZenSegue", sender: self)
@@ -131,6 +134,9 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     }
     
     func guidedZenPressed(guidedZen: UIButton) {
+        let notification = UINotificationFeedbackGenerator()
+        notification.notificationOccurred(.success)
+        self.playAudio()
         mainMenuView.addGuidedTappedAnimation { (finished) in
             if finished {
                 self.performSegue(withIdentifier: "guidedZenSegue", sender: self)
