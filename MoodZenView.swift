@@ -699,19 +699,19 @@ class MoodZenView : UIView, CAAnimationDelegate {
 		self.layer.removeAnimation(forKey: "UpsetTapped")
 	}
 
-	func actionCantSleepPressed(cantSleep: UIButton) {
+	@objc func actionCantSleepPressed(cantSleep: UIButton) {
 		moodZenViewDelegate?.cantSleepPressed(cantSleep: cantSleep)
 	}
 
-	func actionHappyPressed(happy: UIButton) {
+	@objc func actionHappyPressed(happy: UIButton) {
 		moodZenViewDelegate?.happyPressed(happy: happy)
 	}
 
-	func actionSadPressed(sad: UIButton) {
+	@objc func actionSadPressed(sad: UIButton) {
 		moodZenViewDelegate?.sadPressed(sad: sad)
 	}
 
-	func actionUpsetPressed(upset: UIButton) {
+	@objc func actionUpsetPressed(upset: UIButton) {
 		moodZenViewDelegate?.upsetPressed(upset: upset)
 	}
 }

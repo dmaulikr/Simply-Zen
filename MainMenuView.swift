@@ -558,15 +558,15 @@ class MainMenuView : UIView, CAAnimationDelegate {
 		self.layer.removeAnimation(forKey: "MoodTapped")
 	}
 
-	func actionGuidedZenPressed(guidedZen: UIButton) {
+	@objc func actionGuidedZenPressed(guidedZen: UIButton) {
 		mainMenuViewDelegate?.guidedZenPressed(guidedZen: guidedZen)
 	}
 
-	func actionMoodZenPressed(moodZen: UIButton) {
+	@objc func actionMoodZenPressed(moodZen: UIButton) {
 		mainMenuViewDelegate?.moodZenPressed(moodZen: moodZen)
 	}
 
-	func actionOpenZenPressed(openZen: UIButton) {
+	@objc func actionOpenZenPressed(openZen: UIButton) {
 		mainMenuViewDelegate?.openZenPressed(openZen: openZen)
 	}
     

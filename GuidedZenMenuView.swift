@@ -841,23 +841,23 @@ class GuidedZenMenuView : UIView, CAAnimationDelegate {
 		self.layer.removeAnimation(forKey: "LettingGoTapped")
 	}
 
-	func actionLettingGoPressed(lettingGo: UIButton) {
+	@objc func actionLettingGoPressed(lettingGo: UIButton) {
 		guidedZenMenuViewDelegate?.lettingGoPressed(lettingGo: lettingGo)
 	}
 
-	func actionBeginningZenPressed(beginningZen: UIButton) {
+	@objc func actionBeginningZenPressed(beginningZen: UIButton) {
 		guidedZenMenuViewDelegate?.beginningZenPressed(beginningZen: beginningZen)
 	}
 
-	func actionRelaxPressed(relax: UIButton) {
+	@objc func actionRelaxPressed(relax: UIButton) {
 		guidedZenMenuViewDelegate?.relaxPressed(relax: relax)
 	}
 
-	func actionHeartMeditationPressed(heartMeditation: UIButton) {
+	@objc func actionHeartMeditationPressed(heartMeditation: UIButton) {
 		guidedZenMenuViewDelegate?.heartMeditationPressed(heartMeditation: heartMeditation)
 	}
 
-	func actionAdvancedBreathingPressed(advancedBreathing: UIButton) {
+	@objc func actionAdvancedBreathingPressed(advancedBreathing: UIButton) {
 		guidedZenMenuViewDelegate?.advancedBreathingPressed(advancedBreathing: advancedBreathing)
 	}
 }

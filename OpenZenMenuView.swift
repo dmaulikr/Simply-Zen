@@ -824,23 +824,23 @@ class OpenZenMenuView : UIView, CAAnimationDelegate {
 		self.layer.removeAnimation(forKey: "FiveMinutesTapped")
 	}
 
-	func actionTenMinutesPressed(tenMinutes: UIButton) {
+	@objc func actionTenMinutesPressed(tenMinutes: UIButton) {
 		openZenMenuViewDelegate?.tenMinutesPressed(tenMinutes: tenMinutes)
 	}
 
-	func actionTwoMinutesPressed(twoMinutes: UIButton) {
+	@objc func actionTwoMinutesPressed(twoMinutes: UIButton) {
 		openZenMenuViewDelegate?.twoMinutesPressed(twoMinutes: twoMinutes)
 	}
 
-	func actionNoBellsPressed(noBells: UIButton) {
+	@objc func actionNoBellsPressed(noBells: UIButton) {
 		openZenMenuViewDelegate?.noBellsPressed(noBells: noBells)
 	}
 
-	func actionTwentyMinutesPressed(twentyMinutes: UIButton) {
+	@objc func actionTwentyMinutesPressed(twentyMinutes: UIButton) {
 		openZenMenuViewDelegate?.twentyMinutesPressed(twentyMinutes: twentyMinutes)
 	}
 
-	func actionFiveMinutesPressed(fiveMinutes: UIButton) {
+	@objc func actionFiveMinutesPressed(fiveMinutes: UIButton) {
 		openZenMenuViewDelegate?.fiveMinutesPressed(fiveMinutes: fiveMinutes)
 	}
 }

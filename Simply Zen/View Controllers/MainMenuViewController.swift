@@ -114,7 +114,7 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.view.backgroundColor = UIColor.clear
         navigationController?.navigationBar.tintColor = navigationColor
-        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:navigationColor]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:navigationColor]
         navigationController?.navigationBar.isHidden = true
         navigationController?.barHideOnTapGestureRecognizer.numberOfTapsRequired = 2
         navigationController?.barHideOnTapGestureRecognizer.delaysTouchesBegan = true
