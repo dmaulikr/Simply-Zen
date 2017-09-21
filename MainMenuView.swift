@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 protocol MainMenuViewDelegate: class {
 	func moodZenPressed(moodZen: UIButton)
@@ -24,7 +25,6 @@ private class MainMenuPassthroughView: UIView {
 
 @IBDesignable
 class MainMenuView : UIView, CAAnimationDelegate {
-
 
 	var animationCompletions = Dictionary<CAAnimation, (Bool) -> Void>()
 	var viewsByName: [String : UIView]!
