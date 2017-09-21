@@ -154,18 +154,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="First-Screen" translatesAutoresizingMaskIntoConstraints="NO" id="2Dt-8o-GBe">
-                                <rect key="frame" x="-4" y="0.0" width="383" height="812"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="First-Screen" translatesAutoresizingMaskIntoConstraints="NO" id="2Dt-8o-GBe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="2Dt-8o-GBe" firstAttribute="top" secondItem="sbi-FK-0rH" secondAttribute="bottom" constant="-44" id="34m-O3-mBu"/>
-                            <constraint firstItem="Yap-ol-qAL" firstAttribute="top" secondItem="2Dt-8o-GBe" secondAttribute="bottom" constant="-34" id="CqQ-gN-OcN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2Dt-8o-GBe" secondAttribute="trailing" constant="-20" id="Y79-2W-2ia"/>
-                            <constraint firstItem="2Dt-8o-GBe" firstAttribute="leading" secondItem="XDW-th-n1g" secondAttribute="leadingMargin" constant="-20" id="wBU-Z1-Uou"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qgn-jd-BKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -229,12 +224,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Main-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="D9W-bm-qC1">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="D9W-bm-qC1">
+                                <rect key="frame" x="0.0" y="0.0" width="379" height="812"/>
                             </imageView>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eh-41-KPk" customClass="MainMenuView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="-4" y="102" width="383" height="676"/>
+                                <rect key="frame" x="-4" y="122" width="383" height="656"/>
                                 <gestureRecognizers/>
                             </view>
                         </subviews>
@@ -243,7 +237,11 @@
                         <constraints>
                             <constraint firstItem="2eh-41-KPk" firstAttribute="leading" secondItem="CU1-Dp-Dae" secondAttribute="leadingMargin" constant="-20" id="2Sr-aB-yQ9"/>
                             <constraint firstItem="7r7-Ml-diU" firstAttribute="top" secondItem="2eh-41-KPk" secondAttribute="bottom" id="GvB-on-sfc"/>
-                            <constraint firstItem="2eh-41-KPk" firstAttribute="top" secondItem="HJk-Aq-L7F" secondAttribute="bottom" constant="-20" id="WOj-Mv-59Z"/>
+                            <constraint firstItem="D9W-bm-qC1" firstAttribute="top" secondItem="HJk-Aq-L7F" secondAttribute="bottom" constant="-122" id="H94-7M-4W2"/>
+                            <constraint firstAttribute="trailing" secondItem="D9W-bm-qC1" secondAttribute="trailing" constant="-4" id="IJA-dh-oEZ"/>
+                            <constraint firstItem="7r7-Ml-diU" firstAttribute="top" secondItem="D9W-bm-qC1" secondAttribute="bottom" constant="-34" id="JLf-PG-0Vp"/>
+                            <constraint firstItem="2eh-41-KPk" firstAttribute="top" secondItem="HJk-Aq-L7F" secondAttribute="bottom" id="WOj-Mv-59Z"/>
+                            <constraint firstItem="D9W-bm-qC1" firstAttribute="leading" secondItem="CU1-Dp-Dae" secondAttribute="leading" id="XH6-dS-GaU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2eh-41-KPk" secondAttribute="trailing" constant="-20" id="lEL-rn-pfP"/>
                         </constraints>
                     </view>
@@ -277,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvr-Aa-XhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-579" y="54"/>
+            <point key="canvasLocation" x="-580" y="53.940886699507388"/>
         </scene>
         <!--Open Zen-->
         <scene sceneID="Xnd-vN-PAX">
@@ -291,19 +289,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Open-Zen-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="JNB-Ub-r1X">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Open-Zen-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="JNB-Ub-r1X">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="854"/>
                             </imageView>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="zS2-xn-m5P" customClass="OpenZenMenuView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="-4" y="102" width="383" height="676"/>
+                                <rect key="frame" x="-4" y="122" width="383" height="656"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="zS2-xn-m5P" secondAttribute="trailing" constant="-20" id="Aet-PF-Arh"/>
-                            <constraint firstItem="zS2-xn-m5P" firstAttribute="top" secondItem="lzh-sP-KYn" secondAttribute="bottom" constant="-20" id="Mda-u8-aNl"/>
+                            <constraint firstItem="JNB-Ub-r1X" firstAttribute="leading" secondItem="QZ8-9C-xXZ" secondAttribute="leading" id="Iuh-wx-ql7"/>
+                            <constraint firstItem="JNB-Ub-r1X" firstAttribute="top" secondItem="lzh-sP-KYn" secondAttribute="bottom" constant="-122" id="J4A-zn-4R9"/>
+                            <constraint firstItem="zS2-xn-m5P" firstAttribute="top" secondItem="lzh-sP-KYn" secondAttribute="bottom" id="Mda-u8-aNl"/>
+                            <constraint firstItem="qoG-jG-eqM" firstAttribute="top" secondItem="JNB-Ub-r1X" secondAttribute="bottom" constant="-76" id="OBL-yJ-7e3"/>
                             <constraint firstItem="zS2-xn-m5P" firstAttribute="leading" secondItem="QZ8-9C-xXZ" secondAttribute="leadingMargin" constant="-20" id="SEk-h0-caa"/>
+                            <constraint firstAttribute="trailing" secondItem="JNB-Ub-r1X" secondAttribute="trailing" id="Tzp-1V-HwJ"/>
                             <constraint firstItem="qoG-jG-eqM" firstAttribute="top" secondItem="zS2-xn-m5P" secondAttribute="bottom" id="aME-63-3TY"/>
                         </constraints>
                     </view>
@@ -335,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFi-DG-CJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-578.26086956521749" y="-744.29347826086962"/>
+            <point key="canvasLocation" x="-580" y="-745.56650246305423"/>
         </scene>
         <!--Settings-->
         <scene sceneID="AOv-Z2-Xks">
@@ -350,7 +351,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="kuH-bw-6Ym">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temple Bell Sound for Open Zen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="L3q-p9-HkJ">
                                 <rect key="frame" x="-19" y="96" width="378" height="28"/>
@@ -474,7 +475,7 @@
                             <constraint firstItem="L3q-p9-HkJ" firstAttribute="top" secondItem="GWH-pp-xjy" secondAttribute="bottom" constant="8" id="8lO-z1-E5C"/>
                             <constraint firstAttribute="leadingMargin" secondItem="JJb-Iz-RNX" secondAttribute="leading" id="9Pw-Iy-hNk"/>
                             <constraint firstItem="ZiX-MP-4NP" firstAttribute="top" secondItem="1Hj-by-yFz" secondAttribute="bottom" constant="8" id="BIY-7i-Wpt"/>
-                            <constraint firstItem="s0m-oJ-buv" firstAttribute="top" secondItem="kuH-bw-6Ym" secondAttribute="bottom" id="Bdu-AG-0Fu"/>
+                            <constraint firstItem="s0m-oJ-buv" firstAttribute="top" secondItem="kuH-bw-6Ym" secondAttribute="bottom" constant="-34" id="Bdu-AG-0Fu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bog-Oo-jY3" secondAttribute="trailing" id="Bpv-hD-VFI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JJb-Iz-RNX" secondAttribute="trailing" id="E85-8E-vOj"/>
                             <constraint firstAttribute="leadingMargin" secondItem="1Hj-by-yFz" secondAttribute="leading" id="LqB-4H-I1f"/>
@@ -506,7 +507,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbx-nR-62j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578.26086956521749" y="-788.31521739130437"/>
+            <point key="canvasLocation" x="576.79999999999995" y="-788.42364532019712"/>
         </scene>
         <!--Guided Zen-->
         <scene sceneID="toT-yu-AFl">
@@ -520,27 +521,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Guided-Zen-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="rCa-Hf-n60">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guided-Zen-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="rCa-Hf-n60">
+                                <rect key="frame" x="0.0" y="0.0" width="379" height="812"/>
                             </imageView>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzh-9L-UFd" customClass="GuidedZenMenuView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="-4" y="102" width="383" height="676"/>
+                                <rect key="frame" x="-4" y="122" width="383" height="656"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cG6-U0-ETT" firstAttribute="top" secondItem="hzh-9L-UFd" secondAttribute="bottom" id="090-w0-daz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hzh-9L-UFd" secondAttribute="trailing" constant="-20" id="3BG-FW-mrV"/>
-                            <constraint firstItem="hzh-9L-UFd" firstAttribute="top" secondItem="G78-3n-rps" secondAttribute="bottom" constant="-20" id="kNC-mC-vdl"/>
+                            <constraint firstItem="rCa-Hf-n60" firstAttribute="top" secondItem="G78-3n-rps" secondAttribute="bottom" constant="-122" id="5QT-7l-b7c"/>
+                            <constraint firstItem="cG6-U0-ETT" firstAttribute="top" secondItem="rCa-Hf-n60" secondAttribute="bottom" constant="-34" id="ij8-rQ-QSx"/>
+                            <constraint firstItem="hzh-9L-UFd" firstAttribute="top" secondItem="G78-3n-rps" secondAttribute="bottom" id="kNC-mC-vdl"/>
+                            <constraint firstItem="rCa-Hf-n60" firstAttribute="leading" secondItem="y13-SK-QSP" secondAttribute="leading" id="rXd-Dd-CWC"/>
                             <constraint firstItem="hzh-9L-UFd" firstAttribute="leading" secondItem="y13-SK-QSP" secondAttribute="leadingMargin" constant="-20" id="vAZ-ba-tWa"/>
+                            <constraint firstAttribute="trailing" secondItem="rCa-Hf-n60" secondAttribute="trailing" constant="-4" id="ycH-79-zfb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Guided Zen" prompt="Select Your Guide" id="gCA-KO-Aa3">
                         <barButtonItem key="backBarButtonItem" title="Home" id="MAN-5N-znS"/>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="rya-3c-uIN">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="ND4-OL-CrP">
-                                <rect key="frame" x="313" y="34" width="46" height="44"/>
+                                <rect key="frame" x="329" y="34" width="30" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -564,7 +568,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wb4-jD-Tqi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="579" y="54"/>
+            <point key="canvasLocation" x="578.39999999999998" y="53.940886699507388"/>
         </scene>
         <!--Mood Zen-->
         <scene sceneID="hFU-rT-iJ6">
@@ -578,20 +582,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mood-Zen-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="Duf-9V-r8B">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mood-Zen-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="Duf-9V-r8B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7q-eF-KX4" customClass="MoodZenView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="-4" y="102" width="383" height="676"/>
+                                <rect key="frame" x="-4" y="122" width="383" height="656"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="h7q-eF-KX4" firstAttribute="top" secondItem="3gx-Gn-Sh8" secondAttribute="bottom" constant="-20" id="615-ZU-Bjb"/>
+                            <constraint firstItem="h7q-eF-KX4" firstAttribute="top" secondItem="3gx-Gn-Sh8" secondAttribute="bottom" id="615-ZU-Bjb"/>
+                            <constraint firstItem="m6B-W6-eL5" firstAttribute="top" secondItem="Duf-9V-r8B" secondAttribute="bottom" constant="-34" id="6iz-mI-qvO"/>
                             <constraint firstItem="h7q-eF-KX4" firstAttribute="leading" secondItem="Vqn-Bt-1Y3" secondAttribute="leadingMargin" constant="-20" id="7xd-Bs-QRc"/>
+                            <constraint firstItem="Duf-9V-r8B" firstAttribute="leading" secondItem="Vqn-Bt-1Y3" secondAttribute="leading" id="Lxn-3g-ryT"/>
+                            <constraint firstAttribute="trailing" secondItem="Duf-9V-r8B" secondAttribute="trailing" id="SoB-CS-osN"/>
                             <constraint firstItem="m6B-W6-eL5" firstAttribute="top" secondItem="h7q-eF-KX4" secondAttribute="bottom" id="bRW-wc-8El"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h7q-eF-KX4" secondAttribute="trailing" constant="-20" id="s86-Mr-1aT"/>
+                            <constraint firstItem="Duf-9V-r8B" firstAttribute="top" secondItem="3gx-Gn-Sh8" secondAttribute="bottom" constant="-122" id="vd8-7w-NWc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mood Zen" prompt="What's your mood?" id="6Yv-KU-EwF">
@@ -622,7 +629,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83u-Ph-r6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-579" y="1023"/>
+            <point key="canvasLocation" x="-580" y="1022.6600985221676"/>
         </scene>
         <!--Meditate-->
         <scene sceneID="SXY-5t-v9X">
@@ -636,9 +643,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Meditation-Background" translatesAutoresizingMaskIntoConstraints="NO" id="XQv-5F-8RQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Meditation-Background" translatesAutoresizingMaskIntoConstraints="NO" id="XQv-5F-8RQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWo-GQ-pqB" customClass="MeditationView" customModule="Simply_Zen" customModuleProvider="target">
                                 <rect key="frame" x="-4" y="184" width="383" height="434"/>
@@ -659,10 +665,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JfP-dj-El7" firstAttribute="top" secondItem="XQv-5F-8RQ" secondAttribute="bottom" constant="-34" id="B6n-2G-iz0"/>
                             <constraint firstItem="JfP-dj-El7" firstAttribute="top" secondItem="TWo-GQ-pqB" secondAttribute="bottom" constant="160" id="JVI-Vg-wrY"/>
                             <constraint firstItem="TWo-GQ-pqB" firstAttribute="leading" secondItem="Vp6-Ok-tiK" secondAttribute="leadingMargin" constant="-20" id="Mkt-Ty-2Wx"/>
                             <constraint firstItem="ebo-9j-6M7" firstAttribute="centerX" secondItem="Vp6-Ok-tiK" secondAttribute="centerX" id="Q7p-5W-6aE"/>
+                            <constraint firstAttribute="trailing" secondItem="XQv-5F-8RQ" secondAttribute="trailing" id="Sre-jq-eAu"/>
+                            <constraint firstItem="XQv-5F-8RQ" firstAttribute="leading" secondItem="Vp6-Ok-tiK" secondAttribute="leading" id="caJ-4H-IB7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TWo-GQ-pqB" secondAttribute="trailing" constant="-20" id="lm1-SJ-lS6"/>
+                            <constraint firstItem="XQv-5F-8RQ" firstAttribute="top" secondItem="8Kp-TB-K5r" secondAttribute="bottom" constant="-44" id="y8r-fu-sBh"/>
                             <constraint firstItem="ebo-9j-6M7" firstAttribute="top" secondItem="TWo-GQ-pqB" secondAttribute="bottom" constant="8" id="yY3-qQ-kV3"/>
                             <constraint firstItem="TWo-GQ-pqB" firstAttribute="top" secondItem="8Kp-TB-K5r" secondAttribute="bottom" constant="140" id="zhF-1I-T7k"/>
                         </constraints>
@@ -715,13 +725,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="747" text="Meditation Quote" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JmI-oY-0JD">
-                                <rect key="frame" x="99.666666666666686" y="105" width="175.66666666666663" height="31"/>
+                                <rect key="frame" x="98.333333333333314" y="105" width="177.33333333333337" height="31"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HFN-73-bma">
-                                <rect key="frame" x="-98.666666666666671" y="144" width="374" height="31"/>
+                                <rect key="frame" x="-98.666666666666671" y="144" width="374.33333333333337" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="vl5-g0-QZe"/>
                                 </constraints>
@@ -730,20 +740,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Complete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fP7-l6-qn1">
-                                <rect key="frame" x="96.666666666666686" y="52" width="182" height="31"/>
+                                <rect key="frame" x="96.333333333333314" y="52" width="182" height="31"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inR-WU-tzm" userLabel="Done Button">
-                                <rect key="frame" x="88.666666666666686" y="760" width="199" height="32"/>
+                                <rect key="frame" x="88.333333333333314" y="760" width="199" height="32"/>
                                 <state key="normal" image="Done-Button"/>
                                 <connections>
                                     <action selector="doneButtonTapped:" destination="igT-jd-uyB" eventType="touchUpInside" id="bco-zd-4ML"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E72-Yi-cfo" userLabel="Tweet Button">
-                                <rect key="frame" x="88.666666666666686" y="720" width="199" height="32"/>
+                                <rect key="frame" x="88.333333333333314" y="720" width="199" height="32"/>
                                 <state key="normal" image="Tweet-Session-Button"/>
                                 <connections>
                                     <action selector="tweetSessionTapped:" destination="igT-jd-uyB" eventType="touchUpInside" id="6Lh-nO-Ky2"/>
@@ -962,6 +972,6 @@
         <image name="flower_2" width="2592" height="1936"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5i6-vW-Qmx"/>
+        <segue reference="KjU-q1-dUz"/>
     </inferredMetricsTieBreakers>
 </document>
