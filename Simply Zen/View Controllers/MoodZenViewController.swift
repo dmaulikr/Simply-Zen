@@ -21,8 +21,8 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
     // For sound
-    var audioURL: URL!
-    var audioPlayer: AVAudioPlayer!
+//    var audioURL: URL!
+//    var audioPlayer: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
         navigationController?.navigationBar.isHidden = true
         
         // Load sound effect
-        audioURL = Bundle.main.url(forResource: "Water on Paper", withExtension: "mp3")
+//        audioURL = Bundle.main.url(forResource: "Water on Paper", withExtension: "mp3")
         
         // Setup animations and enable button taps
         moodZenView.addFloatAnimation()
@@ -53,7 +53,7 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
     func sadPressed(sad: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playAudio()
+        self.playSoundEffect()
         moodZenView.addSadTappedAnimation { (finished) in
             if finished {
                 self.moodCourse = SZCourse.sadCourse()
@@ -65,7 +65,7 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
     func happyPressed(happy: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playAudio()
+        self.playSoundEffect()
         moodZenView.addHappyTappedAnimation { (finished) in
             if finished {
                 self.moodCourse = SZCourse.happyCourse()
@@ -77,7 +77,7 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
     func cantSleepPressed(cantSleep: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playAudio()
+        self.playSoundEffect()
         moodZenView.addCantSleepTappedAnimation { (finished) in
             if finished {
                 self.moodCourse = SZCourse.cantSleepCourse()
@@ -89,7 +89,7 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
     func upsetPressed(upset: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playAudio()
+        self.playSoundEffect()
         moodZenView.addUpsetTappedAnimation { (finished) in
             if finished {
                 self.moodCourse = SZCourse.upsetCourse()
@@ -147,16 +147,16 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
     
     // MARK: AVAudio Functions
     
-    private func playAudio() {
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
-            audioPlayer.delegate = self as? AVAudioPlayerDelegate
-            audioPlayer.volume = 0.3
-            audioPlayer.play()
-        } catch {
-            print("Unable to start audio player")
-        }
-    }
+//    private func playSoundEffect() {
+//        do {
+//            audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
+//            audioPlayer.delegate = self as? AVAudioPlayerDelegate
+//            audioPlayer.volume = 0.3
+//            audioPlayer.play()
+//        } catch {
+//            print("Unable to start audio player")
+//        }
+//    }
 
 
 

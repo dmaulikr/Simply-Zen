@@ -25,8 +25,8 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
     // For sound
-    var audioURL: URL!
-    var audioPlayer: AVAudioPlayer!
+//    var audioURL: URL!
+//    var audioPlayer: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         mainMenuView.mainMenuViewDelegate = self
         
         // Load sound effect
-        audioURL = Bundle.main.url(forResource: "Water on Paper", withExtension: "mp3")
+//        audioURL = Bundle.main.url(forResource: "Water on Paper", withExtension: "mp3")
     }
     
     
@@ -125,7 +125,7 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     func moodZenPressed(moodZen: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playAudio()
+        self.playSoundEffect()
         mainMenuView.addMoodTappedAnimation { (finished) in
             if finished {
                 self.performSegue(withIdentifier: "moodZenSegue", sender: self)
@@ -136,7 +136,7 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     func guidedZenPressed(guidedZen: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playAudio()
+        self.playSoundEffect()
         mainMenuView.addGuidedTappedAnimation { (finished) in
             if finished {
                 self.performSegue(withIdentifier: "guidedZenSegue", sender: self)
@@ -147,7 +147,7 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     func openZenPressed(openZen: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playAudio()
+        self.playSoundEffect()
         mainMenuView.addOpenTappedAnimation { (finished) in
             if finished {
                 self.performSegue(withIdentifier: "openZenSegue", sender: self)
@@ -166,17 +166,17 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         }
     }
     
-    // MARK: AVAudio Functions
-    
-    private func playAudio() {
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
-            audioPlayer.delegate = self as? AVAudioPlayerDelegate
-            audioPlayer.volume = 0.3
-            audioPlayer.play()
-        } catch {
-            print("Unable to start audio player")
-        }
-    }
+//    // MARK: AVAudio Functions
+//    
+//    private func playSoundEffect() {
+//        do {
+//            audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
+//            audioPlayer.delegate = self as? AVAudioPlayerDelegate
+//            audioPlayer.volume = 0.3
+//            audioPlayer.play()
+//        } catch {
+//            print("Unable to start audio player")
+//        }
+//    }
     
 }

@@ -22,8 +22,8 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
     // For sound
-    var audioURL: URL!
-    var audioPlayer: AVAudioPlayer!
+//    var audioURL: URL!
+//    var audioPlayer: AVAudioPlayer!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -39,7 +39,7 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
         let bellsSound = delegate.user.bellSound
         
         // Load sound effect
-        audioURL = Bundle.main.url(forResource: "Water on Paper", withExtension: "mp3")
+//        audioURL = Bundle.main.url(forResource: "Water on Paper", withExtension: "mp3")
         
         switch bellsSound {
         case "burmese":
@@ -71,7 +71,7 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     func noBellsPressed(noBells: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playAudio()
+        self.playSoundEffect()
         openZenMenuView.addNoBellsTappedAnimation { (finished) in
             if finished {
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
@@ -86,7 +86,7 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     func tenMinutesPressed(tenMinutes: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playAudio()
+        self.playSoundEffect()
         openZenMenuView.addTenMinutesTappedAnimation { (finished) in
             if finished {
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
@@ -103,7 +103,7 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     func twentyMinutesPressed(twentyMinutes: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playAudio()
+        self.playSoundEffect()
         openZenMenuView.addTwentyMinutesTappedAnimation { (finished) in
             if finished {
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
@@ -120,7 +120,7 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     func fiveMinutesPressed(fiveMinutes: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playAudio()
+        self.playSoundEffect()
         openZenMenuView.addFiveMinutesTappedAnimation { (finished) in
             if finished {
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
@@ -137,7 +137,7 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     func twoMinutesPressed(twoMinutes: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playAudio()
+        self.playSoundEffect()
         openZenMenuView.addTwoMinutesTappedAnimation { (finished) in
             if finished {
                 let meditationVC = self.storyboard?.instantiateViewController(withIdentifier: "meditationView") as! MeditationViewController
@@ -153,15 +153,15 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     
     // MARK: AVAudio Functions
     
-    private func playAudio() {
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
-            audioPlayer.delegate = self as? AVAudioPlayerDelegate
-            audioPlayer.volume = 0.3
-            audioPlayer.play()
-        } catch {
-            print("Unable to start audio player")
-        }
-    }
+//    private func playSoundEffect() {
+//        do {
+//            audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
+//            audioPlayer.delegate = self as? AVAudioPlayerDelegate
+//            audioPlayer.volume = 0.3
+//            audioPlayer.play()
+//        } catch {
+//            print("Unable to start audio player")
+//        }
+//    }
 
 }
