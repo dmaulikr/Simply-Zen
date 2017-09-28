@@ -23,8 +23,7 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
     // For sound
-//    var audioURL: URL!
-//    var audioPlayer: AVAudioPlayer!
+    var soundEffectPlayer: SoundEffect!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -32,8 +31,8 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
         // hide nav bar
         navigationController?.navigationBar.isHidden = true
         
-        // Load sound effect
-//        audioURL = Bundle.main.url(forResource: "Water on Paper", withExtension: "mp3")
+        // Load sound effect Engine
+        soundEffectPlayer = SoundEffect()
         
         // Setup animations and enable button taps
         guidedZenView.addFloatAnimation()
@@ -50,7 +49,7 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     func relaxPressed(relax: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playSoundEffect()
+        soundEffectPlayer.playSoundEffect()
         guidedZenView.addRelaxTappedAnimation { (finished) in
             if finished {
                 self.guidedCourse = SZCourse.relaxCourse()
@@ -62,7 +61,7 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     func heartMeditationPressed(heartMeditation: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playSoundEffect()
+        soundEffectPlayer.playSoundEffect()
         guidedZenView.addHeartMeditationTappedAnimation { (finished) in
             if finished {
                 self.guidedCourse = SZCourse.heartMeditationCourse()
@@ -74,7 +73,7 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     func beginningZenPressed(beginningZen: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playSoundEffect()
+        soundEffectPlayer.playSoundEffect()
         guidedZenView.addBeginningZenTappedAnimation { (finished) in
             if finished {
                 self.guidedCourse = SZCourse.beginningZenCourse()
@@ -86,7 +85,7 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     func lettingGoPressed(lettingGo: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playSoundEffect()
+        soundEffectPlayer.playSoundEffect()
         guidedZenView.addLettingGoTappedAnimation { (finished) in
             if finished {
                 self.guidedCourse = SZCourse.lettingGoCourse()
@@ -98,7 +97,7 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     func advancedBreathingPressed(advancedBreathing: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
-        self.playSoundEffect()
+        soundEffectPlayer.playSoundEffect()
         guidedZenView.addAdvancedBreathingTappedAnimation { (finished) in
             if finished {
                 self.guidedCourse = SZCourse.advancedBreathingCourse()
@@ -155,18 +154,5 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
         meditationVC.maxLevel = maxLevel
         self.navigationController?.pushViewController(meditationVC, animated: true)
     }
-    
-    // MARK: AVAudio Functions
-    
-//    private func playSoundEffect() {
-//        do {
-//            audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
-//            audioPlayer.delegate = self as? AVAudioPlayerDelegate
-//            audioPlayer.volume = 0.3
-//            audioPlayer.play()
-//        } catch {
-//            print("Unable to start audio player")
-//        }
-//    }
 
 }

@@ -10,20 +10,27 @@ import Foundation
 import UIKit
 import AVFoundation
 
-extension UIViewController {
+struct SoundEffect {
+    
+    var audioURL: URL!
+    var audioPlayer: AVAudioPlayer!
+    
+    init() {
+        audioURL = Bundle.main.url(forResource: "W1", withExtension: "mp3")
+    }
     
     // MARK: AVAudio Functions
-    
-    func playSoundEffect() {
+
+    mutating func playSoundEffect() {
         // Load sound effect
-        guard let audioURL = Bundle.main.url(forResource: "W1", withExtension: "mp3") else {
-            print("Error loading sound effect")
-            return
-        }
+//        let audioURL = Bundle.main.url(forResource: "W1", withExtension: "mp3")
+//        var audioPlayer: AVAudioPlayer!
+        
         do {
-            let audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
-            audioPlayer.delegate = self as? AVAudioPlayerDelegate
-            audioPlayer.volume = 0.3
+            audioPlayer = try AVAudioPlayer(contentsOf: audioURL!)
+//            audioPlayer.delegate = self as? AVAudioPlayerDelegate
+            audioPlayer.volume = 2.0
+            print("Playing sound from struct")
             audioPlayer.play()
         } catch {
             print("Unable to start audio player")

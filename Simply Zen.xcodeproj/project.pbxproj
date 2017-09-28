@@ -48,6 +48,7 @@
 		653BFFE31ED76C71008F48AA /* OpenMeditationsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BFFE21ED76C71008F48AA /* OpenMeditationsExtension.swift */; };
 		653BFFE51ED76C7C008F48AA /* MoodMeditationsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BFFE41ED76C7C008F48AA /* MoodMeditationsExtension.swift */; };
 		653FDEBD1EF99C0D00CD26FE /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653FDEBC1EF99C0D00CD26FE /* SettingsTableViewCell.swift */; };
+		6554813A1F7D77B600CF51B4 /* W1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 655481391F7D774B00CF51B4 /* W1.mp3 */; };
 		655A90181F54BDCA00610496 /* FirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655A90171F54BDCA00610496 /* FirebaseTests.swift */; };
 		656F20A91EF2EC61009C6AAB /* Breathing Away Anger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20A51EF2EC61009C6AAB /* Breathing Away Anger.mp3 */; };
 		656F20AA1EF2EC61009C6AAB /* Full Letting Go Session No Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20A61EF2EC61009C6AAB /* Full Letting Go Session No Intro.mp3 */; };
@@ -176,6 +177,7 @@
 		653BFFE21ED76C71008F48AA /* OpenMeditationsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenMeditationsExtension.swift; path = "Simply Zen/Model/OpenMeditationsExtension.swift"; sourceTree = "<group>"; };
 		653BFFE41ED76C7C008F48AA /* MoodMeditationsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoodMeditationsExtension.swift; path = "Simply Zen/Model/MoodMeditationsExtension.swift"; sourceTree = "<group>"; };
 		653FDEBC1EF99C0D00CD26FE /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsTableViewCell.swift; path = "Simply Zen/View Controllers/SettingsTableViewCell.swift"; sourceTree = "<group>"; };
+		655481391F7D774B00CF51B4 /* W1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = W1.mp3; sourceTree = "<group>"; };
 		655A90171F54BDCA00610496 /* FirebaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseTests.swift; sourceTree = "<group>"; };
 		656F20A51EF2EC61009C6AAB /* Breathing Away Anger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Breathing Away Anger.mp3"; sourceTree = "<group>"; };
 		656F20A61EF2EC61009C6AAB /* Full Letting Go Session No Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Full Letting Go Session No Intro.mp3"; sourceTree = "<group>"; };
@@ -371,6 +373,7 @@
 		65497F9F1F758BB300F5E631 /* Sound Effects */ = {
 			isa = PBXGroup;
 			children = (
+				655481391F7D774B00CF51B4 /* W1.mp3 */,
 			);
 			path = "Sound Effects";
 			sourceTree = "<group>";
@@ -803,6 +806,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6554813A1F7D77B600CF51B4 /* W1.mp3 in Resources */,
 				653022A31EF0844B004BA701 /* Finding Your Focus.mp3 in Resources */,
 				653022AF1EF08516004BA701 /* Breathing While Lying Down.mp3 in Resources */,
 				65B7BC511EEF5B5C009AE298 /* Intro to Hearth meditation.mp3 in Resources */,
