@@ -176,6 +176,7 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
             let notification = UINotificationFeedbackGenerator()
             notification.notificationOccurred(.success)
         }
+        
         soundEffectPlayer.playSoundEffect()
         mainMenuView.addOpenTappedAnimation { (finished) in
             if finished {
