@@ -25,6 +25,9 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     // For sound
     var soundEffectPlayer: SoundEffect!
     
+    // For haptics
+    var areHapticsEnabled: Bool!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -37,6 +40,14 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
         // Setup animations and enable button taps
         guidedZenView.addFloatAnimation()
         guidedZenView.guidedZenMenuViewDelegate = self
+        
+        // Load haptic settings
+        if let hapticsEnabled = UserDefaults.standard.value(forKey: "areUiHapticsOn") as? Bool {
+            areHapticsEnabled = hapticsEnabled
+        } else {
+            areHapticsEnabled = true
+            UserDefaults.standard.set(areHapticsEnabled, forKey: "areUiHapticsOn")
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -47,8 +58,10 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     // MARK: - Guided Zen Menu View Delegate Methods
     
     func relaxPressed(relax: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         guidedZenView.addRelaxTappedAnimation { (finished) in
             if finished {
@@ -59,8 +72,10 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     }
     
     func heartMeditationPressed(heartMeditation: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         guidedZenView.addHeartMeditationTappedAnimation { (finished) in
             if finished {
@@ -71,8 +86,10 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     }
     
     func beginningZenPressed(beginningZen: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         guidedZenView.addBeginningZenTappedAnimation { (finished) in
             if finished {
@@ -83,8 +100,10 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     }
     
     func lettingGoPressed(lettingGo: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         guidedZenView.addLettingGoTappedAnimation { (finished) in
             if finished {
@@ -95,8 +114,10 @@ class GuidedZenViewController: UIViewController, GuidedZenMenuViewDelegate {
     }
     
     func advancedBreathingPressed(advancedBreathing: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         guidedZenView.addAdvancedBreathingTappedAnimation { (finished) in
             if finished {

@@ -27,6 +27,9 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     // For sound
     var soundEffectPlayer: SoundEffect!
     
+    // For haptics
+    var areHapticsEnabled: Bool!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,6 +52,14 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
         
         // Load sound effect Engine
         soundEffectPlayer = SoundEffect()
+        
+        // Load haptic settings
+        if let hapticsEnabled = UserDefaults.standard.value(forKey: "areUiHapticsOn") as? Bool {
+            areHapticsEnabled = hapticsEnabled
+        } else {
+            areHapticsEnabled = true
+            UserDefaults.standard.set(areHapticsEnabled, forKey: "areUiHapticsOn")
+        }
     }
     
     
@@ -122,8 +133,10 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     // MARK: - MainMenuView Button Behavior
     
     func allMeditationsPressed(allMeditations: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         mainMenuView.addAllTappedAnimation() { (finished) in
             if finished {
@@ -133,8 +146,10 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     }
     
     func moodZenPressed(moodZen: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         mainMenuView.addMoodTappedAnimation { (finished) in
             if finished {
@@ -144,8 +159,10 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     }
     
     func guidedZenPressed(guidedZen: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         mainMenuView.addGuidedTappedAnimation { (finished) in
             if finished {
@@ -155,8 +172,10 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     }
     
     func openZenPressed(openZen: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         mainMenuView.addOpenTappedAnimation { (finished) in
             if finished {

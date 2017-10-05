@@ -24,6 +24,9 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     // For sound
     var soundEffectPlayer: SoundEffect!
     
+    // For haptics
+    var areHapticsEnabled: Bool!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -53,6 +56,14 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
             lesson = openZen.lessons[OpenZenLessons.Burmese]
         }
         
+        // Load haptic settings
+        if let hapticsEnabled = UserDefaults.standard.value(forKey: "areUiHapticsOn") as? Bool {
+            areHapticsEnabled = hapticsEnabled
+        } else {
+            areHapticsEnabled = true
+            UserDefaults.standard.set(areHapticsEnabled, forKey: "areUiHapticsOn")
+        }
+        
         
     }
 
@@ -68,8 +79,10 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     // These handle the button presses
     
     func noBellsPressed(noBells: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         openZenMenuView.addNoBellsTappedAnimation { (finished) in
             if finished {
@@ -83,8 +96,10 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     }
     
     func tenMinutesPressed(tenMinutes: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         openZenMenuView.addTenMinutesTappedAnimation { (finished) in
             if finished {
@@ -100,8 +115,10 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     }
     
     func twentyMinutesPressed(twentyMinutes: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         openZenMenuView.addTwentyMinutesTappedAnimation { (finished) in
             if finished {
@@ -117,8 +134,10 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     }
     
     func fiveMinutesPressed(fiveMinutes: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         openZenMenuView.addFiveMinutesTappedAnimation { (finished) in
             if finished {
@@ -134,8 +153,10 @@ class OpenZenMenuViewController: UIViewController, OpenZenMenuViewDelegate {
     }
     
     func twoMinutesPressed(twoMinutes: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         openZenMenuView.addTwoMinutesTappedAnimation { (finished) in
             if finished {

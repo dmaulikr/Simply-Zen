@@ -24,15 +24,24 @@ struct SoundEffect {
     // MARK: AVAudio Functions
 
     mutating func playSoundEffect() {
-
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: audioURL!)
-            audioPlayer.volume = 2.0
-            print("Playing sound from struct")
-            audioPlayer.play()
-        } catch {
-            print("Unable to start audio player")
+        guard let soundsEnabled = UserDefaults.standard.value(forKey: "isUiSoundOn") as? Bool else {
+            UserDefaults.standard.set(true, forKey: "isUiSoundOn")
+            self.playSoundEffect()
+            return
         }
+        
+        // Only play if the sounds are enabled
+        if soundsEnabled {
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: audioURL!)
+                audioPlayer.volume = 2.0
+                print("Playing sound from struct")
+                audioPlayer.play()
+            } catch {
+                print("Unable to start audio player")
+            }
+        }
+        
     }
     
     func pickRandomAudioURL() -> String {

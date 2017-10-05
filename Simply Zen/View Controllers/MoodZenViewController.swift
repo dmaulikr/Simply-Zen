@@ -23,6 +23,9 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
     // For sound
     var soundEffectPlayer: SoundEffect!
     
+    // For haptics
+    var areHapticsEnabled: Bool!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -40,6 +43,14 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
         // Setup animations and enable button taps
         moodZenView.addFloatAnimation()
         moodZenView.moodZenViewDelegate = self
+        
+        // Load haptic settings
+        if let hapticsEnabled = UserDefaults.standard.value(forKey: "areUiHapticsOn") as? Bool {
+            areHapticsEnabled = hapticsEnabled
+        } else {
+            areHapticsEnabled = true
+            UserDefaults.standard.set(areHapticsEnabled, forKey: "areUiHapticsOn")
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -51,8 +62,10 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
     // MARK: - MoodZenViewDelegate Methods
     
     func sadPressed(sad: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         moodZenView.addSadTappedAnimation { (finished) in
             if finished {
@@ -63,8 +76,10 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
     }
     
     func happyPressed(happy: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         moodZenView.addHappyTappedAnimation { (finished) in
             if finished {
@@ -75,8 +90,10 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
     }
     
     func cantSleepPressed(cantSleep: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         moodZenView.addCantSleepTappedAnimation { (finished) in
             if finished {
@@ -87,8 +104,10 @@ class MoodZenViewController: UIViewController, MoodZenViewDelegate {
     }
     
     func upsetPressed(upset: UIButton) {
-        let notification = UINotificationFeedbackGenerator()
-        notification.notificationOccurred(.success)
+        if areHapticsEnabled {
+            let notification = UINotificationFeedbackGenerator()
+            notification.notificationOccurred(.success)
+        }
         soundEffectPlayer.playSoundEffect()
         moodZenView.addUpsetTappedAnimation { (finished) in
             if finished {
