@@ -10,7 +10,6 @@
 		03AFCAE9B6825943BAB9EC06 /* Pods_Simply_ZenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71CA935852B17E4A87126B14 /* Pods_Simply_ZenTests.framework */; };
 		123DAEBAEEC165763E87B0AB /* Pods_Simply_Zen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3489C8EB9CFF7F238D4E7644 /* Pods_Simply_Zen.framework */; };
 		30D5E46BCB61EA03DE7D7AFB /* Pods_Simply_ZenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E926AB633DBA407E74580E59 /* Pods_Simply_ZenUITests.framework */; };
-		6502A6721ECE1C1D0018E51B /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6502A6711ECE1C1D0018E51B /* MainMenuView.swift */; };
 		6502A6741ECE2C080018E51B /* OpenZenMenu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6502A6731ECE2C080018E51B /* OpenZenMenu.xcassets */; };
 		6502A6761ECE2C0F0018E51B /* OpenZenMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6502A6751ECE2C0F0018E51B /* OpenZenMenuView.swift */; };
 		6502A6781ECE2C850018E51B /* OpenZenMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6502A6771ECE2C850018E51B /* OpenZenMenuViewController.swift */; };
@@ -20,6 +19,7 @@
 		65163EC61F85B04C00913347 /* W5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65163EC01F85AD3A00913347 /* W5.mp3 */; };
 		651D51311F85C1D700E5FDF2 /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D51301F85C1D700E5FDF2 /* LessonsViewController.swift */; };
 		651D51331F85C2AD00E5FDF2 /* LessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D51321F85C2AD00E5FDF2 /* LessonsTableViewCell.swift */; };
+		651D51351F85CDF600E5FDF2 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D51341F85CDF500E5FDF2 /* MainMenuView.swift */; };
 		651F0C1D1ECF6EE600ABA621 /* GuidedZenMenu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651F0C1C1ECF6EE600ABA621 /* GuidedZenMenu.xcassets */; };
 		651F0C1F1ECF6F0000ABA621 /* GuidedZenMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F0C1E1ECF6F0000ABA621 /* GuidedZenMenuView.swift */; };
 		651F0C211ECF6F8E00ABA621 /* GuidedZenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F0C201ECF6F8E00ABA621 /* GuidedZenViewController.swift */; };
@@ -53,7 +53,6 @@
 		653BFFE11ED76C55008F48AA /* GuidedMeditationsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BFFE01ED76C55008F48AA /* GuidedMeditationsExtension.swift */; };
 		653BFFE31ED76C71008F48AA /* OpenMeditationsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BFFE21ED76C71008F48AA /* OpenMeditationsExtension.swift */; };
 		653BFFE51ED76C7C008F48AA /* MoodMeditationsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BFFE41ED76C7C008F48AA /* MoodMeditationsExtension.swift */; };
-		653FDEBD1EF99C0D00CD26FE /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653FDEBC1EF99C0D00CD26FE /* SettingsTableViewCell.swift */; };
 		6554813A1F7D77B600CF51B4 /* W1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 655481391F7D774B00CF51B4 /* W1.mp3 */; };
 		655A90181F54BDCA00610496 /* FirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655A90171F54BDCA00610496 /* FirebaseTests.swift */; };
 		656F20A91EF2EC61009C6AAB /* Breathing Away Anger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656F20A51EF2EC61009C6AAB /* Breathing Away Anger.mp3 */; };
@@ -145,7 +144,6 @@
 		3155256345EDCC3305152BA5 /* Pods-Simply ZenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simply ZenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simply ZenTests/Pods-Simply ZenTests.release.xcconfig"; sourceTree = "<group>"; };
 		3489C8EB9CFF7F238D4E7644 /* Pods_Simply_Zen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simply_Zen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E4E5A9048656EA4E95B602 /* Pods-Simply ZenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simply ZenUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simply ZenUITests/Pods-Simply ZenUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6502A6711ECE1C1D0018E51B /* MainMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		6502A6731ECE2C080018E51B /* OpenZenMenu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = OpenZenMenu.xcassets; sourceTree = "<group>"; };
 		6502A6751ECE2C0F0018E51B /* OpenZenMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenZenMenuView.swift; sourceTree = "<group>"; };
 		6502A6771ECE2C850018E51B /* OpenZenMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenZenMenuViewController.swift; path = "Simply Zen/View Controllers/OpenZenMenuViewController.swift"; sourceTree = "<group>"; };
@@ -155,6 +153,7 @@
 		65163EC21F85AD3A00913347 /* W4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = W4.mp3; path = "../../../../../../../../../../Music/GarageBand/Simply Zen/Sound Effects/MP3/W4.mp3"; sourceTree = "<group>"; };
 		651D51301F85C1D700E5FDF2 /* LessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LessonsViewController.swift; path = "Simply Zen/View Controllers/LessonsViewController.swift"; sourceTree = "<group>"; };
 		651D51321F85C2AD00E5FDF2 /* LessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LessonsTableViewCell.swift; path = "Simply Zen/View Controllers/LessonsTableViewCell.swift"; sourceTree = "<group>"; };
+		651D51341F85CDF500E5FDF2 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		651F0C1C1ECF6EE600ABA621 /* GuidedZenMenu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GuidedZenMenu.xcassets; sourceTree = "<group>"; };
 		651F0C1E1ECF6F0000ABA621 /* GuidedZenMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidedZenMenuView.swift; sourceTree = "<group>"; };
 		651F0C201ECF6F8E00ABA621 /* GuidedZenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuidedZenViewController.swift; path = "Simply Zen/View Controllers/GuidedZenViewController.swift"; sourceTree = "<group>"; };
@@ -188,7 +187,6 @@
 		653BFFE01ED76C55008F48AA /* GuidedMeditationsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuidedMeditationsExtension.swift; path = "Simply Zen/Model/GuidedMeditationsExtension.swift"; sourceTree = "<group>"; };
 		653BFFE21ED76C71008F48AA /* OpenMeditationsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenMeditationsExtension.swift; path = "Simply Zen/Model/OpenMeditationsExtension.swift"; sourceTree = "<group>"; };
 		653BFFE41ED76C7C008F48AA /* MoodMeditationsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoodMeditationsExtension.swift; path = "Simply Zen/Model/MoodMeditationsExtension.swift"; sourceTree = "<group>"; };
-		653FDEBC1EF99C0D00CD26FE /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsTableViewCell.swift; path = "Simply Zen/View Controllers/SettingsTableViewCell.swift"; sourceTree = "<group>"; };
 		655481391F7D774B00CF51B4 /* W1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = W1.mp3; sourceTree = "<group>"; };
 		655A90171F54BDCA00610496 /* FirebaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseTests.swift; sourceTree = "<group>"; };
 		656F20A51EF2EC61009C6AAB /* Breathing Away Anger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Breathing Away Anger.mp3"; sourceTree = "<group>"; };
@@ -439,7 +437,6 @@
 				65C18A901EDF74E1000B29F6 /* SZNavigationController.swift */,
 				657B41871EE088CC00503868 /* TutorialPageViewController.swift */,
 				65C18A921EDF768F000B29F6 /* TutorialViewController.swift */,
-				653FDEBC1EF99C0D00CD26FE /* SettingsTableViewCell.swift */,
 				65D13A511F017B2100DBEDEA /* QuotesBackupExtension.swift */,
 				6595C7CC1EE5F2C3007972A7 /* SessionCompleteViewController.swift */,
 				65EC9EA21F1D3DE700DFB38C /* RateInStoreExtension.swift */,
@@ -456,7 +453,7 @@
 		658C9FC41ECBB5F400C71538 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				6502A6711ECE1C1D0018E51B /* MainMenuView.swift */,
+				651D51341F85CDF500E5FDF2 /* MainMenuView.swift */,
 				6502A6751ECE2C0F0018E51B /* OpenZenMenuView.swift */,
 				651F0C1E1ECF6F0000ABA621 /* GuidedZenMenuView.swift */,
 				651F0C2A1ECF951600ABA621 /* MoodZenView.swift */,
@@ -1065,13 +1062,11 @@
 				659E0D9C1ED3929800E6346D /* SZLesson.swift in Sources */,
 				653BFFE51ED76C7C008F48AA /* MoodMeditationsExtension.swift in Sources */,
 				653BFFE31ED76C71008F48AA /* OpenMeditationsExtension.swift in Sources */,
-				6502A6721ECE1C1D0018E51B /* MainMenuView.swift in Sources */,
 				65FD30B71ED4D57C008D76D6 /* Meditation+CoreDataClass.swift in Sources */,
 				65BE12C21EC500E700628802 /* AppDelegate.swift in Sources */,
 				65FD30BD1ED4D57C008D76D6 /* UserData+CoreDataClass.swift in Sources */,
 				6502A6761ECE2C0F0018E51B /* OpenZenMenuView.swift in Sources */,
 				653BFFE11ED76C55008F48AA /* GuidedMeditationsExtension.swift in Sources */,
-				653FDEBD1EF99C0D00CD26FE /* SettingsTableViewCell.swift in Sources */,
 				659E0DA01ED392AF00E6346D /* SZCourse.swift in Sources */,
 				65A9CC5B1F1D3FE200770A82 /* Alerts.swift in Sources */,
 				651F0C211ECF6F8E00ABA621 /* GuidedZenViewController.swift in Sources */,
@@ -1087,6 +1082,7 @@
 				6576E2EC1ED787E000FBD40C /* Course+CoreDataClass.swift in Sources */,
 				6502A6781ECE2C850018E51B /* OpenZenMenuViewController.swift in Sources */,
 				652C2E7C1ED34DF700352BE5 /* CoreDataStack.swift in Sources */,
+				651D51351F85CDF600E5FDF2 /* MainMenuView.swift in Sources */,
 				659B8D871ED4E6B600E6D24C /* SettingsViewController.swift in Sources */,
 				65C18A931EDF768F000B29F6 /* TutorialViewController.swift in Sources */,
 				651D51311F85C1D700E5FDF2 /* LessonsViewController.swift in Sources */,

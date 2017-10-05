@@ -12,7 +12,7 @@ import TwitterKit
 import AVFoundation
 
 class MainMenuViewController: UIViewController, MainMenuViewDelegate {
-
+    
     @IBOutlet var mainMenuView: MainMenuView!
     
     // Mark: - Properties
@@ -121,6 +121,17 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
     
     // MARK: - MainMenuView Button Behavior
     
+    func allMeditationsPressed(allMeditations: UIButton) {
+        let notification = UINotificationFeedbackGenerator()
+        notification.notificationOccurred(.success)
+        soundEffectPlayer.playSoundEffect()
+        mainMenuView.addAllTappedAnimation() { (finished) in
+            if finished {
+                self.performSegue(withIdentifier: "allMeditationsSegue", sender: self)
+            }
+        }
+    }
+    
     func moodZenPressed(moodZen: UIButton) {
         let notification = UINotificationFeedbackGenerator()
         notification.notificationOccurred(.success)
@@ -162,6 +173,8 @@ class MainMenuViewController: UIViewController, MainMenuViewDelegate {
             let _ = segue.destination as! GuidedZenViewController
         } else if segue.identifier == "moodZenSegue" {
             let _ = segue.destination as! MoodZenViewController
+        } else if segue.identifier == "allMeditationsSegue" {
+            let _ = segue.destination as! LessonsViewController
         }
     }
     
