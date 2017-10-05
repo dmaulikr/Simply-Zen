@@ -16,7 +16,7 @@ extension SZCourse {
     static func heartMeditationCourse() -> SZCourse {
         // create the lessons for the course
         var heartLessons = [SZLesson]()
-        let intro = SZLesson(addLesson: "Intro to Heart Meditation", withFilename: "Intro to Hearth meditation", level: 0, durationInSeconds: 104)
+        let intro = SZLesson(addLesson: "Intro to Heart Meditation", withFilename: "Intro to Heart meditation", level: 0, durationInSeconds: 104)
         let openToYourself = SZLesson(addLesson: "Opening Your Heart to Yourself", withFilename: "Opening Your Heart to Yourself", level: 1, durationInSeconds: 379)
         let openToOthers = SZLesson(addLesson: "Opening Your Heart to Others", withFilename: "Opening Your Heart to Others", level: 2, durationInSeconds: 418)
         let openToDifficult = SZLesson(addLesson: "Opening Your Heart to a Difficult Person", withFilename: "Opening Your Heart to Difficult People", level: 3, durationInSeconds: 487)

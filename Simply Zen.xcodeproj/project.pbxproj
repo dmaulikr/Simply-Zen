@@ -14,6 +14,10 @@
 		6502A6741ECE2C080018E51B /* OpenZenMenu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6502A6731ECE2C080018E51B /* OpenZenMenu.xcassets */; };
 		6502A6761ECE2C0F0018E51B /* OpenZenMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6502A6751ECE2C0F0018E51B /* OpenZenMenuView.swift */; };
 		6502A6781ECE2C850018E51B /* OpenZenMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6502A6771ECE2C850018E51B /* OpenZenMenuViewController.swift */; };
+		65163EC31F85B04C00913347 /* W2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65163EC11F85AD3A00913347 /* W2.mp3 */; };
+		65163EC41F85B04C00913347 /* W3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65163EBF1F85AD3A00913347 /* W3.mp3 */; };
+		65163EC51F85B04C00913347 /* W4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65163EC21F85AD3A00913347 /* W4.mp3 */; };
+		65163EC61F85B04C00913347 /* W5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65163EC01F85AD3A00913347 /* W5.mp3 */; };
 		651F0C1D1ECF6EE600ABA621 /* GuidedZenMenu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651F0C1C1ECF6EE600ABA621 /* GuidedZenMenu.xcassets */; };
 		651F0C1F1ECF6F0000ABA621 /* GuidedZenMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F0C1E1ECF6F0000ABA621 /* GuidedZenMenuView.swift */; };
 		651F0C211ECF6F8E00ABA621 /* GuidedZenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F0C201ECF6F8E00ABA621 /* GuidedZenViewController.swift */; };
@@ -92,7 +96,7 @@
 		65B7BC481EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC471EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 */; };
 		65B7BC4A1EEF5B2E009AE298 /* Full Meditation Session.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC491EEF5B2E009AE298 /* Full Meditation Session.mp3 */; };
 		65B7BC501EEF5B5C009AE298 /* Inner Light Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC4B1EEF5B5C009AE298 /* Inner Light Meditation.mp3 */; };
-		65B7BC511EEF5B5C009AE298 /* Intro to Hearth meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC4C1EEF5B5C009AE298 /* Intro to Hearth meditation.mp3 */; };
+		65B7BC511EEF5B5C009AE298 /* Intro to Heart meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC4C1EEF5B5C009AE298 /* Intro to Heart meditation.mp3 */; };
 		65B7BC521EEF5B5C009AE298 /* Opening Your Heart to Difficult People.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC4D1EEF5B5C009AE298 /* Opening Your Heart to Difficult People.mp3 */; };
 		65B7BC531EEF5B5C009AE298 /* Opening Your Heart to the Universe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC4E1EEF5B5C009AE298 /* Opening Your Heart to the Universe.mp3 */; };
 		65B7BC541EEF5B5C009AE298 /* Opening Your Heart to Yourself.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC4F1EEF5B5C009AE298 /* Opening Your Heart to Yourself.mp3 */; };
@@ -143,6 +147,10 @@
 		6502A6731ECE2C080018E51B /* OpenZenMenu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = OpenZenMenu.xcassets; sourceTree = "<group>"; };
 		6502A6751ECE2C0F0018E51B /* OpenZenMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenZenMenuView.swift; sourceTree = "<group>"; };
 		6502A6771ECE2C850018E51B /* OpenZenMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenZenMenuViewController.swift; path = "Simply Zen/View Controllers/OpenZenMenuViewController.swift"; sourceTree = "<group>"; };
+		65163EBF1F85AD3A00913347 /* W3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = W3.mp3; path = "../../../../../../../../../../Music/GarageBand/Simply Zen/Sound Effects/MP3/W3.mp3"; sourceTree = "<group>"; };
+		65163EC01F85AD3A00913347 /* W5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = W5.mp3; path = "../../../../../../../../../../Music/GarageBand/Simply Zen/Sound Effects/MP3/W5.mp3"; sourceTree = "<group>"; };
+		65163EC11F85AD3A00913347 /* W2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = W2.mp3; path = "../../../../../../../../../../Music/GarageBand/Simply Zen/Sound Effects/MP3/W2.mp3"; sourceTree = "<group>"; };
+		65163EC21F85AD3A00913347 /* W4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = W4.mp3; path = "../../../../../../../../../../Music/GarageBand/Simply Zen/Sound Effects/MP3/W4.mp3"; sourceTree = "<group>"; };
 		651F0C1C1ECF6EE600ABA621 /* GuidedZenMenu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GuidedZenMenu.xcassets; sourceTree = "<group>"; };
 		651F0C1E1ECF6F0000ABA621 /* GuidedZenMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidedZenMenuView.swift; sourceTree = "<group>"; };
 		651F0C201ECF6F8E00ABA621 /* GuidedZenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuidedZenViewController.swift; path = "Simply Zen/View Controllers/GuidedZenViewController.swift"; sourceTree = "<group>"; };
@@ -198,7 +206,7 @@
 		658C9FD71ECBC6E300C71538 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = "Simply Zen/View Controllers/MainMenuViewController.swift"; sourceTree = "<group>"; };
 		6591DB011F758C2600A94E8A /* SZSoundEffectsVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SZSoundEffectsVCExtension.swift; path = "Simply Zen/View Controllers/Extensions/SZSoundEffectsVCExtension.swift"; sourceTree = "<group>"; };
 		6595C7CC1EE5F2C3007972A7 /* SessionCompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionCompleteViewController.swift; path = "Simply Zen/View Controllers/SessionCompleteViewController.swift"; sourceTree = "<group>"; };
-		6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetQuotesRESTAPI.swift; path = Model/REST/GetQuotesRESTAPI.swift; sourceTree = "<group>"; };
+		6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetQuotesRESTAPI.swift; sourceTree = "<group>"; };
 		659B8D861ED4E6B600E6D24C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "Simply Zen/View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
 		659E0D921ED38B1800E6346D /* burmese-bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "burmese-bell.mp3"; sourceTree = "<group>"; };
 		659E0D931ED38B1800E6346D /* kyoto-temple-bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "kyoto-temple-bell.mp3"; sourceTree = "<group>"; };
@@ -219,7 +227,7 @@
 		65B7BC471EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Becoming Aware of Your Body.mp3"; sourceTree = "<group>"; };
 		65B7BC491EEF5B2E009AE298 /* Full Meditation Session.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Full Meditation Session.mp3"; sourceTree = "<group>"; };
 		65B7BC4B1EEF5B5C009AE298 /* Inner Light Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Inner Light Meditation.mp3"; sourceTree = "<group>"; };
-		65B7BC4C1EEF5B5C009AE298 /* Intro to Hearth meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Intro to Hearth meditation.mp3"; sourceTree = "<group>"; };
+		65B7BC4C1EEF5B5C009AE298 /* Intro to Heart meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Intro to Heart meditation.mp3"; sourceTree = "<group>"; };
 		65B7BC4D1EEF5B5C009AE298 /* Opening Your Heart to Difficult People.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Opening Your Heart to Difficult People.mp3"; sourceTree = "<group>"; };
 		65B7BC4E1EEF5B5C009AE298 /* Opening Your Heart to the Universe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Opening Your Heart to the Universe.mp3"; sourceTree = "<group>"; };
 		65B7BC4F1EEF5B5C009AE298 /* Opening Your Heart to Yourself.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Opening Your Heart to Yourself.mp3"; sourceTree = "<group>"; };
@@ -240,7 +248,7 @@
 		65D13A511F017B2100DBEDEA /* QuotesBackupExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuotesBackupExtension.swift; path = "Simply Zen/View Controllers/Extensions/QuotesBackupExtension.swift"; sourceTree = "<group>"; };
 		65EB85561ED4AF3C0092FEB5 /* Simply Zen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Simply Zen.entitlements"; sourceTree = "<group>"; };
 		65EB85581ED4AF3C0092FEB5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		65EB855E1ED4B1730092FEB5 /* HealthKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthKitExtension.swift; path = HealthKit/HealthKitExtension.swift; sourceTree = "<group>"; };
+		65EB855E1ED4B1730092FEB5 /* HealthKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitExtension.swift; sourceTree = "<group>"; };
 		65EC9EA21F1D3DE700DFB38C /* RateInStoreExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RateInStoreExtension.swift; path = "Simply Zen/View Controllers/Extensions/RateInStoreExtension.swift"; sourceTree = "<group>"; };
 		65F036101F4770BB004EEF09 /* SZModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SZModelTests.swift; sourceTree = "<group>"; };
 		65FD30AF1ED4D57C008D76D6 /* Meditation+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Meditation+CoreDataClass.swift"; path = "Simply Zen/Model/Meditation+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -331,7 +339,7 @@
 				653022A01EF0844B004BA701 /* Intro to Advanced Breathing.mp3 */,
 				653022A11EF0844B004BA701 /* Returning to the Breath.mp3 */,
 			);
-			name = "Advanced Breathing";
+			path = "Advanced Breathing";
 			sourceTree = "<group>";
 		};
 		653022B51EF0851D004BA701 /* Relax */ = {
@@ -344,7 +352,7 @@
 				653022AD1EF08516004BA701 /* Learning to Visualize.mp3 */,
 				653022AE1EF08516004BA701 /* Warming Your Body.mp3 */,
 			);
-			name = Relax;
+			path = Relax;
 			sourceTree = "<group>";
 		};
 		653022C21EF08547004BA701 /* Letting Go */ = {
@@ -357,7 +365,7 @@
 				653022BA1EF0853E004BA701 /* Loving Yourself.mp3 */,
 				653022BB1EF0853E004BA701 /* Rejecting Negativity.mp3 */,
 			);
-			name = "Letting Go";
+			path = "Letting Go";
 			sourceTree = "<group>";
 		};
 		653BFFE61ED76E30008F48AA /* Meditation Courses */ = {
@@ -374,6 +382,10 @@
 			isa = PBXGroup;
 			children = (
 				655481391F7D774B00CF51B4 /* W1.mp3 */,
+				65163EC11F85AD3A00913347 /* W2.mp3 */,
+				65163EBF1F85AD3A00913347 /* W3.mp3 */,
+				65163EC21F85AD3A00913347 /* W4.mp3 */,
+				65163EC01F85AD3A00913347 /* W5.mp3 */,
 			);
 			path = "Sound Effects";
 			sourceTree = "<group>";
@@ -386,7 +398,7 @@
 				656F20A71EF2EC61009C6AAB /* Rejecting Negativity No Intro.mp3 */,
 				656F20A81EF2EC61009C6AAB /* Visualizing Anger.mp3 */,
 			);
-			name = Upset;
+			path = Upset;
 			sourceTree = "<group>";
 		};
 		656F20B61EF2FCE0009C6AAB /* Happy */ = {
@@ -397,7 +409,7 @@
 				656F20B01EF2FCDC009C6AAB /* Opening Your Heart to Others No Intro.mp3 */,
 				656F20B11EF2FCDC009C6AAB /* Opening Your Heart to the Universe No Intro.mp3 */,
 			);
-			name = Happy;
+			path = Happy;
 			sourceTree = "<group>";
 		};
 		656F20BF1EF2FCF0009C6AAB /* Sad */ = {
@@ -408,7 +420,7 @@
 				656F20B91EF2FCEA009C6AAB /* Seeking Happiness.mp3 */,
 				656F20BA1EF2FCEA009C6AAB /* Self Affirmations.mp3 */,
 			);
-			name = Sad;
+			path = Sad;
 			sourceTree = "<group>";
 		};
 		658C9FC31ECBB5DC00C71538 /* View Controllers */ = {
@@ -460,7 +472,7 @@
 				656F20B61EF2FCE0009C6AAB /* Happy */,
 				656F20BF1EF2FCF0009C6AAB /* Sad */,
 			);
-			name = "Meditation Tracks";
+			path = "Meditation Tracks";
 			sourceTree = "<group>";
 		};
 		659E0D881ED389F900E6346D /* Audio */ = {
@@ -470,7 +482,7 @@
 				659E0D911ED38A0D00E6346D /* Bells */,
 				659E0D851ED37E8300E6346D /* Meditation Tracks */,
 			);
-			name = Audio;
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		659E0D911ED38A0D00E6346D /* Bells */ = {
@@ -481,7 +493,7 @@
 				659E0D941ED38B1800E6346D /* thai-bell.mp3 */,
 				659E0D951ED38B1800E6346D /* tibetan-bell.mp3 */,
 			);
-			name = Bells;
+			path = Bells;
 			sourceTree = "<group>";
 		};
 		659E0D9E1ED392A000E6346D /* Lessons Model */ = {
@@ -502,20 +514,20 @@
 				65A688E31EF213FA000DAB18 /* Floating on a Cloud.mp3 */,
 				65A688E41EF213FA000DAB18 /* Warming Your Body No Intro.mp3 */,
 			);
-			name = "Can't Sleep";
+			path = "Can't Sleep";
 			sourceTree = "<group>";
 		};
 		65B7BC551EEF5B64009AE298 /* Heart Meditation */ = {
 			isa = PBXGroup;
 			children = (
 				65B7BC4B1EEF5B5C009AE298 /* Inner Light Meditation.mp3 */,
-				65B7BC4C1EEF5B5C009AE298 /* Intro to Hearth meditation.mp3 */,
+				65B7BC4C1EEF5B5C009AE298 /* Intro to Heart meditation.mp3 */,
 				65B7BC561EEF5C1A009AE298 /* Opening Your Heart to Others.mp3 */,
 				65B7BC4D1EEF5B5C009AE298 /* Opening Your Heart to Difficult People.mp3 */,
 				65B7BC4E1EEF5B5C009AE298 /* Opening Your Heart to the Universe.mp3 */,
 				65B7BC4F1EEF5B5C009AE298 /* Opening Your Heart to Yourself.mp3 */,
 			);
-			name = "Heart Meditation";
+			path = "Heart Meditation";
 			sourceTree = "<group>";
 		};
 		65BE12B51EC500E700628802 = {
@@ -543,6 +555,11 @@
 		65BE12C01EC500E700628802 /* Simply Zen */ = {
 			isa = PBXGroup;
 			children = (
+				65EB855E1ED4B1730092FEB5 /* HealthKitExtension.swift */,
+				6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */,
+				65BE12C11EC500E700628802 /* AppDelegate.swift */,
+				65BE12CF1EC500E700628802 /* Info.plist */,
+				65B4E0EE1F54B2AB00EA3C61 /* GoogleService-Info.plist */,
 				65EB85561ED4AF3C0092FEB5 /* Simply Zen.entitlements */,
 				65F6C9F31ECA30EA001ABBA6 /* Model */,
 				65F6C9F41ECA311B001ABBA6 /* View */,
@@ -630,7 +647,7 @@
 				65B7BC471EEF43A1009AE298 /* Becoming Aware of Your Body.mp3 */,
 				65B7BC491EEF5B2E009AE298 /* Full Meditation Session.mp3 */,
 			);
-			name = "Beginning Zen";
+			path = "Beginning Zen";
 			sourceTree = "<group>";
 		};
 		65EB85571ED4AF3C0092FEB5 /* Frameworks */ = {
@@ -667,13 +684,8 @@
 			isa = PBXGroup;
 			children = (
 				659E0D881ED389F900E6346D /* Audio */,
-				65EB855E1ED4B1730092FEB5 /* HealthKitExtension.swift */,
-				6595C7CE1EE5FAA7007972A7 /* GetQuotesRESTAPI.swift */,
-				65BE12C11EC500E700628802 /* AppDelegate.swift */,
-				65BE12CF1EC500E700628802 /* Info.plist */,
-				65B4E0EE1F54B2AB00EA3C61 /* GoogleService-Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -806,10 +818,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65163EC31F85B04C00913347 /* W2.mp3 in Resources */,
+				65163EC41F85B04C00913347 /* W3.mp3 in Resources */,
+				65163EC51F85B04C00913347 /* W4.mp3 in Resources */,
+				65163EC61F85B04C00913347 /* W5.mp3 in Resources */,
 				6554813A1F7D77B600CF51B4 /* W1.mp3 in Resources */,
 				653022A31EF0844B004BA701 /* Finding Your Focus.mp3 in Resources */,
 				653022AF1EF08516004BA701 /* Breathing While Lying Down.mp3 in Resources */,
-				65B7BC511EEF5B5C009AE298 /* Intro to Hearth meditation.mp3 in Resources */,
+				65B7BC511EEF5B5C009AE298 /* Intro to Heart meditation.mp3 in Resources */,
 				659E0D991ED38B1800E6346D /* tibetan-bell.mp3 in Resources */,
 				653022A21EF0844B004BA701 /* Being Kind.mp3 in Resources */,
 				65A688E51EF213FA000DAB18 /* Finding a Peaceful Place.mp3 in Resources */,

@@ -88,7 +88,7 @@ class SZModelTests: XCTestCase {
             switch courseLesson.lessonLevel {
             case 0:
                 XCTAssertEqual(courseLesson.lessonName, "Intro to Heart Meditation")
-                XCTAssertEqual(courseLesson.lessonFileName, "Intro to Hearth meditation")
+                XCTAssertEqual(courseLesson.lessonFileName, "Intro to Heart meditation")
                 XCTAssertEqual(courseLesson.durationInSeconds, 104)
             case 1:
                 XCTAssertEqual(courseLesson.lessonName, "Opening Your Heart to Yourself")
