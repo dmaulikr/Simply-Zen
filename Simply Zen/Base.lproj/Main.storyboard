@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1X7-Ut-dFE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dtl-K0-AsN">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -515,6 +515,98 @@
             </objects>
             <point key="canvasLocation" x="576.79999999999995" y="-788.42364532019712"/>
         </scene>
+        <!--Lessons View Controller-->
+        <scene sceneID="Ssd-Y2-Fot">
+            <objects>
+                <viewController id="dtl-K0-AsN" customClass="LessonsViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TwT-sp-tVH"/>
+                        <viewControllerLayoutGuide type="bottom" id="qJg-Fr-Yo7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mh4-dS-TBa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="ruk-qv-ugD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ORv-Ov-Xet">
+                                <rect key="frame" x="16" y="52" width="343" height="726"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="lessonsCell" rowHeight="40" id="Zt0-Vh-QQY" customClass="LessonsTableViewCell" customModule="Simply_Zen" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zt0-Vh-QQY" id="DCv-QH-CRK">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="39.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYa-pI-z2N">
+                                                    <rect key="frame" x="8" y="6" width="294" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEB-13-2ho">
+                                                    <rect key="frame" x="310" y="2" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="C0v-nP-XVJ"/>
+                                                        <constraint firstAttribute="width" constant="25" id="qtq-Jc-wuT"/>
+                                                    </constraints>
+                                                    <state key="normal" image="Play-Button"/>
+                                                    <connections>
+                                                        <action selector="playButtonTapped:" destination="Zt0-Vh-QQY" eventType="touchUpInside" id="idn-Ua-apb"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="SYa-pI-z2N" secondAttribute="bottom" constant="-1.3333333333333321" id="Jmg-Pk-HuX"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="zEB-13-2ho" secondAttribute="bottom" constant="-5.3333333333333321" id="Ony-Bl-sy1"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="SYa-pI-z2N" secondAttribute="leading" id="Xad-L6-nfO"/>
+                                                <constraint firstItem="zEB-13-2ho" firstAttribute="top" secondItem="DCv-QH-CRK" secondAttribute="topMargin" constant="-6" id="c2v-wP-opE"/>
+                                                <constraint firstItem="zEB-13-2ho" firstAttribute="leading" secondItem="SYa-pI-z2N" secondAttribute="trailing" constant="8" id="dXd-ex-OiK"/>
+                                                <constraint firstItem="SYa-pI-z2N" firstAttribute="top" secondItem="DCv-QH-CRK" secondAttribute="topMargin" constant="-2" id="nhw-dQ-5hk"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="zEB-13-2ho" secondAttribute="trailing" id="oBB-qu-bHl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="lessonTitle" destination="SYa-pI-z2N" id="Aot-IJ-eGx"/>
+                                            <outlet property="playButton" destination="zEB-13-2ho" id="fW8-sc-MfG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dtl-K0-AsN" id="qTk-ZS-kDp"/>
+                                    <outlet property="delegate" destination="dtl-K0-AsN" id="WnC-qT-7B5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ORv-Ov-Xet" secondAttribute="trailing" constant="16" id="9KO-Ky-bea"/>
+                            <constraint firstItem="ORv-Ov-Xet" firstAttribute="top" secondItem="TwT-sp-tVH" secondAttribute="bottom" constant="8" id="BWY-fh-4aa"/>
+                            <constraint firstItem="ruk-qv-ugD" firstAttribute="leading" secondItem="mh4-dS-TBa" secondAttribute="leading" id="CcR-HK-Oeo"/>
+                            <constraint firstItem="qJg-Fr-Yo7" firstAttribute="top" secondItem="ORv-Ov-Xet" secondAttribute="bottom" id="dMa-ea-0O1"/>
+                            <constraint firstItem="ruk-qv-ugD" firstAttribute="top" secondItem="TwT-sp-tVH" secondAttribute="bottom" constant="-44" id="o2T-Zk-mer"/>
+                            <constraint firstAttribute="trailing" secondItem="ruk-qv-ugD" secondAttribute="trailing" id="pQz-E1-PRl"/>
+                            <constraint firstItem="qJg-Fr-Yo7" firstAttribute="top" secondItem="ruk-qv-ugD" secondAttribute="bottom" constant="-34" id="qxa-dV-02n"/>
+                            <constraint firstItem="ORv-Ov-Xet" firstAttribute="leading" secondItem="mh4-dS-TBa" secondAttribute="leading" constant="16" id="rCy-i5-2IV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lessonsTableView" destination="ORv-Ov-Xet" id="puD-6a-Be9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3l-nM-XXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1518" y="-788"/>
+        </scene>
         <!--Guided Zen-->
         <scene sceneID="toT-yu-AFl">
             <objects>
@@ -528,10 +620,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guided-Zen-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="rCa-Hf-n60">
-                                <rect key="frame" x="0.0" y="44" width="379" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="379" height="812"/>
                             </imageView>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hzh-9L-UFd" customClass="GuidedZenMenuView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="-4" y="166" width="383" height="612"/>
+                                <rect key="frame" x="-4" y="122" width="383" height="656"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -589,10 +681,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mood-Zen-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="Duf-9V-r8B">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
                             </imageView>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="h7q-eF-KX4" customClass="MoodZenView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="-4" y="122" width="383" height="656"/>
+                                <rect key="frame" x="-4" y="166" width="383" height="612"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
