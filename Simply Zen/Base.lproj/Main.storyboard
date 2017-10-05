@@ -361,7 +361,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temple Bell Sound for Open Zen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="L3q-p9-HkJ">
-                                <rect key="frame" x="-19" y="96" width="378" height="28"/>
+                                <rect key="frame" x="16" y="96" width="343" height="28"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -380,7 +380,7 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8m-Rv-itu">
-                                <rect key="frame" x="16" y="232" width="343" height="33"/>
+                                <rect key="frame" x="16" y="242" width="343" height="33"/>
                                 <color key="backgroundColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Enable Twitter">
@@ -391,7 +391,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="0.29999999999999999" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJb-Iz-RNX">
-                                <rect key="frame" x="14" y="194" width="347" height="31"/>
+                                <rect key="frame" x="14" y="204" width="347" height="31"/>
                                 <color key="tintColor" red="0.13513316214084625" green="0.32346397638320923" blue="0.55696898698806763" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="maximumTrackTintColor" red="0.85294514889999995" green="0.90522384639999998" blue="0.94118994469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
@@ -405,7 +405,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hj-by-yFz">
-                                <rect key="frame" x="16" y="273" width="343" height="33"/>
+                                <rect key="frame" x="16" y="283" width="343" height="33"/>
                                 <color key="backgroundColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="View Tutorial">
@@ -416,31 +416,80 @@
                                     <action selector="viewTutorial:" destination="dnm-S2-X50" eventType="touchUpInside" id="Qwt-6P-Ld2"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fza-E9-xSf" userLabel="Sounds Stack View">
+                                <rect key="frame" x="16" y="324" width="343" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Sounds (Does not Affect Bells)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zgw-BS-3mI">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="31"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0pc-8Q-EZK">
+                                        <rect key="frame" x="294" y="0.0" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="soundSwitchTapped:" destination="dnm-S2-X50" eventType="valueChanged" id="Auk-Qc-u33"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVd-8z-qak" userLabel="Haptics Stack View">
+                                <rect key="frame" x="16" y="363" width="343" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Haptics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1eb-AT-DXO">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="31"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d5S-k5-dg1">
+                                        <rect key="frame" x="294" y="0.0" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="hapticsSwitchTapped:" destination="dnm-S2-X50" eventType="valueChanged" id="UCS-eK-xaT"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="bog-Oo-jY3" firstAttribute="top" secondItem="L3q-p9-HkJ" secondAttribute="bottom" constant="8" id="027-o5-01W"/>
-                            <constraint firstItem="2FA-Uj-a51" firstAttribute="top" secondItem="bog-Oo-jY3" secondAttribute="bottom" constant="8" id="65p-5i-eXg"/>
-                            <constraint firstItem="2FA-Uj-a51" firstAttribute="leading" secondItem="JJb-Iz-RNX" secondAttribute="leading" id="6bi-0s-2Yq"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="bog-Oo-jY3" secondAttribute="leading" id="8UK-MN-VEE"/>
-                            <constraint firstItem="L3q-p9-HkJ" firstAttribute="top" secondItem="GWH-pp-xjy" secondAttribute="bottom" constant="8" id="8lO-z1-E5C"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="JJb-Iz-RNX" secondAttribute="leading" id="9Pw-Iy-hNk"/>
-                            <constraint firstItem="s0m-oJ-buv" firstAttribute="top" secondItem="kuH-bw-6Ym" secondAttribute="bottom" constant="-34" id="Bdu-AG-0Fu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bog-Oo-jY3" secondAttribute="trailing" id="Bpv-hD-VFI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JJb-Iz-RNX" secondAttribute="trailing" id="E85-8E-vOj"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="1Hj-by-yFz" secondAttribute="leading" id="LqB-4H-I1f"/>
-                            <constraint firstItem="L3q-p9-HkJ" firstAttribute="leading" secondItem="kuH-bw-6Ym" secondAttribute="trailing" constant="-394" id="NnE-S6-iYw"/>
-                            <constraint firstItem="kuH-bw-6Ym" firstAttribute="top" secondItem="Sva-Qu-icE" secondAttribute="top" id="P8V-KM-dXm"/>
-                            <constraint firstAttribute="trailing" secondItem="kuH-bw-6Ym" secondAttribute="trailing" id="SaW-f4-lWe"/>
-                            <constraint firstItem="2FA-Uj-a51" firstAttribute="trailing" secondItem="JJb-Iz-RNX" secondAttribute="trailing" id="aM7-HN-8ca"/>
-                            <constraint firstItem="2FA-Uj-a51" firstAttribute="trailing" secondItem="a8m-Rv-itu" secondAttribute="trailing" id="cw1-2t-CUo"/>
-                            <constraint firstItem="JJb-Iz-RNX" firstAttribute="top" secondItem="2FA-Uj-a51" secondAttribute="bottom" constant="-2" id="czh-YJ-bwx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="L3q-p9-HkJ" secondAttribute="trailing" id="eSk-C3-WZ5"/>
-                            <constraint firstItem="kuH-bw-6Ym" firstAttribute="leading" secondItem="Sva-Qu-icE" secondAttribute="leading" id="fzY-vD-xzE"/>
-                            <constraint firstItem="a8m-Rv-itu" firstAttribute="top" secondItem="JJb-Iz-RNX" secondAttribute="bottom" constant="8" id="jNp-YV-R4J"/>
-                            <constraint firstItem="1Hj-by-yFz" firstAttribute="top" secondItem="a8m-Rv-itu" secondAttribute="bottom" constant="8" id="kQV-N3-SZG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1Hj-by-yFz" secondAttribute="trailing" id="pzR-cG-NBd"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="a8m-Rv-itu" secondAttribute="leading" id="ykm-la-JUh"/>
+                            <constraint firstItem="CVd-8z-qak" firstAttribute="leading" secondItem="Sva-Qu-icE" secondAttribute="leadingMargin" id="0UA-7T-iYS"/>
+                            <constraint firstItem="1Hj-by-yFz" firstAttribute="leading" secondItem="Sva-Qu-icE" secondAttribute="leadingMargin" id="2ED-CK-Lpm"/>
+                            <constraint firstItem="CVd-8z-qak" firstAttribute="top" secondItem="fza-E9-xSf" secondAttribute="bottom" constant="8" id="434-Cz-kbU"/>
+                            <constraint firstItem="L3q-p9-HkJ" firstAttribute="leading" secondItem="Sva-Qu-icE" secondAttribute="leadingMargin" id="4Fa-QQ-9v6"/>
+                            <constraint firstItem="a8m-Rv-itu" firstAttribute="trailing" secondItem="Sva-Qu-icE" secondAttribute="trailingMargin" id="5Gh-kW-WS9"/>
+                            <constraint firstItem="bog-Oo-jY3" firstAttribute="top" secondItem="L3q-p9-HkJ" secondAttribute="bottom" constant="8" id="5tc-qR-Gs6"/>
+                            <constraint firstItem="bog-Oo-jY3" firstAttribute="trailing" secondItem="Sva-Qu-icE" secondAttribute="trailingMargin" id="AMK-9a-enm"/>
+                            <constraint firstItem="bog-Oo-jY3" firstAttribute="top" secondItem="L3q-p9-HkJ" secondAttribute="bottom" constant="8" id="E2z-ZZ-tI3"/>
+                            <constraint firstItem="CVd-8z-qak" firstAttribute="top" secondItem="fza-E9-xSf" secondAttribute="bottom" constant="8" id="KlD-dL-aqj"/>
+                            <constraint firstItem="1Hj-by-yFz" firstAttribute="top" secondItem="a8m-Rv-itu" secondAttribute="bottom" constant="8" id="QUc-pb-oxh"/>
+                            <constraint firstItem="L3q-p9-HkJ" firstAttribute="top" secondItem="GWH-pp-xjy" secondAttribute="bottom" constant="8" id="QwM-Zp-yYK"/>
+                            <constraint firstItem="2FA-Uj-a51" firstAttribute="leading" secondItem="Sva-Qu-icE" secondAttribute="leadingMargin" id="Rcz-dm-tMA"/>
+                            <constraint firstItem="JJb-Iz-RNX" firstAttribute="top" secondItem="2FA-Uj-a51" secondAttribute="bottom" constant="8" id="Srq-EG-Pxo"/>
+                            <constraint firstItem="a8m-Rv-itu" firstAttribute="top" secondItem="JJb-Iz-RNX" secondAttribute="bottom" constant="8" id="T62-Rh-PSg"/>
+                            <constraint firstItem="fza-E9-xSf" firstAttribute="top" secondItem="1Hj-by-yFz" secondAttribute="bottom" constant="8" id="VYX-TW-9Eu"/>
+                            <constraint firstItem="a8m-Rv-itu" firstAttribute="leading" secondItem="Sva-Qu-icE" secondAttribute="leadingMargin" id="Vhk-fp-Z7s"/>
+                            <constraint firstItem="kuH-bw-6Ym" firstAttribute="top" secondItem="Sva-Qu-icE" secondAttribute="top" id="W4R-TP-mj6"/>
+                            <constraint firstItem="2FA-Uj-a51" firstAttribute="top" secondItem="bog-Oo-jY3" secondAttribute="bottom" constant="8" id="Wu9-Np-88w"/>
+                            <constraint firstItem="2FA-Uj-a51" firstAttribute="top" secondItem="bog-Oo-jY3" secondAttribute="bottom" constant="8" id="biR-su-xHk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CVd-8z-qak" secondAttribute="trailing" id="dQu-ya-nai"/>
+                            <constraint firstAttribute="trailing" secondItem="kuH-bw-6Ym" secondAttribute="trailing" id="f50-Ux-MGm"/>
+                            <constraint firstAttribute="bottom" secondItem="kuH-bw-6Ym" secondAttribute="bottom" id="g7c-jl-065"/>
+                            <constraint firstItem="1Hj-by-yFz" firstAttribute="trailing" secondItem="Sva-Qu-icE" secondAttribute="trailingMargin" id="gIG-s4-jfm"/>
+                            <constraint firstItem="bog-Oo-jY3" firstAttribute="leading" secondItem="Sva-Qu-icE" secondAttribute="leadingMargin" id="gk6-6k-oqX"/>
+                            <constraint firstItem="JJb-Iz-RNX" firstAttribute="trailing" secondItem="Sva-Qu-icE" secondAttribute="trailingMargin" id="h3S-Tn-WTn"/>
+                            <constraint firstItem="fza-E9-xSf" firstAttribute="top" secondItem="1Hj-by-yFz" secondAttribute="bottom" constant="8" id="ixE-b1-gcb"/>
+                            <constraint firstItem="a8m-Rv-itu" firstAttribute="top" secondItem="JJb-Iz-RNX" secondAttribute="bottom" constant="8" id="lrG-V6-MtW"/>
+                            <constraint firstItem="fza-E9-xSf" firstAttribute="leading" secondItem="Sva-Qu-icE" secondAttribute="leadingMargin" id="oGx-qE-94x"/>
+                            <constraint firstItem="L3q-p9-HkJ" firstAttribute="trailing" secondItem="Sva-Qu-icE" secondAttribute="trailingMargin" id="pYw-gE-IyK"/>
+                            <constraint firstItem="JJb-Iz-RNX" firstAttribute="top" secondItem="2FA-Uj-a51" secondAttribute="bottom" constant="8" id="r4m-rU-kLu"/>
+                            <constraint firstItem="kuH-bw-6Ym" firstAttribute="leading" secondItem="Sva-Qu-icE" secondAttribute="leading" id="sxC-I8-PXG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fza-E9-xSf" secondAttribute="trailing" id="tP4-X2-dQO"/>
+                            <constraint firstItem="2FA-Uj-a51" firstAttribute="trailing" secondItem="Sva-Qu-icE" secondAttribute="trailingMargin" id="vSW-3G-aof"/>
+                            <constraint firstItem="1Hj-by-yFz" firstAttribute="top" secondItem="a8m-Rv-itu" secondAttribute="bottom" constant="8" id="xEK-lO-esO"/>
+                            <constraint firstItem="JJb-Iz-RNX" firstAttribute="leading" secondItem="Sva-Qu-icE" secondAttribute="leadingMargin" id="yuz-zY-1AY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="RFu-gZ-j3r"/>
@@ -448,6 +497,8 @@
                         <outlet property="bellSegmentedControl" destination="bog-Oo-jY3" id="xPS-Nz-ANF"/>
                         <outlet property="bellVolumeSlider" destination="JJb-Iz-RNX" id="gsF-Qa-l7l"/>
                         <outlet property="enableTwitterButton" destination="a8m-Rv-itu" id="6hg-7B-f3I"/>
+                        <outlet property="uiHapticsSwitch" destination="d5S-k5-dg1" id="CWa-pe-jiw"/>
+                        <outlet property="uiSoundsSwitch" destination="0pc-8Q-EZK" id="vAg-H0-3fM"/>
                         <outlet property="viewTutorialButton" destination="1Hj-by-yFz" id="vi3-Ie-hq6"/>
                     </connections>
                 </viewController>
@@ -467,7 +518,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="ruk-qv-ugD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="All-Meditations-Background" translatesAutoresizingMaskIntoConstraints="NO" id="ruk-qv-ugD">
                                 <rect key="frame" x="0.0" y="44" width="375" height="768"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ORv-Ov-Xet">
@@ -621,10 +672,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mood-Zen-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="Duf-9V-r8B">
-                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="h7q-eF-KX4" customClass="MoodZenView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="-4" y="166" width="383" height="612"/>
+                                <rect key="frame" x="-4" y="122" width="383" height="656"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -643,6 +694,7 @@
                         <barButtonItem key="backBarButtonItem" title="Home" id="Uvp-C0-3Ac"/>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="s7a-O2-Vb4">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="eQn-0G-Z1R">
+                                <rect key="frame" x="14" y="34" width="345" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -993,6 +1045,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="All-Meditations-Background" width="1242" height="2208"/>
         <image name="Complete-Session-Button" width="199" height="32"/>
         <image name="Done-Button" width="199" height="32"/>
         <image name="First-Screen" width="766" height="1321"/>

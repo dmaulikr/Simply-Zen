@@ -147,10 +147,10 @@
 		6502A6731ECE2C080018E51B /* OpenZenMenu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = OpenZenMenu.xcassets; sourceTree = "<group>"; };
 		6502A6751ECE2C0F0018E51B /* OpenZenMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenZenMenuView.swift; sourceTree = "<group>"; };
 		6502A6771ECE2C850018E51B /* OpenZenMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenZenMenuViewController.swift; path = "Simply Zen/View Controllers/OpenZenMenuViewController.swift"; sourceTree = "<group>"; };
-		65163EBF1F85AD3A00913347 /* W3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = W3.mp3; path = "../../../../../../../../../../Music/GarageBand/Simply Zen/Sound Effects/MP3/W3.mp3"; sourceTree = "<group>"; };
-		65163EC01F85AD3A00913347 /* W5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = W5.mp3; path = "../../../../../../../../../../Music/GarageBand/Simply Zen/Sound Effects/MP3/W5.mp3"; sourceTree = "<group>"; };
-		65163EC11F85AD3A00913347 /* W2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = W2.mp3; path = "../../../../../../../../../../Music/GarageBand/Simply Zen/Sound Effects/MP3/W2.mp3"; sourceTree = "<group>"; };
-		65163EC21F85AD3A00913347 /* W4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = W4.mp3; path = "../../../../../../../../../../Music/GarageBand/Simply Zen/Sound Effects/MP3/W4.mp3"; sourceTree = "<group>"; };
+		65163EBF1F85AD3A00913347 /* W3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = W3.mp3; sourceTree = "<group>"; };
+		65163EC01F85AD3A00913347 /* W5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = W5.mp3; sourceTree = "<group>"; };
+		65163EC11F85AD3A00913347 /* W2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = W2.mp3; sourceTree = "<group>"; };
+		65163EC21F85AD3A00913347 /* W4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = W4.mp3; sourceTree = "<group>"; };
 		651D51301F85C1D700E5FDF2 /* LessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LessonsViewController.swift; path = "Simply Zen/View Controllers/LessonsViewController.swift"; sourceTree = "<group>"; };
 		651D51321F85C2AD00E5FDF2 /* LessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LessonsTableViewCell.swift; path = "Simply Zen/View Controllers/LessonsTableViewCell.swift"; sourceTree = "<group>"; };
 		651D51341F85CDF500E5FDF2 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };

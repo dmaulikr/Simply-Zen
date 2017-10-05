@@ -17,11 +17,15 @@ class SettingsViewController: UIViewController {
     var audioURL: URL!
     var audioPlayer: AVAudioPlayer!
     var bellVolume: Float!
+    var uiSoundOn: Bool!
+    var uiHapticssOn: Bool!
 
     @IBOutlet weak var bellSegmentedControl: UISegmentedControl!
     @IBOutlet weak var enableTwitterButton: UIButton!
     @IBOutlet weak var viewTutorialButton: UIButton!
     @IBOutlet weak var bellVolumeSlider: UISlider!
+    @IBOutlet weak var uiSoundsSwitch: UISwitch!
+    @IBOutlet weak var uiHapticsSwitch: UISwitch!
     
     // Color For text
     let darkBlue = UIColor(red: 1.0 / 255.0, green: 84.0 / 255.0, blue: 147.0 / 255.0, alpha: 1)
@@ -54,6 +58,21 @@ class SettingsViewController: UIViewController {
         bellVolumeSlider.value = bellVolume
         print("The volume is set to \(String(describing: bellVolume))")
         
+        // Setup toggles
+        if let isSoundToggleOn = UserDefaults.standard.value(forKey: "isUiSoundOn") as? Bool, let areHapticsOn = UserDefaults.standard.value(forKey: "areUiHapticsOn") as? Bool {
+            uiSoundOn = isSoundToggleOn
+            uiHapticssOn = areHapticsOn
+        } else {
+            uiSoundOn = true
+            uiHapticssOn = true
+            UserDefaults.standard.set(uiSoundOn, forKey: "isUiSoundOn")
+            UserDefaults.standard.set(uiHapticssOn, forKey: "areUiHapticsOn")
+        }
+        
+        // Set toggles to correct state
+        uiSoundsSwitch.isOn = uiSoundOn
+        uiHapticsSwitch.isOn = uiHapticssOn
+        
         // Setup button fonts
         
         viewTutorialButton.titleLabel?.font = UIFont(name: "STHeitiSC-Light", size: 18)
@@ -65,6 +84,8 @@ class SettingsViewController: UIViewController {
             enableTwitterButton.titleLabel?.font = UIFont(name: "STHeitiSC-Light", size: 18)
         }
     }
+    
+    
     
     // MARK: - Save bell volume when view will disappear
     
@@ -185,7 +206,19 @@ class SettingsViewController: UIViewController {
         let tutorialVC = storyboard?.instantiateViewController(withIdentifier: "pageVC") as! TutorialPageViewController
         UIApplication.shared.delegate?.window??.rootViewController = tutorialVC
     }
-
+    
+    // Update User Defaults for Sound
+    @IBAction func soundSwitchTapped(_ sender: Any) {
+        uiSoundOn = uiSoundsSwitch.isOn
+        UserDefaults.standard.set(uiSoundOn, forKey: "isUiSoundOn")
+    }
+    
+    // Update user defaults for haptics
+    @IBAction func hapticsSwitchTapped(_ sender: Any) {
+        uiHapticssOn = uiHapticsSwitch.isOn
+        UserDefaults.standard.set(uiHapticssOn, forKey: "areUiHapticsOn")
+    }
+    
     // MARK: - Commented out, because I may use it again later on
 //    // MARK: - Done Button tapped
 //    @IBAction func doneButtonTapped(_ sender: Any) {
