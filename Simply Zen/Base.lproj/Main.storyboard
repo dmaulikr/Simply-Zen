@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -267,7 +268,10 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="dnm-S2-X50" kind="show" id="tFe-Ky-oVe"/>
+                                    <segue destination="dnm-S2-X50" kind="show" id="tFe-Ky-oVe">
+                                        <segue key="commit" inheritsFrom="parent" id="At6-P7-qnW"/>
+                                        <segue key="preview" inheritsFrom="commit" id="ziB-ss-uDM"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -332,7 +336,10 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="dnm-S2-X50" kind="show" id="800-15-ETT"/>
+                                    <segue destination="dnm-S2-X50" kind="show" id="800-15-ETT">
+                                        <segue key="commit" inheritsFrom="parent" id="HcE-Y9-FXy"/>
+                                        <segue key="preview" inheritsFrom="commit" id="i96-77-mYI"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -506,7 +513,7 @@
             </objects>
             <point key="canvasLocation" x="576.79999999999995" y="-788.42364532019712"/>
         </scene>
-        <!--Lessons View Controller-->
+        <!--All Lessons-->
         <scene sceneID="Ssd-Y2-Fot">
             <objects>
                 <viewController storyboardIdentifier="allLessons" id="dtl-K0-AsN" customClass="LessonsViewController" customModule="Simply_Zen" customModuleProvider="target" sceneMemberID="viewController">
@@ -519,10 +526,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="All-Meditations-Background" translatesAutoresizingMaskIntoConstraints="NO" id="ruk-qv-ugD">
-                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ORv-Ov-Xet">
-                                <rect key="frame" x="16" y="96" width="343" height="682"/>
+                                <rect key="frame" x="16" y="130" width="343" height="648"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.0020844584799999998" green="0.32912391419999998" blue="0.57680368420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -584,19 +591,44 @@
                             <constraint firstItem="ORv-Ov-Xet" firstAttribute="top" secondItem="TwT-sp-tVH" secondAttribute="bottom" constant="8" id="BWY-fh-4aa"/>
                             <constraint firstItem="ruk-qv-ugD" firstAttribute="leading" secondItem="mh4-dS-TBa" secondAttribute="leading" id="CcR-HK-Oeo"/>
                             <constraint firstItem="qJg-Fr-Yo7" firstAttribute="top" secondItem="ORv-Ov-Xet" secondAttribute="bottom" id="dMa-ea-0O1"/>
-                            <constraint firstItem="ruk-qv-ugD" firstAttribute="top" secondItem="TwT-sp-tVH" secondAttribute="bottom" constant="-44" id="o2T-Zk-mer"/>
+                            <constraint firstItem="ruk-qv-ugD" firstAttribute="top" secondItem="TwT-sp-tVH" secondAttribute="bottom" constant="-122" id="o2T-Zk-mer"/>
                             <constraint firstAttribute="trailing" secondItem="ruk-qv-ugD" secondAttribute="trailing" id="pQz-E1-PRl"/>
                             <constraint firstItem="qJg-Fr-Yo7" firstAttribute="top" secondItem="ruk-qv-ugD" secondAttribute="bottom" constant="-34" id="qxa-dV-02n"/>
                             <constraint firstItem="ORv-Ov-Xet" firstAttribute="leading" secondItem="mh4-dS-TBa" secondAttribute="leading" constant="16" id="rCy-i5-2IV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="All Lessons" prompt="Find Your Zen" id="xaz-zk-jJ6">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="QJ6-if-gMN"/>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="xI3-9g-RCf">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="SCr-Cv-yu1">
+                                <rect key="frame" x="329" y="34" width="30" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="⚙">
+                                            <attributes>
+                                                <color key="NSColor" red="0.086274509799999996" green="0.058823529409999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="30" name="Menlo-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="dnm-S2-X50" kind="show" id="pKj-fS-Y3Y">
+                                        <segue key="commit" inheritsFrom="parent" id="fII-DK-F8q"/>
+                                        <segue key="preview" inheritsFrom="commit" id="5hO-3c-qvU"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lessonsTableView" destination="ORv-Ov-Xet" id="puD-6a-Be9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3l-nM-XXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1518" y="-788"/>
+            <point key="canvasLocation" x="1517.5999999999999" y="-788.42364532019712"/>
         </scene>
         <!--Guided Zen-->
         <scene sceneID="toT-yu-AFl">
@@ -707,7 +739,10 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="dnm-S2-X50" kind="show" id="KjU-q1-dUz"/>
+                                    <segue destination="dnm-S2-X50" kind="show" id="KjU-q1-dUz">
+                                        <segue key="commit" inheritsFrom="parent" id="4mT-bC-ajx"/>
+                                        <segue key="preview" inheritsFrom="commit" id="yJn-Ts-7BN"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -1067,6 +1102,6 @@
         <image name="flower_2" width="2592" height="1936"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tFe-Ky-oVe"/>
+        <segue reference="KjU-q1-dUz"/>
     </inferredMetricsTieBreakers>
 </document>
