@@ -87,6 +87,7 @@
 		65A688E61EF213FA000DAB18 /* Floating on a Cloud.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65A688E31EF213FA000DAB18 /* Floating on a Cloud.mp3 */; };
 		65A688E71EF213FA000DAB18 /* Warming Your Body No Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65A688E41EF213FA000DAB18 /* Warming Your Body No Intro.mp3 */; };
 		65A9CC5B1F1D3FE200770A82 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9CC5A1F1D3FE200770A82 /* Alerts.swift */; };
+		65B053CC1F88368800681BC9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B053CA1F88368800681BC9 /* Launch Screen.storyboard */; };
 		65B4E0EF1F54B2AB00EA3C61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65B4E0EE1F54B2AB00EA3C61 /* GoogleService-Info.plist */; };
 		65B4E0F01F54B2AB00EA3C61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65B4E0EE1F54B2AB00EA3C61 /* GoogleService-Info.plist */; };
 		65B4E0F11F54B2AB00EA3C61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65B4E0EE1F54B2AB00EA3C61 /* GoogleService-Info.plist */; };
@@ -104,7 +105,6 @@
 		65B7BC571EEF5C1A009AE298 /* Opening Your Heart to Others.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B7BC561EEF5C1A009AE298 /* Opening Your Heart to Others.mp3 */; };
 		65BE12C21EC500E700628802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12C11EC500E700628802 /* AppDelegate.swift */; };
 		65BE12C91EC500E700628802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12C71EC500E700628802 /* Main.storyboard */; };
-		65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE12CC1EC500E700628802 /* LaunchScreen.storyboard */; };
 		65BE12E41EC500E700628802 /* Simply_ZenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE12E31EC500E700628802 /* Simply_ZenUITests.swift */; };
 		65C18A911EDF74E1000B29F6 /* SZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C18A901EDF74E1000B29F6 /* SZNavigationController.swift */; };
 		65C18A931EDF768F000B29F6 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C18A921EDF768F000B29F6 /* TutorialViewController.swift */; };
@@ -221,6 +221,7 @@
 		65A688E31EF213FA000DAB18 /* Floating on a Cloud.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Floating on a Cloud.mp3"; sourceTree = "<group>"; };
 		65A688E41EF213FA000DAB18 /* Warming Your Body No Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Warming Your Body No Intro.mp3"; sourceTree = "<group>"; };
 		65A9CC5A1F1D3FE200770A82 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		65B053CB1F88368800681BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		65B4E0EE1F54B2AB00EA3C61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		65B7BC3F1EEF360F009AE298 /* Intro to Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Intro to Meditation.mp3"; sourceTree = "<group>"; };
 		65B7BC401EEF360F009AE298 /* Learning to Breath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Learning to Breath.mp3"; sourceTree = "<group>"; };
@@ -237,7 +238,6 @@
 		65BE12BE1EC500E700628802 /* Simply Zen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simply Zen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE12C11EC500E700628802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65BE12C81EC500E700628802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		65BE12CD1EC500E700628802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65BE12CF1EC500E700628802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65BE12D41EC500E700628802 /* Simply ZenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simply ZenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE12DA1EC500E700628802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -326,7 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				65BE12C71EC500E700628802 /* Main.storyboard */,
-				65BE12CC1EC500E700628802 /* LaunchScreen.storyboard */,
+				65B053CA1F88368800681BC9 /* Launch Screen.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -845,7 +845,6 @@
 				653022A41EF0844B004BA701 /* Full Breath Awareness.mp3 in Resources */,
 				659E0D961ED38B1800E6346D /* burmese-bell.mp3 in Resources */,
 				653022BE1EF0853E004BA701 /* Intro to Letting Go with Meditation.mp3 in Resources */,
-				65BE12CE1EC500E700628802 /* LaunchScreen.storyboard in Resources */,
 				658C9FD21ECBC6A600C71538 /* Assets.xcassets in Resources */,
 				656F20B31EF2FCDC009C6AAB /* Inner Light Meditation No Intro.mp3 in Resources */,
 				653022C11EF0853E004BA701 /* Rejecting Negativity.mp3 in Resources */,
@@ -864,6 +863,7 @@
 				653022B41EF08516004BA701 /* Warming Your Body.mp3 in Resources */,
 				653022B11EF08516004BA701 /* Fully Relax.mp3 in Resources */,
 				65B7BC571EEF5C1A009AE298 /* Opening Your Heart to Others.mp3 in Resources */,
+				65B053CC1F88368800681BC9 /* Launch Screen.storyboard in Resources */,
 				656F20BB1EF2FCEA009C6AAB /* Identifying Sadness.mp3 in Resources */,
 				656F20B21EF2FCDC009C6AAB /* Exploring Happiness.mp3 in Resources */,
 				65B7BC461EEF3F4F009AE298 /* Deeper Breath Awareness.mp3 in Resources */,
@@ -1125,20 +1125,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		65B053CA1F88368800681BC9 /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65B053CB1F88368800681BC9 /* Base */,
+			);
+			name = "Launch Screen.storyboard";
+			sourceTree = "<group>";
+		};
 		65BE12C71EC500E700628802 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				65BE12C81EC500E700628802 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		65BE12CC1EC500E700628802 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				65BE12CD1EC500E700628802 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1256,6 +1256,7 @@
 			baseConfigurationReference = EB5E7998270FE59CFA313021 /* Pods-Simply Zen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_OPTIMIZATION = space;
 				CODE_SIGN_ENTITLEMENTS = "Simply Zen/Simply Zen.entitlements";
 				DEVELOPMENT_TEAM = ZJ769HHQS2;
 				INFOPLIST_FILE = "Simply Zen/Info.plist";
@@ -1274,6 +1275,7 @@
 			baseConfigurationReference = 09F44175D081CBA209254172 /* Pods-Simply Zen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_OPTIMIZATION = space;
 				CODE_SIGN_ENTITLEMENTS = "Simply Zen/Simply Zen.entitlements";
 				DEVELOPMENT_TEAM = ZJ769HHQS2;
 				INFOPLIST_FILE = "Simply Zen/Info.plist";
