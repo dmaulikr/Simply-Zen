@@ -26,14 +26,14 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1009212017</string>
+	<string>1109212017</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>twitter</string>
 		<string>twitterauth</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
-	<false/>
+	<true/>
 	<key>NSHealthShareUsageDescription</key>
 	<string>Allow access to track your meditation sessions in HealthKit.</string>
 	<key>NSHealthUpdateUsageDescription</key>
