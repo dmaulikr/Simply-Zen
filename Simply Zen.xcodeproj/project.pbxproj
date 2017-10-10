@@ -80,7 +80,7 @@
 		6556B1A21F8C354A008408C6 /* Breathing Away Anger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6556B19F1F8C353B008408C6 /* Breathing Away Anger.mp3 */; };
 		6556B1A31F8C354A008408C6 /* Full Letting Go Session No Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6556B19E1F8C353B008408C6 /* Full Letting Go Session No Intro.mp3 */; };
 		6556B1A41F8C354A008408C6 /* Rejecting Negativity No Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6556B1A11F8C353C008408C6 /* Rejecting Negativity No Intro.mp3 */; };
-		6556B1A51F8C354A008408C6 /* Visualizing Anger .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6556B1A01F8C353C008408C6 /* Visualizing Anger .mp3 */; };
+		6556B1A51F8C354A008408C6 /* Visualizing Anger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6556B1A01F8C353C008408C6 /* Visualizing Anger.mp3 */; };
 		655A90181F54BDCA00610496 /* FirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655A90171F54BDCA00610496 /* FirebaseTests.swift */; };
 		6576E2EC1ED787E000FBD40C /* Course+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576E2EA1ED787E000FBD40C /* Course+CoreDataClass.swift */; };
 		6576E2ED1ED787E000FBD40C /* Course+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576E2EB1ED787E000FBD40C /* Course+CoreDataProperties.swift */; };
@@ -213,7 +213,7 @@
 		6556B1991F8C33C3008408C6 /* Identifying Sadness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Identifying Sadness.mp3"; sourceTree = "<group>"; };
 		6556B19E1F8C353B008408C6 /* Full Letting Go Session No Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Full Letting Go Session No Intro.mp3"; sourceTree = "<group>"; };
 		6556B19F1F8C353B008408C6 /* Breathing Away Anger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Breathing Away Anger.mp3"; sourceTree = "<group>"; };
-		6556B1A01F8C353C008408C6 /* Visualizing Anger .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Visualizing Anger .mp3"; sourceTree = "<group>"; };
+		6556B1A01F8C353C008408C6 /* Visualizing Anger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Visualizing Anger.mp3"; sourceTree = "<group>"; };
 		6556B1A11F8C353C008408C6 /* Rejecting Negativity No Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rejecting Negativity No Intro.mp3"; sourceTree = "<group>"; };
 		655A90171F54BDCA00610496 /* FirebaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseTests.swift; sourceTree = "<group>"; };
 		6576E2EA1ED787E000FBD40C /* Course+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Course+CoreDataClass.swift"; path = "Simply Zen/Model/Course+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -398,7 +398,7 @@
 				6556B19F1F8C353B008408C6 /* Breathing Away Anger.mp3 */,
 				6556B19E1F8C353B008408C6 /* Full Letting Go Session No Intro.mp3 */,
 				6556B1A11F8C353C008408C6 /* Rejecting Negativity No Intro.mp3 */,
-				6556B1A01F8C353C008408C6 /* Visualizing Anger .mp3 */,
+				6556B1A01F8C353C008408C6 /* Visualizing Anger.mp3 */,
 			);
 			path = Upset;
 			sourceTree = "<group>";
@@ -824,7 +824,7 @@
 				6556B1A21F8C354A008408C6 /* Breathing Away Anger.mp3 in Resources */,
 				6556B1A31F8C354A008408C6 /* Full Letting Go Session No Intro.mp3 in Resources */,
 				6556B1A41F8C354A008408C6 /* Rejecting Negativity No Intro.mp3 in Resources */,
-				6556B1A51F8C354A008408C6 /* Visualizing Anger .mp3 in Resources */,
+				6556B1A51F8C354A008408C6 /* Visualizing Anger.mp3 in Resources */,
 				6556B19A1F8C33D5008408C6 /* Identifying Sadness.mp3 in Resources */,
 				6556B19B1F8C33D5008408C6 /* Opening Your Heart to Yourself No Intro.mp3 in Resources */,
 				6556B19C1F8C33D5008408C6 /* Seeking Happiness.mp3 in Resources */,

@@ -643,10 +643,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guided-Zen-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="rCa-Hf-n60">
-                                <rect key="frame" x="0.0" y="44" width="379" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="379" height="812"/>
                             </imageView>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hzh-9L-UFd" customClass="GuidedZenMenuView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="-4" y="166" width="383" height="612"/>
+                                <rect key="frame" x="-4" y="122" width="383" height="656"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
