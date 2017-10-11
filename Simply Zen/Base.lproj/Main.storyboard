@@ -232,10 +232,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="D9W-bm-qC1">
-                                <rect key="frame" x="0.0" y="0.0" width="379" height="812"/>
+                                <rect key="frame" x="0.0" y="44" width="379" height="768"/>
                             </imageView>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="2eh-41-KPk" customClass="MainMenuView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="-4" y="122" width="383" height="656"/>
+                                <rect key="frame" x="-4" y="166" width="383" height="612"/>
                                 <gestureRecognizers/>
                             </view>
                         </subviews>
