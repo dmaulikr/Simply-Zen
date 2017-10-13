@@ -232,10 +232,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="D9W-bm-qC1">
-                                <rect key="frame" x="0.0" y="44" width="379" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="379" height="812"/>
                             </imageView>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="2eh-41-KPk" customClass="MainMenuView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="-4" y="166" width="383" height="612"/>
+                                <rect key="frame" x="-4" y="122" width="383" height="656"/>
                                 <gestureRecognizers/>
                             </view>
                         </subviews>
@@ -301,10 +301,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Open-Zen-Menu-Background" translatesAutoresizingMaskIntoConstraints="NO" id="JNB-Ub-r1X">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="854"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="810"/>
                             </imageView>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zS2-xn-m5P" customClass="OpenZenMenuView" customModule="Simply_Zen" customModuleProvider="target">
-                                <rect key="frame" x="-4" y="122" width="383" height="656"/>
+                                <rect key="frame" x="-4" y="166" width="383" height="612"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
